@@ -1,9 +1,8 @@
-# Setting it up, step by step
+﻿# Setting it up, step by step
 
 You'll create four free accounts, copy a few keys into GitHub, then press "Run".
 Allow about an hour. Do steps 1–7 on your **PC**, then step 8 is your **iPad**.
 
-Throughout, replace `YOURNAME` with your GitHub username.
 
 ---
 
@@ -22,7 +21,7 @@ Throughout, replace `YOURNAME` with your GitHub username.
 4. Paste these lines (the code is already committed for you):
 
    ```powershell
-   git remote add origin https://github.com/YOURNAME/underground-uk.git
+   git remote add origin https://github.com/davidmcewen1-del/underground-uk.git
    git push -u origin main
    ```
 
@@ -60,7 +59,7 @@ This is what saves your thumbs up/down when you tap them on the iPad.
    - **Variables and Secrets → Add**:
      - Type **Secret**, name `VOTE_KEY`, value: make up a PIN or phrase (at least 8 characters,
        e.g. `bristol-dub-4471`). You'll type this once on the iPad. Note it down. **Deploy/Save**.
-     - Type **Text**, name `ALLOWED_ORIGIN`, value `https://YOURNAME.github.io` (no slash at the end). **Save**.
+     - Type **Text**, name `ALLOWED_ORIGIN`, value `https://davidmcewen1-del.github.io` (no slash at the end). **Save**.
 8. On the Worker's overview page, copy its address. It looks like
    `https://underground-votes.something.workers.dev`. Save it for step 6.
 
@@ -112,7 +111,7 @@ Secrets are hidden: nobody (including you) can read them back. Only the weekly j
 3. Click **Weekly digest** (left) → **Run workflow** → **Run workflow**.
 4. Wait. The first run takes about 20–30 minutes because it fetches politely, with pauses between requests.
    When it shows a green tick, click the run. The summary lists what it found and the page address.
-5. Your digest is at **`https://YOURNAME.github.io/underground-uk/`**.
+5. Your digest is at **`https://davidmcewen1-del.github.io/underground-uk/`**.
 
 From now on it runs by itself **every Friday at 7am UK time**, and a new Spotify playlist called
 "Underground UK – 2026-W42" (etc.) appears in your Spotify library.
