@@ -311,8 +311,21 @@ class Run:
                 f.write(f"## Digest {self.week}\n\n" + "\n".join(f"- {n}" for n in self.notes) + "\n")
 
 
+def rebuild(cfg):
+    """Re-render the latest saved digest with the current page design (no fetching)."""
+    digests = load_digests()
+    if not digests:
+        log.info("Nothing to rebuild yet")
+        return
+    week = max(digests)
+    saved = load_json(f"digests/{week}.json", {})
+    render.write_site(cfg, week, saved["label"], saved["releases"], saved.get("playlist_url"), digests)
+    log.info("Rebuilt page for %s", week)
+
+
 def main():
     parser = argparse.ArgumentParser(description="Build the weekly Underground UK digest.")
+    parser.add_argument("--rebuild", action="store_true", help="only re-render the latest digest page")
     parser.add_argument("--dry-run", action="store_true", help="build the page but save no state and make no playlist")
     parser.add_argument("--cities", type=int, help="only use the first N cities (for quick tests)")
     parser.add_argument("--size", type=int, help="override digest size")
@@ -325,7 +338,10 @@ def main():
     if args.size:
         cfg["digest"]["size"] = args.size
     cfg["votes"]["worker_url"] = os.environ.get("WORKER_URL") or cfg["votes"]["worker_url"]
-    Run(cfg, args.dry_run).run()
+    if args.rebuild:
+        rebuild(cfg)
+    else:
+        Run(cfg, args.dry_run).run()
 
 
 if __name__ == "__main__":

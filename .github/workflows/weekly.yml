@@ -5,6 +5,11 @@ on:
     - cron: "0 7 * * 5"          # Fridays at 07:00
       timezone: "Europe/London"
   workflow_dispatch:              # "Run workflow" button for running it by hand
+    inputs:
+      rebuild_only:
+        description: "Only rebuild the page (no new digest or playlist)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write                 # commit the updated data/ and docs/ folders
@@ -40,7 +45,7 @@ jobs:
           SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
           VOTE_KEY: ${{ secrets.VOTE_KEY }}
           WORKER_URL: ${{ vars.WORKER_URL }}
-        run: python -m digest.main
+        run: python -m digest.main ${{ inputs.rebuild_only && '--rebuild' || '' }}
 
       - name: Save state and pages
         run: |
