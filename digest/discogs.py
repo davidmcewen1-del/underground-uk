@@ -23,6 +23,11 @@ def genre_name(discogs_genre):
     return GENRE_NAMES.get(discogs_genre.lower(), discogs_genre.lower())
 
 
+def clean_name(name):
+    """Drop Discogs' disambiguation suffix, e.g. "Undergrowth (3)" -> "Undergrowth"."""
+    return re.sub(r"\s\(\d{1,2}\)$", "", name or "").rstrip("*")
+
+
 def is_self_released(label_name):
     return norm(label_name).startswith("not on label")
 
@@ -84,8 +89,7 @@ class Discogs:
             return None
         labels = d.get("labels") or []
         label = labels[0] if labels else {}
-        artists = ", ".join(re.sub(r" \(\d+\)$", "", a.get("anv") or a.get("name", "")).rstrip("*")
-                            for a in d.get("artists") or [])
+        artists = ", ".join(clean_name(a.get("anv") or a.get("name", "")) for a in d.get("artists") or [])
         images = d.get("images") or []
         primary = next((i for i in images if i.get("type") == "primary"), images[0] if images else {})
         self_rel = not label or is_self_released(label.get("name", ""))
@@ -94,7 +98,7 @@ class Discogs:
             "source": "discogs",
             "title": d.get("title", ""),
             "artist": artists,
-            "label": None if self_rel else label.get("name"),
+            "label": None if self_rel else clean_name(label.get("name")),
             "discogs_label_id": None if self_rel else label.get("id"),
             "self_released": self_rel,
             "city": "UK",

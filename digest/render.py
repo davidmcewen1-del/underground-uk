@@ -3,7 +3,7 @@ import shutil
 from collections import Counter
 from html import escape
 
-from .discogs import genre_name
+from .discogs import clean_name, genre_name
 from .util import DOCS, ROOT
 
 
@@ -36,7 +36,7 @@ def _link(url, text, cls):
 
 
 def _card(rel):
-    label = escape(rel.get("label") or "Self-released")
+    label = escape(clean_name(rel.get("label")) or "Self-released")
     tags = "".join(f"<li>{escape(t)}</li>" for t in rel.get("tags") or [])
     art = (f'<img src="{escape(rel["artwork"])}" alt="" loading="lazy" referrerpolicy="no-referrer">'
            if rel.get("artwork") else '<div class="noart" aria-hidden="true">♪</div>')
