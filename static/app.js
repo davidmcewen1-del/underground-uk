@@ -109,11 +109,87 @@
   }
   [city, show].forEach((el) => el && el.addEventListener("change", applyFilters));
 
-  if (worker && pin && cards.length) {
-    call("/votes").then((all) => {
-      Object.keys(all).forEach((k) => (votes[k] = all[k].vote));
-      cards.forEach(paint);
-      applyFilters();
-    }).catch((e) => { if (e.message === "pin") pin = null; });
+  // --- Save label / artist ---------------------------------------------
+  const saved = {};
+  const saveButtons = Array.from(document.querySelectorAll("button.save"));
+
+  function paintSaves() {
+    saveButtons.forEach((b) => {
+      const on = Boolean(saved[b.dataset.saveKey]);
+      b.setAttribute("aria-pressed", String(on));
+      b.innerHTML = '<span class="star" aria-hidden="true">' + (on ? "★" : "☆") + "</span> " +
+        (on ? "Saved " : "Save ") + b.dataset.saveKind;
+    });
+  }
+
+  async function toggleSave(b) {
+    if (!worker) { say("Saving isn't set up yet."); return; }
+    if (!pin && !(await askPin())) return;
+    const key = b.dataset.saveKey;
+    const on = !saved[key];
+    const same = saveButtons.filter((x) => x.dataset.saveKey === key);
+    same.forEach((x) => (x.disabled = true));
+    try {
+      await call("/save", { method: "POST", body: JSON.stringify({
+        key: key, name: b.dataset.saveName, url: b.dataset.saveUrl, kind: b.dataset.saveKind, save: on }) });
+      if (on) saved[key] = { name: b.dataset.saveName, url: b.dataset.saveUrl, kind: b.dataset.saveKind };
+      else delete saved[key];
+      paintSaves();
+      say(on ? "Saved " + b.dataset.saveName + " — it'll be checked every week" : "Removed " + b.dataset.saveName);
+    } catch (e) {
+      if (e.message === "pin") { pin = null; say("PIN needed again — tap again to enter it."); }
+      else say("Couldn't save that — try again.");
+    } finally {
+      same.forEach((x) => (x.disabled = false));
+    }
+  }
+  saveButtons.forEach((b) => b.addEventListener("click", () => toggleSave(b)));
+
+  // The "My labels" page: show the live list, with a remove button on each.
+  function renderSavedList() {
+    ["label", "artist"].forEach((kind) => {
+      const ul = document.getElementById("saved-" + kind);
+      if (!ul) return;
+      const items = Object.keys(saved).filter((k) => saved[k].kind === kind)
+        .sort((a, b) => saved[a].name.localeCompare(saved[b].name));
+      ul.innerHTML = "";
+      if (!items.length) { ul.innerHTML = '<li class="none">Nothing saved yet.</li>'; return; }
+      items.forEach((k) => {
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        a.href = saved[k].url; a.target = "_blank"; a.rel = "noopener"; a.textContent = saved[k].name;
+        const when = document.createElement("span");
+        when.className = "when"; when.textContent = saved[k].at ? "saved " + saved[k].at.slice(0, 10) : "";
+        const rm = document.createElement("button");
+        rm.type = "button"; rm.className = "btn remove"; rm.textContent = "Remove";
+        rm.addEventListener("click", async () => {
+          rm.disabled = true;
+          try {
+            await call("/save", { method: "POST", body: JSON.stringify({ key: k, save: false }) });
+            delete saved[k];
+            renderSavedList();
+          } catch (e) { rm.disabled = false; say("Couldn't remove that — try again."); }
+        });
+        li.append(a, " ", when, rm);
+        ul.appendChild(li);
+      });
+    });
+  }
+
+  if (worker && pin) {
+    if (cards.length) {
+      call("/votes").then((all) => {
+        Object.keys(all).forEach((k) => (votes[k] = all[k].vote));
+        cards.forEach(paint);
+        applyFilters();
+      }).catch((e) => { if (e.message === "pin") pin = null; });
+    }
+    call("/saved").then((all) => {
+      Object.assign(saved, all);
+      paintSaves();
+      renderSavedList();
+    }).catch(() => {});
+  } else if (document.getElementById("saved-label")) {
+    say("Enter your PIN on the digest page (tap any thumb) to see changes made since Friday.");
   }
 })();

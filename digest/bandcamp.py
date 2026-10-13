@@ -19,6 +19,7 @@ GENRES = {
     21: "r&b/soul", 22: "reggae", 23: "rock", 24: "soundtrack", 25: "spoken word", 26: "world",
     27: "podcasts", 28: "audiobooks",
 }
+BANDCAMP_GENRES = set(GENRES.values())
 SKIP_GENRES = {"podcasts", "audiobooks"}  # not music releases
 
 
@@ -177,6 +178,9 @@ class Bandcamp:
         d = self.album_details(url)
         if not d or not d["item_id"] or not d["release_date"]:
             return None
+        place = norm((d["city"] or "").split(",")[0])
+        tags = [t for t in d["tags"] if norm(t) != place]
+        genre = next((t for t in tags if t in BANDCAMP_GENRES), None)
         return {
             "key": f"bc:{d['item_id']}",
             "source": "bandcamp",
@@ -186,8 +190,8 @@ class Bandcamp:
             "label_url": label_url,
             "self_released": False,
             "city": d["city"] or "UK",
-            "genre": None,
-            "tags": d["tags"],
+            "genre": genre,
+            "tags": tags[:8],
             "artwork": d["artwork"],
             "release_date": d["release_date"],
             "bandcamp_url": url,

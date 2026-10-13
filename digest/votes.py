@@ -30,6 +30,22 @@ def sync(worker_url, vote_key, digests):
     return votes
 
 
+def sync_saved(worker_url, vote_key):
+    """Saved labels/artists from the Worker, kept in data/saved.json (also used if the Worker is down)."""
+    saved = load_json("saved.json", {})
+    if not worker_url or not vote_key:
+        return saved
+    try:
+        saved = PoliteSession(0).get(worker_url.rstrip("/") + "/saved",
+                                     headers={"Authorization": f"Bearer {vote_key}"}).json()
+    except Exception as exc:
+        log.warning("Saved labels: could not reach the Worker (%s), using saved copy", exc)
+        return saved
+    save_json("saved.json", saved)
+    log.info("Saved labels/artists: %d", len(saved))
+    return saved
+
+
 def preference_model(votes):
     labels, tags = Counter(), Counter()
     for v in votes.values():

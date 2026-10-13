@@ -3,8 +3,22 @@ import shutil
 from collections import Counter
 from html import escape
 
+from .bandcamp import label_key, site_root
 from .discogs import clean_name, genre_name
 from .util import DOCS, ROOT
+
+
+def save_target(rel):
+    """(key, name, url, kind) for the label - or, if self-released, the artist - behind a release."""
+    if rel.get("label_url"):
+        return label_key(rel["label_url"]), clean_name(rel.get("label")), rel["label_url"], "label"
+    if rel.get("discogs_label_id"):
+        return (f"dg:{rel['discogs_label_id']}", clean_name(rel.get("label")),
+                f"https://www.discogs.com/label/{rel['discogs_label_id']}", "label")
+    if rel.get("self_released") and not rel.get("label") and rel.get("bandcamp_url"):
+        url = site_root(rel["bandcamp_url"])
+        return label_key(url), rel["artist"], url, "artist"
+    return None
 
 
 def _genre(rel):
@@ -43,6 +57,13 @@ def _card(rel):
     pick = {"random": '<span class="badge">Random pick</span>',
             "for-you": '<span class="badge fy">For you</span>',
             "followed": '<span class="badge fl">Following</span>'}.get(rel.get("pick"), "")
+    target = save_target(rel)
+    save = ""
+    if target:
+        key, name, url, kind = target
+        save = (f'<button type="button" class="save" data-save-key="{escape(key)}" data-save-name="{escape(name)}"'
+                f' data-save-url="{escape(url)}" data-save-kind="{kind}" aria-pressed="false">'
+                f'<span class="star" aria-hidden="true">☆</span> Save {kind}</button>')
     return f"""<article class="card" data-key="{escape(rel['key'])}"
  data-city="{escape(rel.get('city') or '')}" data-pick="{escape(rel.get('pick') or '')}">
  <div class="art">{art}{pick}</div>
@@ -56,6 +77,7 @@ def _card(rel):
    <button type="button" data-vote="1" aria-label="Thumbs up" aria-pressed="false">👍</button>
    <button type="button" data-vote="-1" aria-label="Thumbs down" aria-pressed="false">👎</button>
   </div>
+  {save}
  </div>
 </article>"""
 
@@ -91,7 +113,7 @@ def digest_page(cfg, week, label, releases, playlist_url, prefix):
   <h1>{escape(cfg['digest']['title'])}</h1>
   <p class="sub">{escape(label)} · {len(releases)} new releases from small UK labels</p>
  </div>
- <nav>{playlist}<a class="btn" href="{prefix}archive.html">Archive</a></nav>
+ <nav>{playlist}<a class="btn" href="{prefix}saved.html">My labels</a><a class="btn" href="{prefix}archive.html">Archive</a></nav>
 </header>
 <nav class="jump" aria-label="Genres">{jump}</nav>
 <section class="filters" aria-label="Filters">
@@ -116,11 +138,30 @@ def archive_page(cfg, digests):
     return _page(f"{cfg['digest']['title']} archive", body, "", cfg["votes"]["worker_url"])
 
 
-def write_site(cfg, week, label, releases, playlist_url, digests):
+def saved_page(cfg, saved):
+    """Catalogue of saved labels and artists. Built weekly; the page script refreshes it live."""
+    def rows(kind):
+        items = sorted(((k, v) for k, v in saved.items() if v.get("kind") == kind), key=lambda kv: kv[1]["name"].lower())
+        return "".join(f'<li data-save-key="{escape(k)}"><a href="{escape(v["url"])}" target="_blank" rel="noopener">'
+                       f'{escape(v["name"])}</a> <span class="when">saved {escape((v.get("at") or "")[:10])}</span></li>'
+                       for k, v in items) or '<li class="none">Nothing saved yet.</li>'
+    body = f"""<header class="top"><div><h1>My labels</h1>
+<p class="sub">Labels and artists you've saved. They're checked every week, and their new releases always make the digest.</p></div>
+<nav><a class="btn" href="index.html">Latest digest</a><a class="btn" href="archive.html">Archive</a></nav></header>
+<main class="archive saved-list">
+ <h2>Labels</h2><ul id="saved-label">{rows("label")}</ul>
+ <h2>Artists</h2><ul id="saved-artist">{rows("artist")}</ul>
+ <p class="status" id="vote-status" role="status"></p>
+</main>"""
+    return _page("My labels", body, "", cfg["votes"]["worker_url"])
+
+
+def write_site(cfg, week, label, releases, playlist_url, digests, saved=None):
     (DOCS / "digests").mkdir(parents=True, exist_ok=True)
     shutil.copytree(ROOT / "static", DOCS / "assets", dirs_exist_ok=True)
     (DOCS / "digests" / f"{week}.html").write_text(
         digest_page(cfg, week, label, releases, playlist_url, "../"), encoding="utf-8")
     (DOCS / "index.html").write_text(digest_page(cfg, week, label, releases, playlist_url, ""), encoding="utf-8")
     (DOCS / "archive.html").write_text(archive_page(cfg, digests), encoding="utf-8")
+    (DOCS / "saved.html").write_text(saved_page(cfg, saved or {}), encoding="utf-8")
     (DOCS / ".nojekyll").write_text("", encoding="utf-8")

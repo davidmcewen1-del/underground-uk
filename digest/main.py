@@ -43,6 +43,7 @@ class Run:
         self.labels = load_json("labels.json", {})
         self.shown = load_json("shown.json", {})
         self.pending = load_json("pending.json", {})
+        self.saved = load_json("saved.json", {})
         self.load_follows()
         iso = date.today().isocalendar()
         self.week = f"{iso.year}-W{iso.week:02d}"
@@ -63,9 +64,11 @@ class Run:
 
     # --- helpers ---------------------------------------------------------
     def load_follows(self):
-        """Register the labels listed under [labels] follow in config.toml."""
+        """Register followed labels/artists: [labels] follow in config.toml plus those saved on the page."""
         keys = set()
-        for raw in self.cfg["labels"].get("follow", []):
+        wanted = [(raw, "label") for raw in self.cfg["labels"].get("follow", [])]
+        wanted += [(v["url"], v.get("kind", "label")) for v in self.saved.values() if v.get("url")]
+        for raw, kind in wanted:
             raw = raw.strip()
             m = re.search(r"discogs\.com/(?:[a-z]{2}/)?label/(\d+)(?:-([^/?#]+))?", raw)
             if m:
@@ -84,6 +87,10 @@ class Run:
                 continue
             entry["followed"] = True
             entry["excluded"] = None
+            entry["kind"] = kind
+            if key in self.saved:
+                entry["name"] = self.saved[key].get("name") or entry["name"]
+                entry.pop("name_from_url", None)
             keys.add(key)
         for key, entry in self.labels.items():
             if entry.get("followed") and key not in keys:
@@ -91,7 +98,10 @@ class Run:
         self.follow_count = len(keys)
 
     def is_followed(self, rel):
-        return bool(self.labels.get(rel.get("label_key") or "", {}).get("followed"))
+        keys = [rel.get("label_key") or ""]
+        if rel.get("self_released") and rel.get("bandcamp_url"):
+            keys.append(label_key(site_root(rel["bandcamp_url"])))  # a saved artist's own account
+        return any(self.labels.get(k, {}).get("followed") for k in keys)
 
     def note(self, msg):
         log.info(msg)
@@ -190,6 +200,8 @@ class Run:
                 except Exception as exc:
                     log.warning("Bandcamp page %s failed: %s", url, exc)
                     continue
+                if rel and entry.get("kind") == "artist":
+                    rel.update(label=None, label_url=None, self_released=True)
                 if rel and rel["release_date"] >= self.since:
                     rel["label_key"] = key
                     rel["city"] = rel["city"] if rel["city"] != "UK" else entry.get("city") or "UK"
@@ -280,6 +292,8 @@ class Run:
         cfg = self.cfg
         digests = load_digests()
         all_votes = votes.sync(cfg["votes"]["worker_url"], os.environ.get("VOTE_KEY"), digests)
+        self.saved = votes.sync_saved(cfg["votes"]["worker_url"], os.environ.get("VOTE_KEY"))
+        self.load_follows()
 
         bc = Bandcamp(cfg["bandcamp"])
         self.from_pending()
@@ -336,7 +350,7 @@ class Run:
         label = f"Week {self.week.split('-W')[1]} · {d.day} {d:%b %Y}"
         clean = [{k: v for k, v in r.items() if k not in ("enriched", "upcoming", "added")} for r in releases]
         digests[self.week] = clean
-        render.write_site(cfg, self.week, label, clean, playlist_url, digests)
+        render.write_site(cfg, self.week, label, clean, playlist_url, digests, self.saved)
         self.note(f"Digest {self.week}: {len(clean)} releases")
 
         if not self.dry_run:
@@ -399,7 +413,8 @@ def rebuild(cfg):
         return
     week = max(digests)
     saved = load_json(f"digests/{week}.json", {})
-    render.write_site(cfg, week, saved["label"], saved["releases"], saved.get("playlist_url"), digests)
+    render.write_site(cfg, week, saved["label"], saved["releases"], saved.get("playlist_url"), digests,
+                      load_json("saved.json", {}))
     log.info("Rebuilt page for %s", week)
 
 

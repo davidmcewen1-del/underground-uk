@@ -120,6 +120,18 @@ select {
 .vote button[data-vote="1"][aria-pressed="true"] { border-color: var(--up); background: color-mix(in srgb, var(--up) 15%, var(--surface)); }
 .vote button[data-vote="-1"][aria-pressed="true"] { border-color: var(--down); background: color-mix(in srgb, var(--down) 15%, var(--surface)); }
 .vote button:disabled { cursor: wait; }
+button.save {
+  margin-top: 8px; min-height: 40px; border: 1px solid var(--line); border-radius: 10px;
+  background: var(--surface); color: var(--muted); font: inherit; font-size: 0.85rem; font-weight: 600;
+  cursor: pointer; text-transform: none;
+}
+button.save .star { font-size: 1rem; }
+button.save[aria-pressed="true"] { color: var(--accent); border-color: var(--accent); }
+.saved-list h2 { margin: 24px 0 4px; font-size: 1.2rem; }
+.saved-list li { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
+.saved-list .when { color: var(--muted); font-size: 0.85rem; flex: 1; }
+.saved-list .remove { min-height: 34px; font-size: 0.8rem; color: var(--muted); cursor: pointer; }
+.saved-list .none { color: var(--muted); }
 .empty { text-align: center; color: var(--muted); padding: 40px 20px; }
 .archive { max-width: 700px; margin: 0 auto; padding: 0 20px 40px; }
 .archive ul { list-style: none; padding: 0; }
