@@ -75,3 +75,6 @@ class PoliteSession:
 
     def post(self, url, **kw):
         return self.request("POST", url, **kw)
+
+    def put(self, url, **kw):
+        return self.request("PUT", url, **kw)

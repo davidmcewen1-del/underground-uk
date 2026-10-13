@@ -3,7 +3,7 @@
 
 [digest]
 title = "Underground UK"
-size = 200                    # releases per weekly digest
+size = 500                    # releases per weekly digest
 random_share = 0.2            # share of each digest picked at random, ignoring your votes
 max_per_label = 4             # stops one busy label filling the page
 include_self_released = true  # artists releasing without a label
@@ -15,14 +15,14 @@ exclude_majors = true         # Universal, Sony, Warner and the labels they own
 # Size limits, using Discogs data. 0 = switched off.
 max_releases = 0              # exclude labels with more releases than this on Discogs
 max_avg_have = 0              # exclude labels whose releases average more Discogs "haves" than this
-max_bandcamp_checks_per_run = 150
-max_discogs_checks_per_run = 100
+max_bandcamp_checks_per_run = 400
+max_discogs_checks_per_run = 200
 always_exclude = []           # label names to always skip, e.g. ["Some Label"]
 never_exclude = []            # label names never to treat as major
 
 [bandcamp]
 delay_seconds = 2.0           # pause between requests to Bandcamp
-pages_per_city = 5            # 60 releases per page
+pages_per_city = 8            # 60 releases per page
 cities = [
   { name = "London",     geoname_id = 2643743 },
   { name = "Bristol",    geoname_id = 2654675 },
@@ -41,13 +41,13 @@ cities = [
 
 [discogs]
 delay_seconds = 1.1           # Discogs allows 60 requests a minute
-search_pages = 5              # 100 results per page
-max_release_lookups = 250
+search_pages = 10             # 100 results per page
+max_release_lookups = 600
 skip_formats = ["Reissue", "Repress", "Remastered", "Unofficial Release"]
 
 [spotify]
 enabled = true
-tracks_per_release = 1        # 0 = add whole releases
+tracks_per_release = 0        # 0 = add whole releases
 public = false
 playlist_name = "Underground UK – {week}"
 

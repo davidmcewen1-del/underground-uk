@@ -59,11 +59,19 @@ class Spotify:
         uris = [t["uri"] for t in data.get("items", [])]
         return uris[:per] if per else uris
 
-    def make_playlist(self, name, description, uris):
-        resp = self.http.post(f"{API}/me/playlists",
-                              json={"name": name, "description": description, "public": self.cfg["public"]})
-        playlist = resp.json()
-        for i in range(0, len(uris), 100):
-            self.http.post(f"{API}/playlists/{playlist['id']}/items", json={"uris": uris[i:i + 100]})
+    def make_playlist(self, name, description, uris, existing_url=None):
+        """Create the week's playlist, or refill an existing one (a redo of the same week)."""
+        if existing_url:
+            playlist_id = existing_url.rstrip("/").split("/")[-1].split("?")[0]
+            url = existing_url
+            self.http.put(f"{API}/playlists/{playlist_id}/items", json={"uris": uris[:100]})
+            rest = uris[100:]
+        else:
+            resp = self.http.post(f"{API}/me/playlists",
+                                  json={"name": name, "description": description, "public": self.cfg["public"]})
+            playlist_id, url = resp.json()["id"], resp.json()["external_urls"]["spotify"]
+            rest = uris
+        for i in range(0, len(rest), 100):
+            self.http.post(f"{API}/playlists/{playlist_id}/items", json={"uris": rest[i:i + 100]})
         log.info("Spotify playlist %s with %d tracks", name, len(uris))
-        return playlist["external_urls"]["spotify"]
+        return url

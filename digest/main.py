@@ -43,12 +43,20 @@ class Run:
         self.labels = load_json("labels.json", {})
         self.shown = load_json("shown.json", {})
         self.pending = load_json("pending.json", {})
-        last = self.state.get("last_run")
-        lookback = (date.fromisoformat(last[:10]) - timedelta(days=2)) if last else \
-            date.today() - timedelta(days=cfg["digest"]["first_run_lookback_days"])
-        self.since = lookback.isoformat()
         iso = date.today().isocalendar()
         self.week = f"{iso.year}-W{iso.week:02d}"
+        # A second run in the same week redoes that week's digest from the same starting point.
+        self.redo = self.state.get("week") == self.week and "week_since" in self.state
+        if self.redo:
+            self.since = self.state["week_since"]
+            self.discogs_min_id = self.state.get("week_discogs_min_id", 0)
+        else:
+            last = self.state.get("last_run")
+            lookback = (date.fromisoformat(last[:10]) - timedelta(days=2)) if last else \
+                date.today() - timedelta(days=cfg["digest"]["first_run_lookback_days"])
+            self.since = lookback.isoformat()
+            self.discogs_min_id = self.state.get("discogs_max_id", 0)
+            self.state.update(week=self.week, week_since=self.since, week_discogs_min_id=self.discogs_min_id)
         self.candidates = {}
         self.notes = []
 
@@ -154,11 +162,11 @@ class Run:
     def from_discogs(self, dg):
         year = date.today().year
         try:
-            found, top = dg.search_new(year, self.since, self.state.get("discogs_max_id", 0))
+            found, top = dg.search_new(year, self.since, self.discogs_min_id)
         except Exception as exc:
             log.warning("Discogs search failed: %s", exc)
-            found, top = [], self.state.get("discogs_max_id", 0)
-        self.state["discogs_max_id"] = top
+            found, top = [], self.discogs_min_id
+        self.state["discogs_max_id"] = max(top, self.state.get("discogs_max_id", 0))
         for rel in found:
             self.track_label(rel)
             self.add(rel)
@@ -205,6 +213,15 @@ class Run:
                 return
         entry["excluded"] = None
 
+    def reopen_week(self, previous):
+        """Put this week's earlier picks back in the running so the redo can choose afresh."""
+        for rel in previous:
+            for k in (rel["key"], signature(rel)):
+                if self.shown.get(k) == self.week:
+                    del self.shown[k]
+            self.candidates.setdefault(rel["key"], {**rel, "spotify_url": None})
+        self.note(f"Redoing {self.week}: {len(previous)} earlier picks back in the pool")
+
     # --- main ------------------------------------------------------------
     def run(self):
         cfg = self.cfg
@@ -213,6 +230,8 @@ class Run:
 
         bc = Bandcamp(cfg["bandcamp"])
         self.from_pending()
+        if self.redo:
+            self.reopen_week(digests.get(self.week, []))
         self.from_bandcamp(bc)
         token = os.environ.get("DISCOGS_TOKEN")
         dg = Discogs(cfg["discogs"], token) if token else None
@@ -298,8 +317,10 @@ class Run:
         if not uris or self.dry_run:
             return None
         try:
+            previous = load_json(f"digests/{self.week}.json", {}).get("playlist_url") if self.redo else None
             return sp.make_playlist(sc["playlist_name"].format(week=self.week),
-                                    f"{len(releases)} new releases from small UK labels. Digest {self.week}.", uris)
+                                    f"{len(releases)} new releases from small UK labels. Digest {self.week}.", uris,
+                                    existing_url=previous)
         except Exception as exc:
             self.note(f"Spotify playlist failed: {exc}")
             return None
