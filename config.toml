@@ -56,7 +56,7 @@ skip_formats = ["Reissue", "Repress", "Remastered", "Unofficial Release"]
 enabled = true
 tracks_per_release = 0        # 0 = add whole releases
 public = false
-playlist_name = "Underground UK – {week}"
+playlist_name = "Underground UK – {kind} – {week}"   # two a week: Labels and Self-released
 
 [votes]
 # Your Cloudflare Worker address, filled in during setup (SETUP.md step 4).

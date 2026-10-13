@@ -345,12 +345,12 @@ class Run:
         order = {"followed": 0, "for-you": 1}
         releases.sort(key=lambda r: (order.get(r["pick"], 2), r.get("genre") or "", r["artist"].lower()))
 
-        playlist_url = self.spotify(releases)
+        playlists = self.spotify(releases)
         d = date.today()
         label = f"Week {self.week.split('-W')[1]} · {d.day} {d:%b %Y}"
         clean = [{k: v for k, v in r.items() if k not in ("enriched", "upcoming", "added")} for r in releases]
         digests[self.week] = clean
-        render.write_site(cfg, self.week, label, clean, playlist_url, digests, self.saved)
+        render.write_site(cfg, self.week, label, clean, playlists, digests, self.saved)
         self.note(f"Digest {self.week}: {len(clean)} releases")
 
         if not self.dry_run:
@@ -358,7 +358,7 @@ class Run:
                 self.shown[r["key"]] = self.week
                 self.shown[signature(r)] = self.week
             self.state["last_run"] = datetime.now(timezone.utc).isoformat()
-            save_json(f"digests/{self.week}.json", {"label": label, "playlist_url": playlist_url, "releases": clean})
+            save_json(f"digests/{self.week}.json", {"label": label, "playlists": playlists, "releases": clean})
             save_json("state.json", self.state)
             save_json("labels.json", self.labels)
             save_json("shown.json", self.shown)
@@ -376,7 +376,9 @@ class Run:
         except Exception as exc:
             self.note(f"Spotify login failed: {exc}")
             return None
-        uris = []
+        # Two playlists a week: releases on labels, and self-released ones.
+        groups = {"labels": [], "self-released": []}
+        counts = {"labels": 0, "self-released": 0}
         for rel in releases:
             try:
                 url, tracks = sp.find(rel)
@@ -385,18 +387,26 @@ class Run:
                 continue
             if url:
                 rel["spotify_url"] = url
-                uris.extend(tracks)
-        self.note(f"Spotify: found {sum(1 for r in releases if r.get('spotify_url'))} of {len(releases)}")
-        if not uris or self.dry_run:
-            return None
-        try:
-            previous = load_json(f"digests/{self.week}.json", {}).get("playlist_url") if self.redo else None
-            return sp.make_playlist(sc["playlist_name"].format(week=self.week),
-                                    f"{len(releases)} new releases from small UK labels. Digest {self.week}.", uris,
-                                    existing_url=previous)
-        except Exception as exc:
-            self.note(f"Spotify playlist failed: {exc}")
-            return None
+                group = "labels" if rel.get("label") else "self-released"
+                groups[group].extend(tracks)
+                counts[group] += 1
+        self.note(f"Spotify: found {sum(counts.values())} of {len(releases)}")
+        if self.dry_run:
+            return {}
+        previous = load_json(f"digests/{self.week}.json", {}).get("playlists", {}) if self.redo else {}
+        titles = {"labels": "Labels", "self-released": "Self-released"}
+        playlists = {}
+        for group, uris in groups.items():
+            if not uris:
+                continue
+            try:
+                playlists[group] = sp.make_playlist(
+                    sc["playlist_name"].format(kind=titles[group], week=self.week),
+                    f"{counts[group]} new {'label' if group == 'labels' else 'self-released'} releases from the UK "
+                    f"underground. Digest {self.week}.", uris, existing_url=previous.get(group))
+            except Exception as exc:
+                self.note(f"Spotify {titles[group]} playlist failed: {exc}")
+        return playlists
 
     def summary(self):
         path = os.environ.get("GITHUB_STEP_SUMMARY")
@@ -413,7 +423,8 @@ def rebuild(cfg):
         return
     week = max(digests)
     saved = load_json(f"digests/{week}.json", {})
-    render.write_site(cfg, week, saved["label"], saved["releases"], saved.get("playlist_url"), digests,
+    playlists = saved.get("playlists") or ({"all": saved["playlist_url"]} if saved.get("playlist_url") else {})
+    render.write_site(cfg, week, saved["label"], saved["releases"], playlists, digests,
                       load_json("saved.json", {}))
     log.info("Rebuilt page for %s", week)
 

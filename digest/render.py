@@ -104,9 +104,11 @@ def _page(title, body, prefix, worker_url):
 """
 
 
-def digest_page(cfg, week, label, releases, playlist_url, prefix):
-    playlist = (f'<a class="btn sp big" href="{escape(playlist_url)}" target="_blank" rel="noopener">'
-                f'Play this week on Spotify</a>') if playlist_url else ""
+def digest_page(cfg, week, label, releases, playlists, prefix):
+    names = {"labels": "Labels playlist", "self-released": "Self-released playlist", "all": "Spotify playlist"}
+    playlist = "".join(f'<a class="btn sp big" href="{escape(url)}" target="_blank" rel="noopener">'
+                       f'▶ {names.get(group, "Spotify playlist")}</a>'
+                       for group, url in (playlists or {}).items() if url)
     jump, sections = _sections(releases)
     body = f"""<header class="top">
  <div>
@@ -156,12 +158,12 @@ def saved_page(cfg, saved):
     return _page("My labels", body, "", cfg["votes"]["worker_url"])
 
 
-def write_site(cfg, week, label, releases, playlist_url, digests, saved=None):
+def write_site(cfg, week, label, releases, playlists, digests, saved=None):
     (DOCS / "digests").mkdir(parents=True, exist_ok=True)
     shutil.copytree(ROOT / "static", DOCS / "assets", dirs_exist_ok=True)
     (DOCS / "digests" / f"{week}.html").write_text(
-        digest_page(cfg, week, label, releases, playlist_url, "../"), encoding="utf-8")
-    (DOCS / "index.html").write_text(digest_page(cfg, week, label, releases, playlist_url, ""), encoding="utf-8")
+        digest_page(cfg, week, label, releases, playlists, "../"), encoding="utf-8")
+    (DOCS / "index.html").write_text(digest_page(cfg, week, label, releases, playlists, ""), encoding="utf-8")
     (DOCS / "archive.html").write_text(archive_page(cfg, digests), encoding="utf-8")
     (DOCS / "saved.html").write_text(saved_page(cfg, saved or {}), encoding="utf-8")
     (DOCS / ".nojekyll").write_text("", encoding="utf-8")
