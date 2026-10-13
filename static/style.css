@@ -64,8 +64,29 @@ select {
   background: var(--surface); color: var(--text); font: inherit; max-width: 60vw;
 }
 .status { color: var(--muted); font-size: 0.85rem; }
+.jump {
+  display: flex; flex-wrap: wrap; gap: 8px; padding: 4px 20px 8px; max-width: 1400px; margin: 0 auto;
+}
+.chip {
+  display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 0 14px;
+  border-radius: 999px; background: var(--chip); color: var(--text); text-decoration: none;
+  font-weight: 600; font-size: 0.9rem; text-transform: capitalize;
+}
+.chip .n, .count { color: var(--muted); font-weight: 500; }
+.chip[hidden], .genre[hidden] { display: none; }
+.genres { max-width: 1400px; margin: 0 auto; padding: 0 20px 40px; }
+.genre { border-top: 1px solid var(--line); }
+.genre summary {
+  display: flex; align-items: center; gap: 10px; min-height: 56px; cursor: pointer; list-style: none;
+}
+.genre summary::-webkit-details-marker { display: none; }
+.genre summary::before {
+  content: "▸"; color: var(--muted); font-size: 1.1rem; transition: transform 0.15s;
+}
+.genre[open] summary::before { transform: rotate(90deg); }
+.genre summary h2 { margin: 0; font-size: 1.25rem; text-transform: capitalize; }
 .grid {
-  display: grid; gap: 16px; padding: 0 20px 40px; max-width: 1400px; margin: 0 auto;
+  display: grid; gap: 16px; padding: 4px 0 24px;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
 }
 .card {
@@ -82,7 +103,7 @@ select {
 }
 .badge.fy { background: var(--accent); }
 .body { display: flex; flex-direction: column; gap: 4px; padding: 12px 14px 14px; flex: 1; }
-.body h2 { margin: 0; font-size: 1.02rem; line-height: 1.25; overflow-wrap: anywhere; }
+.body h3 { margin: 0; font-size: 1.02rem; line-height: 1.25; overflow-wrap: anywhere; }
 .artist { margin: 0; font-weight: 600; color: var(--accent); overflow-wrap: anywhere; }
 .meta { margin: 0; color: var(--muted); font-size: 0.85rem; overflow-wrap: anywhere; }
 .tags { display: flex; flex-wrap: wrap; gap: 4px; list-style: none; margin: 4px 0; padding: 0; }
@@ -105,7 +126,7 @@ select {
 .archive a { color: var(--accent); font-weight: 600; text-decoration: none; }
 @media (max-width: 520px) {
   .top { padding: 16px 16px 8px; }
-  .filters, .grid { padding-left: 16px; padding-right: 16px; }
+  .filters, .jump, .genres { padding-left: 16px; padding-right: 16px; }
   .grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
   .links .btn { padding: 0 8px; }
 }

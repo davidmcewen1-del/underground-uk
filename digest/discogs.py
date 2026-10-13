@@ -8,6 +8,21 @@ from .util import PoliteSession, log, norm
 API = "https://api.discogs.com"
 
 
+# Discogs genre names mapped onto Bandcamp's, so each genre gets one section on the page.
+GENRE_NAMES = {
+    "hip hop": "hip-hop/rap", "funk / soul": "r&b/soul", "folk, world, & country": "folk",
+    "stage & screen": "soundtrack", "children's": "kids", "non-music": "spoken word",
+    "brass & military": "classical", "latin": "latin", "reggae": "reggae", "blues": "blues",
+    "electronic": "electronic", "rock": "rock", "pop": "pop", "jazz": "jazz", "classical": "classical",
+}
+
+
+def genre_name(discogs_genre):
+    if not discogs_genre:
+        return None
+    return GENRE_NAMES.get(discogs_genre.lower(), discogs_genre.lower())
+
+
 def is_self_released(label_name):
     return norm(label_name).startswith("not on label")
 
@@ -83,7 +98,7 @@ class Discogs:
             "discogs_label_id": None if self_rel else label.get("id"),
             "self_released": self_rel,
             "city": "UK",
-            "genre": (d.get("genres") or [None])[0],
+            "genre": genre_name((d.get("genres") or [None])[0]),
             "tags": [t.lower() for t in (d.get("styles") or []) + (d.get("genres") or [])][:8],
             "artwork": primary.get("uri150") or primary.get("uri"),
             "release_date": d.get("released") or str(d.get("year", "")),

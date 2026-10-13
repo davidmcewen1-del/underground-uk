@@ -3,7 +3,32 @@ import shutil
 from collections import Counter
 from html import escape
 
+from .discogs import genre_name
 from .util import DOCS, ROOT
+
+
+def _genre(rel):
+    return genre_name(rel.get("genre")) or "other"
+
+
+def _slug(text):
+    return "".join(c if c.isalnum() else "-" for c in text.lower()).strip("-")
+
+
+def _sections(releases):
+    """One folded <details> section per genre, alphabetical, with "other" last."""
+    groups = {}
+    for rel in releases:
+        groups.setdefault(_genre(rel), []).append(rel)
+    names = sorted(groups, key=lambda g: (g == "other", g))
+    jump = "".join(f'<a class="chip" href="#g-{_slug(g)}" data-target="g-{_slug(g)}">{escape(g)} '
+                   f'<span class="n">{len(groups[g])}</span></a>' for g in names)
+    sections = "".join(
+        f'<details class="genre" id="g-{_slug(g)}"><summary><h2>{escape(g)}</h2>'
+        f'<span class="count">{len(groups[g])}</span></summary>'
+        f'<div class="grid">{"".join(_card(r) for r in groups[g])}</div></details>'
+        for g in names)
+    return jump, sections
 
 
 def _link(url, text, cls):
@@ -17,11 +42,11 @@ def _card(rel):
            if rel.get("artwork") else '<div class="noart" aria-hidden="true">♪</div>')
     pick = '<span class="badge">Random pick</span>' if rel.get("pick") == "random" else \
            '<span class="badge fy">For you</span>' if rel.get("pick") == "for-you" else ""
-    return f"""<article class="card" data-key="{escape(rel['key'])}" data-genre="{escape(rel.get('genre') or '')}"
+    return f"""<article class="card" data-key="{escape(rel['key'])}"
  data-city="{escape(rel.get('city') or '')}" data-pick="{escape(rel.get('pick') or '')}">
  <div class="art">{art}{pick}</div>
  <div class="body">
-  <h2>{escape(rel['title'])}</h2>
+  <h3>{escape(rel['title'])}</h3>
   <p class="artist">{escape(rel['artist'])}</p>
   <p class="meta">{label} · {escape(rel.get('city') or 'UK')} · {escape(rel.get('release_date') or '')}</p>
   <ul class="tags">{tags}</ul>
@@ -59,6 +84,7 @@ def _page(title, body, prefix, worker_url):
 def digest_page(cfg, week, label, releases, playlist_url, prefix):
     playlist = (f'<a class="btn sp big" href="{escape(playlist_url)}" target="_blank" rel="noopener">'
                 f'Play this week on Spotify</a>') if playlist_url else ""
+    jump, sections = _sections(releases)
     body = f"""<header class="top">
  <div>
   <h1>{escape(cfg['digest']['title'])}</h1>
@@ -66,15 +92,15 @@ def digest_page(cfg, week, label, releases, playlist_url, prefix):
  </div>
  <nav>{playlist}<a class="btn" href="{prefix}archive.html">Archive</a></nav>
 </header>
+<nav class="jump" aria-label="Genres">{jump}</nav>
 <section class="filters" aria-label="Filters">
- <label>Genre <select id="f-genre"><option value="">All</option>{_options(r.get('genre') for r in releases)}</select></label>
  <label>City <select id="f-city"><option value="">All</option>{_options(r.get('city') for r in releases)}</select></label>
  <label>Show <select id="f-show"><option value="">Everything</option><option value="unvoted">Not voted yet</option>
   <option value="for-you">For you</option><option value="random">Random picks</option></select></label>
  <span id="vote-status" class="status" role="status"></span>
 </section>
-<main class="grid">
-{''.join(_card(r) for r in releases)}
+<main class="genres">
+{sections}
 </main>
 <p class="empty" hidden>No releases match these filters.</p>"""
     return _page(f"{cfg['digest']['title']} {week}", body, prefix, cfg["votes"]["worker_url"])

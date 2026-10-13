@@ -74,23 +74,40 @@
     });
   });
 
-  const genre = document.getElementById("f-genre");
+  // Genre buttons open their (folded) section and scroll to it.
+  document.querySelectorAll(".jump .chip").forEach((chip) => {
+    chip.addEventListener("click", (e) => {
+      const section = document.getElementById(chip.dataset.target);
+      if (!section) return;
+      e.preventDefault();
+      section.open = true;
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
+
   const city = document.getElementById("f-city");
   const show = document.getElementById("f-show");
   const empty = document.querySelector(".empty");
   function applyFilters() {
-    if (!genre) return;
+    if (!city) return;
     let visible = 0;
     cards.forEach((c) => {
-      const ok = (!genre.value || c.dataset.genre === genre.value) &&
-        (!city.value || c.dataset.city === city.value) &&
+      const ok = (!city.value || c.dataset.city === city.value) &&
         (!show.value || (show.value === "unvoted" ? !votes[c.dataset.key] : c.dataset.pick === show.value));
       c.hidden = !ok;
       if (ok) visible++;
     });
+    // Update each section's count and hide sections (and their buttons) left empty.
+    document.querySelectorAll(".genre").forEach((section) => {
+      const n = section.querySelectorAll(".card:not([hidden])").length;
+      section.hidden = n === 0;
+      section.querySelector(".count").textContent = n;
+      const chip = document.querySelector('.chip[data-target="' + section.id + '"]');
+      if (chip) { chip.hidden = n === 0; chip.querySelector(".n").textContent = n; }
+    });
     if (empty) empty.hidden = visible > 0;
   }
-  [genre, city, show].forEach((el) => el && el.addEventListener("change", applyFilters));
+  [city, show].forEach((el) => el && el.addEventListener("change", applyFilters));
 
   if (worker && pin && cards.length) {
     call("/votes").then((all) => {
