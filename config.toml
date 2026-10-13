@@ -54,6 +54,16 @@ cities = [
   { name = "Aberdeen",   geoname_id = 2657832 },
   { name = "Dundee",     geoname_id = 2650752 },
   { name = "Swansea",    geoname_id = 2636432 },
+  { name = "Coventry", geoname_id = 2652221 },
+  { name = "York", geoname_id = 2633352 },
+  { name = "Hull", geoname_id = 2645425 },
+  { name = "Portsmouth", geoname_id = 2639996 },
+  { name = "Derby", geoname_id = 2651347 },
+  { name = "Exeter", geoname_id = 2649808 },
+  { name = "Hastings", geoname_id = 2647356 },
+  { name = "Plymouth", geoname_id = 2640194 },
+  { name = "Huddersfield", geoname_id = 2646458 },
+  { name = "Margate", geoname_id = 2643044 },
 ]
 
 [discogs]
