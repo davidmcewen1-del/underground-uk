@@ -17,6 +17,13 @@ max_releases = 0              # exclude labels with more releases than this on D
 max_avg_have = 0              # exclude labels whose releases average more Discogs "haves" than this
 max_bandcamp_checks_per_run = 400
 max_discogs_checks_per_run = 200
+# Labels you've found elsewhere (radio, shops, friends): checked every week, and their
+# new releases always make the digest. Paste Bandcamp or Discogs label addresses, e.g.
+# follow = [
+#   "https://youngechorecords.bandcamp.com",
+#   "https://www.discogs.com/label/12345-Some-Label",
+# ]
+follow = []
 always_exclude = []           # label names to always skip, e.g. ["Some Label"]
 never_exclude = []            # label names never to treat as major
 

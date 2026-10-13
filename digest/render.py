@@ -40,8 +40,9 @@ def _card(rel):
     tags = "".join(f"<li>{escape(t)}</li>" for t in rel.get("tags") or [])
     art = (f'<img src="{escape(rel["artwork"])}" alt="" loading="lazy" referrerpolicy="no-referrer">'
            if rel.get("artwork") else '<div class="noart" aria-hidden="true">♪</div>')
-    pick = '<span class="badge">Random pick</span>' if rel.get("pick") == "random" else \
-           '<span class="badge fy">For you</span>' if rel.get("pick") == "for-you" else ""
+    pick = {"random": '<span class="badge">Random pick</span>',
+            "for-you": '<span class="badge fy">For you</span>',
+            "followed": '<span class="badge fl">Following</span>'}.get(rel.get("pick"), "")
     return f"""<article class="card" data-key="{escape(rel['key'])}"
  data-city="{escape(rel.get('city') or '')}" data-pick="{escape(rel.get('pick') or '')}">
  <div class="art">{art}{pick}</div>
@@ -96,7 +97,7 @@ def digest_page(cfg, week, label, releases, playlist_url, prefix):
 <section class="filters" aria-label="Filters">
  <label>City <select id="f-city"><option value="">All</option>{_options(r.get('city') for r in releases)}</select></label>
  <label>Show <select id="f-show"><option value="">Everything</option><option value="unvoted">Not voted yet</option>
-  <option value="for-you">For you</option><option value="random">Random picks</option></select></label>
+  <option value="followed">Following</option><option value="for-you">For you</option><option value="random">Random picks</option></select></label>
  <span id="vote-status" class="status" role="status"></span>
 </section>
 <main class="genres">

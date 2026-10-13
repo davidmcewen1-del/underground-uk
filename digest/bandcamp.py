@@ -33,6 +33,13 @@ def site_root(url):
     return f"{parts.scheme}://{parts.netloc}"
 
 
+def label_key(url):
+    """"bc:<subdomain>" for x.bandcamp.com, "bc:<host>" for labels on their own domain."""
+    host = urlsplit(url if "://" in url else "https://" + url).netloc.lower()
+    host = host[4:] if host.startswith("www.") else host
+    return "bc:" + (host[:-len(".bandcamp.com")] if host.endswith(".bandcamp.com") else host)
+
+
 def clean_url(url):
     return url.split("?")[0]
 
@@ -103,19 +110,21 @@ class Bandcamp:
         }
 
     # --- Label pages ----------------------------------------------------
-    def label_release_urls(self, label_url):
-        """All album/track URLs listed on a label's /music page."""
+    def label_page(self, label_url):
+        """(label name, album/track URLs on its /music page in page order, newest first)."""
         resp = self.http.get(label_url.rstrip("/") + "/music")
-        page = resp.text
-        if re.search(r"/(album|track)/", urlsplit(resp.url).path):
-            return {clean_url(resp.url)}  # single-release accounts redirect to it
-        urls = {urljoin(label_url, m) for m in re.findall(r'href="((?:https?://[^"/]+)?/(?:album|track)/[^"?#]+)', page)}
+        page, base = resp.text, resp.url
+        m = re.search(r'<meta property="og:site_name" content="([^"]*)"', page)
+        name = html.unescape(m.group(1)) if m else None
+        if re.search(r"/(album|track)/", urlsplit(base).path):
+            return name, [clean_url(base)]  # single-release accounts redirect to it
+        urls = [urljoin(base, u) for u in re.findall(r'href="((?:https?://[^"/]+)?/(?:album|track)/[^"?#]+)', page)]
         extra = re.search(r'data-client-items="([^"]+)"', page)
         if extra:
             for it in json.loads(html.unescape(extra.group(1))):
                 if it.get("page_url"):
-                    urls.add(urljoin(label_url, it["page_url"]))
-        return {clean_url(u) for u in urls}
+                    urls.append(urljoin(base, it["page_url"]))
+        return name, list(dict.fromkeys(clean_url(u) for u in urls))
 
     # --- Album pages ----------------------------------------------------
     def album_details(self, url):

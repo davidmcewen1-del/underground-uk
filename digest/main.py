@@ -2,12 +2,12 @@
 import argparse
 import logging
 import os
+import re
 import tomllib
 from datetime import date, datetime, timedelta, timezone
-from urllib.parse import urlsplit
 
 from . import majors, render, votes
-from .bandcamp import Bandcamp
+from .bandcamp import Bandcamp, label_key, site_root
 from .discogs import Discogs, chain_is_major
 from .spotify import Spotify
 from .util import DATA, ROOT, load_json, log, norm, save_json
@@ -43,6 +43,7 @@ class Run:
         self.labels = load_json("labels.json", {})
         self.shown = load_json("shown.json", {})
         self.pending = load_json("pending.json", {})
+        self.load_follows()
         iso = date.today().isocalendar()
         self.week = f"{iso.year}-W{iso.week:02d}"
         # A second run in the same week redoes that week's digest from the same starting point.
@@ -61,6 +62,37 @@ class Run:
         self.notes = []
 
     # --- helpers ---------------------------------------------------------
+    def load_follows(self):
+        """Register the labels listed under [labels] follow in config.toml."""
+        keys = set()
+        for raw in self.cfg["labels"].get("follow", []):
+            raw = raw.strip()
+            m = re.search(r"discogs\.com/(?:[a-z]{2}/)?label/(\d+)(?:-([^/?#]+))?", raw)
+            if m:
+                key = f"dg:{m.group(1)}"
+                entry = self.labels.setdefault(key, {
+                    "name": (m.group(2) or "").replace("-", " ") or key, "source": "discogs",
+                    "discogs_id": int(m.group(1)), "first_seen": self.today, "last_checked": None,
+                    "known": None, "name_from_url": True})
+            elif raw:
+                url = site_root(raw if "://" in raw else "https://" + raw)
+                key = label_key(url)
+                entry = self.labels.setdefault(key, {
+                    "name": key[3:], "source": "bandcamp", "url": url, "first_seen": self.today,
+                    "last_checked": None, "known": None, "name_from_url": True})
+            else:
+                continue
+            entry["followed"] = True
+            entry["excluded"] = None
+            keys.add(key)
+        for key, entry in self.labels.items():
+            if entry.get("followed") and key not in keys:
+                entry["followed"] = False
+        self.follow_count = len(keys)
+
+    def is_followed(self, rel):
+        return bool(self.labels.get(rel.get("label_key") or "", {}).get("followed"))
+
     def note(self, msg):
         log.info(msg)
         self.notes.append(msg)
@@ -76,7 +108,7 @@ class Run:
 
     def track_label(self, rel):
         if rel.get("label_url"):
-            key = "bc:" + urlsplit(rel["label_url"]).netloc.split(".")[0]
+            key = label_key(rel["label_url"])
             entry = self.labels.setdefault(key, {"name": rel["label"], "source": "bandcamp",
                                                  "url": rel["label_url"], "first_seen": self.today,
                                                  "last_checked": None, "known": None})
@@ -92,6 +124,8 @@ class Run:
         return key
 
     def excluded(self, rel):
+        if self.is_followed(rel):
+            return False
         lc = self.cfg["labels"]
         name = rel.get("label")
         if rel.get("self_released") and not name:
@@ -131,31 +165,37 @@ class Run:
         self.note(f"Bandcamp city feeds: {n} releases (incl. upcoming)")
 
     def check_bandcamp_labels(self, bc):
-        todo = sorted((k for k, v in self.labels.items() if v["source"] == "bandcamp" and not v.get("excluded")),
-                      key=lambda k: self.labels[k]["last_checked"] or "")
-        todo = todo[:self.cfg["labels"]["max_bandcamp_checks_per_run"]]
+        todo = self.label_todo("bandcamp", self.cfg["labels"]["max_bandcamp_checks_per_run"])
         found = 0
         for key in todo:
             entry = self.labels[key]
             try:
-                urls = bc.label_release_urls(entry["url"])
+                page_name, urls = bc.label_page(entry["url"])
             except Exception as exc:
                 log.warning("Bandcamp label %s failed: %s", entry["name"], exc)
                 continue
+            if page_name and entry.pop("name_from_url", False):
+                entry["name"] = page_name
+            listed = {r.get("bandcamp_url") for r in self.candidates.values()}
             if entry["known"] is not None:
-                listed = {r.get("bandcamp_url") for r in self.candidates.values()}
-                for url in sorted(urls - set(entry["known"]) - listed):
-                    try:
-                        rel = bc.release_from_page(url, entry["name"], entry["url"])
-                    except Exception as exc:
-                        log.warning("Bandcamp page %s failed: %s", url, exc)
-                        continue
-                    if rel and rel["release_date"] >= self.since:
-                        rel["label_key"] = key
-                        rel["city"] = rel["city"] if rel["city"] != "UK" else entry.get("city") or "UK"
-                        self.add(rel)
-                        found += 1
-            entry["known"] = sorted(urls | set(entry["known"] or []))
+                known = set(entry["known"])
+                to_read = [u for u in urls if u not in known and u not in listed]
+            elif entry.get("followed"):
+                to_read = [u for u in urls[:6] if u not in listed]  # newly followed: its latest releases
+            else:
+                to_read = []
+            for url in to_read:
+                try:
+                    rel = bc.release_from_page(url, entry["name"], entry["url"])
+                except Exception as exc:
+                    log.warning("Bandcamp page %s failed: %s", url, exc)
+                    continue
+                if rel and rel["release_date"] >= self.since:
+                    rel["label_key"] = key
+                    rel["city"] = rel["city"] if rel["city"] != "UK" else entry.get("city") or "UK"
+                    self.add(rel)
+                    found += 1
+            entry["known"] = sorted(set(urls) | set(entry["known"] or []))
             entry["last_checked"] = self.today
         self.note(f"Bandcamp label pages: checked {len(todo)}, {found} new releases")
 
@@ -172,9 +212,7 @@ class Run:
             self.add(rel)
         self.note(f"Discogs search: {len(found)} new UK {year} releases")
 
-        todo = sorted((k for k, v in self.labels.items() if v["source"] == "discogs" and not v.get("excluded")),
-                      key=lambda k: self.labels[k]["last_checked"] or "")
-        todo = todo[:self.cfg["labels"]["max_discogs_checks_per_run"]]
+        todo = self.label_todo("discogs", self.cfg["labels"]["max_discogs_checks_per_run"])
         fresh_count = 0
         for key in todo:
             entry = self.labels[key]
@@ -186,8 +224,10 @@ class Run:
             except Exception as exc:
                 log.warning("Discogs label %s failed: %s", entry["name"], exc)
                 continue
-            if entry["known"] is not None:
+            if entry["known"] is not None or entry.get("followed"):
                 for rel in fresh:
+                    if entry["known"] is None and rel["added"] < self.since:
+                        continue  # newly followed: only releases added since the last digest
                     rel["label_key"] = key
                     self.add(rel)
                     fresh_count += 1
@@ -195,7 +235,20 @@ class Run:
             entry["last_checked"] = self.today
         self.note(f"Discogs labels: checked {len(todo)}, {fresh_count} new releases")
 
+    def label_todo(self, source, cap):
+        """Followed labels every run; the rest oldest-checked first, up to `cap`."""
+        mine = [k for k, v in self.labels.items() if v["source"] == source]
+        followed = [k for k in mine if self.labels[k].get("followed")]
+        others = sorted((k for k in mine if not self.labels[k].get("followed") and not self.labels[k].get("excluded")),
+                        key=lambda k: self.labels[k]["last_checked"] or "")
+        return followed + others[:cap]
+
     def classify_discogs_label(self, dg, entry):
+        if entry.get("followed"):
+            if entry.pop("name_from_url", False):
+                entry["name"] = dg.label_info(entry["discogs_id"])["name"]
+            entry["excluded"] = None
+            return
         if "excluded" in entry:
             return
         lc = self.cfg["labels"]
@@ -259,8 +312,13 @@ class Run:
         self.note(f"Eligible after filters: {len(pool)}")
 
         size = cfg["digest"]["size"]
-        picked = votes.choose(pool, all_votes, round(size * 1.1), cfg["digest"]["random_share"],
-                              cfg["digest"]["max_per_label"])
+        followed = [r for r in pool if self.is_followed(r)]
+        for rel in followed:
+            rel["pick"] = "followed"
+        others = [r for r in pool if not self.is_followed(r)]
+        picked = followed + votes.choose(others, all_votes, max(0, round(size * 1.1) - len(followed)),
+                                         cfg["digest"]["random_share"], cfg["digest"]["max_per_label"])
+        self.note(f"Followed labels: {self.follow_count}, {len(followed)} new releases from them")
         releases = []
         for rel in picked:
             if rel["source"] == "bandcamp":
@@ -270,7 +328,8 @@ class Run:
             releases.append(rel)
             if len(releases) >= size:
                 break
-        releases.sort(key=lambda r: (r["pick"] != "for-you", r.get("genre") or "", r["artist"].lower()))
+        order = {"followed": 0, "for-you": 1}
+        releases.sort(key=lambda r: (order.get(r["pick"], 2), r.get("genre") or "", r["artist"].lower()))
 
         playlist_url = self.spotify(releases)
         d = date.today()
