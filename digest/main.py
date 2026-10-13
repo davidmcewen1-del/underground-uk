@@ -8,7 +8,7 @@ from datetime import date, datetime, timedelta, timezone
 
 from . import majors, render, votes
 from .bandcamp import Bandcamp, label_key, site_root
-from .discogs import Discogs, chain_is_major
+from .discogs import Discogs, chain_is_major, uk_city
 from .spotify import Spotify
 from .util import DATA, ROOT, load_json, log, norm, save_json
 
@@ -278,6 +278,15 @@ class Run:
                 return
         entry["excluded"] = None
 
+    def discogs_label_city(self, dg, entry):
+        """Look up a Discogs label's UK city from its address, once."""
+        if entry.get("city_checked"):
+            return
+        city = uk_city(dg.label_info(entry["discogs_id"]).get("contact", ""))
+        if city:
+            entry["city"] = f"{city}, UK"
+        entry["city_checked"] = True
+
     def reopen_week(self, previous):
         """Put this week's earlier picks back in the running so the redo can choose afresh."""
         for rel in previous:
@@ -292,6 +301,7 @@ class Run:
         cfg = self.cfg
         digests = load_digests()
         all_votes = votes.sync(cfg["votes"]["worker_url"], os.environ.get("VOTE_KEY"), digests)
+        self.digests, self.all_votes = digests, all_votes
         self.saved = votes.sync_saved(cfg["votes"]["worker_url"], os.environ.get("VOTE_KEY"))
         self.load_follows()
 
@@ -303,15 +313,19 @@ class Run:
         token = os.environ.get("DISCOGS_TOKEN")
         dg = Discogs(cfg["discogs"], token) if token else None
         if dg:
-            # Classify labels found in this run's search before filtering.
-            for rel in self.candidates.values():
-                if rel.get("discogs_label_id"):
-                    entry = self.labels.get(rel["label_key"])
-                    try:
-                        self.classify_discogs_label(dg, entry)
-                    except Exception as exc:
-                        log.warning("Discogs label %s failed: %s", entry["name"], exc)
             self.from_discogs(dg)
+            # Classify every Discogs label behind a candidate (majors out) and fill in its city.
+            for rel in self.candidates.values():
+                entry = self.labels.get(rel.get("label_key") or "") if rel.get("discogs_label_id") else None
+                if not entry:
+                    continue
+                try:
+                    self.classify_discogs_label(dg, entry)
+                    self.discogs_label_city(dg, entry)
+                except Exception as exc:
+                    log.warning("Discogs label %s failed: %s", entry["name"], exc)
+                if entry.get("city") and rel.get("city") in (None, "", "UK"):
+                    rel["city"] = entry["city"]
         else:
             self.note("Discogs skipped: DISCOGS_TOKEN not set")
         self.check_bandcamp_labels(bc)
@@ -350,7 +364,7 @@ class Run:
         label = f"Week {self.week.split('-W')[1]} · {d.day} {d:%b %Y}"
         clean = [{k: v for k, v in r.items() if k not in ("enriched", "upcoming", "added")} for r in releases]
         digests[self.week] = clean
-        render.write_site(cfg, self.week, label, clean, playlists, digests, self.saved)
+        render.write_site(cfg, self.week, label, clean, playlists, digests, self.saved, all_votes)
         self.note(f"Digest {self.week}: {len(clean)} releases")
 
         if not self.dry_run:
@@ -406,7 +420,36 @@ class Run:
                     f"underground. Digest {self.week}.", uris, existing_url=previous.get(group))
             except Exception as exc:
                 self.note(f"Spotify {titles[group]} playlist failed: {exc}")
+        liked = self.update_liked(sp, releases)
+        if liked:
+            playlists["liked"] = liked
         return playlists
+
+    def update_liked(self, sp, releases):
+        """Refill the running "Liked" playlist with every 👍 release found on Spotify, newest first."""
+        meta = {r["key"]: r for week in self.digests.values() for r in week}
+        meta.update({r["key"]: r for r in releases})
+        liked = sorted((k for k, v in self.all_votes.items() if v["vote"] > 0 and (meta.get(k) or {}).get("spotify_url")),
+                       key=lambda k: self.all_votes[k].get("at") or "", reverse=True)
+        uris = []
+        for k in liked:
+            album_id = meta[k]["spotify_url"].rstrip("/").split("/")[-1].split("?")[0]
+            try:
+                uris.extend(sp.album_tracks(album_id))
+            except Exception as exc:
+                log.warning("Spotify tracks failed for %s: %s", meta[k]["title"], exc)
+        if not uris:
+            return self.state.get("liked_playlist")
+        try:
+            url = sp.make_playlist(self.cfg["spotify"]["liked_playlist_name"],
+                                   "Every release you gave a thumbs up in the Underground UK digest.",
+                                   uris[:10000], existing_url=self.state.get("liked_playlist"))
+        except Exception as exc:
+            self.note(f"Spotify Liked playlist failed: {exc}")
+            return self.state.get("liked_playlist")
+        self.state["liked_playlist"] = url
+        self.note(f"Liked playlist: {len(liked)} releases, {len(uris)} tracks")
+        return url
 
     def summary(self):
         path = os.environ.get("GITHUB_STEP_SUMMARY")
@@ -425,7 +468,7 @@ def rebuild(cfg):
     saved = load_json(f"digests/{week}.json", {})
     playlists = saved.get("playlists") or ({"all": saved["playlist_url"]} if saved.get("playlist_url") else {})
     render.write_site(cfg, week, saved["label"], saved["releases"], playlists, digests,
-                      load_json("saved.json", {}))
+                      load_json("saved.json", {}), load_json("votes.json", {}))
     log.info("Rebuilt page for %s", week)
 
 

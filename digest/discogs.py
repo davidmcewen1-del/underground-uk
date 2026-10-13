@@ -28,6 +28,25 @@ def clean_name(name):
     return re.sub(r"\s\(\d{1,2}\)$", "", name or "").rstrip("*")
 
 
+UK_CITIES = [
+    "London", "Manchester", "Birmingham", "Leeds", "Glasgow", "Edinburgh", "Bristol", "Liverpool",
+    "Sheffield", "Newcastle", "Nottingham", "Leicester", "Brighton", "Cardiff", "Belfast", "Oxford",
+    "Cambridge", "Norwich", "Bath", "Southampton", "Portsmouth", "Aberdeen", "Dundee", "Swansea",
+    "Coventry", "York", "Hull", "Bradford", "Derby", "Plymouth", "Exeter", "Margate", "Hastings",
+    "Bournemouth", "Wolverhampton", "Huddersfield", "Salford", "Gateshead", "Sunderland", "Middlesbrough",
+    "Lancaster", "Preston", "Stockport", "Luton", "Milton Keynes", "Northampton", "Ipswich", "Colchester",
+    "Canterbury", "Inverness", "Stirling", "Derry", "Newport", "Cheltenham", "Gloucester", "Worcester",
+    "Folkestone", "Stoke-on-Trent", "Leamington Spa", "Falmouth",
+]
+_CITY_RE = re.compile(r"\b(" + "|".join(re.escape(c) for c in UK_CITIES) + r")\b")
+
+
+def uk_city(address):
+    """First UK city named in a label's Discogs address (the current address is listed first)."""
+    m = _CITY_RE.search(address or "")
+    return m.group(1) if m else None
+
+
 def is_self_released(label_name):
     return norm(label_name).startswith("not on label")
 
@@ -126,7 +145,7 @@ class Discogs:
                 break
             chain.append(parent.get("name", ""))
             parent = self._get(f"/labels/{parent['id']}").get("parent_label")
-        info = {"name": d.get("name", ""), "chain": chain}
+        info = {"name": d.get("name", ""), "chain": chain, "contact": d.get("contact_info") or ""}
         self.label_cache[label_id] = info
         return info
 

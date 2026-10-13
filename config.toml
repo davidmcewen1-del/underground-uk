@@ -44,6 +44,16 @@ cities = [
   { name = "Nottingham", geoname_id = 2641170 },
   { name = "Cardiff",    geoname_id = 2653822 },
   { name = "Belfast",    geoname_id = 2655984 },
+  { name = "Newcastle",  geoname_id = 2641673 },
+  { name = "Bath",       geoname_id = 2656173 },
+  { name = "Oxford",     geoname_id = 2640729 },
+  { name = "Cambridge",  geoname_id = 2653941 },
+  { name = "Norwich",    geoname_id = 2641181 },
+  { name = "Leicester",  geoname_id = 2644668 },
+  { name = "Southampton", geoname_id = 2637487 },
+  { name = "Aberdeen",   geoname_id = 2657832 },
+  { name = "Dundee",     geoname_id = 2650752 },
+  { name = "Swansea",    geoname_id = 2636432 },
 ]
 
 [discogs]
@@ -56,6 +66,7 @@ skip_formats = ["Reissue", "Repress", "Remastered", "Unofficial Release"]
 enabled = true
 tracks_per_release = 0        # 0 = add whole releases
 public = false
+liked_playlist_name = "Underground UK – Liked"   # every 👍 release, kept up to date each week
 playlist_name = "Underground UK – {kind} – {week}"   # two a week: Labels and Self-released
 
 [votes]

@@ -53,10 +53,13 @@ class Spotify:
         names = [norm(a["name"]) for a in album.get("artists", [])]
         return any(similar(n, wanted) >= 0.85 or (n and n in wanted) for n in names)
 
+    def album_tracks(self, album_id):
+        data = self.http.get(f"{API}/albums/{album_id}/tracks", params={"limit": 50}).json()
+        return [t["uri"] for t in data.get("items", [])]
+
     def _tracks(self, album_id):
         per = self.cfg["tracks_per_release"]
-        data = self.http.get(f"{API}/albums/{album_id}/tracks", params={"limit": 50}).json()
-        uris = [t["uri"] for t in data.get("items", [])]
+        uris = self.album_tracks(album_id)
         return uris[:per] if per else uris
 
     def make_playlist(self, name, description, uris, existing_url=None):

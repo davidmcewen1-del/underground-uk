@@ -132,6 +132,12 @@ button.save[aria-pressed="true"] { color: var(--accent); border-color: var(--acc
 .saved-list .when { color: var(--muted); font-size: 0.85rem; flex: 1; }
 .saved-list .remove { min-height: 34px; font-size: 0.8rem; color: var(--muted); cursor: pointer; }
 .saved-list .none { color: var(--muted); }
+.taste-page h2 { margin: 24px 0 6px; font-size: 1.2rem; }
+.taste { width: 100%; border-collapse: collapse; }
+.taste td { padding: 10px 4px; border-bottom: 1px solid var(--line); }
+.taste td:first-child { text-transform: capitalize; font-weight: 600; }
+.taste td:not(:first-child) { width: 4.5em; text-align: right; color: var(--muted); white-space: nowrap; }
+.taste .none { color: var(--muted); font-weight: 400; }
 .empty { text-align: center; color: var(--muted); padding: 40px 20px; }
 .archive { max-width: 700px; margin: 0 auto; padding: 0 20px 40px; }
 .archive ul { list-style: none; padding: 0; }

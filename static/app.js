@@ -108,6 +108,17 @@
     if (empty) empty.hidden = visible > 0;
   }
   [city, show].forEach((el) => el && el.addEventListener("change", applyFilters));
+  // Remember the "Show" choice on this device (defaults to "Not voted yet").
+  if (show) {
+    try {
+      const remembered = localStorage.getItem("show-filter");
+      if (remembered !== null) show.value = remembered;
+    } catch (e) { /* private browsing: use the default */ }
+    show.addEventListener("change", () => {
+      try { localStorage.setItem("show-filter", show.value); } catch (e) { /* ignore */ }
+    });
+  }
+  applyFilters();
 
   // --- Save label / artist ---------------------------------------------
   const saved = {};
