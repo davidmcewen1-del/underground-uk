@@ -156,14 +156,21 @@ class Discogs:
         haves = [r.get("community", {}).get("have", 0) for r in sample]
         return count, (sum(haves) / len(haves) if haves else 0)
 
-    def label_new_releases(self, label_id, known, year):
-        """Releases on a label not seen before; returns (new releases, all ids now known)."""
+    def label_new_releases(self, label_id, known, year, limit=None):
+        """Releases on a label not seen before; returns (new releases, all ids now known).
+
+        `limit` caps the detail lookups (one request each); 0 just records what's there.
+        """
         data = self._get(f"/labels/{label_id}/releases", per_page=50, sort="year", sort_order="desc")
         ids = {str(r["id"]) for r in data.get("releases", []) if r.get("type", "release") == "release"}
         fresh = []
+        lookups = 0
         for r in data.get("releases", []):
             if str(r["id"]) in known or str(r.get("year")) != str(year) or r.get("type", "release") != "release":
                 continue
+            if limit is not None and lookups >= limit:
+                break
+            lookups += 1
             try:
                 rel = self.release(r["id"], year=year)
             except Exception as exc:

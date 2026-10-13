@@ -9,6 +9,7 @@ max_per_label = 4             # stops one busy label filling the page
 include_self_released = true  # artists releasing without a label
 include_preorders = false     # only music that is already out
 first_run_lookback_days = 7   # how far back the very first digest looks
+max_collect_minutes = 75      # after this, skip optional label checks so the run finishes
 
 [labels]
 exclude_majors = true         # Universal, Sony, Warner and the labels they own

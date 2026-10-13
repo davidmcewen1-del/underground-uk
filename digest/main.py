@@ -3,6 +3,7 @@ import argparse
 import logging
 import os
 import re
+import time
 import tomllib
 from datetime import date, datetime, timedelta, timezone
 
@@ -61,6 +62,16 @@ class Run:
             self.state.update(week=self.week, week_since=self.since, week_discogs_min_id=self.discogs_min_id)
         self.candidates = {}
         self.notes = []
+        # Stop optional label checks after this long, so the run always finishes in time.
+        self.deadline = time.monotonic() + 60 * cfg["digest"].get("max_collect_minutes", 75)
+
+    def out_of_time(self, what):
+        if time.monotonic() < self.deadline:
+            return False
+        msg = f"Time limit reached: skipped the rest of {what}"
+        if msg not in self.notes:
+            self.note(msg)
+        return True
 
     # --- helpers ---------------------------------------------------------
     def load_follows(self):
@@ -179,6 +190,8 @@ class Run:
         found = 0
         for key in todo:
             entry = self.labels[key]
+            if not entry.get("followed") and self.out_of_time("Bandcamp label checks"):
+                break
             try:
                 page_name, urls = bc.label_page(entry["url"])
             except Exception as exc:
@@ -228,11 +241,16 @@ class Run:
         fresh_count = 0
         for key in todo:
             entry = self.labels[key]
+            if not entry.get("followed") and self.out_of_time("Discogs label checks"):
+                break
             try:
                 self.classify_discogs_label(dg, entry)
                 if entry.get("excluded"):
                     continue
-                fresh, ids = dg.label_new_releases(entry["discogs_id"], set(entry["known"] or []), year)
+                # First look at a label: just record its catalogue (or its 10 latest, if you follow it).
+                first_look = entry["known"] is None
+                limit = (10 if entry.get("followed") else 0) if first_look else 30
+                fresh, ids = dg.label_new_releases(entry["discogs_id"], set(entry["known"] or []), year, limit)
             except Exception as exc:
                 log.warning("Discogs label %s failed: %s", entry["name"], exc)
                 continue
@@ -321,7 +339,8 @@ class Run:
                     continue
                 try:
                     self.classify_discogs_label(dg, entry)
-                    self.discogs_label_city(dg, entry)
+                    if not self.out_of_time("Discogs label cities"):
+                        self.discogs_label_city(dg, entry)
                 except Exception as exc:
                     log.warning("Discogs label %s failed: %s", entry["name"], exc)
                 if entry.get("city") and rel.get("city") in (None, "", "UK"):
