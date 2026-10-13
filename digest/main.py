@@ -1,0 +1,332 @@
+"""Weekly run: gather new releases, filter, pick, find on Spotify, publish the page."""
+import argparse
+import logging
+import os
+import tomllib
+from datetime import date, datetime, timedelta, timezone
+from urllib.parse import urlsplit
+
+from . import majors, render, votes
+from .bandcamp import Bandcamp
+from .discogs import Discogs, chain_is_major
+from .spotify import Spotify
+from .util import DATA, ROOT, load_json, log, norm, save_json
+
+
+def load_env_file():
+    """Read a local .env file (for running on your own computer; GitHub uses Secrets)."""
+    path = ROOT / ".env"
+    if path.exists():
+        for line in path.read_text(encoding="utf-8").splitlines():
+            if "=" in line and not line.lstrip().startswith("#"):
+                k, v = line.split("=", 1)
+                os.environ.setdefault(k.strip(), v.strip())
+
+
+def signature(rel):
+    return "sig:" + norm(rel["artist"]) + "|" + norm(rel["title"])
+
+
+def load_digests():
+    out = {}
+    for path in sorted((DATA / "digests").glob("*.json")):
+        out[path.stem] = load_json(f"digests/{path.name}", {}).get("releases", [])
+    return out
+
+
+class Run:
+    def __init__(self, cfg, dry_run=False):
+        self.cfg = cfg
+        self.dry_run = dry_run
+        self.today = date.today().isoformat()
+        self.state = load_json("state.json", {})
+        self.labels = load_json("labels.json", {})
+        self.shown = load_json("shown.json", {})
+        self.pending = load_json("pending.json", {})
+        last = self.state.get("last_run")
+        lookback = (date.fromisoformat(last[:10]) - timedelta(days=2)) if last else \
+            date.today() - timedelta(days=cfg["digest"]["first_run_lookback_days"])
+        self.since = lookback.isoformat()
+        iso = date.today().isocalendar()
+        self.week = f"{iso.year}-W{iso.week:02d}"
+        self.candidates = {}
+        self.notes = []
+
+    # --- helpers ---------------------------------------------------------
+    def note(self, msg):
+        log.info(msg)
+        self.notes.append(msg)
+
+    def add(self, rel):
+        if rel.get("upcoming") or rel["release_date"] > self.today:
+            if self.cfg["digest"]["include_preorders"]:
+                rel["upcoming"] = True
+            else:
+                self.pending.setdefault(rel["key"], rel)
+                return
+        self.candidates.setdefault(rel["key"], rel)
+
+    def track_label(self, rel):
+        if rel.get("label_url"):
+            key = "bc:" + urlsplit(rel["label_url"]).netloc.split(".")[0]
+            entry = self.labels.setdefault(key, {"name": rel["label"], "source": "bandcamp",
+                                                 "url": rel["label_url"], "first_seen": self.today,
+                                                 "last_checked": None, "known": None})
+        elif rel.get("discogs_label_id"):
+            key = f"dg:{rel['discogs_label_id']}"
+            entry = self.labels.setdefault(key, {"name": rel["label"], "source": "discogs",
+                                                 "discogs_id": rel["discogs_label_id"], "first_seen": self.today,
+                                                 "last_checked": None, "known": None})
+        else:
+            return None
+        entry.setdefault("city", rel.get("city"))
+        rel["label_key"] = key
+        return key
+
+    def excluded(self, rel):
+        lc = self.cfg["labels"]
+        name = rel.get("label")
+        if rel.get("self_released") and not name:
+            return not self.cfg["digest"]["include_self_released"]
+        if norm(name) in {norm(n) for n in lc["always_exclude"]}:
+            return True
+        if lc["exclude_majors"] and majors.is_major(name, lc["never_exclude"]):
+            return True
+        entry = self.labels.get(rel.get("label_key") or "", {})
+        return bool(entry.get("excluded"))
+
+    # --- sources ---------------------------------------------------------
+    def from_pending(self):
+        released = [k for k, r in self.pending.items() if r["release_date"] <= self.today]
+        for k in released:
+            rel = self.pending.pop(k)
+            rel["upcoming"] = False
+            self.candidates.setdefault(k, rel)
+        far_past = (date.today() - timedelta(days=30)).isoformat()
+        for k in [k for k, r in self.pending.items() if r["release_date"] < far_past]:
+            del self.pending[k]
+        self.note(f"Pre-orders now out: {len(released)}")
+
+    def from_bandcamp(self, bc):
+        n = 0
+        for city in self.cfg["bandcamp"]["cities"]:
+            try:
+                found = bc.discover_city(city, self.since, self.today)
+            except Exception as exc:
+                log.warning("Bandcamp %s failed: %s", city["name"], exc)
+                continue
+            for rel in found:
+                self.track_label(rel)
+                self.add(rel)
+            n += len(found)
+            log.info("Bandcamp %s: %d", city["name"], len(found))
+        self.note(f"Bandcamp city feeds: {n} releases (incl. upcoming)")
+
+    def check_bandcamp_labels(self, bc):
+        todo = sorted((k for k, v in self.labels.items() if v["source"] == "bandcamp" and not v.get("excluded")),
+                      key=lambda k: self.labels[k]["last_checked"] or "")
+        todo = todo[:self.cfg["labels"]["max_bandcamp_checks_per_run"]]
+        found = 0
+        for key in todo:
+            entry = self.labels[key]
+            try:
+                urls = bc.label_release_urls(entry["url"])
+            except Exception as exc:
+                log.warning("Bandcamp label %s failed: %s", entry["name"], exc)
+                continue
+            if entry["known"] is not None:
+                listed = {r.get("bandcamp_url") for r in self.candidates.values()}
+                for url in sorted(urls - set(entry["known"]) - listed):
+                    try:
+                        rel = bc.release_from_page(url, entry["name"], entry["url"])
+                    except Exception as exc:
+                        log.warning("Bandcamp page %s failed: %s", url, exc)
+                        continue
+                    if rel and rel["release_date"] >= self.since:
+                        rel["label_key"] = key
+                        rel["city"] = rel["city"] if rel["city"] != "UK" else entry.get("city") or "UK"
+                        self.add(rel)
+                        found += 1
+            entry["known"] = sorted(urls | set(entry["known"] or []))
+            entry["last_checked"] = self.today
+        self.note(f"Bandcamp label pages: checked {len(todo)}, {found} new releases")
+
+    def from_discogs(self, dg):
+        year = date.today().year
+        try:
+            found, top = dg.search_new(year, self.since, self.state.get("discogs_max_id", 0))
+        except Exception as exc:
+            log.warning("Discogs search failed: %s", exc)
+            found, top = [], self.state.get("discogs_max_id", 0)
+        self.state["discogs_max_id"] = top
+        for rel in found:
+            self.track_label(rel)
+            self.add(rel)
+        self.note(f"Discogs search: {len(found)} new UK {year} releases")
+
+        todo = sorted((k for k, v in self.labels.items() if v["source"] == "discogs" and not v.get("excluded")),
+                      key=lambda k: self.labels[k]["last_checked"] or "")
+        todo = todo[:self.cfg["labels"]["max_discogs_checks_per_run"]]
+        fresh_count = 0
+        for key in todo:
+            entry = self.labels[key]
+            try:
+                self.classify_discogs_label(dg, entry)
+                if entry.get("excluded"):
+                    continue
+                fresh, ids = dg.label_new_releases(entry["discogs_id"], set(entry["known"] or []), year)
+            except Exception as exc:
+                log.warning("Discogs label %s failed: %s", entry["name"], exc)
+                continue
+            if entry["known"] is not None:
+                for rel in fresh:
+                    rel["label_key"] = key
+                    self.add(rel)
+                    fresh_count += 1
+            entry["known"] = sorted(ids | set(entry["known"] or []))
+            entry["last_checked"] = self.today
+        self.note(f"Discogs labels: checked {len(todo)}, {fresh_count} new releases")
+
+    def classify_discogs_label(self, dg, entry):
+        if "excluded" in entry:
+            return
+        lc = self.cfg["labels"]
+        info = dg.label_info(entry["discogs_id"])
+        entry["parents"] = info["chain"][1:]
+        if lc["exclude_majors"] and chain_is_major(info["chain"], lc["never_exclude"]):
+            entry["excluded"] = "major"
+            return
+        if lc["max_releases"] or lc["max_avg_have"]:
+            count, avg_have = dg.label_size(entry["discogs_id"], entry["name"])
+            entry["releases"], entry["avg_have"] = count, round(avg_have)
+            if (lc["max_releases"] and count > lc["max_releases"]) or \
+                    (lc["max_avg_have"] and avg_have > lc["max_avg_have"]):
+                entry["excluded"] = "size"
+                return
+        entry["excluded"] = None
+
+    # --- main ------------------------------------------------------------
+    def run(self):
+        cfg = self.cfg
+        digests = load_digests()
+        all_votes = votes.sync(cfg["votes"]["worker_url"], os.environ.get("VOTE_KEY"), digests)
+
+        bc = Bandcamp(cfg["bandcamp"])
+        self.from_pending()
+        self.from_bandcamp(bc)
+        token = os.environ.get("DISCOGS_TOKEN")
+        dg = Discogs(cfg["discogs"], token) if token else None
+        if dg:
+            # Classify labels found in this run's search before filtering.
+            for rel in self.candidates.values():
+                if rel.get("discogs_label_id"):
+                    entry = self.labels.get(rel["label_key"])
+                    try:
+                        self.classify_discogs_label(dg, entry)
+                    except Exception as exc:
+                        log.warning("Discogs label %s failed: %s", entry["name"], exc)
+            self.from_discogs(dg)
+        else:
+            self.note("Discogs skipped: DISCOGS_TOKEN not set")
+        self.check_bandcamp_labels(bc)
+
+        pool, seen_sigs = [], set()
+        for rel in self.candidates.values():
+            sig = signature(rel)
+            if rel["key"] in self.shown or sig in self.shown or sig in seen_sigs or self.excluded(rel):
+                continue
+            seen_sigs.add(sig)
+            pool.append(rel)
+        self.note(f"Eligible after filters: {len(pool)}")
+
+        size = cfg["digest"]["size"]
+        picked = votes.choose(pool, all_votes, round(size * 1.1), cfg["digest"]["random_share"],
+                              cfg["digest"]["max_per_label"])
+        releases = []
+        for rel in picked:
+            if rel["source"] == "bandcamp":
+                bc.enrich(rel)
+                if self.excluded(rel):
+                    continue
+            releases.append(rel)
+            if len(releases) >= size:
+                break
+        releases.sort(key=lambda r: (r["pick"] != "for-you", r.get("genre") or "", r["artist"].lower()))
+
+        playlist_url = self.spotify(releases)
+        d = date.today()
+        label = f"Week {self.week.split('-W')[1]} · {d.day} {d:%b %Y}"
+        clean = [{k: v for k, v in r.items() if k not in ("enriched", "upcoming", "added")} for r in releases]
+        digests[self.week] = clean
+        render.write_site(cfg, self.week, label, clean, playlist_url, digests)
+        self.note(f"Digest {self.week}: {len(clean)} releases")
+
+        if not self.dry_run:
+            for r in clean:
+                self.shown[r["key"]] = self.week
+                self.shown[signature(r)] = self.week
+            self.state["last_run"] = datetime.now(timezone.utc).isoformat()
+            save_json(f"digests/{self.week}.json", {"label": label, "playlist_url": playlist_url, "releases": clean})
+            save_json("state.json", self.state)
+            save_json("labels.json", self.labels)
+            save_json("shown.json", self.shown)
+            save_json("pending.json", self.pending)
+        self.summary()
+
+    def spotify(self, releases):
+        sc = self.cfg["spotify"]
+        needed = ("SPOTIFY_CLIENT_ID", "SPOTIFY_CLIENT_SECRET", "SPOTIFY_REFRESH_TOKEN")
+        if not sc["enabled"] or not all(os.environ.get(k) for k in needed):
+            self.note("Spotify skipped: not configured")
+            return None
+        try:
+            sp = Spotify(sc, *(os.environ[k] for k in needed))
+        except Exception as exc:
+            self.note(f"Spotify login failed: {exc}")
+            return None
+        uris = []
+        for rel in releases:
+            try:
+                url, tracks = sp.find(rel)
+            except Exception as exc:
+                log.warning("Spotify search failed for %s: %s", rel["title"], exc)
+                continue
+            if url:
+                rel["spotify_url"] = url
+                uris.extend(tracks)
+        self.note(f"Spotify: found {sum(1 for r in releases if r.get('spotify_url'))} of {len(releases)}")
+        if not uris or self.dry_run:
+            return None
+        try:
+            return sp.make_playlist(sc["playlist_name"].format(week=self.week),
+                                    f"{len(releases)} new releases from small UK labels. Digest {self.week}.", uris)
+        except Exception as exc:
+            self.note(f"Spotify playlist failed: {exc}")
+            return None
+
+    def summary(self):
+        path = os.environ.get("GITHUB_STEP_SUMMARY")
+        if path:
+            with open(path, "a", encoding="utf-8") as f:
+                f.write(f"## Digest {self.week}\n\n" + "\n".join(f"- {n}" for n in self.notes) + "\n")
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Build the weekly Underground UK digest.")
+    parser.add_argument("--dry-run", action="store_true", help="build the page but save no state and make no playlist")
+    parser.add_argument("--cities", type=int, help="only use the first N cities (for quick tests)")
+    parser.add_argument("--size", type=int, help="override digest size")
+    args = parser.parse_args()
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
+    load_env_file()
+    cfg = tomllib.loads((ROOT / "config.toml").read_text(encoding="utf-8"))
+    if args.cities:
+        cfg["bandcamp"]["cities"] = cfg["bandcamp"]["cities"][:args.cities]
+    if args.size:
+        cfg["digest"]["size"] = args.size
+    cfg["votes"]["worker_url"] = os.environ.get("WORKER_URL") or cfg["votes"]["worker_url"]
+    Run(cfg, args.dry_run).run()
+
+
+if __name__ == "__main__":
+    main()
