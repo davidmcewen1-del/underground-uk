@@ -205,6 +205,28 @@
   "title": "Parallels",
   "upcoming": true
  },
+ "bc:1174610683": {
+  "artist": "Doug Thomas",
+  "artwork": "https://f4.bcbits.com/img/a2311723271_2.jpg",
+  "bandcamp_url": "https://dougthomas.bandcamp.com/album/omakase-128-2026",
+  "city": "London, UK",
+  "discogs_url": null,
+  "enriched": false,
+  "genre": "classical",
+  "key": "bc:1174610683",
+  "label": "NOOX",
+  "label_key": "bc:dougthomas",
+  "label_url": "https://dougthomas.bandcamp.com",
+  "release_date": "2026-10-15",
+  "self_released": false,
+  "source": "bandcamp",
+  "spotify_url": null,
+  "tags": [
+   "classical"
+  ],
+  "title": "OMAKASE [128] (2026)",
+  "upcoming": true
+ },
  "bc:1180819918": {
   "artist": "Lady Dammage",
   "artwork": "https://f4.bcbits.com/img/a3718142353_2.jpg",
@@ -225,6 +247,27 @@
    "electronic"
   ],
   "title": "Discoteca",
+  "upcoming": true
+ },
+ "bc:1192081016": {
+  "artist": "Slam",
+  "artwork": "https://f4.bcbits.com/img/a2906211539_2.jpg",
+  "bandcamp_url": "https://slam-djs.bandcamp.com/album/soma-354-activate-remixes",
+  "city": "Glasgow, UK",
+  "discogs_url": null,
+  "enriched": false,
+  "genre": "electronic",
+  "key": "bc:1192081016",
+  "label": null,
+  "label_url": null,
+  "release_date": "2026-11-13",
+  "self_released": true,
+  "source": "bandcamp",
+  "spotify_url": null,
+  "tags": [
+   "electronic"
+  ],
+  "title": "Soma 35.4 – Activate Remixes",
   "upcoming": true
  },
  "bc:1202301674": {
@@ -269,6 +312,25 @@
    "electronic"
   ],
   "title": "The Stone Tape Confessions",
+  "upcoming": true
+ },
+ "bc:1214296465": {
+  "artist": "Aztec Records",
+  "artwork": "https://f4.bcbits.com/img/a0391805237_2.jpg",
+  "bandcamp_url": "https://aztecrecords.bandcamp.com/album/pure-darkwave-vol-4",
+  "city": "London, UK",
+  "discogs_url": null,
+  "enriched": false,
+  "genre": null,
+  "key": "bc:1214296465",
+  "label": null,
+  "label_url": null,
+  "release_date": "2026-10-16",
+  "self_released": true,
+  "source": "bandcamp",
+  "spotify_url": null,
+  "tags": [],
+  "title": "Pure Darkwave Vol.4",
   "upcoming": true
  },
  "bc:1220252252": {
@@ -3274,6 +3336,28 @@
   "title": "Vaudevilles",
   "upcoming": true
  },
+ "bc:3082895324": {
+  "artist": "Auld Reekie Nocturne",
+  "artwork": "https://f4.bcbits.com/img/a0340164541_2.jpg",
+  "bandcamp_url": "https://shadowrunnerrecordings.bandcamp.com/album/dance-with-devils-ep",
+  "city": "Edinburgh, UK",
+  "discogs_url": null,
+  "enriched": false,
+  "genre": "electronic",
+  "key": "bc:3082895324",
+  "label": "Shadowrunner Recordings",
+  "label_key": "bc:shadowrunnerrecordings",
+  "label_url": "https://shadowrunnerrecordings.bandcamp.com",
+  "release_date": "2026-10-30",
+  "self_released": false,
+  "source": "bandcamp",
+  "spotify_url": null,
+  "tags": [
+   "electronic"
+  ],
+  "title": "Dance With Devils EP",
+  "upcoming": true
+ },
  "bc:3089478316": {
   "artist": "Monkz",
   "artwork": "https://f4.bcbits.com/img/a1386208019_2.jpg",
@@ -3442,6 +3526,27 @@
    "folk"
   ],
   "title": "Believe",
+  "upcoming": true
+ },
+ "bc:3153834842": {
+  "artist": "Ceitidh Mac",
+  "artwork": "https://f4.bcbits.com/img/a3591179703_2.jpg",
+  "bandcamp_url": "https://ceitidhmac.bandcamp.com/album/sing-sung-singing",
+  "city": "Newcastle Upon Tyne, UK",
+  "discogs_url": null,
+  "enriched": false,
+  "genre": "folk",
+  "key": "bc:3153834842",
+  "label": null,
+  "label_url": null,
+  "release_date": "2027-01-08",
+  "self_released": true,
+  "source": "bandcamp",
+  "spotify_url": null,
+  "tags": [
+   "folk"
+  ],
+  "title": "Sing, Sung, Singing",
   "upcoming": true
  },
  "bc:3167674828": {
@@ -5980,6 +6085,28 @@
   "title": "Girlband!",
   "upcoming": true
  },
+ "bc:82698458": {
+  "artist": "Renceau",
+  "artwork": "https://f4.bcbits.com/img/a4243782553_2.jpg",
+  "bandcamp_url": "https://sterlingrecords.bandcamp.com/album/need-a-stretchhh-wreck-da-dancefloor",
+  "city": "Sheffield, UK",
+  "discogs_url": null,
+  "enriched": false,
+  "genre": "electronic",
+  "key": "bc:82698458",
+  "label": "STERLING",
+  "label_key": "bc:sterlingrecords",
+  "label_url": "https://sterlingrecords.bandcamp.com",
+  "release_date": "2026-10-16",
+  "self_released": false,
+  "source": "bandcamp",
+  "spotify_url": null,
+  "tags": [
+   "electronic"
+  ],
+  "title": "Need A Stretchhh/Wreck Da Dancefloor",
+  "upcoming": true
+ },
  "bc:83650552": {
   "artist": "LP",
   "artwork": "https://f4.bcbits.com/img/a2334035172_2.jpg",
@@ -6603,5 +6730,103 @@
    "electronic"
   ],
   "title": "All These Places, Together"
+ },
+ "dg:38716623": {
+  "added": "2026-10-14",
+  "artist": "Various",
+  "artwork": "https://i.discogs.com/0E8V4EQqqspnKrVhx-edD8bAnLn0jk80g_Bdux5y2Dg/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4NzE2/NjIzLTE3OTE5Njg1/NTEtNzY5OS5wbmc.jpeg",
+  "bandcamp_url": null,
+  "city": "UK",
+  "discogs_label_id": 1120989,
+  "discogs_url": "https://www.discogs.com/release/38716623-Various-Global-Underground-Thirty",
+  "enriched": true,
+  "genre": "electronic",
+  "have": 2,
+  "key": "dg:38716623",
+  "label": "Global Underground",
+  "label_key": "dg:1120989",
+  "release_date": "2026-10-16",
+  "self_released": false,
+  "source": "discogs",
+  "spotify_url": null,
+  "tags": [
+   "house",
+   "deep house",
+   "tech house",
+   "electronic"
+  ],
+  "title": "Global Underground: Thirty"
+ },
+ "dg:38719962": {
+  "added": "2026-10-14",
+  "artist": "DJ Quest",
+  "artwork": "https://i.discogs.com/UuPFe9IVODjzwXXXj2oWqZg6KH-pvtaFVkNpVRivlKg/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4NzE5/OTYyLTE3OTE5OTc3/MTYtMjcyNS5qcGVn.jpeg",
+  "bandcamp_url": null,
+  "city": "UK",
+  "discogs_label_id": 8543,
+  "discogs_url": "https://www.discogs.com/release/38719962-DJ-Quest-Cyberfunk-050",
+  "enriched": true,
+  "genre": "electronic",
+  "have": 1,
+  "key": "dg:38719962",
+  "label": "Cyberfunk Records",
+  "label_key": "dg:8543",
+  "release_date": "2026-10-30",
+  "self_released": false,
+  "source": "discogs",
+  "spotify_url": null,
+  "tags": [
+   "breaks",
+   "breakbeat",
+   "electronic"
+  ],
+  "title": "Cyberfunk 050"
+ },
+ "dg:38719974": {
+  "added": "2026-10-14",
+  "artist": "Factor B",
+  "artwork": "https://i.discogs.com/tdfxrp82cdAvOoR392x2jdQzU_ApUvz9Ki0-x8KbPLo/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4NzE5/OTc0LTE3OTE5OTYw/MTMtOTA0MS5qcGVn.jpeg",
+  "bandcamp_url": null,
+  "city": "UK",
+  "discogs_label_id": 2134336,
+  "discogs_url": "https://www.discogs.com/release/38719974-Factor-B-2-A-Gift-To-The-Earth-Sneijder-Remix",
+  "enriched": true,
+  "genre": "electronic",
+  "have": 1,
+  "key": "dg:38719974",
+  "label": "Theatre Of The Mind Music",
+  "label_key": "dg:2134336",
+  "release_date": "2026-10-15",
+  "self_released": false,
+  "source": "discogs",
+  "spotify_url": null,
+  "tags": [
+   "trance",
+   "electronic"
+  ],
+  "title": "A Gift To The Earth (Sneijder Remix)"
+ },
+ "dg:38720697": {
+  "added": "2026-10-14",
+  "artist": "DJ Qaz",
+  "artwork": "https://i.discogs.com/WrFOg-HZ8rFKDd5dhvbQG7J-D5SXdrsw4aZyiA6-XXQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4NzIw/Njk3LTE3OTIwMDA2/MDMtMTU3MC5qcGVn.jpeg",
+  "bandcamp_url": null,
+  "city": "UK",
+  "discogs_label_id": null,
+  "discogs_url": "https://www.discogs.com/release/38720697-DJ-Qaz-Ambient-Pieces",
+  "enriched": true,
+  "genre": "electronic",
+  "have": 0,
+  "key": "dg:38720697",
+  "label": null,
+  "release_date": "2026-10-21",
+  "self_released": true,
+  "source": "discogs",
+  "spotify_url": null,
+  "tags": [
+   "ambient",
+   "electronic"
+  ],
+  "title": "Ambient Pieces"
  }
 }
