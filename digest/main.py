@@ -412,11 +412,18 @@ class Run:
         # Two playlists a week: releases on labels, and self-released ones.
         groups = {"labels": [], "self-released": []}
         counts = {"labels": 0, "self-released": 0}
+        failures = 0
         for rel in releases:
             try:
                 url, tracks = sp.find(rel)
             except Exception as exc:
                 log.warning("Spotify search failed for %s: %s", rel["title"], exc)
+                failures += 1
+                if failures == 1:
+                    self.note(f"Spotify search error (first of possibly many): {exc}")
+                if failures >= 10 and not counts["labels"] + counts["self-released"]:
+                    self.note("Spotify: stopped after 10 failed searches in a row")
+                    break
                 continue
             if url:
                 rel["spotify_url"] = url

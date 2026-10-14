@@ -49,6 +49,7 @@ class PoliteSession:
 
     def request(self, method, url, **kw):
         kw.setdefault("timeout", 30)
+        last_status = None
         for attempt in range(5):
             wait = self.last + self.delay - time.monotonic()
             if wait > 0:
@@ -63,12 +64,18 @@ class PoliteSession:
             if resp.status_code == 429 or resp.status_code >= 500:
                 retry_after = resp.headers.get("Retry-After", "")
                 pause = float(retry_after) if retry_after.isdigit() else 5 * 2 ** attempt
+                if pause > 600:  # a long block: fail now rather than stall the run
+                    raise RuntimeError(f"{resp.status_code} from {url.split('?')[0]}: "
+                                       f"asked to wait {pause / 3600:.1f} hours")
                 log.warning("%s %s -> %s, waiting %.0fs", method, url, resp.status_code, pause)
                 time.sleep(min(pause, 120))
+                last_status = resp.status_code
                 continue
-            resp.raise_for_status()
+            if resp.status_code >= 400:
+                raise requests.HTTPError(f"{resp.status_code} from {url.split('?')[0]}: {resp.text[:200]}",
+                                         response=resp)
             return resp
-        raise RuntimeError(f"Giving up on {url}")
+        raise RuntimeError(f"Giving up on {url.split('?')[0]} (last status {last_status})")
 
     def get(self, url, **kw):
         return self.request("GET", url, **kw)
