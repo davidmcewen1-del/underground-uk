@@ -118,20 +118,41 @@ def _page(title, body, prefix, worker_url):
 """
 
 
-def digest_page(cfg, week, label, releases, playlists, prefix):
+KINDS = {"labels": "Labels", "self-released": "Self-released"}
+
+
+def is_label_release(rel):
+    return bool(rel.get("label"))
+
+
+def split_releases(releases):
+    return {"labels": [r for r in releases if is_label_release(r)],
+            "self-released": [r for r in releases if not is_label_release(r)]}
+
+
+def digest_page(cfg, week, label, releases, playlists, prefix, kind="labels", pages=None):
+    """One of the two digest pages: releases on labels, or self-released ones."""
     names = {"labels": "Labels playlist", "self-released": "Self-released playlist", "liked": "Liked playlist",
              "all": "Spotify playlist"}
+    wanted = {kind, "liked", "all"}
     playlist = "".join(f'<a class="btn sp big" href="{escape(url)}" target="_blank" rel="noopener">'
                        f'▶ {names.get(group, "Spotify playlist")}</a>'
-                       for group, url in (playlists or {}).items() if url)
+                       for group, url in (playlists or {}).items() if url and group in wanted)
+    current = ' aria-current="page"'
+    tabs = "".join(
+        f'<a class="tab" href="{escape(href)}"{current if k == kind else ""}>'
+        f'{KINDS[k]} <span class="n">{n}</span></a>'
+        for k, (href, n) in (pages or {}).items())
+    what = "on small UK labels" if kind == "labels" else "self-released by UK artists"
     jump, sections = _sections(releases)
     body = f"""<header class="top">
  <div>
   <h1>{escape(cfg['digest']['title'])}</h1>
-  <p class="sub">{escape(label)} · {len(releases)} new releases from small UK labels</p>
+  <p class="sub">{escape(label)} · {len(releases)} new releases {what}</p>
  </div>
  <nav>{playlist}<a class="btn" href="{prefix}saved.html">My labels</a><a class="btn" href="{prefix}taste.html">My taste</a><a class="btn" href="{prefix}archive.html">Archive</a></nav>
 </header>
+<nav class="tabs" aria-label="Digest pages">{tabs}</nav>
 <nav class="jump" aria-label="Genres">{jump}</nav>
 <section class="filters" aria-label="Filters">
  <label>City <select id="f-city"><option value="">All</option>{_options(r.get('city') for r in releases)}</select></label>
@@ -154,12 +175,15 @@ def digest_page(cfg, week, label, releases, playlists, prefix):
  </div>
  <div id="pl-frame"></div>
 </div>"""
-    return _page(f"{cfg['digest']['title']} {week}", body, prefix, cfg["votes"]["worker_url"])
+    return _page(f"{cfg['digest']['title']} {KINDS[kind]} {week}", body, prefix, cfg["votes"]["worker_url"])
 
 
 def archive_page(cfg, digests):
-    rows = "".join(f'<li><a href="digests/{escape(w)}.html">{escape(w)}</a> · {len(r)} releases</li>'
-                   for w, r in sorted(digests.items(), reverse=True))
+    def row(w, releases):
+        parts = split_releases(releases)
+        return (f'<li><strong>{escape(w)}</strong> · <a href="digests/{escape(w)}.html">Labels ({len(parts["labels"])})</a>'
+                f' · <a href="digests/{escape(w)}-self-released.html">Self-released ({len(parts["self-released"])})</a></li>')
+    rows = "".join(row(w, r) for w, r in sorted(digests.items(), reverse=True))
     body = f"""<header class="top"><div><h1>{escape(cfg['digest']['title'])}</h1>
 <p class="sub">Every weekly digest</p></div><nav><a class="btn" href="index.html">Latest</a></nav></header>
 <main class="archive"><ul>{rows}</ul></main>"""
@@ -217,9 +241,14 @@ Updated every Friday.</p></div>
 def write_site(cfg, week, label, releases, playlists, digests, saved=None, all_votes=None):
     (DOCS / "digests").mkdir(parents=True, exist_ok=True)
     shutil.copytree(ROOT / "static", DOCS / "assets", dirs_exist_ok=True)
-    (DOCS / "digests" / f"{week}.html").write_text(
-        digest_page(cfg, week, label, releases, playlists, "../"), encoding="utf-8")
-    (DOCS / "index.html").write_text(digest_page(cfg, week, label, releases, playlists, ""), encoding="utf-8")
+    parts = split_releases(releases)
+    for prefix, folder, names in (("", DOCS, {"labels": "index.html", "self-released": "self-released.html"}),
+                                  ("../", DOCS / "digests", {"labels": f"{week}.html",
+                                                             "self-released": f"{week}-self-released.html"})):
+        pages = {k: (names[k], len(parts[k])) for k in KINDS}
+        for kind in KINDS:
+            (folder / names[kind]).write_text(
+                digest_page(cfg, week, label, parts[kind], playlists, prefix, kind, pages), encoding="utf-8")
     (DOCS / "archive.html").write_text(archive_page(cfg, digests), encoding="utf-8")
     (DOCS / "saved.html").write_text(saved_page(cfg, saved or {}), encoding="utf-8")
     (DOCS / "taste.html").write_text(taste_page(cfg, all_votes or {}, saved or {}, digests), encoding="utf-8")
