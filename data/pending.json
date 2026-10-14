@@ -82,28 +82,6 @@
   "title": "Kosmische Advice EP",
   "upcoming": true
  },
- "bc:1060799830": {
-  "artist": "Pulse",
-  "artwork": "https://f4.bcbits.com/img/a1855531128_2.jpg",
-  "bandcamp_url": "https://neptunediscs.bandcamp.com/album/pulse-cryogenic-life-support-systems",
-  "city": "Edinburgh, UK",
-  "discogs_url": null,
-  "enriched": false,
-  "genre": "electronic",
-  "key": "bc:1060799830",
-  "label": "Neptune Discs",
-  "label_key": "bc:neptunediscs",
-  "label_url": "https://neptunediscs.bandcamp.com",
-  "release_date": "2026-10-14",
-  "self_released": false,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [
-   "electronic"
-  ],
-  "title": "Pulse - Cryogenic Life Support Systems",
-  "upcoming": true
- },
  "bc:108100008": {
   "artist": "Paul Reset",
   "artwork": "https://f4.bcbits.com/img/a0061020280_2.jpg",
@@ -923,6 +901,28 @@
   "title": "Loving (Pullman Close)",
   "upcoming": true
  },
+ "bc:1575351908": {
+  "artist": "Juni",
+  "artwork": "https://f4.bcbits.com/img/a2640634295_2.jpg",
+  "bandcamp_url": "https://duckland.bandcamp.com/album/lighters-up",
+  "city": "Bristol, UK",
+  "discogs_url": null,
+  "enriched": false,
+  "genre": "electronic",
+  "key": "bc:1575351908",
+  "label": "Duckland",
+  "label_key": "bc:duckland",
+  "label_url": "https://duckland.bandcamp.com",
+  "release_date": "2026-10-23",
+  "self_released": false,
+  "source": "bandcamp",
+  "spotify_url": null,
+  "tags": [
+   "electronic"
+  ],
+  "title": "Lighters Up",
+  "upcoming": true
+ },
  "bc:1577271649": {
   "artist": "DJ SUHOY",
   "artwork": "https://f4.bcbits.com/img/a4075853275_2.jpg",
@@ -1139,6 +1139,28 @@
    "punk"
   ],
   "title": "Hélas",
+  "upcoming": true
+ },
+ "bc:1721929256": {
+  "artist": "Klubfiller x 2 Sick Puppiez",
+  "artwork": "https://f4.bcbits.com/img/a0380204221_2.jpg",
+  "bandcamp_url": "https://ravelife.bandcamp.com/album/whats-going-on",
+  "city": "Liverpool, UK",
+  "discogs_url": null,
+  "enriched": false,
+  "genre": "electronic",
+  "key": "bc:1721929256",
+  "label": "Ravelife",
+  "label_key": "bc:ravelife",
+  "label_url": "https://ravelife.bandcamp.com",
+  "release_date": "2026-10-23",
+  "self_released": false,
+  "source": "bandcamp",
+  "spotify_url": null,
+  "tags": [
+   "electronic"
+  ],
+  "title": "What's Going On",
   "upcoming": true
  },
  "bc:1723657856": {
@@ -2127,7 +2149,7 @@
   "key": "bc:2291449344",
   "label": null,
   "label_url": null,
-  "release_date": "2026-10-14",
+  "release_date": "2026-10-21",
   "self_released": true,
   "source": "bandcamp",
   "spotify_url": null,
@@ -2512,6 +2534,28 @@
    "metal"
   ],
   "title": "The Forgotten Verses (Demos & Rarities)",
+  "upcoming": true
+ },
+ "bc:2588826850": {
+  "artist": "Distance",
+  "artwork": "https://f4.bcbits.com/img/a1919846062_2.jpg",
+  "bandcamp_url": "https://andynproductions.bandcamp.com/album/dead-drop",
+  "city": "Manchester, UK",
+  "discogs_url": null,
+  "enriched": false,
+  "genre": "experimental",
+  "key": "bc:2588826850",
+  "label": "Andy N productions",
+  "label_key": "bc:andynproductions",
+  "label_url": "https://andynproductions.bandcamp.com",
+  "release_date": "2026-10-15",
+  "self_released": false,
+  "source": "bandcamp",
+  "spotify_url": null,
+  "tags": [
+   "experimental"
+  ],
+  "title": "Dead Drop",
   "upcoming": true
  },
  "bc:2590049408": {
@@ -3353,6 +3397,31 @@
   "tags": [],
   "title": "Krismasi: Christmas Songs From Africa 1968-1982",
   "upcoming": true
+ },
+ "bc:3124547556": {
+  "artist": "Cosy Nghtmre",
+  "artwork": "https://f4.bcbits.com/img/a3714776694_2.jpg",
+  "bandcamp_url": "https://darksideunleashed.bandcamp.com/album/distortion",
+  "city": "Glasgow, UK",
+  "discogs_url": null,
+  "enriched": true,
+  "genre": "electronic",
+  "key": "bc:3124547556",
+  "label": "Darkside Unleashed",
+  "label_key": "bc:darksideunleashed",
+  "label_url": "https://darksideunleashed.bandcamp.com",
+  "release_date": "2026-10-23",
+  "self_released": false,
+  "source": "bandcamp",
+  "spotify_url": null,
+  "tags": [
+   "electronic",
+   "hardcore",
+   "hardcore techno",
+   "mainstream hardcore",
+   "uptempo hardcore"
+  ],
+  "title": "Distortion"
  },
  "bc:312618582": {
   "artist": "Katie Lindsay",
@@ -5276,27 +5345,6 @@
   "title": "That Was Then",
   "upcoming": true
  },
- "bc:508098358": {
-  "artist": "Mitch Benn",
-  "artwork": "https://f4.bcbits.com/img/a0571721800_2.jpg",
-  "bandcamp_url": "https://mitchbenn.bandcamp.com/album/original-london-cast-recording-mitch-benn-presents-gilbert-sullivans-dracula",
-  "city": "London, UK",
-  "discogs_url": null,
-  "enriched": false,
-  "genre": "comedy",
-  "key": "bc:508098358",
-  "label": null,
-  "label_url": null,
-  "release_date": "2026-10-14",
-  "self_released": true,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [
-   "comedy"
-  ],
-  "title": "Original London Cast Recording: Mitch Benn presents Gilbert & Sullivan's Dracula",
-  "upcoming": true
- },
  "bc:514835176": {
   "artist": "Various Artists",
   "artwork": "https://f4.bcbits.com/img/a2683323200_2.jpg",
@@ -5531,6 +5579,27 @@
    "alternative"
   ],
   "title": "As Shadows Fall PRE ORDER",
+  "upcoming": true
+ },
+ "bc:649398981": {
+  "artist": "Mary Dillon, Neil Martin & Dónal O'Connor",
+  "artwork": "https://f4.bcbits.com/img/a1455843330_2.jpg",
+  "bandcamp_url": "https://donaloconnormusic.bandcamp.com/album/north-of-here",
+  "city": "Belfast, UK",
+  "discogs_url": null,
+  "enriched": false,
+  "genre": "folk",
+  "key": "bc:649398981",
+  "label": null,
+  "label_url": null,
+  "release_date": "2026-11-27",
+  "self_released": true,
+  "source": "bandcamp",
+  "spotify_url": null,
+  "tags": [
+   "folk"
+  ],
+  "title": "North of Here",
   "upcoming": true
  },
  "bc:651227676": {
@@ -5992,28 +6061,6 @@
    "alternative"
   ],
   "title": "Schrammelig",
-  "upcoming": true
- },
- "bc:857415342": {
-  "artist": "SLOW MURDER AND ORDEAL BY ROSES",
-  "artwork": "https://f4.bcbits.com/img/a3861335656_2.jpg",
-  "bandcamp_url": "https://sgarabtapes.bandcamp.com/album/slow-murder-and-ordeal-by-roses",
-  "city": "Cardiff, UK",
-  "discogs_url": null,
-  "enriched": false,
-  "genre": "experimental",
-  "key": "bc:857415342",
-  "label": "SGARAB TAPES",
-  "label_key": "bc:sgarabtapes",
-  "label_url": "https://sgarabtapes.bandcamp.com",
-  "release_date": "2026-10-14",
-  "self_released": false,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [
-   "experimental"
-  ],
-  "title": "SLOW MURDER AND ORDEAL BY ROSES",
   "upcoming": true
  },
  "bc:859171901": {
