@@ -10,7 +10,7 @@ from datetime import date, datetime, timedelta, timezone
 from . import majors, render, votes
 from .bandcamp import Bandcamp, label_key, site_root
 from .discogs import Discogs, chain_is_major, uk_city
-from .spotify import Spotify
+from .spotify import Spotify, SpotifyBlocked
 from .util import DATA, ROOT, load_json, log, norm, save_json
 
 
@@ -45,6 +45,7 @@ class Run:
         self.shown = load_json("shown.json", {})
         self.pending = load_json("pending.json", {})
         self.saved = load_json("saved.json", {})
+        self.spotify_cache = load_json("spotify_cache.json", {})
         self.load_follows()
         iso = date.today().isocalendar()
         self.week = f"{iso.year}-W{iso.week:02d}"
@@ -311,7 +312,7 @@ class Run:
             for k in (rel["key"], signature(rel)):
                 if self.shown.get(k) == self.week:
                     del self.shown[k]
-            self.candidates.setdefault(rel["key"], {**rel, "spotify_url": None})
+            self.candidates.setdefault(rel["key"], rel)
         self.note(f"Redoing {self.week}: {len(previous)} earlier picks back in the pool")
 
     # --- main ------------------------------------------------------------
@@ -396,6 +397,7 @@ class Run:
             save_json("labels.json", self.labels)
             save_json("shown.json", self.shown)
             save_json("pending.json", self.pending)
+            save_json("spotify_cache.json", self.spotify_cache)
         self.summary()
 
     def spotify(self, releases):
@@ -412,25 +414,36 @@ class Run:
         # Two playlists a week: releases on labels, and self-released ones.
         groups = {"labels": [], "self-released": []}
         counts = {"labels": 0, "self-released": 0}
-        failures = 0
+        per = sc["tracks_per_release"]
+        retry_misses_before = (date.today() - timedelta(days=14)).isoformat()
+        failures = searched = 0
         for rel in releases:
-            try:
-                url, tracks = sp.find(rel)
-            except Exception as exc:
-                log.warning("Spotify search failed for %s: %s", rel["title"], exc)
-                failures += 1
-                if failures == 1:
-                    self.note(f"Spotify search error (first of possibly many): {exc}")
-                if failures >= 10 and not counts["labels"] + counts["self-released"]:
-                    self.note("Spotify: stopped after 10 failed searches in a row")
+            hit = self.spotify_cache.get(rel["key"])
+            if not hit or (not hit.get("album") and hit.get("checked", "") < retry_misses_before):
+                try:
+                    url, tracks = sp.find(rel)
+                except SpotifyBlocked as exc:
+                    self.note(f"Spotify paused us ({exc}). Playlists use what was found so far; "
+                              "the rest will be tried next run.")
                     break
-                continue
-            if url:
-                rel["spotify_url"] = url
+                except Exception as exc:
+                    log.warning("Spotify search failed for %s: %s", rel["title"], exc)
+                    failures += 1
+                    if failures == 1:
+                        self.note(f"Spotify search error (first of possibly many): {exc}")
+                    if failures >= 10 and not searched:
+                        self.note("Spotify: stopped after 10 failed searches in a row")
+                        break
+                    continue
+                searched += 1
+                hit = {"album": url, "tracks": tracks, "checked": self.today}
+                self.spotify_cache[rel["key"]] = hit
+            if hit.get("album"):
+                rel["spotify_url"] = hit["album"]
                 group = "labels" if rel.get("label") else "self-released"
-                groups[group].extend(tracks)
+                groups[group].extend(hit["tracks"][:per] if per else hit["tracks"])
                 counts[group] += 1
-        self.note(f"Spotify: found {sum(counts.values())} of {len(releases)}")
+        self.note(f"Spotify: found {sum(counts.values())} of {len(releases)} ({searched} new searches)")
         if self.dry_run:
             return {}
         previous = load_json(f"digests/{self.week}.json", {}).get("playlists", {}) if self.redo else {}
@@ -459,9 +472,15 @@ class Run:
                        key=lambda k: self.all_votes[k].get("at") or "", reverse=True)
         uris = []
         for k in liked:
+            cached = (self.spotify_cache.get(k) or {}).get("tracks")
+            if cached:
+                uris.extend(cached)
+                continue
             album_id = meta[k]["spotify_url"].rstrip("/").split("/")[-1].split("?")[0]
             try:
                 uris.extend(sp.album_tracks(album_id))
+            except SpotifyBlocked:
+                break
             except Exception as exc:
                 log.warning("Spotify tracks failed for %s: %s", meta[k]["title"], exc)
         if not uris:
