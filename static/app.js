@@ -120,6 +120,85 @@
   }
   applyFilters();
 
+  // --- Player bar ------------------------------------------------------
+  // ▶ on a card loads Bandcamp's (or Spotify's) own player into a bar fixed to the bottom
+  // of the page, with previous/next release and voting. iPads need one tap on the
+  // player's own play button each time, because pages can't start sound by themselves.
+  const bar = document.getElementById("player");
+  let current = null;
+  const playable = cards.filter((c) => c.querySelector("button.play"));
+
+  function dark() {
+    try { return window.matchMedia("(prefers-color-scheme: dark)").matches; } catch (e) { return false; }
+  }
+
+  function embedFor(ref) {
+    const [source, kind, id] = ref.split(":");
+    if (source === "bc") {
+      const colours = dark() ? "bgcol=1e1d1b/linkcol=fb923c" : "bgcol=ffffff/linkcol=c2410c";
+      return { src: "https://bandcamp.com/EmbeddedPlayer/" + kind + "=" + id + "/size=large/" + colours +
+        "/artwork=small/tracklist=false/transparent=true/", height: 120 };
+    }
+    return { src: "https://open.spotify.com/embed/" + kind + "/" + id + "?theme=" + (dark() ? "0" : "1"), height: 152 };
+  }
+
+  function paintBar() {
+    if (!current) return;
+    const v = votes[current.dataset.key] || 0;
+    document.getElementById("pl-up").setAttribute("aria-pressed", String(v === 1));
+    document.getElementById("pl-down").setAttribute("aria-pressed", String(v === -1));
+  }
+
+  function play(card) {
+    if (!bar || !card) return;
+    const ref = card.querySelector("button.play").dataset.player;
+    const embed = embedFor(ref);
+    const frame = document.createElement("iframe");
+    frame.src = embed.src;
+    frame.style.height = embed.height + "px";
+    frame.title = "Player";
+    frame.allow = "autoplay; encrypted-media";
+    frame.setAttribute("loading", "eager");
+    const holder = document.getElementById("pl-frame");
+    holder.innerHTML = "";
+    holder.appendChild(frame);
+    if (current) current.classList.remove("playing");
+    current = card;
+    card.classList.add("playing");
+    document.getElementById("pl-title").textContent = card.querySelector("h3").textContent;
+    document.getElementById("pl-artist").textContent = card.querySelector(".artist").textContent;
+    bar.hidden = false;
+    document.body.classList.add("player-open");
+    const section = card.closest("details");
+    if (section) section.open = true;
+    card.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    paintBar();
+  }
+
+  function step(direction) {
+    if (!current) return;
+    let i = playable.indexOf(current);
+    for (let n = 0; n < playable.length; n++) {
+      i = (i + direction + playable.length) % playable.length;
+      if (!playable[i].hidden && !playable[i].closest(".genre[hidden]")) { play(playable[i]); return; }
+    }
+  }
+
+  playable.forEach((c) => c.querySelector("button.play").addEventListener("click", () => play(c)));
+  if (bar) {
+    document.getElementById("pl-prev").addEventListener("click", () => step(-1));
+    document.getElementById("pl-next").addEventListener("click", () => step(1));
+    document.getElementById("pl-up").addEventListener("click", () => current && vote(current, 1).then(paintBar));
+    document.getElementById("pl-down").addEventListener("click", () => current && vote(current, -1).then(paintBar));
+    document.getElementById("pl-close").addEventListener("click", () => {
+      document.getElementById("pl-frame").innerHTML = "";
+      bar.hidden = true;
+      document.body.classList.remove("player-open");
+      if (current) current.classList.remove("playing");
+      current = null;
+    });
+  }
+
   // --- Save label / artist ---------------------------------------------
   const saved = {};
   const saveButtons = Array.from(document.querySelectorAll("button.save"));

@@ -138,6 +138,28 @@ button.save[aria-pressed="true"] { color: var(--accent); border-color: var(--acc
 .taste td:first-child { text-transform: capitalize; font-weight: 600; }
 .taste td:not(:first-child) { width: 4.5em; text-align: right; color: var(--muted); white-space: nowrap; }
 .taste .none { color: var(--muted); font-weight: 400; }
+.btn.play { color: var(--accent); border-color: var(--accent); cursor: pointer; font: inherit; font-size: 0.8rem; font-weight: 600; }
+.card.playing { outline: 3px solid var(--accent); outline-offset: -1px; }
+.player {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 10;
+  background: var(--surface); border-top: 1px solid var(--line);
+  box-shadow: 0 -6px 24px rgba(0, 0, 0, 0.15);
+  padding: 8px 12px calc(8px + env(safe-area-inset-bottom));
+}
+.player[hidden] { display: none; }
+.player-head, #pl-frame { max-width: 900px; margin: 0 auto; }
+.player-head { display: flex; align-items: center; gap: 6px; margin-bottom: 6px; }
+.now { flex: 1; min-width: 0; display: flex; flex-direction: column; line-height: 1.2; }
+.now strong, .now span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.now span { color: var(--accent); font-size: 0.85rem; font-weight: 600; }
+.pl-btn {
+  min-width: 44px; min-height: 44px; border: 1px solid var(--line); border-radius: 10px;
+  background: var(--bg); color: var(--text); font-size: 1.1rem; cursor: pointer;
+}
+#pl-up[aria-pressed="true"] { border-color: var(--up); background: color-mix(in srgb, var(--up) 15%, var(--surface)); }
+#pl-down[aria-pressed="true"] { border-color: var(--down); background: color-mix(in srgb, var(--down) 15%, var(--surface)); }
+#pl-frame iframe { display: block; width: 100%; border: 0; border-radius: 10px; }
+body.player-open { padding-bottom: 200px; }
 .empty { text-align: center; color: var(--muted); padding: 40px 20px; }
 .archive { max-width: 700px; margin: 0 auto; padding: 0 20px 40px; }
 .archive ul { list-style: none; padding: 0; }

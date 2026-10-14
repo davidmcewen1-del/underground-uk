@@ -50,6 +50,16 @@ def _link(url, text, cls):
     return f'<a class="btn {cls}" href="{escape(url)}" target="_blank" rel="noopener">{text}</a>' if url else ""
 
 
+def _player_ref(rel):
+    """What the player bar should load: Bandcamp's player first, else Spotify's, else nothing."""
+    if rel.get("bandcamp_url") and rel["key"].startswith("bc:"):
+        kind = "track" if "/track/" in rel["bandcamp_url"] else "album"
+        return f"bc:{kind}:{rel['key'][3:]}"
+    if rel.get("spotify_url") and "/album/" in rel["spotify_url"]:
+        return "sp:album:" + rel["spotify_url"].rstrip("/").split("/")[-1].split("?")[0]
+    return None
+
+
 def _card(rel):
     label = escape(clean_name(rel.get("label")) or "Self-released")
     tags = "".join(f"<li>{escape(t)}</li>" for t in rel.get("tags") or [])
@@ -58,6 +68,9 @@ def _card(rel):
     pick = {"random": '<span class="badge">Random pick</span>',
             "for-you": '<span class="badge fy">For you</span>',
             "followed": '<span class="badge fl">Following</span>'}.get(rel.get("pick"), "")
+    player = _player_ref(rel)
+    play = (f'<button type="button" class="btn play" data-player="{escape(player)}" '
+            f'aria-label="Play {escape(rel["title"])}">▶ Play</button>') if player else ""
     target = save_target(rel)
     save = ""
     if target:
@@ -73,7 +86,7 @@ def _card(rel):
   <p class="artist">{escape(rel['artist'])}</p>
   <p class="meta">{label} · {escape(rel.get('city') or 'UK')} · {escape(rel.get('release_date') or '')}</p>
   <ul class="tags">{tags}</ul>
-  <div class="links">{_link(rel.get('bandcamp_url'), 'Bandcamp', 'bc')}{_link(rel.get('discogs_url'), 'Discogs', 'dg')}{_link(rel.get('spotify_url'), 'Spotify', 'sp')}</div>
+  <div class="links">{play}{_link(rel.get('bandcamp_url'), 'Bandcamp', 'bc')}{_link(rel.get('discogs_url'), 'Discogs', 'dg')}{_link(rel.get('spotify_url'), 'Spotify', 'sp')}</div>
   <div class="vote" role="group" aria-label="Rate this release">
    <button type="button" data-vote="1" aria-label="Thumbs up" aria-pressed="false">👍</button>
    <button type="button" data-vote="-1" aria-label="Thumbs down" aria-pressed="false">👎</button>
@@ -129,7 +142,18 @@ def digest_page(cfg, week, label, releases, playlists, prefix):
 <main class="genres">
 {sections}
 </main>
-<p class="empty" hidden>No releases match these filters.</p>"""
+<p class="empty" hidden>No releases match these filters.</p>
+<div id="player" class="player" hidden>
+ <div class="player-head">
+  <button type="button" id="pl-prev" class="pl-btn" aria-label="Previous release">⏮</button>
+  <div class="now"><strong id="pl-title"></strong><span id="pl-artist"></span></div>
+  <button type="button" id="pl-up" class="pl-btn" aria-label="Thumbs up" aria-pressed="false">👍</button>
+  <button type="button" id="pl-down" class="pl-btn" aria-label="Thumbs down" aria-pressed="false">👎</button>
+  <button type="button" id="pl-next" class="pl-btn" aria-label="Next release">⏭</button>
+  <button type="button" id="pl-close" class="pl-btn" aria-label="Close player">✕</button>
+ </div>
+ <div id="pl-frame"></div>
+</div>"""
     return _page(f"{cfg['digest']['title']} {week}", body, prefix, cfg["votes"]["worker_url"])
 
 
