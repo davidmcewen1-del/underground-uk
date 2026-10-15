@@ -205,28 +205,6 @@
   "title": "Parallels",
   "upcoming": true
  },
- "bc:1174610683": {
-  "artist": "Doug Thomas",
-  "artwork": "https://f4.bcbits.com/img/a2311723271_2.jpg",
-  "bandcamp_url": "https://dougthomas.bandcamp.com/album/omakase-128-2026",
-  "city": "London, UK",
-  "discogs_url": null,
-  "enriched": false,
-  "genre": "classical",
-  "key": "bc:1174610683",
-  "label": "NOOX",
-  "label_key": "bc:dougthomas",
-  "label_url": "https://dougthomas.bandcamp.com",
-  "release_date": "2026-10-15",
-  "self_released": false,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [
-   "classical"
-  ],
-  "title": "OMAKASE [128] (2026)",
-  "upcoming": true
- },
  "bc:1180819918": {
   "artist": "Lady Dammage",
   "artwork": "https://f4.bcbits.com/img/a3718142353_2.jpg",
@@ -542,6 +520,27 @@
   "title": "Screed",
   "upcoming": true
  },
+ "bc:1357182490": {
+  "artist": "James Daniel",
+  "artwork": "https://f4.bcbits.com/img/a0275659682_2.jpg",
+  "bandcamp_url": "https://james-daniel.bandcamp.com/album/its-about-time",
+  "city": "London, UK",
+  "discogs_url": null,
+  "enriched": false,
+  "genre": "acoustic",
+  "key": "bc:1357182490",
+  "label": null,
+  "label_url": null,
+  "release_date": "2026-11-10",
+  "self_released": true,
+  "source": "bandcamp",
+  "spotify_url": null,
+  "tags": [
+   "acoustic"
+  ],
+  "title": "It's About Time",
+  "upcoming": true
+ },
  "bc:1365747413": {
   "artist": "Lateral",
   "artwork": "https://f4.bcbits.com/img/a1558071487_2.jpg",
@@ -560,6 +559,27 @@
   "spotify_url": null,
   "tags": [],
   "title": "On Fire/Le Rock",
+  "upcoming": true
+ },
+ "bc:1373962358": {
+  "artist": "GUNSHIP",
+  "artwork": "https://f4.bcbits.com/img/a0374591455_2.jpg",
+  "bandcamp_url": "https://gunshipmusic.bandcamp.com/album/monster-in-paradise-makeup-and-vanity-set-remix",
+  "city": "London, UK",
+  "discogs_url": null,
+  "enriched": false,
+  "genre": "electronic",
+  "key": "bc:1373962358",
+  "label": null,
+  "label_url": null,
+  "release_date": "2026-10-21",
+  "self_released": true,
+  "source": "bandcamp",
+  "spotify_url": null,
+  "tags": [
+   "electronic"
+  ],
+  "title": "Monster in Paradise (Makeup and Vanity Set Remix)",
   "upcoming": true
  },
  "bc:138099755": {
@@ -752,27 +772,6 @@
    "experimental"
   ],
   "title": "made to appear",
-  "upcoming": true
- },
- "bc:1478612702": {
-  "artist": "merrowfolk",
-  "artwork": "https://f4.bcbits.com/img/a1527967622_2.jpg",
-  "bandcamp_url": "https://merrowfolk.bandcamp.com/album/understory-3",
-  "city": "Glasgow, UK",
-  "discogs_url": null,
-  "enriched": false,
-  "genre": "rock",
-  "key": "bc:1478612702",
-  "label": null,
-  "label_url": null,
-  "release_date": "2026-10-15",
-  "self_released": true,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [
-   "rock"
-  ],
-  "title": "understory",
   "upcoming": true
  },
  "bc:1480648711": {
@@ -2031,27 +2030,6 @@
   "title": "True North",
   "upcoming": true
  },
- "bc:2250839460": {
-  "artist": "Avicide",
-  "artwork": "https://f4.bcbits.com/img/a3101489096_2.jpg",
-  "bandcamp_url": "https://avicide.bandcamp.com/album/respirate",
-  "city": "Bristol, UK",
-  "discogs_url": null,
-  "enriched": false,
-  "genre": "metal",
-  "key": "bc:2250839460",
-  "label": null,
-  "label_url": null,
-  "release_date": "2026-10-15",
-  "self_released": true,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [
-   "metal"
-  ],
-  "title": "Respirate",
-  "upcoming": true
- },
  "bc:2257459688": {
   "artist": "Las Ánimas",
   "artwork": "https://f4.bcbits.com/img/a3310290926_2.jpg",
@@ -2598,28 +2576,6 @@
   "title": "The Forgotten Verses (Demos & Rarities)",
   "upcoming": true
  },
- "bc:2588826850": {
-  "artist": "Distance",
-  "artwork": "https://f4.bcbits.com/img/a1919846062_2.jpg",
-  "bandcamp_url": "https://andynproductions.bandcamp.com/album/dead-drop",
-  "city": "Manchester, UK",
-  "discogs_url": null,
-  "enriched": false,
-  "genre": "experimental",
-  "key": "bc:2588826850",
-  "label": "Andy N productions",
-  "label_key": "bc:andynproductions",
-  "label_url": "https://andynproductions.bandcamp.com",
-  "release_date": "2026-10-15",
-  "self_released": false,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [
-   "experimental"
-  ],
-  "title": "Dead Drop",
-  "upcoming": true
- },
  "bc:2590049408": {
   "artist": "Publicity Department",
   "artwork": "https://f4.bcbits.com/img/a2156069567_2.jpg",
@@ -2746,27 +2702,6 @@
   "title": "Peace & Blessings",
   "upcoming": true
  },
- "bc:269261772": {
-  "artist": "Drone",
-  "artwork": "https://f4.bcbits.com/img/a0029611356_2.jpg",
-  "bandcamp_url": "https://droneuk.bandcamp.com/album/what-comes-next-ep",
-  "city": "Bristol, UK",
-  "discogs_url": null,
-  "enriched": false,
-  "genre": "electronic",
-  "key": "bc:269261772",
-  "label": null,
-  "label_url": null,
-  "release_date": "2026-10-15",
-  "self_released": true,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [
-   "electronic"
-  ],
-  "title": "What Comes Next EP",
-  "upcoming": true
- },
  "bc:2718443326": {
   "artist": "ĠENN",
   "artwork": "https://f4.bcbits.com/img/a3690647088_2.jpg",
@@ -2848,27 +2783,6 @@
    "metal"
   ],
   "title": "In the Name of...",
-  "upcoming": true
- },
- "bc:2760693183": {
-  "artist": "Nectax",
-  "artwork": "https://f4.bcbits.com/img/a1688157198_2.jpg",
-  "bandcamp_url": "https://nectax.bandcamp.com/album/mtxlt907-cash4gold-close2mine",
-  "city": "Newcastle Upon Tyne, UK",
-  "discogs_url": null,
-  "enriched": false,
-  "genre": "electronic",
-  "key": "bc:2760693183",
-  "label": null,
-  "label_url": null,
-  "release_date": "2026-10-15",
-  "self_released": true,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [
-   "electronic"
-  ],
-  "title": "[MTXLT907] Cash4Gold / Close2Mine",
   "upcoming": true
  },
  "bc:2782758781": {
@@ -4968,6 +4882,31 @@
   "title": "Write > Protect > Release",
   "upcoming": true
  },
+ "bc:4040713109": {
+  "artist": "Kaimera & Psycho Mentality",
+  "artwork": "https://f4.bcbits.com/img/a3908669955_2.jpg",
+  "bandcamp_url": "https://darksideunleashed.bandcamp.com/album/harder-than-your-808",
+  "city": "Glasgow, UK",
+  "discogs_url": null,
+  "enriched": true,
+  "genre": "electronic",
+  "key": "bc:4040713109",
+  "label": "Darkside Unleashed",
+  "label_key": "bc:darksideunleashed",
+  "label_url": "https://darksideunleashed.bandcamp.com",
+  "release_date": "2026-10-30",
+  "self_released": false,
+  "source": "bandcamp",
+  "spotify_url": null,
+  "tags": [
+   "electronic",
+   "hardcore",
+   "hardcore techno",
+   "mainstream hardcore",
+   "uptempo hardcore"
+  ],
+  "title": "Harder Than Your 808"
+ },
  "bc:4075701670": {
   "artist": "Smith & Mighty",
   "artwork": "https://f4.bcbits.com/img/a0086775645_2.jpg",
@@ -5747,6 +5686,28 @@
    "folk"
   ],
   "title": "The Blackbird",
+  "upcoming": true
+ },
+ "bc:65218617": {
+  "artist": "Mirren",
+  "artwork": "https://f4.bcbits.com/img/a2824880178_2.jpg",
+  "bandcamp_url": "https://intersticerecords.bandcamp.com/album/periphery-lives",
+  "city": "Glasgow, UK",
+  "discogs_url": null,
+  "enriched": false,
+  "genre": "alternative",
+  "key": "bc:65218617",
+  "label": "Interstice Records",
+  "label_key": "bc:intersticerecords",
+  "label_url": "https://intersticerecords.bandcamp.com",
+  "release_date": "2026-12-18",
+  "self_released": false,
+  "source": "bandcamp",
+  "spotify_url": null,
+  "tags": [
+   "alternative"
+  ],
+  "title": "Periphery Lives",
   "upcoming": true
  },
  "bc:65324378": {
@@ -6782,30 +6743,6 @@
   ],
   "title": "Cyberfunk 050"
  },
- "dg:38719974": {
-  "added": "2026-10-14",
-  "artist": "Factor B",
-  "artwork": "https://i.discogs.com/tdfxrp82cdAvOoR392x2jdQzU_ApUvz9Ki0-x8KbPLo/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4NzE5/OTc0LTE3OTE5OTYw/MTMtOTA0MS5qcGVn.jpeg",
-  "bandcamp_url": null,
-  "city": "UK",
-  "discogs_label_id": 2134336,
-  "discogs_url": "https://www.discogs.com/release/38719974-Factor-B-2-A-Gift-To-The-Earth-Sneijder-Remix",
-  "enriched": true,
-  "genre": "electronic",
-  "have": 1,
-  "key": "dg:38719974",
-  "label": "Theatre Of The Mind Music",
-  "label_key": "dg:2134336",
-  "release_date": "2026-10-15",
-  "self_released": false,
-  "source": "discogs",
-  "spotify_url": null,
-  "tags": [
-   "trance",
-   "electronic"
-  ],
-  "title": "A Gift To The Earth (Sneijder Remix)"
- },
  "dg:38720697": {
   "added": "2026-10-14",
   "artist": "DJ Qaz",
@@ -6828,5 +6765,30 @@
    "electronic"
   ],
   "title": "Ambient Pieces"
+ },
+ "dg:38725914": {
+  "added": "2026-10-15",
+  "artist": "Fontaines D.C.",
+  "artwork": "https://i.discogs.com/EMxB__LLuSTC6Y8GYZduhIx6NDbh4MSnhx7ewzqO1fk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4NzI1/OTE0LTE3OTIwNTYw/NzktNTczOS5qcGVn.jpeg",
+  "bandcamp_url": null,
+  "city": "UK",
+  "discogs_label_id": 160,
+  "discogs_url": "https://www.discogs.com/release/38725914-Fontaines-DC-Dopamine-Chamber-",
+  "enriched": true,
+  "genre": "rock",
+  "have": 1,
+  "key": "dg:38725914",
+  "label": "XL Recordings",
+  "label_key": "dg:160",
+  "release_date": "2026-10-16",
+  "self_released": false,
+  "source": "discogs",
+  "spotify_url": null,
+  "tags": [
+   "alternative rock",
+   "indie rock",
+   "rock"
+  ],
+  "title": "Dopamine Chamber "
  }
 }
