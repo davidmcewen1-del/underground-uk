@@ -400,53 +400,84 @@ class Run:
             save_json("spotify_cache.json", self.spotify_cache)
         self.summary()
 
+    def previous_playlists(self):
+        return load_json(f"digests/{self.week}.json", {}).get("playlists", {}) if self.redo else {}
+
     def spotify(self, releases):
         sc = self.cfg["spotify"]
         needed = ("SPOTIFY_CLIENT_ID", "SPOTIFY_CLIENT_SECRET", "SPOTIFY_REFRESH_TOKEN")
         if not sc["enabled"] or not all(os.environ.get(k) for k in needed):
             self.note("Spotify skipped: not configured")
             return None
+        now = datetime.now(timezone.utc)
+        blocked_until = self.state.get("spotify_blocked_until", "")
+        if blocked_until > now.isoformat():
+            self.note(f"Spotify skipped: it has blocked us until {blocked_until[:16].replace('T', ' ')} UTC")
+            return self.previous_playlists()
         try:
             sp = Spotify(sc, *(os.environ[k] for k in needed))
         except Exception as exc:
             self.note(f"Spotify login failed: {exc}")
             return None
-        # Two playlists a week: releases on labels, and self-released ones.
+        # Spotify blocks the app for a whole day after too many searches, so new searches are
+        # rationed per day. Followed and "for you" picks go first, then releases on labels.
+        window = (now - timedelta(hours=22)).isoformat()
+        recent = [r for r in self.state.get("spotify_searches", []) if r["at"] > window]
+        budget = max(0, sc.get("max_searches_per_day", 200) - sum(r["n"] for r in recent))
+        priority = sorted(releases, key=lambda r: (r["pick"] != "followed", r["pick"] != "for-you", not r.get("label")))
+        retry_misses_before = (date.today() - timedelta(days=14)).isoformat()
+        failures = searched = left = 0
+        blocked = False
+        for rel in priority:
+            hit = self.spotify_cache.get(rel["key"])
+            if hit and (hit.get("album") or hit.get("checked", "") >= retry_misses_before):
+                continue
+            if searched >= budget:
+                left += 1
+                continue
+            try:
+                url, tracks = sp.find(rel)
+            except SpotifyBlocked as exc:
+                hours = re.search(r"wait ([\d.]+) hours", str(exc))
+                until = now + timedelta(hours=float(hours.group(1)) if hours else 24)
+                self.state["spotify_blocked_until"] = until.isoformat(timespec="minutes")
+                self.note(f"Spotify paused us ({exc}). No playlist changes this run; "
+                          "the rest will be tried after the block.")
+                blocked = True
+                break
+            except Exception as exc:
+                log.warning("Spotify search failed for %s: %s", rel["title"], exc)
+                failures += 1
+                if failures == 1:
+                    self.note(f"Spotify search error (first of possibly many): {exc}")
+                if failures >= 10 and not searched:
+                    self.note("Spotify: stopped after 10 failed searches in a row")
+                    break
+                continue
+            searched += 1
+            self.spotify_cache[rel["key"]] = {"album": url, "tracks": tracks, "checked": self.today}
+        if searched:
+            recent.append({"at": now.isoformat(timespec="minutes"), "n": searched})
+        self.state["spotify_searches"] = recent
         groups = {"labels": [], "self-released": []}
         counts = {"labels": 0, "self-released": 0}
         per = sc["tracks_per_release"]
-        retry_misses_before = (date.today() - timedelta(days=14)).isoformat()
-        failures = searched = 0
         for rel in releases:
-            hit = self.spotify_cache.get(rel["key"])
-            if not hit or (not hit.get("album") and hit.get("checked", "") < retry_misses_before):
-                try:
-                    url, tracks = sp.find(rel)
-                except SpotifyBlocked as exc:
-                    self.note(f"Spotify paused us ({exc}). Playlists use what was found so far; "
-                              "the rest will be tried next run.")
-                    break
-                except Exception as exc:
-                    log.warning("Spotify search failed for %s: %s", rel["title"], exc)
-                    failures += 1
-                    if failures == 1:
-                        self.note(f"Spotify search error (first of possibly many): {exc}")
-                    if failures >= 10 and not searched:
-                        self.note("Spotify: stopped after 10 failed searches in a row")
-                        break
-                    continue
-                searched += 1
-                hit = {"album": url, "tracks": tracks, "checked": self.today}
-                self.spotify_cache[rel["key"]] = hit
+            hit = self.spotify_cache.get(rel["key"]) or {}
             if hit.get("album"):
                 rel["spotify_url"] = hit["album"]
                 group = "labels" if rel.get("label") else "self-released"
                 groups[group].extend(hit["tracks"][:per] if per else hit["tracks"])
                 counts[group] += 1
         self.note(f"Spotify: found {sum(counts.values())} of {len(releases)} ({searched} new searches)")
+        if left:
+            self.note(f"Spotify: {left} releases still to look up (limit {sc.get('max_searches_per_day', 200)} "
+                      "searches a day); the next run carries on")
         if self.dry_run:
             return {}
-        previous = load_json(f"digests/{self.week}.json", {}).get("playlists", {}) if self.redo else {}
+        previous = self.previous_playlists()
+        if blocked:
+            return previous
         titles = {"labels": "Labels", "self-released": "Self-released"}
         playlists = {}
         for group, uris in groups.items():
@@ -457,8 +488,11 @@ class Run:
                     sc["playlist_name"].format(kind=titles[group], week=self.week),
                     f"{counts[group]} new {'label' if group == 'labels' else 'self-released'} releases from the UK "
                     f"underground. Digest {self.week}.", uris, existing_url=previous.get(group))
+                self.note(f"Spotify {titles[group]} playlist: {counts[group]} releases")
             except Exception as exc:
                 self.note(f"Spotify {titles[group]} playlist failed: {exc}")
+                if previous.get(group):
+                    playlists[group] = previous[group]
         liked = self.update_liked(sp, releases)
         if liked:
             playlists["liked"] = liked
@@ -517,9 +551,37 @@ def rebuild(cfg):
     log.info("Rebuilt page for %s", week)
 
 
+def playlists_only(cfg):
+    """Look up more of the latest digest on Spotify and (re)make its playlists. Gathers nothing new."""
+    digests = load_digests()
+    if not digests:
+        log.info("No digest yet")
+        return
+    week = max(digests)
+    saved = load_json(f"digests/{week}.json", {})
+    run = Run(cfg)
+    run.state = load_json("state.json", {})  # never start a new week from here
+    run.week, run.redo = week, True
+    run.digests = digests
+    run.all_votes = votes.sync(cfg["votes"]["worker_url"], os.environ.get("VOTE_KEY"), digests)
+    run.saved = votes.sync_saved(cfg["votes"]["worker_url"], os.environ.get("VOTE_KEY"))
+    releases = saved["releases"]
+    playlists = run.spotify(releases)
+    if playlists is None:
+        playlists = saved.get("playlists") or {}
+    saved["playlists"] = playlists
+    save_json(f"digests/{week}.json", saved)
+    save_json("spotify_cache.json", run.spotify_cache)
+    save_json("state.json", run.state)
+    render.write_site(cfg, week, saved["label"], releases, playlists, digests, run.saved, run.all_votes)
+    run.summary()
+
+
 def main():
     parser = argparse.ArgumentParser(description="Build the weekly Underground UK digest.")
     parser.add_argument("--rebuild", action="store_true", help="only re-render the latest digest page")
+    parser.add_argument("--playlists", action="store_true",
+                        help="only look up the latest digest on Spotify and make its playlists")
     parser.add_argument("--dry-run", action="store_true", help="build the page but save no state and make no playlist")
     parser.add_argument("--cities", type=int, help="only use the first N cities (for quick tests)")
     parser.add_argument("--size", type=int, help="override digest size")
@@ -534,6 +596,8 @@ def main():
     cfg["votes"]["worker_url"] = os.environ.get("WORKER_URL") or cfg["votes"]["worker_url"]
     if args.rebuild:
         rebuild(cfg)
+    elif args.playlists:
+        playlists_only(cfg)
     else:
         Run(cfg, args.dry_run).run()
 

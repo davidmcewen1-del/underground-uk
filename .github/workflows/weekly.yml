@@ -2,12 +2,18 @@ name: Weekly digest
 
 on:
   schedule:
-    - cron: "0 7 * * 5"          # Fridays at 07:00
+    - cron: "0 7 * * 5"          # Fridays at 07:00: the new digest
+      timezone: "Europe/London"
+    - cron: "0 13 * * 5,6"       # Fridays and Saturdays at 13:00: more Spotify lookups and the playlists
       timezone: "Europe/London"
   workflow_dispatch:              # "Run workflow" button for running it by hand
     inputs:
       rebuild_only:
         description: "Only rebuild the page (no new digest or playlist)"
+        type: boolean
+        default: false
+      playlists_only:
+        description: "Only do Spotify (look up more releases and make the playlists)"
         type: boolean
         default: false
 
@@ -45,7 +51,14 @@ jobs:
           SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
           VOTE_KEY: ${{ secrets.VOTE_KEY }}
           WORKER_URL: ${{ vars.WORKER_URL }}
-        run: python -m digest.main ${{ inputs.rebuild_only && '--rebuild' || '' }}
+        run: |
+          if [ "${{ inputs.rebuild_only }}" = "true" ]; then
+            python -m digest.main --rebuild
+          elif [ "${{ inputs.playlists_only }}" = "true" ] || [ "${{ github.event.schedule }}" = "0 13 * * 5,6" ]; then
+            python -m digest.main --playlists
+          else
+            python -m digest.main
+          fi
 
       - name: Save state and pages
         run: |
