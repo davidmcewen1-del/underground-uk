@@ -6,7 +6,7 @@
    "https://174life.bandcamp.com/album/ljhigh-outlaw-ep",
    "https://174life.bandcamp.com/track/ljhigh-wolves"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "174Life",
   "source": "bandcamp",
   "url": "https://174life.bandcamp.com"
@@ -177,7 +177,7 @@
    "https://kosh212.bandcamp.com/album/vis315-vicious-love",
    "https://reedalerise.bandcamp.com/album/vis311-pressure-drop"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "20/20 Vision",
   "source": "bandcamp",
   "url": "https://2020vision.bandcamp.com"
@@ -426,7 +426,7 @@
    "https://2tuf4u.com/track/vintage-2tuf-4u-vol-1-2014-5-5",
    "https://2tuf4u.com/track/vintage-2tuf-4u-vol-2-2014-5-7"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "2TUF4U Records",
   "source": "bandcamp",
   "url": "https://2tuf4u.com"
@@ -675,7 +675,7 @@
    "https://2tuf4u.com/track/vintage-2tuf-4u-vol-1-2014-5-5",
    "https://2tuf4u.com/track/vintage-2tuf-4u-vol-2-2014-5-7"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "2TUF4U Records",
   "source": "bandcamp",
   "url": "https://2tuf4u.com"
@@ -694,7 +694,7 @@
    "https://a-eno-acid.bandcamp.com/album/sold-out-now-download",
    "https://a-eno-acid.bandcamp.com/album/the-last-jack"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Chicago Bee Records",
   "source": "bandcamp",
   "url": "https://a-eno-acid.bandcamp.com"
@@ -725,7 +725,7 @@
    "https://alexsmoke.bandcamp.com/track/bright-flows-the-river-live",
    "https://alexsmoke.bandcamp.com/track/thinning-the-warp-live"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Alex Smoke",
   "source": "bandcamp",
   "url": "https://alexsmoke.bandcamp.com"
@@ -970,7 +970,7 @@
    "https://andynproductions.bandcamp.com/album/xvii-live-september-2007-manchester",
    "https://andynproductions.bandcamp.com/album/xviii-improvisation-april-2021"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Andy N productions",
   "source": "bandcamp",
   "url": "https://andynproductions.bandcamp.com"
@@ -1118,10 +1118,285 @@
    "https://anthonyreynolds.bandcamp.com/album/you-left-your-heart-in-1982-extended-play",
    "https://anthonyreynolds.bandcamp.com/album/youre-hurting-my-feelings-demo-album"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Anthony Reynolds",
   "source": "bandcamp",
   "url": "https://anthonyreynolds.bandcamp.com"
+ },
+ "bc:aotns": {
+  "city": "Edinburgh, UK",
+  "first_seen": "2026-10-16",
+  "known": [
+   "https://aotns.bandcamp.com/album/a-minute-too-late",
+   "https://aotns.bandcamp.com/album/alabama-soul-man-selmass-doctor-t",
+   "https://aotns.bandcamp.com/album/all-in-you",
+   "https://aotns.bandcamp.com/album/all-the-way-down",
+   "https://aotns.bandcamp.com/album/am-funk",
+   "https://aotns.bandcamp.com/album/bab-party-get-on-down",
+   "https://aotns.bandcamp.com/album/baby",
+   "https://aotns.bandcamp.com/album/back-together",
+   "https://aotns.bandcamp.com/album/be-my-lady",
+   "https://aotns.bandcamp.com/album/be-there-in-the-morning",
+   "https://aotns.bandcamp.com/album/beautiful-day",
+   "https://aotns.bandcamp.com/album/belvedere-point-1",
+   "https://aotns.bandcamp.com/album/billy-bruner",
+   "https://aotns.bandcamp.com/album/bim-bam",
+   "https://aotns.bandcamp.com/album/black-fairy",
+   "https://aotns.bandcamp.com/album/bobby-boyd",
+   "https://aotns.bandcamp.com/album/bobby-boyd-2023-remaster",
+   "https://aotns.bandcamp.com/album/brief-encounter-singles",
+   "https://aotns.bandcamp.com/album/catch-me-when-im-falling",
+   "https://aotns.bandcamp.com/album/changes",
+   "https://aotns.bandcamp.com/album/chauffeur",
+   "https://aotns.bandcamp.com/album/chicago",
+   "https://aotns.bandcamp.com/album/coast-to-coast",
+   "https://aotns.bandcamp.com/album/complete-friends-buddies-2",
+   "https://aotns.bandcamp.com/album/confrontation",
+   "https://aotns.bandcamp.com/album/confrontations",
+   "https://aotns.bandcamp.com/album/cookin-cokin-and-smokin",
+   "https://aotns.bandcamp.com/album/dance-and-resist",
+   "https://aotns.bandcamp.com/album/date-with-the-rain",
+   "https://aotns.bandcamp.com/album/defected",
+   "https://aotns.bandcamp.com/album/disco-thing",
+   "https://aotns.bandcamp.com/album/disco-with-a-feeling",
+   "https://aotns.bandcamp.com/album/do-it-this-way-beautiful-lady",
+   "https://aotns.bandcamp.com/album/do-you-hear-me-talking-to-you",
+   "https://aotns.bandcamp.com/album/dont-act-like-a-fool",
+   "https://aotns.bandcamp.com/album/dont-be-afraid",
+   "https://aotns.bandcamp.com/album/dont-you-know-i-love-you",
+   "https://aotns.bandcamp.com/album/dreaming-our-lives-away",
+   "https://aotns.bandcamp.com/album/drown-my-heart",
+   "https://aotns.bandcamp.com/album/ecology",
+   "https://aotns.bandcamp.com/album/everything-that-looks-good",
+   "https://aotns.bandcamp.com/album/everything-thats-good-in-life",
+   "https://aotns.bandcamp.com/album/excitement",
+   "https://aotns.bandcamp.com/album/fee-fi-fo-fum",
+   "https://aotns.bandcamp.com/album/first-flight",
+   "https://aotns.bandcamp.com/album/for-the-love-of-you",
+   "https://aotns.bandcamp.com/album/for-the-love-of-you-vol-21",
+   "https://aotns.bandcamp.com/album/formula-1",
+   "https://aotns.bandcamp.com/album/forrest-terry",
+   "https://aotns.bandcamp.com/album/foxy-lady",
+   "https://aotns.bandcamp.com/album/frazelle-today-is-the-day",
+   "https://aotns.bandcamp.com/album/from-philly",
+   "https://aotns.bandcamp.com/album/fruit",
+   "https://aotns.bandcamp.com/album/fruit-what-you-gonna-do-500-only",
+   "https://aotns.bandcamp.com/album/funny-feeling",
+   "https://aotns.bandcamp.com/album/gangster-boy",
+   "https://aotns.bandcamp.com/album/get-a-good-feeling",
+   "https://aotns.bandcamp.com/album/get-down",
+   "https://aotns.bandcamp.com/album/get-it-on-you-can-be",
+   "https://aotns.bandcamp.com/album/get-together",
+   "https://aotns.bandcamp.com/album/give-it-up",
+   "https://aotns.bandcamp.com/album/good-feeling",
+   "https://aotns.bandcamp.com/album/good-thing",
+   "https://aotns.bandcamp.com/album/got-the-love",
+   "https://aotns.bandcamp.com/album/greatest-part-of-loving-you",
+   "https://aotns.bandcamp.com/album/havin-a-party-music-makes-me-high",
+   "https://aotns.bandcamp.com/album/henry-stones-miami-soul-the-record-mans-finest-45s",
+   "https://aotns.bandcamp.com/album/here-i-am-baby",
+   "https://aotns.bandcamp.com/album/here-in-the-name-of-love",
+   "https://aotns.bandcamp.com/album/hidden-stash",
+   "https://aotns.bandcamp.com/album/hot-oklahoma-nights",
+   "https://aotns.bandcamp.com/album/how-close",
+   "https://aotns.bandcamp.com/album/i-can-do-all-things-through-christ-jesus-which-strengthen-me",
+   "https://aotns.bandcamp.com/album/i-cant-wait",
+   "https://aotns.bandcamp.com/album/i-like-what-you-do-to-me-girl-like-you",
+   "https://aotns.bandcamp.com/album/i-love-you",
+   "https://aotns.bandcamp.com/album/i-need-you-baby",
+   "https://aotns.bandcamp.com/album/i-saw-you",
+   "https://aotns.bandcamp.com/album/i-see-a-world",
+   "https://aotns.bandcamp.com/album/i-thought-you-wanted-to-dance",
+   "https://aotns.bandcamp.com/album/i-would-have-to-be-a-fool",
+   "https://aotns.bandcamp.com/album/if-i-had-you",
+   "https://aotns.bandcamp.com/album/if-you-dance-tonight",
+   "https://aotns.bandcamp.com/album/if-you-feel-it-say-yeah",
+   "https://aotns.bandcamp.com/album/if-you-feel-it-say-yeah-1",
+   "https://aotns.bandcamp.com/album/im-gonna-miss-ya",
+   "https://aotns.bandcamp.com/album/im-so-glad",
+   "https://aotns.bandcamp.com/album/in-togetherness",
+   "https://aotns.bandcamp.com/album/introducing",
+   "https://aotns.bandcamp.com/album/is-it-what-you-want",
+   "https://aotns.bandcamp.com/album/is-it-what-you-want-1",
+   "https://aotns.bandcamp.com/album/its-a-rat-race",
+   "https://aotns.bandcamp.com/album/its-bad",
+   "https://aotns.bandcamp.com/album/james-mckenzie-the-mckenzie-brothers",
+   "https://aotns.bandcamp.com/album/just-a-touch",
+   "https://aotns.bandcamp.com/album/kashmere-scorpio",
+   "https://aotns.bandcamp.com/album/keep-me-dancing",
+   "https://aotns.bandcamp.com/album/keep-on-dancin-you",
+   "https://aotns.bandcamp.com/album/language-of-the-birds",
+   "https://aotns.bandcamp.com/album/leather-pants",
+   "https://aotns.bandcamp.com/album/leon-gardners-igloo-records",
+   "https://aotns.bandcamp.com/album/let-go",
+   "https://aotns.bandcamp.com/album/let-your-light-shine",
+   "https://aotns.bandcamp.com/album/lets-do-it-today-procrastination",
+   "https://aotns.bandcamp.com/album/life-is-a-miracle",
+   "https://aotns.bandcamp.com/album/lihue-playing-with-fire",
+   "https://aotns.bandcamp.com/album/listen-party",
+   "https://aotns.bandcamp.com/album/live-at-the-point-after-20-aug-1977",
+   "https://aotns.bandcamp.com/album/live-at-the-quarter-moon",
+   "https://aotns.bandcamp.com/album/look-a-little-higher",
+   "https://aotns.bandcamp.com/album/looking-for-a-place",
+   "https://aotns.bandcamp.com/album/love-chug",
+   "https://aotns.bandcamp.com/album/love-goddess-bad-news",
+   "https://aotns.bandcamp.com/album/love-is-the-same",
+   "https://aotns.bandcamp.com/album/love-of-mind",
+   "https://aotns.bandcamp.com/album/love-of-mine",
+   "https://aotns.bandcamp.com/album/love-tempo",
+   "https://aotns.bandcamp.com/album/lovers-holiday",
+   "https://aotns.bandcamp.com/album/loving-you-is-too-far-out-digi-only",
+   "https://aotns.bandcamp.com/album/madness-if-your-so-in-love",
+   "https://aotns.bandcamp.com/album/making-new-friends",
+   "https://aotns.bandcamp.com/album/mamas-baby-boy",
+   "https://aotns.bandcamp.com/album/maybe-so-maybe-no-my-baby-aint-no-plaything",
+   "https://aotns.bandcamp.com/album/migraine",
+   "https://aotns.bandcamp.com/album/mind-games",
+   "https://aotns.bandcamp.com/album/mind-games-1",
+   "https://aotns.bandcamp.com/album/money-wont-change-you",
+   "https://aotns.bandcamp.com/album/mr-magic-fryers-edit-talking-about-my-baby",
+   "https://aotns.bandcamp.com/album/musica-para-todos",
+   "https://aotns.bandcamp.com/album/my-babys-gone-1",
+   "https://aotns.bandcamp.com/album/my-dreams-are-clouded",
+   "https://aotns.bandcamp.com/album/my-love-box",
+   "https://aotns.bandcamp.com/album/nathan-bartell",
+   "https://aotns.bandcamp.com/album/never-too-much",
+   "https://aotns.bandcamp.com/album/not-a-minute-too-late",
+   "https://aotns.bandcamp.com/album/november-18-1983",
+   "https://aotns.bandcamp.com/album/nxs800",
+   "https://aotns.bandcamp.com/album/open-up-your-heart",
+   "https://aotns.bandcamp.com/album/our-love",
+   "https://aotns.bandcamp.com/album/outstanding",
+   "https://aotns.bandcamp.com/album/party-man-put-everything-in-place",
+   "https://aotns.bandcamp.com/album/passion",
+   "https://aotns.bandcamp.com/album/paula-marie",
+   "https://aotns.bandcamp.com/album/penny-goodwin",
+   "https://aotns.bandcamp.com/album/play-with-me",
+   "https://aotns.bandcamp.com/album/portrait-of-a-gemini",
+   "https://aotns.bandcamp.com/album/positivo",
+   "https://aotns.bandcamp.com/album/premonitions",
+   "https://aotns.bandcamp.com/album/primitive-substance",
+   "https://aotns.bandcamp.com/album/queen-of-my-universe",
+   "https://aotns.bandcamp.com/album/reality",
+   "https://aotns.bandcamp.com/album/reality-dreams",
+   "https://aotns.bandcamp.com/album/rock-on-bob-blank-remix-rock-on",
+   "https://aotns.bandcamp.com/album/rocket-love",
+   "https://aotns.bandcamp.com/album/salir-del-agujero",
+   "https://aotns.bandcamp.com/album/say-brother-edit-bustin-out-of-doors-edit",
+   "https://aotns.bandcamp.com/album/say-it",
+   "https://aotns.bandcamp.com/album/say-it-with-feeling-conscience-2",
+   "https://aotns.bandcamp.com/album/school-dance-sweetness",
+   "https://aotns.bandcamp.com/album/second-re-surrection-keep-on-keeping-on",
+   "https://aotns.bandcamp.com/album/shake-rock-till-the-police-knock",
+   "https://aotns.bandcamp.com/album/shes-on-money",
+   "https://aotns.bandcamp.com/album/simple-song",
+   "https://aotns.bandcamp.com/album/since-i-was-a-little-girl",
+   "https://aotns.bandcamp.com/album/sittin-on-it",
+   "https://aotns.bandcamp.com/album/slow-hot-wind",
+   "https://aotns.bandcamp.com/album/smiling-faces",
+   "https://aotns.bandcamp.com/album/so-much-love",
+   "https://aotns.bandcamp.com/album/so-sad",
+   "https://aotns.bandcamp.com/album/someone-somewhere-where-is-your-love",
+   "https://aotns.bandcamp.com/album/speak-now",
+   "https://aotns.bandcamp.com/album/split-decision-band-watchin-out",
+   "https://aotns.bandcamp.com/album/st-elmos-fire",
+   "https://aotns.bandcamp.com/album/star-ride",
+   "https://aotns.bandcamp.com/album/stay-away",
+   "https://aotns.bandcamp.com/album/stephen-colebrooke-stay-away-from-music",
+   "https://aotns.bandcamp.com/album/strange-you-space-v",
+   "https://aotns.bandcamp.com/album/strictly-business",
+   "https://aotns.bandcamp.com/album/strung-out-on-your-love",
+   "https://aotns.bandcamp.com/album/stubborn-heart",
+   "https://aotns.bandcamp.com/album/take-them-in-prayer",
+   "https://aotns.bandcamp.com/album/tell-her-the-dance-got-old",
+   "https://aotns.bandcamp.com/album/tell-me-baby",
+   "https://aotns.bandcamp.com/album/the-first-time",
+   "https://aotns.bandcamp.com/album/the-game-of-music",
+   "https://aotns.bandcamp.com/album/the-golden-seal",
+   "https://aotns.bandcamp.com/album/the-power-of-your-love",
+   "https://aotns.bandcamp.com/album/the-prince-of-georgia-soul",
+   "https://aotns.bandcamp.com/album/the-sands-of-zanzibar",
+   "https://aotns.bandcamp.com/album/the-time-is-right",
+   "https://aotns.bandcamp.com/album/the-tonistics-holding-on",
+   "https://aotns.bandcamp.com/album/the-undisco-kidds",
+   "https://aotns.bandcamp.com/album/the-weather-man",
+   "https://aotns.bandcamp.com/album/these-are-the-good-times",
+   "https://aotns.bandcamp.com/album/third-rock",
+   "https://aotns.bandcamp.com/album/this-is-the-place",
+   "https://aotns.bandcamp.com/album/thumping-for-you",
+   "https://aotns.bandcamp.com/album/time-for-a-change",
+   "https://aotns.bandcamp.com/album/tonight",
+   "https://aotns.bandcamp.com/album/traveling-home",
+   "https://aotns.bandcamp.com/album/traveling-stranger",
+   "https://aotns.bandcamp.com/album/travelling-stanger",
+   "https://aotns.bandcamp.com/album/treasure-mind",
+   "https://aotns.bandcamp.com/album/truth-is-the-key-dreamflower",
+   "https://aotns.bandcamp.com/album/try-love-that-boy-of-mine",
+   "https://aotns.bandcamp.com/album/tulsa-song",
+   "https://aotns.bandcamp.com/album/vampiras-hermanos-latinos",
+   "https://aotns.bandcamp.com/album/w-e-l-f-a-r-e",
+   "https://aotns.bandcamp.com/album/waiting-in-the-wings",
+   "https://aotns.bandcamp.com/album/war-previously-unreleased-300-only-bandcamp-exclusive",
+   "https://aotns.bandcamp.com/album/watch-the-dog-ill-be-there",
+   "https://aotns.bandcamp.com/album/watchin-out-today-is-the-day",
+   "https://aotns.bandcamp.com/album/watchin-you-to-the-sky",
+   "https://aotns.bandcamp.com/album/we-are-here-to-party",
+   "https://aotns.bandcamp.com/album/we-want-to-play",
+   "https://aotns.bandcamp.com/album/we-want-to-play-for-you-sweet-tender-loving",
+   "https://aotns.bandcamp.com/album/well-good",
+   "https://aotns.bandcamp.com/album/weve-got-one",
+   "https://aotns.bandcamp.com/album/what-about-love",
+   "https://aotns.bandcamp.com/album/what-about-me-girl",
+   "https://aotns.bandcamp.com/album/what-about-the-child",
+   "https://aotns.bandcamp.com/album/what-about-the-child-original-mix",
+   "https://aotns.bandcamp.com/album/what-do-you-want-me-to-do",
+   "https://aotns.bandcamp.com/album/when-you-have-love-run-for-cover",
+   "https://aotns.bandcamp.com/album/where-will-i-go-always",
+   "https://aotns.bandcamp.com/album/windows-of-my-mind",
+   "https://aotns.bandcamp.com/album/wish-upon-love-night-on-beach-island",
+   "https://aotns.bandcamp.com/album/without-you",
+   "https://aotns.bandcamp.com/album/world-today",
+   "https://aotns.bandcamp.com/album/you-are-my-doll-baby",
+   "https://aotns.bandcamp.com/album/you-are-so-wonderful",
+   "https://aotns.bandcamp.com/album/you-better-stop-it-do-i-love-you-vinyl-only-ltd-no-repress",
+   "https://aotns.bandcamp.com/album/you-can-tell-me-goodbye",
+   "https://aotns.bandcamp.com/album/you-can-win",
+   "https://aotns.bandcamp.com/album/you-done-let-the-daylight-catch-you-smoke-in-the-disco",
+   "https://aotns.bandcamp.com/album/youre-my-only-desire",
+   "https://aotns.bandcamp.com/album/youre-so-fine",
+   "https://aotns.bandcamp.com/album/youre-the-best",
+   "https://aotns.bandcamp.com/album/youve-got-a-lot-of-living",
+   "https://aotns.bandcamp.com/track/what-you-do-for-me",
+   "https://aotns.bandcamp.com/track/you-can-win-spark-something-remix",
+   "https://brightandfindlay.bandcamp.com/album/everything-is-slow",
+   "https://brightandfindlay.bandcamp.com/album/slow-dance",
+   "https://brightandfindlay.bandcamp.com/track/fireflies",
+   "https://brightandfindlay.bandcamp.com/track/flowers-1",
+   "https://brightandfindlay.bandcamp.com/track/ny-disco-smile",
+   "https://brightandfindlay.bandcamp.com/track/when-i-look-into-the-world",
+   "https://gregfoat.bandcamp.com/album/galaxies-like-grains-of-sand",
+   "https://gregfoat.bandcamp.com/album/linkwood-foat",
+   "https://gregfoat.bandcamp.com/album/nightshade",
+   "https://gregfoat.bandcamp.com/album/off-piste",
+   "https://gregfoat.bandcamp.com/album/the-dreaming-jewels",
+   "https://gregfoat.bandcamp.com/album/the-honeybear",
+   "https://gregfoat.bandcamp.com/album/the-mage",
+   "https://jamesalexanderbright.bandcamp.com/album/cool-cool",
+   "https://jamesalexanderbright.bandcamp.com/album/cool-cool-ecla-dub",
+   "https://jamesalexanderbright.bandcamp.com/album/fall-for-you",
+   "https://jamesalexanderbright.bandcamp.com/album/straight-line",
+   "https://jamesalexanderbright.bandcamp.com/album/whenever-i-hear-you-call-i-know-its-love",
+   "https://jamesalexanderbright.bandcamp.com/track/cool-cool-sunset-mix",
+   "https://jamesalexanderbright.bandcamp.com/track/your-love",
+   "https://linkwood.bandcamp.com/album/face-the-facts",
+   "https://linkwood.bandcamp.com/album/mono",
+   "https://linkwood.bandcamp.com/album/stereo",
+   "https://otherlands1.bandcamp.com/album/archipelagos"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Athens Of The North",
+  "source": "bandcamp",
+  "url": "https://aotns.bandcamp.com"
  },
  "bc:apollorecords": {
   "city": "London, UK",
@@ -1265,7 +1540,7 @@
    "https://volorflex.bandcamp.com/album/blowing-smoke",
    "https://volorflex.bandcamp.com/album/the-conspiracy"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Apollo Records",
   "source": "bandcamp",
   "url": "https://apollorecords.bandcamp.com"
@@ -1282,7 +1557,7 @@
    "https://banishedbeats.bandcamp.com/album/twilight-zone-ep",
    "https://banishedbeats.bandcamp.com/track/bring-it-back"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Banished Beats",
   "source": "bandcamp",
   "url": "https://banishedbeats.bandcamp.com"
@@ -1318,7 +1593,7 @@
    "https://bassbinsoundz.bandcamp.com/album/we-r-hardcore-ep",
    "https://bassbinsoundz.bandcamp.com/album/word-on-the-street-not-afraid-to-lose"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Bass Bin Soundz",
   "source": "bandcamp",
   "url": "https://bassbinsoundz.bandcamp.com"
@@ -1469,7 +1744,7 @@
    "https://waxmachine.bandcamp.com/album/the-sky-unfurls-the-dance-goes-on",
    "https://zherav.bandcamp.com/album/naja-bazaar"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Batov Records",
   "source": "bandcamp",
   "url": "https://batovrecords.bandcamp.com"
@@ -1493,7 +1768,7 @@
    "https://beyondtomorrowmusic.bandcamp.com/album/winter-sun-ep",
    "https://robredford.bandcamp.com/album/distant-suns-ep"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Beyond Tomorrow",
   "source": "bandcamp",
   "url": "https://beyondtomorrow.bandcamp.com"
@@ -1673,7 +1948,7 @@
    "https://scotttwynholm.bandcamp.com/album/orbits",
    "https://wilsontrouve.bandcamp.com/album/hidup"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "bigo & twigetti",
   "source": "bandcamp",
   "url": "https://bigoandtwigetti.bandcamp.com"
@@ -1823,7 +2098,7 @@
    "https://blackliondubsuk.bandcamp.com/track/up-and-away-trap-hiphop",
    "https://blackliondubsuk.bandcamp.com/track/zulu-warrior-remix"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "blackliondubsuk",
   "source": "bandcamp",
   "url": "https://blackliondubsuk.bandcamp.com"
@@ -1834,7 +2109,7 @@
   "known": [
    "https://boredchristian.bandcamp.com/album/honesty-is-the-longest-con"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "boredagainchristian",
   "source": "bandcamp",
   "url": "https://boredchristian.bandcamp.com"
@@ -1946,7 +2221,7 @@
    "https://bricolageglasgow.bandcamp.com/album/you-matter-bc037",
    "https://bricolageglasgow.bandcamp.com/album/your-skyline-correspondent-bc099"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Bricolage",
   "source": "bandcamp",
   "url": "https://bricolageglasgow.bandcamp.com"
@@ -2031,7 +2306,7 @@
    "https://bubblewrapcollective.bandcamp.com/album/young-in-summer-ep",
    "https://bubblewrapcollective.bandcamp.com/album/zone-rouge-2"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Bubblewrap Collective",
   "source": "bandcamp",
   "url": "https://bubblewrapcollective.bandcamp.com"
@@ -2289,7 +2564,7 @@
    "https://cause4concern.bandcamp.com/track/under-forever",
    "https://cause4concern.bandcamp.com/track/your-games-ft-joanna-syze"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Cause4Concern",
   "source": "bandcamp",
   "url": "https://cause4concern.bandcamp.com"
@@ -2469,7 +2744,7 @@
    "https://ciarecords1.bandcamp.com/track/bring-the-heat",
    "https://ciarecords1.bandcamp.com/track/lounge-bandcamp-exclusive"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "CIA Records",
   "source": "bandcamp",
   "url": "https://ciarecords1.bandcamp.com"
@@ -2481,7 +2756,7 @@
    "https://clamrecords.bandcamp.com/album/tactic-banzai",
    "https://clamrecords.bandcamp.com/album/toxik-ep"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Clam Records",
   "source": "bandcamp",
   "url": "https://clamrecords.bandcamp.com"
@@ -2887,7 +3162,7 @@
    "https://clandestinerecords.bandcamp.com/album/zero-crossing",
    "https://clandestinerecords.bandcamp.com/album/zoo-petra-schelm-split-lp"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Clan Destine Records",
   "source": "bandcamp",
   "url": "https://clandestinerecords.bandcamp.com"
@@ -3006,7 +3281,7 @@
    "https://tornsail.bandcamp.com/album/treasure",
    "https://zeeerf.bandcamp.com/album/southern-freeez"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Claremont 56",
   "source": "bandcamp",
   "url": "https://claremont56.bandcamp.com"
@@ -3020,7 +3295,7 @@
    "https://club-fantasy.bandcamp.com/album/eternal-sunshine-cf004",
    "https://club-fantasy.bandcamp.com/album/panorama-ep-cf002"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Club Fantasy",
   "source": "bandcamp",
   "url": "https://club-fantasy.bandcamp.com"
@@ -3039,10 +3314,43 @@
    "https://coclear.bandcamp.com/album/remember-the-garden",
    "https://coclear.bandcamp.com/album/shyness"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "co:clear",
   "source": "bandcamp",
   "url": "https://coclear.bandcamp.com"
+ },
+ "bc:crannbethadhtriskelion": {
+  "city": "Belfast, UK",
+  "first_seen": "2026-10-16",
+  "known": [
+   "https://crannbethadhtriskelion.bandcamp.com/album/3i-atlas-single",
+   "https://crannbethadhtriskelion.bandcamp.com/album/a-fount-of-honey-ep",
+   "https://crannbethadhtriskelion.bandcamp.com/album/congestown",
+   "https://crannbethadhtriskelion.bandcamp.com/album/cuimhne-memory",
+   "https://crannbethadhtriskelion.bandcamp.com/album/febaral",
+   "https://crannbethadhtriskelion.bandcamp.com/album/fuckwind",
+   "https://crannbethadhtriskelion.bandcamp.com/album/gearrthonntaic-short-waves",
+   "https://crannbethadhtriskelion.bandcamp.com/album/hw-t-wiell",
+   "https://crannbethadhtriskelion.bandcamp.com/album/installation-music-for-a-space",
+   "https://crannbethadhtriskelion.bandcamp.com/album/isle-of-glass-single",
+   "https://crannbethadhtriskelion.bandcamp.com/album/oghams-razor",
+   "https://crannbethadhtriskelion.bandcamp.com/album/orde-and-ende",
+   "https://crannbethadhtriskelion.bandcamp.com/album/recurring-motif-ep",
+   "https://crannbethadhtriskelion.bandcamp.com/album/sastrugi-single",
+   "https://crannbethadhtriskelion.bandcamp.com/album/satie-ep",
+   "https://crannbethadhtriskelion.bandcamp.com/album/sequences-volume-1",
+   "https://crannbethadhtriskelion.bandcamp.com/album/sequences-volume-2",
+   "https://crannbethadhtriskelion.bandcamp.com/album/signals-from-ganymede-single",
+   "https://crannbethadhtriskelion.bandcamp.com/album/the-longest-night-ep",
+   "https://crannbethadhtriskelion.bandcamp.com/album/the-longest-night-ep-2",
+   "https://crannbethadhtriskelion.bandcamp.com/album/the-stag-on-the-ridge-ep",
+   "https://crannbethadhtriskelion.bandcamp.com/album/the-third-cave-of-the-dullahan",
+   "https://crannbethadhtriskelion.bandcamp.com/track/the-forbidden-vale"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "CrannBethadh/Triskelion",
+  "source": "bandcamp",
+  "url": "https://crannbethadhtriskelion.bandcamp.com"
  },
  "bc:criticalmusic": {
   "city": "London, UK",
@@ -3402,7 +3710,7 @@
    "https://waeys.bandcamp.com/album/still-turning-ep",
    "https://workforce.bandcamp.com/album/moods-ep"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Critical Music",
   "source": "bandcamp",
   "url": "https://criticalmusic.bandcamp.com"
@@ -3542,7 +3850,7 @@
    "https://danspeed.bandcamp.com/track/you-know",
    "https://danspeed.bandcamp.com/track/you-see-me"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Dan Speed",
   "source": "bandcamp",
   "url": "https://danspeed.bandcamp.com"
@@ -3698,7 +4006,7 @@
    "https://paigetomlinson.bandcamp.com/album/butts-bumpin-ep",
    "https://paigetomlinson.bandcamp.com/track/people-dancin-paige-tomlinson-remix"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Dansu Discs",
   "source": "bandcamp",
   "url": "https://dansudiscsuk.bandcamp.com"
@@ -3722,7 +4030,7 @@
    "https://darkphotonstudio.bandcamp.com/album/the-ravishing-of-amphitrite",
    "https://darkphotonstudio.bandcamp.com/album/the-reign-of-talos"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Dark Photon Studio",
   "source": "bandcamp",
   "url": "https://darkphotonstudio.bandcamp.com"
@@ -4041,7 +4349,7 @@
    "https://darksideunleashed.bandcamp.com/album/you-will-be-the-last-ep",
    "https://darksideunleashed.bandcamp.com/track/hakken"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Darkside Unleashed",
   "source": "bandcamp",
   "url": "https://darksideunleashed.bandcamp.com"
@@ -4175,7 +4483,7 @@
    "https://daupe.bandcamp.com/album/wilderness-of-north-america",
    "https://daupe.bandcamp.com/album/wile-coyote"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Daupe",
   "source": "bandcamp",
   "url": "https://daupe.bandcamp.com"
@@ -4192,7 +4500,7 @@
    "https://dddsssppp.bandcamp.com/album/return-to-zeta-prime-2",
    "https://dddsssppp.bandcamp.com/album/vision-system-dsp005"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Distorted Sensory Perception",
   "source": "bandcamp",
   "url": "https://dddsssppp.bandcamp.com"
@@ -4212,7 +4520,7 @@
    "https://digitalmind.bandcamp.com/track/dataura-daemon",
    "https://digitalmind.bandcamp.com/track/polariton"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Digital Mind",
   "source": "bandcamp",
   "url": "https://digitalmind.bandcamp.com"
@@ -4237,7 +4545,7 @@
    "https://dimeshift.bandcamp.com/album/ghost-town-ep",
    "https://dimeshift.bandcamp.com/album/methylene-blue-ep"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "DIMESHIFT",
   "source": "bandcamp",
   "url": "https://dimeshift.bandcamp.com"
@@ -4760,7 +5068,7 @@
    "https://zerozerodnb.bandcamp.com/album/dis156-peanut-butter-ep",
    "https://zerozerodnb.bandcamp.com/album/disltd055-soundboy-freedom-sound"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Dispatch Recordings",
   "source": "bandcamp",
   "url": "https://dispatchrecordings.bandcamp.com"
@@ -4779,6 +5087,7 @@
    "https://dittanyofcrete.bandcamp.com/album/in-his-house-at-rlyeh-dead-cthulhu-waits-dreaming",
    "https://dittanyofcrete.bandcamp.com/album/kings-and-queens-of-kaiju",
    "https://dittanyofcrete.bandcamp.com/album/koma",
+   "https://dittanyofcrete.bandcamp.com/album/life-is-exhausting",
    "https://dittanyofcrete.bandcamp.com/album/n-u-do",
    "https://dittanyofcrete.bandcamp.com/album/parasomnia-pavor-nocturnus",
    "https://dittanyofcrete.bandcamp.com/album/plague-doctors",
@@ -4801,7 +5110,7 @@
    "https://dittanyofcrete.bandcamp.com/album/viscera-a-harsh-noise-tribute-to-new-french-extremity",
    "https://dittanyofcrete.bandcamp.com/album/wetherby-house-sitting-14-october-1873-and-the-gentle-replacement-of-the-living"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Dittany of Crete",
   "source": "bandcamp",
   "url": "https://dittanyofcrete.bandcamp.com"
@@ -4857,7 +5166,7 @@
    "https://djdharma900.bandcamp.com/track/it-makes-me-wonder",
    "https://djdharma900.bandcamp.com/track/makes-me-wanna-dance-purple-boyz-dub"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Dj Dharma 900",
   "source": "bandcamp",
   "url": "https://djdharma900.bandcamp.com"
@@ -4996,7 +5305,7 @@
    "https://dougthomas.bandcamp.com/track/vienna-2-2020-lss01",
    "https://dougthomas.bandcamp.com/track/wolfgang-1-2019-lspd01"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "NOOX",
   "source": "bandcamp",
   "url": "https://dougthomas.bandcamp.com"
@@ -5192,7 +5501,7 @@
    "https://dpercussionrecordings.bandcamp.com/track/youre-the-one",
    "https://dpercussionrecordings.bandcamp.com/track/youve-been-on-my-mind"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "dpercussion recordings",
   "source": "bandcamp",
   "url": "https://dpercussionrecordings.bandcamp.com"
@@ -5208,7 +5517,7 @@
    "https://dreamspace.bandcamp.com/album/transmissions-vol-i",
    "https://dreamspace.bandcamp.com/album/who-knew-w-richard-sen-remix"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Dream Space",
   "source": "bandcamp",
   "url": "https://dreamspace.bandcamp.com"
@@ -5262,7 +5571,7 @@
    "https://duckland.bandcamp.com/track/start-this-shit-2",
    "https://duckland.bandcamp.com/track/youre-the-one"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Duckland",
   "source": "bandcamp",
   "url": "https://duckland.bandcamp.com"
@@ -5340,7 +5649,7 @@
    "https://eartoground.bandcamp.com/album/various-artists-x-projects-pt1-etg008",
    "https://eartoground.bandcamp.com/album/water-lane-etg035d"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "EarToGround Records",
   "source": "bandcamp",
   "url": "https://eartoground.bandcamp.com"
@@ -5361,7 +5670,7 @@
    "https://echoplexrecords.bandcamp.com/album/epv002-ranger",
    "https://echoplexrecords.bandcamp.com/track/free-dub-rise-shine"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "EchoPlex Records",
   "source": "bandcamp",
   "url": "https://echoplexrecords.bandcamp.com"
@@ -5597,10 +5906,47 @@
    "https://tyondai.bandcamp.com/track/piiano",
    "https://worldsendgirlfriend1.bandcamp.com/album/seven-idiots"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Erased Tapes",
   "source": "bandcamp",
   "url": "https://erasedtapes.bandcamp.com"
+ },
+ "bc:ffinrecords": {
+  "city": "Cardiff, UK",
+  "first_seen": "2026-10-16",
+  "known": [
+   "https://ffinrecords.bandcamp.com/album/40",
+   "https://ffinrecords.bandcamp.com/album/4lle-4places",
+   "https://ffinrecords.bandcamp.com/album/a-liturgy-for-st-columba",
+   "https://ffinrecords.bandcamp.com/album/alchemy",
+   "https://ffinrecords.bandcamp.com/album/bregus-music-from-the-original-tv-series",
+   "https://ffinrecords.bandcamp.com/album/brithdir",
+   "https://ffinrecords.bandcamp.com/album/celtica-latina",
+   "https://ffinrecords.bandcamp.com/album/for",
+   "https://ffinrecords.bandcamp.com/album/galesa-original-film-soundtrack",
+   "https://ffinrecords.bandcamp.com/album/hidden-series-two-music-from-the-original-tv-series",
+   "https://ffinrecords.bandcamp.com/album/in-retrospect",
+   "https://ffinrecords.bandcamp.com/album/lauds-of-the-transfiguration-and-sunday-compline",
+   "https://ffinrecords.bandcamp.com/album/mile-end-original-motion-picture-soundtrack",
+   "https://ffinrecords.bandcamp.com/album/steel-country-a-dark-place-original-motion-picture-soundtrack",
+   "https://ffinrecords.bandcamp.com/album/tempus-per-annum",
+   "https://ffinrecords.bandcamp.com/album/the-liturgy-of-easter",
+   "https://ffinrecords.bandcamp.com/album/the-liturgy-of-holy-week",
+   "https://ffinrecords.bandcamp.com/album/the-season-of-advent",
+   "https://ffinrecords.bandcamp.com/album/tree-on-a-hill-pren-ar-y-bryn-music-from-the-original-tv-series",
+   "https://ffinrecords.bandcamp.com/track/angel",
+   "https://ffinrecords.bandcamp.com/track/do-you-see-me",
+   "https://ffinrecords.bandcamp.com/track/free-dances-so-beautiful-to-me",
+   "https://ffinrecords.bandcamp.com/track/if-you-dont-mind",
+   "https://ffinrecords.bandcamp.com/track/letters-culprit-1-remix",
+   "https://ffinrecords.bandcamp.com/track/runners-trick",
+   "https://ffinrecords.bandcamp.com/track/running-3",
+   "https://ffinrecords.bandcamp.com/track/the-world-keeps-turning"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Ffin Records",
+  "source": "bandcamp",
+  "url": "https://ffinrecords.bandcamp.com"
  },
  "bc:fr33zehead": {
   "city": "Manchester, UK",
@@ -5639,7 +5985,7 @@
    "https://fr33zehead.bandcamp.com/album/you-are-the-wooden-spoon-i-am-the-casualty-deluxe",
    "https://fr33zehead.bandcamp.com/album/you-will-live-today"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Fr33zehead",
   "source": "bandcamp",
   "url": "https://fr33zehead.bandcamp.com"
@@ -6008,7 +6354,7 @@
    "https://voodootrombonequartet.bandcamp.com/album/the-voodoo-trombone-quartet-again",
    "https://voodootrombonequartet.bandcamp.com/album/vibrations"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Freshly Squeezed Music",
   "source": "bandcamp",
   "url": "https://freshlysqueezedmusic.bandcamp.com"
@@ -6138,7 +6484,7 @@
    "https://youngpulse.bandcamp.com/album/paris-edits-vol-8-re-up",
    "https://youngpulse.bandcamp.com/album/paris-edits-vol-9"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "G.A.M.M. Enterprises",
   "source": "bandcamp",
   "url": "https://gammenterprises.bandcamp.com"
@@ -6371,7 +6717,7 @@
    "https://ggmdigital.bandcamp.com/track/wasted-wishes-version-2",
    "https://ggmdigital.bandcamp.com/track/whats-going-on-digigmsp003"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "GGM Digital",
   "source": "bandcamp",
   "url": "https://ggmdigital.bandcamp.com"
@@ -6387,7 +6733,7 @@
    "https://ghettofixrevolution.bandcamp.com/album/the-ghetto-symphony-ghetto-symphony-riddim",
    "https://ghettofixrevolution.bandcamp.com/album/uprising-uprising-riddim"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Ghettofix Revolution Records",
   "source": "bandcamp",
   "url": "https://ghettofixrevolution.bandcamp.com"
@@ -6583,7 +6929,7 @@
    "https://gozu-music.bandcamp.com/album/x",
    "https://gozu-music.bandcamp.com/album/year-one"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Rex Van Der Linde",
   "source": "bandcamp",
   "url": "https://gozu-music.bandcamp.com"
@@ -6636,7 +6982,7 @@
    "https://hawscardiff.bandcamp.com/album/viral-syndicate-vol-6",
    "https://hawscardiff.bandcamp.com/album/yard-club"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Haŵs",
   "source": "bandcamp",
   "url": "https://hawscardiff.bandcamp.com"
@@ -6650,7 +6996,7 @@
    "https://hazardusjuno.bandcamp.com/album/nu-kleo-juno-24",
    "https://hazardusjuno.bandcamp.com/album/questionable-life-choices"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Hazardus Juno",
   "source": "bandcamp",
   "url": "https://hazardusjuno.bandcamp.com"
@@ -6687,7 +7033,7 @@
    "https://houseofquiet.bandcamp.com/album/you-could-say-that",
    "https://houseofquiet.bandcamp.com/track/murmur"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "John George Davidson",
   "source": "bandcamp",
   "url": "https://houseofquiet.bandcamp.com"
@@ -6736,7 +7082,7 @@
    "https://hydrogendukeboxrecords.bandcamp.com/album/walkaway-ep-duke068",
    "https://hydrogendukeboxrecords.bandcamp.com/album/what-goes-up-duke059"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Hydrogen Dukebox Records",
   "source": "bandcamp",
   "url": "https://hydrogendukeboxrecords.bandcamp.com"
@@ -6758,7 +7104,7 @@
    "https://hypnodiscorecords.bandcamp.com/track/surkit-breaker-hdcs-lost-city-vip",
    "https://hypnodiscorecords.bandcamp.com/track/surkit-breaker-lockdown-mix-free-d-l"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Hypno Disco Records",
   "source": "bandcamp",
   "url": "https://hypnodiscorecords.bandcamp.com"
@@ -7122,7 +7468,7 @@
    "https://ifarmusiqueconcretecompilation.bandcamp.com/album/yearn-to-voice",
    "https://ifarmusiqueconcretecompilation.bandcamp.com/album/yield-to-voice"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Institute For Alien Research",
   "source": "bandcamp",
   "url": "https://ifarmusiqueconcretecompilation.bandcamp.com"
@@ -7228,7 +7574,7 @@
    "https://ilpadrinorecords.bandcamp.com/album/trouble-boys-space-the-lost-tapes",
    "https://ilpadrinorecords.bandcamp.com/album/v-a-bfs2man"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Il Padrino Records",
   "source": "bandcamp",
   "url": "https://ilpadrinorecords.bandcamp.com"
@@ -7241,7 +7587,7 @@
    "https://intersticerecords.bandcamp.com/album/periphery-lives",
    "https://intersticerecords.bandcamp.com/album/stiletto"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Interstice Records",
   "source": "bandcamp",
   "url": "https://intersticerecords.bandcamp.com"
@@ -7252,7 +7598,7 @@
   "known": [
    "https://jameschadwck.bandcamp.com/album/walrws"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "james Chadwck",
   "source": "bandcamp",
   "url": "https://jameschadwck.bandcamp.com"
@@ -7269,7 +7615,7 @@
    "https://jazzcatrecords.bandcamp.com/album/the-ray-davies-songbook",
    "https://jazzcatrecords.bandcamp.com/album/wooltown-reflections"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Jazz Cat Records",
   "source": "bandcamp",
   "url": "https://jazzcatrecords.bandcamp.com"
@@ -7298,7 +7644,7 @@
    "https://jonathancrossley1.bandcamp.com/track/prelude-from-suite-in-d-minor",
    "https://nickbrantonandjonathancrossley.bandcamp.com/album/avallus"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Jonathan Crossley",
   "source": "bandcamp",
   "url": "https://jonathancrossley1.bandcamp.com"
@@ -7317,9 +7663,10 @@
    "https://kiamusic666.bandcamp.com/album/i-ve-always-felt-like-nothing",
    "https://kiamusic666.bandcamp.com/album/split-with-luddite-electronics",
    "https://kiamusic666.bandcamp.com/album/the-first-year-compilation",
+   "https://kiamusic666.bandcamp.com/track/the-terror-of-war",
    "https://kiamusic666.bandcamp.com/track/you-ve-taken-everything-why-do-you-still-want-more"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "KIA",
   "source": "bandcamp",
   "url": "https://kiamusic666.bandcamp.com"
@@ -7482,7 +7829,7 @@
    "https://klrrecords.bandcamp.com/track/klr156-j-jay-go-on-move-2022-remix",
    "https://klrrecords.bandcamp.com/track/klr164-mr-trackstar-only-you"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "KLR Records",
   "source": "bandcamp",
   "url": "https://klrrecords.bandcamp.com"
@@ -7501,7 +7848,7 @@
    "https://kristianborring.bandcamp.com/album/urban-novel",
    "https://kristianborring.bandcamp.com/track/song-etude"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Kristian Borring",
   "source": "bandcamp",
   "url": "https://kristianborring.bandcamp.com"
@@ -7733,7 +8080,7 @@
    "https://warhammermusic.bandcamp.com/album/warhammer-vermintide-2-original-soundtrack",
    "https://warhammermusic.bandcamp.com/track/ere-we-go"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Laced Records",
   "source": "bandcamp",
   "url": "https://lacedrecords.bandcamp.com"
@@ -8045,7 +8392,7 @@
    "https://lavidaesunmus.bandcamp.com/album/working-out-in-heaven",
    "https://lavidaesunmus.bandcamp.com/album/zaman-edan"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "LA VIDA ES UN MUS DISCOS",
   "source": "bandcamp",
   "url": "https://lavidaesunmus.bandcamp.com"
@@ -8151,10 +8498,157 @@
    "https://takovoi.bandcamp.com/album/the-fox-with-the-dog-5-2-9",
    "https://tigerbalmmusic.bandcamp.com/album/ello-koko-incl-flamingo-pier-jkriv-remixes"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Leng Records",
   "source": "bandcamp",
   "url": "https://lengrecords.bandcamp.com"
+ },
+ "bc:liquiddropsrecordings": {
+  "city": "London, UK",
+  "first_seen": "2026-10-16",
+  "known": [
+   "https://liquiddropsrecordings.bandcamp.com/album/6-pack-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/about-love-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/alekay-viewer-love-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/all-i-got-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/ancient-greeks-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/another-story-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/autumn-break-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/backyard-jazz",
+   "https://liquiddropsrecordings.bandcamp.com/album/black-skin",
+   "https://liquiddropsrecordings.bandcamp.com/album/blue-dream",
+   "https://liquiddropsrecordings.bandcamp.com/album/choices-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/cold-beach",
+   "https://liquiddropsrecordings.bandcamp.com/album/collabs",
+   "https://liquiddropsrecordings.bandcamp.com/album/collabs-vol-1",
+   "https://liquiddropsrecordings.bandcamp.com/album/crazy-life-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/danceflow-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/deep-inside-your-love",
+   "https://liquiddropsrecordings.bandcamp.com/album/deep-level-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/deep-souls-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/desert-island-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/dimensions-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/discovery-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/downtown-crime-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/dust-2-dust-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/earthling-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/enigma-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/enjoy-yourself-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/eparandom-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/equanimity-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/evoke-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/fantastic-journey-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/feel-it-in-my-soul-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/feel-the-good",
+   "https://liquiddropsrecordings.bandcamp.com/album/fire-in-the-sky-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/focus-on-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/fossil-face-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/funk-conspiracy-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/funk-evidence-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/futurism-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/gambling-man",
+   "https://liquiddropsrecordings.bandcamp.com/album/glow",
+   "https://liquiddropsrecordings.bandcamp.com/album/heart-of-gold-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/her-eyes",
+   "https://liquiddropsrecordings.bandcamp.com/album/hot-feelings-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/in-a-dream-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/india-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/instrumentals-pt-1-bandcamp-xclusive",
+   "https://liquiddropsrecordings.bandcamp.com/album/island-in-the-sky-lp",
+   "https://liquiddropsrecordings.bandcamp.com/album/jazz-evidence-remixed-by-dan-guidance",
+   "https://liquiddropsrecordings.bandcamp.com/album/jazz-ingredients-2",
+   "https://liquiddropsrecordings.bandcamp.com/album/jazz-ingredients-i",
+   "https://liquiddropsrecordings.bandcamp.com/album/jazz-trip-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/jungle-drops-1",
+   "https://liquiddropsrecordings.bandcamp.com/album/jungle-drops-2",
+   "https://liquiddropsrecordings.bandcamp.com/album/jungle-drops-3",
+   "https://liquiddropsrecordings.bandcamp.com/album/kind-of-green-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/last-night-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/last-survivor-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/lay-down-into-the-sun-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/let-me-guess-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/liquid-bangers",
+   "https://liquiddropsrecordings.bandcamp.com/album/liquid-bangers-3",
+   "https://liquiddropsrecordings.bandcamp.com/album/liquid-bangers-4",
+   "https://liquiddropsrecordings.bandcamp.com/album/liquid-bangers-i",
+   "https://liquiddropsrecordings.bandcamp.com/album/liquid-barricades-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/liquid-colors-vol-1",
+   "https://liquiddropsrecordings.bandcamp.com/album/living-sound-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/lost-files-i",
+   "https://liquiddropsrecordings.bandcamp.com/album/lost-files-ii",
+   "https://liquiddropsrecordings.bandcamp.com/album/love-theme-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/missing-you",
+   "https://liquiddropsrecordings.bandcamp.com/album/moment-in-time-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/montjuic",
+   "https://liquiddropsrecordings.bandcamp.com/album/morning-vibes-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/moving-pieces",
+   "https://liquiddropsrecordings.bandcamp.com/album/msdos-remixed-2",
+   "https://liquiddropsrecordings.bandcamp.com/album/msdos-remixed-3",
+   "https://liquiddropsrecordings.bandcamp.com/album/msdos-remixed-8",
+   "https://liquiddropsrecordings.bandcamp.com/album/msdos-remixed-9",
+   "https://liquiddropsrecordings.bandcamp.com/album/msdos-remixed-by-dbase",
+   "https://liquiddropsrecordings.bandcamp.com/album/msdos-remixed-pt1",
+   "https://liquiddropsrecordings.bandcamp.com/album/msdos-the-very-best-of-remixed-part1",
+   "https://liquiddropsrecordings.bandcamp.com/album/music-box",
+   "https://liquiddropsrecordings.bandcamp.com/album/my-style-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/need-you-now",
+   "https://liquiddropsrecordings.bandcamp.com/album/new-york-new-york",
+   "https://liquiddropsrecordings.bandcamp.com/album/no-more-struggle-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/nova-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/obsession-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/odysseia-lp",
+   "https://liquiddropsrecordings.bandcamp.com/album/okee-msdos-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/oldschool-stories-pt-1",
+   "https://liquiddropsrecordings.bandcamp.com/album/piano-to-ruin",
+   "https://liquiddropsrecordings.bandcamp.com/album/pulsar-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/remixed-5",
+   "https://liquiddropsrecordings.bandcamp.com/album/remixed-6",
+   "https://liquiddropsrecordings.bandcamp.com/album/remixed-7",
+   "https://liquiddropsrecordings.bandcamp.com/album/rhythm-of-jazz-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/roads-to-your-soul-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/seen-the-light-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/sensations-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/sensations-msdos-soligen-type-2-remixes",
+   "https://liquiddropsrecordings.bandcamp.com/album/seven-sins-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/shaolin-technics-lp",
+   "https://liquiddropsrecordings.bandcamp.com/album/side-by-side-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/so-real-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/soul-army-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/soul-drops-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/soul-on-fire-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/soul-waves",
+   "https://liquiddropsrecordings.bandcamp.com/album/strange-planet-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/streatlife-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/subcultures-lp",
+   "https://liquiddropsrecordings.bandcamp.com/album/summer-days-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/summer-nights-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/sun-rising-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/sunflower-seeds-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/sunshine",
+   "https://liquiddropsrecordings.bandcamp.com/album/sunshine-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/terradome-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/the-artist-03",
+   "https://liquiddropsrecordings.bandcamp.com/album/the-bass",
+   "https://liquiddropsrecordings.bandcamp.com/album/the-collabs",
+   "https://liquiddropsrecordings.bandcamp.com/album/the-light-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/the-one-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/the-shalako-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/the-strings",
+   "https://liquiddropsrecordings.bandcamp.com/album/trumpet-toys-4-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/trumpet-toys-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/trumpet-toys-vol-2",
+   "https://liquiddropsrecordings.bandcamp.com/album/trumpet-toys-vol-3",
+   "https://liquiddropsrecordings.bandcamp.com/album/upper-limits-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/venture-in-vienna-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/very-best-of-jungle-drops-i",
+   "https://liquiddropsrecordings.bandcamp.com/album/vicious-circle-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/your-summer-haze-ep",
+   "https://liquiddropsrecordings.bandcamp.com/album/zen-guide-ep"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Liquid Drops Recordings",
+  "source": "bandcamp",
+  "url": "https://liquiddropsrecordings.bandcamp.com"
  },
  "bc:lrkrecords": {
   "city": "Cambridge, UK",
@@ -8233,7 +8727,7 @@
    "https://lrkrecords.bandcamp.com/album/you-aint-mine-at-christmas-time-the-other-364",
    "https://lrkrecords.bandcamp.com/track/hope-to-see-you-again"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "LRK Records",
   "source": "bandcamp",
   "url": "https://lrkrecords.bandcamp.com"
@@ -8247,7 +8741,7 @@
    "https://margate-electronics.bandcamp.com/album/ne-mogus",
    "https://margate-electronics.bandcamp.com/album/the-joanne-duo"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Margate Electronics",
   "source": "bandcamp",
   "url": "https://margate-electronics.bandcamp.com"
@@ -8692,7 +9186,7 @@
    "https://zerot.bandcamp.com/album/meta079-exiles-ep",
    "https://zerot.bandcamp.com/album/methpla017-election-the-edge-whats-wrong"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Metalheadz",
   "source": "bandcamp",
   "url": "https://metalheadz.bandcamp.com"
@@ -8782,7 +9276,7 @@
    "https://mightyforce.bandcamp.com/album/wherehouse-2",
    "https://mightyforce.bandcamp.com/album/work-and-money"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Mighty Force",
   "source": "bandcamp",
   "url": "https://mightyforce.bandcamp.com"
@@ -8821,7 +9315,7 @@
    "https://mindseyerecords.xyz/album/virtua-saint",
    "https://mindseyerecords.xyz/album/virtua-saint-2"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Mindseyerecords.xyz",
   "source": "bandcamp",
   "url": "https://mindseyerecords.xyz"
@@ -8860,10 +9354,98 @@
    "https://mindseyerecords.xyz/album/virtua-saint",
    "https://mindseyerecords.xyz/album/virtua-saint-2"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Mindseyerecords.xyz",
   "source": "bandcamp",
   "url": "https://mindseyerecords.xyz"
+ },
+ "bc:moceanrecords": {
+  "city": "London, UK",
+  "first_seen": "2026-10-16",
+  "known": [
+   "https://moceanrecords.bandcamp.com/album/age-of-innocence",
+   "https://moceanrecords.bandcamp.com/album/always-remember-u",
+   "https://moceanrecords.bandcamp.com/album/angry-dogs",
+   "https://moceanrecords.bandcamp.com/album/anything-for-u",
+   "https://moceanrecords.bandcamp.com/album/aztec-ep",
+   "https://moceanrecords.bandcamp.com/album/bass-music-academy-presents-rise-of-brazil-the-new-dnb-generation",
+   "https://moceanrecords.bandcamp.com/album/bass-music-academy-presents-rise-of-brazil-the-new-dnb-generation-part-2",
+   "https://moceanrecords.bandcamp.com/album/blaze-ep",
+   "https://moceanrecords.bandcamp.com/album/brazilian-soldiers-ep",
+   "https://moceanrecords.bandcamp.com/album/bring-me-down-you-better-run",
+   "https://moceanrecords.bandcamp.com/album/burn-it",
+   "https://moceanrecords.bandcamp.com/album/champion-radio-70",
+   "https://moceanrecords.bandcamp.com/album/come-on",
+   "https://moceanrecords.bandcamp.com/album/day-and-night-it-should-happen-after-it-rains",
+   "https://moceanrecords.bandcamp.com/album/dead-of-night-ep",
+   "https://moceanrecords.bandcamp.com/album/distant-lights-ep",
+   "https://moceanrecords.bandcamp.com/album/dj-andy-bass-music-academy-presents-rise-of-brazil-the-new-dnb-generation",
+   "https://moceanrecords.bandcamp.com/album/dj-andy-bass-music-academy-presents-rise-of-brazil-the-new-dnb-generation-part-3",
+   "https://moceanrecords.bandcamp.com/album/dj-andy-bass-music-academy-presents-rise-of-brazil-the-new-dnb-generation-part-4",
+   "https://moceanrecords.bandcamp.com/album/don-t-need-your-love-boundless",
+   "https://moceanrecords.bandcamp.com/album/don-t-want-you-back-touch-of-you-2",
+   "https://moceanrecords.bandcamp.com/album/duoscience-keylo-vs-d-region-code-remix-clash",
+   "https://moceanrecords.bandcamp.com/album/earth-ep",
+   "https://moceanrecords.bandcamp.com/album/empty-room",
+   "https://moceanrecords.bandcamp.com/album/everybody-smoke",
+   "https://moceanrecords.bandcamp.com/album/feeling-it",
+   "https://moceanrecords.bandcamp.com/album/finally-feel",
+   "https://moceanrecords.bandcamp.com/album/fix-my-mind-take-your-time",
+   "https://moceanrecords.bandcamp.com/album/flashback",
+   "https://moceanrecords.bandcamp.com/album/good-transitions-ep",
+   "https://moceanrecords.bandcamp.com/album/i-m-not-nervous-insane",
+   "https://moceanrecords.bandcamp.com/album/in-the-dark-ft-natty-d",
+   "https://moceanrecords.bandcamp.com/album/keep-shining-on-ep",
+   "https://moceanrecords.bandcamp.com/album/keylo-twelve-step-audio",
+   "https://moceanrecords.bandcamp.com/album/know-pain-ep",
+   "https://moceanrecords.bandcamp.com/album/law-of-the-jungle-ep",
+   "https://moceanrecords.bandcamp.com/album/lights-out",
+   "https://moceanrecords.bandcamp.com/album/loggi-sian-evans-love-come-down-the-remixes",
+   "https://moceanrecords.bandcamp.com/album/lost-train",
+   "https://moceanrecords.bandcamp.com/album/love-vibe-you-and-i",
+   "https://moceanrecords.bandcamp.com/album/madness-ep",
+   "https://moceanrecords.bandcamp.com/album/making-wavs",
+   "https://moceanrecords.bandcamp.com/album/my-head-leaving",
+   "https://moceanrecords.bandcamp.com/album/never",
+   "https://moceanrecords.bandcamp.com/album/never-yours",
+   "https://moceanrecords.bandcamp.com/album/night-lights-wired",
+   "https://moceanrecords.bandcamp.com/album/origins",
+   "https://moceanrecords.bandcamp.com/album/outside-the-bubble-without-fear",
+   "https://moceanrecords.bandcamp.com/album/painkiller-ep",
+   "https://moceanrecords.bandcamp.com/album/rainful",
+   "https://moceanrecords.bandcamp.com/album/remember-who-you-are-ep",
+   "https://moceanrecords.bandcamp.com/album/smile",
+   "https://moceanrecords.bandcamp.com/album/snakebite-moths",
+   "https://moceanrecords.bandcamp.com/album/society-ep",
+   "https://moceanrecords.bandcamp.com/album/sound-boy-ep",
+   "https://moceanrecords.bandcamp.com/album/swift-blade",
+   "https://moceanrecords.bandcamp.com/album/symptoms-of-another-world",
+   "https://moceanrecords.bandcamp.com/album/temple-of-light",
+   "https://moceanrecords.bandcamp.com/album/the-curse",
+   "https://moceanrecords.bandcamp.com/album/the-faithless-ep",
+   "https://moceanrecords.bandcamp.com/album/the-mirror",
+   "https://moceanrecords.bandcamp.com/album/up-jungle-shadow",
+   "https://moceanrecords.bandcamp.com/album/voices-of-the-world",
+   "https://moceanrecords.bandcamp.com/album/where-u-gonna-go",
+   "https://moceanrecords.bandcamp.com/track/1981",
+   "https://moceanrecords.bandcamp.com/track/back-alley",
+   "https://moceanrecords.bandcamp.com/track/closer-time",
+   "https://moceanrecords.bandcamp.com/track/glide",
+   "https://moceanrecords.bandcamp.com/track/i-wanna-feel-ft-heloa-holanda",
+   "https://moceanrecords.bandcamp.com/track/loggi-now-that-you-re-gone-con-figure-remix",
+   "https://moceanrecords.bandcamp.com/track/loggi-now-that-youre-gone-grinda-remix",
+   "https://moceanrecords.bandcamp.com/track/love-come-down",
+   "https://moceanrecords.bandcamp.com/track/now-that-youre-gone-akai-s1000-mix",
+   "https://moceanrecords.bandcamp.com/track/reverie",
+   "https://moceanrecords.bandcamp.com/track/sheer",
+   "https://moceanrecords.bandcamp.com/track/toska",
+   "https://moceanrecords.bandcamp.com/track/unbreak-me-ft-nathan-brumley",
+   "https://moceanrecords.bandcamp.com/track/vertigo"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "M Ocean Records",
+  "source": "bandcamp",
+  "url": "https://moceanrecords.bandcamp.com"
  },
  "bc:mogsworldthealbum": {
   "city": "Edinburgh, UK",
@@ -8887,7 +9469,7 @@
    "https://mogsworldthealbum.bandcamp.com/album/mogsworld-the-album-tuneii-edition",
    "https://mogsworldthealbum.bandcamp.com/album/tuneiis-troopicorn-trance-edition-2"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Mogsworld the album",
   "source": "bandcamp",
   "url": "https://mogsworldthealbum.bandcamp.com"
@@ -8915,7 +9497,7 @@
    "https://moodsupplierrecords.bandcamp.com/album/twilight-delights",
    "https://moodsupplierrecords.bandcamp.com/album/valkyrie"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Mood Supplier Records",
   "source": "bandcamp",
   "url": "https://moodsupplierrecords.bandcamp.com"
@@ -9037,7 +9619,7 @@
    "https://mrmrecordings.bandcamp.com/album/wind-send",
    "https://mrmrecordings.bandcamp.com/album/your-in-my-heart"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Minimal Resource Manipulation",
   "source": "bandcamp",
   "url": "https://mrmrecordings.bandcamp.com"
@@ -9113,7 +9695,7 @@
    "https://neptunediscs.bandcamp.com/album/wigs-night-watch-ep",
    "https://neptunediscs.bandcamp.com/album/younger-than-me-vato-loco"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Neptune Discs",
   "source": "bandcamp",
   "url": "https://neptunediscs.bandcamp.com"
@@ -9234,7 +9816,7 @@
    "https://newworldaudio.bandcamp.com/track/time-kills-instrumental",
    "https://newworldaudio.bandcamp.com/track/you-get-me"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "New World Audio",
   "source": "bandcamp",
   "url": "https://newworldaudio.bandcamp.com"
@@ -9247,7 +9829,7 @@
    "https://nhs23.bandcamp.com/album/one-night-in-newstead-ep-skynside",
    "https://nhs23.bandcamp.com/album/rigcrusher-ep-nhs002"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Notts Hard Service",
   "source": "bandcamp",
   "url": "https://nhs23.bandcamp.com"
@@ -9298,7 +9880,7 @@
    "https://northernunrest.bandcamp.com/album/what-skin-holds",
    "https://northernunrest.bandcamp.com/album/worldwide-brotherhood"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Northern Unrest",
   "source": "bandcamp",
   "url": "https://northernunrest.bandcamp.com"
@@ -9320,7 +9902,7 @@
    "https://nosoapworld.bandcamp.com/album/understand",
    "https://nosoapworld.bandcamp.com/album/youve-been-caught-in-your-future"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "No Soap",
   "source": "bandcamp",
   "url": "https://nosoapworld.bandcamp.com"
@@ -9408,7 +9990,7 @@
    "https://not-applicable.bandcamp.com/album/we-are-astonishingly-lifelike",
    "https://not-applicable.bandcamp.com/album/willing-suspension-of-disbelief"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Not Applicable",
   "source": "bandcamp",
   "url": "https://not-applicable.bandcamp.com"
@@ -9429,7 +10011,7 @@
    "https://nothingworx.bandcamp.com/album/troll-time",
    "https://nothingworx.bandcamp.com/album/trve-brightonian-blackened-ska-core"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Nothing Worx",
   "source": "bandcamp",
   "url": "https://nothingworx.bandcamp.com"
@@ -9825,7 +10407,7 @@
    "https://nukg247.bandcamp.com/track/you-dont-see",
    "https://nukg247.bandcamp.com/track/your-love"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "NUKG 24/7",
   "source": "bandcamp",
   "url": "https://nukg247.bandcamp.com"
@@ -10084,7 +10666,7 @@
    "https://oceaninabottle.bandcamp.com/track/piano-in-the-sea",
    "https://oceaninabottle.bandcamp.com/track/piano-on-the-train"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Ocean in a bottle",
   "source": "bandcamp",
   "url": "https://oceaninabottle.bandcamp.com"
@@ -10216,7 +10798,7 @@
    "https://offlicenserecords.bandcamp.com/track/archaic",
    "https://offlicenserecords.bandcamp.com/track/higher"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Off-License",
   "source": "bandcamp",
   "url": "https://offlicenserecords.bandcamp.com"
@@ -10235,7 +10817,7 @@
    "https://onemoreriddim.bandcamp.com/album/omr-008",
    "https://onemoreriddim.bandcamp.com/album/omr-009"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "OneMoreRiddim",
   "source": "bandcamp",
   "url": "https://onemoreriddim.bandcamp.com"
@@ -10283,11 +10865,12 @@
    "https://paisleydarkrecords.bandcamp.com/album/the-machine-soul-engineered-state",
    "https://paisleydarkrecords.bandcamp.com/album/the-machine-soul-norra-linjen",
    "https://paisleydarkrecords.bandcamp.com/album/tougher-than-disco-ep1",
+   "https://paisleydarkrecords.bandcamp.com/album/tougher-than-disco-ep2",
    "https://paisleydarkrecords.bandcamp.com/album/ufo-club-repeat-prescription",
    "https://paisleydarkrecords.bandcamp.com/album/warriors-of-the-dystotheque-ft-joe-duggan-fitzroy-avenue",
    "https://paisleydarkrecords.bandcamp.com/track/steady-state-shake-up-your-mind-blavatsky-tolley-down-the-back-of-the-sofa-mix"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Paisley Dark Records",
   "source": "bandcamp",
   "url": "https://paisleydarkrecords.bandcamp.com"
@@ -10312,10 +10895,45 @@
    "https://patthomas577.bandcamp.com/album/volume-1",
    "https://patthomas577.bandcamp.com/album/volume-2"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Pat Thomas",
   "source": "bandcamp",
   "url": "https://patthomas577.bandcamp.com"
+ },
+ "bc:pigrecords": {
+  "city": "Bristol, UK",
+  "first_seen": "2026-10-16",
+  "known": [
+   "https://4sidedtriangle.bandcamp.com/album/4-sided-triangle",
+   "https://balanca.bandcamp.com/album/balanca",
+   "https://electricladybigband1.bandcamp.com/album/electric-lady-big-band",
+   "https://electricladybigband1.bandcamp.com/album/up-from-the-skies",
+   "https://jimblomfieldtrio.bandcamp.com/album/strange-beauty-every-way-ok",
+   "https://jimblomfieldtrio.bandcamp.com/album/wave-forms-and-sea-changes",
+   "https://kevinfiges.bandcamp.com/album/changing-times",
+   "https://kevinfiges.bandcamp.com/album/hometime",
+   "https://kevinfiges.bandcamp.com/album/tables-and-chairs",
+   "https://kevinfiges.bandcamp.com/album/time-being",
+   "https://kevinfiges.bandcamp.com/album/weather-warning",
+   "https://kevinfiges1.bandcamp.com/album/imogen",
+   "https://kevinfiges1.bandcamp.com/album/the-common-other-short-stories",
+   "https://kevinfiges1.bandcamp.com/album/wallpaper-music",
+   "https://kevinfiges1.bandcamp.com/album/wallpaper-music-ii",
+   "https://kevinfiges1.bandcamp.com/album/wallpaper-music-iii",
+   "https://kevinfigesquartet.bandcamp.com/album/circular-motion",
+   "https://pigrecords.bandcamp.com/album/a-celebration-of-keith-tippett",
+   "https://pigrecords.bandcamp.com/album/airborn",
+   "https://pigrecords.bandcamp.com/album/octo",
+   "https://pigrecords.bandcamp.com/album/pack-it-in-my-leige",
+   "https://pigrecords.bandcamp.com/album/sliders",
+   "https://pigrecords.bandcamp.com/album/sound-dimensions-2",
+   "https://pigrecords.bandcamp.com/track/strange-place",
+   "https://resonationbigband.bandcamp.com/album/resonation-big-band-live"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Pig Records",
+  "source": "bandcamp",
+  "url": "https://pigrecords.bandcamp.com"
  },
  "bc:profoundsound3": {
   "city": "Newcastle Upon Tyne, UK",
@@ -10361,10 +10979,103 @@
    "https://profoundsound3.bandcamp.com/track/take-you-to-the-freedom",
    "https://profoundsound3.bandcamp.com/track/terra"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Profound Sound",
   "source": "bandcamp",
   "url": "https://profoundsound3.bandcamp.com"
+ },
+ "bc:r2records": {
+  "city": "London, UK",
+  "first_seen": "2026-10-16",
+  "known": [
+   "https://atjazz.bandcamp.com/album/beats-bobs-vol-5-atjazz-edition",
+   "https://atjazz.bandcamp.com/album/more-than-a-remix",
+   "https://donpascal.bandcamp.com/album/remixes-dubs",
+   "https://donpascal.bandcamp.com/album/the-dakar-experiment",
+   "https://donpascal.bandcamp.com/album/the-mindelo-experiment",
+   "https://donpascal.bandcamp.com/album/time-feat-lyricl",
+   "https://kaytronik.bandcamp.com/album/a-mind-of-its-own",
+   "https://kaytronik.bandcamp.com/album/a-mind-of-its-own-v20",
+   "https://kaytronik.bandcamp.com/album/beats-bobs-vol-1",
+   "https://kaytronik.bandcamp.com/album/beats-bobs-vol-2",
+   "https://kaytronik.bandcamp.com/album/beats-bobs-vol-4",
+   "https://kaytronik.bandcamp.com/album/beats-bobs-vol-7-kaytronik-edition",
+   "https://kaytronik.bandcamp.com/album/beats-bobs-vol-8",
+   "https://kaytronik.bandcamp.com/album/cant-call-t",
+   "https://kaytronik.bandcamp.com/album/drumz-nightmare",
+   "https://kaytronik.bandcamp.com/album/good-morning-e-p",
+   "https://kaytronik.bandcamp.com/album/hear-and-now",
+   "https://kaytronik.bandcamp.com/album/its-what-i-am-simbad-remix",
+   "https://kaytronik.bandcamp.com/album/karizma-collection-1999-2011",
+   "https://kaytronik.bandcamp.com/album/karizma-klassics-vol-1",
+   "https://kaytronik.bandcamp.com/album/karizma-presents-beats-bobs-vol-fr33",
+   "https://kaytronik.bandcamp.com/album/karizma-remixed",
+   "https://kaytronik.bandcamp.com/album/spirit-the-remixes",
+   "https://kaytronik.bandcamp.com/album/the-damn-thing-tech-this-out-pt-2",
+   "https://kaytronik.bandcamp.com/album/the-power-e-p",
+   "https://kaytronik.bandcamp.com/album/the-power-remixes-e-p",
+   "https://kaytronik.bandcamp.com/album/wall-of-sound",
+   "https://kaytronik.bandcamp.com/track/spirit",
+   "https://pisceangroup.bandcamp.com/album/ferguson-amurikah",
+   "https://pisceangroup.bandcamp.com/album/finger-it-out",
+   "https://pisceangroup.bandcamp.com/album/original-soundtrack",
+   "https://pisceangroup.bandcamp.com/album/saint-louis-strut",
+   "https://pisceangroup.bandcamp.com/album/the-piscean-group",
+   "https://r2records.bandcamp.com/album/audio-funk-ep",
+   "https://r2records.bandcamp.com/album/beyond-remixes-e-p",
+   "https://r2records.bandcamp.com/album/break-up-remix-ep",
+   "https://r2records.bandcamp.com/album/call-t-a-rem-x",
+   "https://r2records.bandcamp.com/album/cant-change-me-ron-trent-remixes",
+   "https://r2records.bandcamp.com/album/crash-boat-party-2",
+   "https://r2records.bandcamp.com/album/dance-the-happy-life",
+   "https://r2records.bandcamp.com/album/dear-friend",
+   "https://r2records.bandcamp.com/album/dear-friend-feat-lisa-millet-the-remixes",
+   "https://r2records.bandcamp.com/album/deep-forest-beyond-earth",
+   "https://r2records.bandcamp.com/album/detroit-boogie-e-p",
+   "https://r2records.bandcamp.com/album/djinji-brown-e-p",
+   "https://r2records.bandcamp.com/album/expansions-e-p",
+   "https://r2records.bandcamp.com/album/far-east-soul-e-p",
+   "https://r2records.bandcamp.com/album/fourth-tune",
+   "https://r2records.bandcamp.com/album/frozen-again-ep",
+   "https://r2records.bandcamp.com/album/future-society-curated-by-seven-davis-jr",
+   "https://r2records.bandcamp.com/album/global-soul-session-e-p-plus",
+   "https://r2records.bandcamp.com/album/guitar-suite",
+   "https://r2records.bandcamp.com/album/gypsy-woman-kaytronik-remix",
+   "https://r2records.bandcamp.com/album/hours-go-by-feat-sio",
+   "https://r2records.bandcamp.com/album/introducing",
+   "https://r2records.bandcamp.com/album/lookin-at-blue",
+   "https://r2records.bandcamp.com/album/malcolm-bliss",
+   "https://r2records.bandcamp.com/album/mangolove",
+   "https://r2records.bandcamp.com/album/mr-repo-man-ep",
+   "https://r2records.bandcamp.com/album/natural-law",
+   "https://r2records.bandcamp.com/album/new-version-e-p",
+   "https://r2records.bandcamp.com/album/perspectives-e-p",
+   "https://r2records.bandcamp.com/album/praia",
+   "https://r2records.bandcamp.com/album/prism-ep",
+   "https://r2records.bandcamp.com/album/purple-thoughts",
+   "https://r2records.bandcamp.com/album/r2-x-yoruba-records-25-years-vinyl-only-no-digital",
+   "https://r2records.bandcamp.com/album/really-real-classics",
+   "https://r2records.bandcamp.com/album/red-velvet",
+   "https://r2records.bandcamp.com/album/reunion-e-p",
+   "https://r2records.bandcamp.com/album/roy-ep",
+   "https://r2records.bandcamp.com/album/self-titled",
+   "https://r2records.bandcamp.com/album/self-titled-instrumentals",
+   "https://r2records.bandcamp.com/album/standing-on-the-wall",
+   "https://r2records.bandcamp.com/album/stomp-theme",
+   "https://r2records.bandcamp.com/album/tanma-feat-aissata-kouyat",
+   "https://r2records.bandcamp.com/album/the-healing",
+   "https://r2records.bandcamp.com/album/thee-album",
+   "https://r2records.bandcamp.com/album/time-ep",
+   "https://r2records.bandcamp.com/album/tribe-2",
+   "https://r2records.bandcamp.com/album/wait-for-you-feat-carla-prather",
+   "https://r2records.bandcamp.com/album/wild-ones-feat-rescuepoetix",
+   "https://r2records.bandcamp.com/track/listen-dub",
+   "https://r2records.bandcamp.com/track/michigan-nights"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "r2 records",
+  "source": "bandcamp",
+  "url": "https://r2records.bandcamp.com"
  },
  "bc:randsrecords": {
   "city": "London, UK",
@@ -10608,7 +11319,7 @@
    "https://yaksound.bandcamp.com/album/termina-ep",
    "https://yansima.bandcamp.com/album/tweede-cans"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "R&S Records",
   "source": "bandcamp",
   "url": "https://randsrecords.bandcamp.com"
@@ -10641,7 +11352,7 @@
    "https://ravelife.bandcamp.com/album/where-did-you-go",
    "https://ravelife.bandcamp.com/album/you-take-my-breath-away"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Ravelife",
   "source": "bandcamp",
   "url": "https://ravelife.bandcamp.com"
@@ -10746,7 +11457,7 @@
    "https://ravemuzik.bandcamp.com/album/the-year-rave-sold-out",
    "https://ravemuzik.bandcamp.com/album/twisted-freqz"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Rave Muzik",
   "source": "bandcamp",
   "url": "https://ravemuzik.bandcamp.com"
@@ -10760,7 +11471,7 @@
    "https://raveonthetyne.bandcamp.com/track/crush-rott002",
    "https://raveonthetyne.bandcamp.com/track/i-want-it-that-way-rott003"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "RaveOnTheTyne Records",
   "source": "bandcamp",
   "url": "https://raveonthetyne.bandcamp.com"
@@ -10777,7 +11488,7 @@
    "https://robpeters1.bandcamp.com/track/blue-is-a-flame",
    "https://robpeters1.bandcamp.com/track/my-rendez-vous-3"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Rob Peters",
   "source": "bandcamp",
   "url": "https://robpeters1.bandcamp.com"
@@ -11124,7 +11835,7 @@
    "https://scatterarchive.bandcamp.com/album/worte-taten-dinge",
    "https://scatterarchive.bandcamp.com/track/hardly-new-you"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "scatterArchive",
   "source": "bandcamp",
   "url": "https://scatterarchive.bandcamp.com"
@@ -11142,7 +11853,7 @@
    "https://sgarabtapes.bandcamp.com/album/the-sun-the-throat",
    "https://sgarabtapes.bandcamp.com/album/yells"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "SGARAB TAPES",
   "source": "bandcamp",
   "url": "https://sgarabtapes.bandcamp.com"
@@ -11159,7 +11870,7 @@
    "https://shadowrunnerrecordings.bandcamp.com/track/deacon-by-day-devil-by-night",
    "https://shadowrunnerrecordings.bandcamp.com/track/vault-of-the-damned"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Shadowrunner Recordings",
   "source": "bandcamp",
   "url": "https://shadowrunnerrecordings.bandcamp.com"
@@ -11175,7 +11886,7 @@
    "https://shop.efpirecords.com/album/wayfinding",
    "https://shop.efpirecords.com/album/why-can-i-still-see-you"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Efpi Records",
   "source": "bandcamp",
   "url": "https://shop.efpirecords.com"
@@ -11191,7 +11902,7 @@
    "https://shop.efpirecords.com/album/wayfinding",
    "https://shop.efpirecords.com/album/why-can-i-still-see-you"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Efpi Records",
   "source": "bandcamp",
   "url": "https://shop.efpirecords.com"
@@ -11208,7 +11919,7 @@
    "https://sixofswordslabel.bandcamp.com/album/mayssa-jallad-civilistj-vel-lp-bundle",
    "https://sixofswordslabel.bandcamp.com/album/severn-flood-plain-where-you-run-to"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Six of Swords",
   "source": "bandcamp",
   "url": "https://sixofswordslabel.bandcamp.com"
@@ -11235,6 +11946,7 @@
    "https://slavestudios.bandcamp.com/album/tercet-ep",
    "https://slavestudios.bandcamp.com/album/the-analogue-years-ii",
    "https://slavestudios.bandcamp.com/album/the-deep-lp",
+   "https://slavestudios.bandcamp.com/album/unhinged-vol-2",
    "https://slavestudios.bandcamp.com/album/unhinged-volume-1",
    "https://slavestudios.bandcamp.com/album/when-we-walk-ep",
    "https://slavestudios.bandcamp.com/album/work-ep",
@@ -11248,7 +11960,7 @@
    "https://slavestudios.bandcamp.com/track/acid-echo",
    "https://slavestudios.bandcamp.com/track/bad-juju"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "slavestudios",
   "source": "bandcamp",
   "url": "https://slavestudios.bandcamp.com"
@@ -11440,7 +12152,7 @@
    "https://slr-recs.bandcamp.com/album/xenophilia",
    "https://slr-recs.bandcamp.com/album/zeit-fuer-acid-leute"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Sub-Label Recordings",
   "source": "bandcamp",
   "url": "https://slr-recs.bandcamp.com"
@@ -11574,7 +12286,7 @@
    "https://x-altera.bandcamp.com/album/new-harbinger-ep",
    "https://yorobi.bandcamp.com/album/eden-ep"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Sneaker Social Club",
   "source": "bandcamp",
   "url": "https://sneakersocialclub.bandcamp.com"
@@ -11708,7 +12420,7 @@
    "https://sweetpeadnb.bandcamp.com/album/fresh-cutz-ep",
    "https://sweetpeadnb.bandcamp.com/album/system-broken-ep"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Sofa Sound",
   "source": "bandcamp",
   "url": "https://sofasoundbristol.bandcamp.com"
@@ -11951,7 +12663,7 @@
    "https://soma-records.bandcamp.com/album/wide-angle-ep",
    "https://soma-records.bandcamp.com/album/world-on-fire-ep-inc-vril-remix"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Soma Records",
   "source": "bandcamp",
   "url": "https://soma-records.bandcamp.com"
@@ -11993,6 +12705,7 @@
    "https://speedymanrecords.bandcamp.com/album/turn-it-up",
    "https://speedymanrecords.bandcamp.com/album/two-for-two-round-2",
    "https://speedymanrecords.bandcamp.com/album/wahn-black-keys",
+   "https://speedymanrecords.bandcamp.com/album/welcome-2-the-jungle",
    "https://speedymanrecords.bandcamp.com/track/a-little-joke",
    "https://speedymanrecords.bandcamp.com/track/addicted",
    "https://speedymanrecords.bandcamp.com/track/all-for-the-cause",
@@ -12062,7 +12775,7 @@
    "https://speedymanrecords.bandcamp.com/track/you-give",
    "https://speedymanrecords.bandcamp.com/track/you-know"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "SpeedyMan Records",
   "source": "bandcamp",
   "url": "https://speedymanrecords.bandcamp.com"
@@ -12075,7 +12788,7 @@
    "https://spritzeditions.bandcamp.com/album/highland-time",
    "https://spritzeditions.bandcamp.com/album/paper-gum-ep-cassette"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Spritz Editions",
   "source": "bandcamp",
   "url": "https://spritzeditions.bandcamp.com"
@@ -12097,7 +12810,7 @@
    "https://sterlingrecords.bandcamp.com/track/bring-the-beat-back",
    "https://sterlingrecords.bandcamp.com/track/silva-bumpa-body-on-me-ft-eva-extended"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "STERLING",
   "source": "bandcamp",
   "url": "https://sterlingrecords.bandcamp.com"
@@ -12122,7 +12835,7 @@
    "https://stompersrecords.bandcamp.com/album/stompgroovers-003-marco-d-and-benny",
    "https://stompersrecords.bandcamp.com/track/stompers-introducing-008-forelle"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Stompers Records",
   "source": "bandcamp",
   "url": "https://stompersrecords.bandcamp.com"
@@ -12405,7 +13118,7 @@
    "https://tonyallen.bandcamp.com/album/inspiration-information-4",
    "https://unitedsoundsofasia.bandcamp.com/album/life-is-a-heavy-burden-ghazals-poetry-from-afghanistan"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Strut",
   "source": "bandcamp",
   "url": "https://strut.bandcamp.com"
@@ -12426,7 +13139,7 @@
    "https://super8syncrecordings.bandcamp.com/album/the-derek-jarman-super8-scores",
    "https://super8syncrecordings.bandcamp.com/album/the-knife"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Super8Sync Recordings",
   "source": "bandcamp",
   "url": "https://super8syncrecordings.bandcamp.com"
@@ -12815,6 +13528,7 @@
    "https://tastyrecordings.bandcamp.com/album/song-for-the-soul",
    "https://tastyrecordings.bandcamp.com/album/soul-power-play-your-own-game-radio-mix",
    "https://tastyrecordings.bandcamp.com/album/soul-taker",
+   "https://tastyrecordings.bandcamp.com/album/space-rider",
    "https://tastyrecordings.bandcamp.com/album/spanish-disco",
    "https://tastyrecordings.bandcamp.com/album/special-delivery",
    "https://tastyrecordings.bandcamp.com/album/star-to-fall",
@@ -12908,7 +13622,7 @@
    "https://tastyrecordings.bandcamp.com/album/your-lovin",
    "https://tastyrecordings.bandcamp.com/album/youre-my-heaven-radio-mix"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Tasty Recordings",
   "source": "bandcamp",
   "url": "https://tastyrecordings.bandcamp.com"
@@ -12981,10 +13695,25 @@
    "https://teletechuk.bandcamp.com/track/this-is-not-house-extended-mix",
    "https://teletechuk.bandcamp.com/track/zorza-memory-u"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Teletech",
   "source": "bandcamp",
   "url": "https://teletechuk.bandcamp.com"
+ },
+ "bc:thedruidsofdub": {
+  "city": "Manchester, UK",
+  "first_seen": "2026-10-16",
+  "known": [
+   "https://thedruidsofdub.bandcamp.com/album/eazeh-2",
+   "https://thedruidsofdub.bandcamp.com/album/journey-ep",
+   "https://thedruidsofdub.bandcamp.com/album/paper",
+   "https://thedruidsofdub.bandcamp.com/album/the-awakening-ep",
+   "https://thedruidsofdub.bandcamp.com/album/the-machine-ep"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "The Druids Of Dub",
+  "source": "bandcamp",
+  "url": "https://thedruidsofdub.bandcamp.com"
  },
  "bc:third-ear-recordings": {
   "city": "London, UK",
@@ -13108,7 +13837,7 @@
    "https://third-ear-recordings.bandcamp.com/album/why-sheep-radiation-ep",
    "https://third-ear-recordings.bandcamp.com/track/how-long-i-had-to-wait"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "third ear recordings",
   "source": "bandcamp",
   "url": "https://third-ear-recordings.bandcamp.com"
@@ -13122,7 +13851,7 @@
    "https://threestriperecords.bandcamp.com/album/brain-scan",
    "https://threestriperecords.bandcamp.com/album/walk-on-different-chapter"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Three Stripe Records",
   "source": "bandcamp",
   "url": "https://threestriperecords.bandcamp.com"
@@ -13176,7 +13905,7 @@
    "https://wordsofbruce.bandcamp.com/album/ready",
    "https://yushh.bandcamp.com/album/full-body-axy"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "TIMEDANCE",
   "source": "bandcamp",
   "url": "https://timedance.bandcamp.com"
@@ -13196,7 +13925,7 @@
    "https://tir-na-nog-productions.bandcamp.com/album/promo",
    "https://tir-na-nog-productions.bandcamp.com/album/stonehaven"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Tir Na Nog Production",
   "source": "bandcamp",
   "url": "https://tir-na-nog-productions.bandcamp.com"
@@ -13266,7 +13995,7 @@
    "https://tmsnge.bandcamp.com/track/vexations",
    "https://tmsnge.bandcamp.com/track/void-burial"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "The Masochistic Sarin Nerve Gas Experiment",
   "source": "bandcamp",
   "url": "https://tmsnge.bandcamp.com"
@@ -13287,7 +14016,7 @@
    "https://tnwmusic.bandcamp.com/album/turn-ye-to-me",
    "https://tnwmusic.bandcamp.com/album/voices-of-venus"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "TNW Music",
   "source": "bandcamp",
   "url": "https://tnwmusic.bandcamp.com"
@@ -13298,7 +14027,7 @@
   "known": [
    "https://toastan.bandcamp.com/album/sinister-viscosity"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Toastan",
   "source": "bandcamp",
   "url": "https://toastan.bandcamp.com"
@@ -13311,7 +14040,7 @@
    "https://tomclarke-hill.bandcamp.com/album/wake-up",
    "https://tomclarke-hill.bandcamp.com/album/who-needs-a-planet"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Tom Clarke-Hill",
   "source": "bandcamp",
   "url": "https://tomclarke-hill.bandcamp.com"
@@ -13331,10 +14060,177 @@
    "https://totality666.bandcamp.com/album/me-pop-now",
    "https://totality666.bandcamp.com/album/olanza"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Totality",
   "source": "bandcamp",
   "url": "https://totality666.bandcamp.com"
+ },
+ "bc:transparentaudio": {
+  "city": "Bristol, UK",
+  "first_seen": "2026-10-16",
+  "known": [
+   "https://transparentaudio.bandcamp.com/album/22-method-feat-sempa-limmz-tsa047",
+   "https://transparentaudio.bandcamp.com/album/4pm-break-ep-tsa015",
+   "https://transparentaudio.bandcamp.com/album/5-years-of-transparent-audio-part-1-tsa069",
+   "https://transparentaudio.bandcamp.com/album/5-years-of-transparent-audio-part-2-remixed-tsa070",
+   "https://transparentaudio.bandcamp.com/album/acid-ritual-hot-one",
+   "https://transparentaudio.bandcamp.com/album/affairs-ep-tsa022",
+   "https://transparentaudio.bandcamp.com/album/alkaline-airlock",
+   "https://transparentaudio.bandcamp.com/album/all-eyes-vip",
+   "https://transparentaudio.bandcamp.com/album/around-you-pulse-of-desire-feat-geostatic-tsa035",
+   "https://transparentaudio.bandcamp.com/album/ashes-of-war-ep-tsa019",
+   "https://transparentaudio.bandcamp.com/album/back-with-a-bang-feat-bazil-mc-tsa006",
+   "https://transparentaudio.bandcamp.com/album/bad-prophecy-ep-tsa010",
+   "https://transparentaudio.bandcamp.com/album/baddest-tap-out",
+   "https://transparentaudio.bandcamp.com/album/believe-ep-tsa012",
+   "https://transparentaudio.bandcamp.com/album/bellamy-tsafree013",
+   "https://transparentaudio.bandcamp.com/album/business-backin",
+   "https://transparentaudio.bandcamp.com/album/closen-night-moonlit-tsa001",
+   "https://transparentaudio.bandcamp.com/album/closer-enemy-bone-rattler-tsa040",
+   "https://transparentaudio.bandcamp.com/album/cold-feet-ep-tsa004",
+   "https://transparentaudio.bandcamp.com/album/cold-stutter-ep-tsa061",
+   "https://transparentaudio.bandcamp.com/album/coup-ep-tsa005",
+   "https://transparentaudio.bandcamp.com/album/dance-done-sndclsh",
+   "https://transparentaudio.bandcamp.com/album/dark-age-ep-tsa024",
+   "https://transparentaudio.bandcamp.com/album/dark-age-instrumental-tsafree014",
+   "https://transparentaudio.bandcamp.com/album/deadshot-broken-tsa063",
+   "https://transparentaudio.bandcamp.com/album/deep-state-ep-tsa068",
+   "https://transparentaudio.bandcamp.com/album/delusions-back-up",
+   "https://transparentaudio.bandcamp.com/album/dial-you-signs-feat-verbz",
+   "https://transparentaudio.bandcamp.com/album/diamond-bits-ep-tsa059",
+   "https://transparentaudio.bandcamp.com/album/diffraction-vol-001-tsa025",
+   "https://transparentaudio.bandcamp.com/album/discombobulate-ep-tsa046",
+   "https://transparentaudio.bandcamp.com/album/dxm-ep-tsa038",
+   "https://transparentaudio.bandcamp.com/album/echoes-ep",
+   "https://transparentaudio.bandcamp.com/album/everybody-tsafree006",
+   "https://transparentaudio.bandcamp.com/album/eye-for-an-eye-syfa",
+   "https://transparentaudio.bandcamp.com/album/faith-ep-tsa030",
+   "https://transparentaudio.bandcamp.com/album/feel-this-way-tsafree008",
+   "https://transparentaudio.bandcamp.com/album/for-what-its-worth",
+   "https://transparentaudio.bandcamp.com/album/fractured-ep-tsa014",
+   "https://transparentaudio.bandcamp.com/album/frozen-mind-ep-tsa028",
+   "https://transparentaudio.bandcamp.com/album/gila-monster-ep-tsa014",
+   "https://transparentaudio.bandcamp.com/album/gloom-ep",
+   "https://transparentaudio.bandcamp.com/album/go-slow-ep-tsa039",
+   "https://transparentaudio.bandcamp.com/album/good-rays-ep",
+   "https://transparentaudio.bandcamp.com/album/hamzar-ep-tsa008",
+   "https://transparentaudio.bandcamp.com/album/haunted-ep-tsa033",
+   "https://transparentaudio.bandcamp.com/album/invert-ep-tsa007",
+   "https://transparentaudio.bandcamp.com/album/invisible-patterns-tsa049",
+   "https://transparentaudio.bandcamp.com/album/jagged-ep-tsa021-2",
+   "https://transparentaudio.bandcamp.com/album/just-wanna-echoes-of-you-feat-felov-tsa041",
+   "https://transparentaudio.bandcamp.com/album/kift-ep-tsa016",
+   "https://transparentaudio.bandcamp.com/album/knowing-you-ep-feat-lauren-walton-ruby-letitia-tsa048",
+   "https://transparentaudio.bandcamp.com/album/last-chance-ep-tsa020",
+   "https://transparentaudio.bandcamp.com/album/leave-you-behind-distress-feat-morrow-tsa043",
+   "https://transparentaudio.bandcamp.com/album/let-me-go-tsafree012",
+   "https://transparentaudio.bandcamp.com/album/let-you-go-ep-feat-offline-tsa031",
+   "https://transparentaudio.bandcamp.com/album/lifeline-ep-tsa054",
+   "https://transparentaudio.bandcamp.com/album/long-distance-ep-tsa027",
+   "https://transparentaudio.bandcamp.com/album/maelstrom-ep-feat-geostatic-tsa045",
+   "https://transparentaudio.bandcamp.com/album/make-me-feel-ep-tsa036",
+   "https://transparentaudio.bandcamp.com/album/man-made-ep-tsa053",
+   "https://transparentaudio.bandcamp.com/album/moments-ep-tsa023",
+   "https://transparentaudio.bandcamp.com/album/never-the-same-ep-tsa050",
+   "https://transparentaudio.bandcamp.com/album/not-invisible-blame",
+   "https://transparentaudio.bandcamp.com/album/nova-seabrook-tsa042",
+   "https://transparentaudio.bandcamp.com/album/observe-thau-feat-kragar-tsa002",
+   "https://transparentaudio.bandcamp.com/album/odd-nmbrs-ep-tsa018",
+   "https://transparentaudio.bandcamp.com/album/ominous-ep-tsa052",
+   "https://transparentaudio.bandcamp.com/album/pagan-ep-tsa058",
+   "https://transparentaudio.bandcamp.com/album/phantom-power-ep-tsa056",
+   "https://transparentaudio.bandcamp.com/album/physikal-varmint-feat-gl-ph-tsa003",
+   "https://transparentaudio.bandcamp.com/album/pieces-tsalp001b",
+   "https://transparentaudio.bandcamp.com/album/pillow-scream-see-you-feat-azrah-tsa044",
+   "https://transparentaudio.bandcamp.com/album/pomona-tsafree002",
+   "https://transparentaudio.bandcamp.com/album/portal-what-this-tsa072",
+   "https://transparentaudio.bandcamp.com/album/power-of-knowledge-ep-tsa027",
+   "https://transparentaudio.bandcamp.com/album/pressure-ep-tsa017",
+   "https://transparentaudio.bandcamp.com/album/psychosis-tsafree007",
+   "https://transparentaudio.bandcamp.com/album/rainy-daze-ep-tsa032",
+   "https://transparentaudio.bandcamp.com/album/refraction-vol-001-tsa011",
+   "https://transparentaudio.bandcamp.com/album/refraction-vol-002-tsa037",
+   "https://transparentaudio.bandcamp.com/album/rinse-repeat-call-from-heaven",
+   "https://transparentaudio.bandcamp.com/album/runaway-ep-tsa009",
+   "https://transparentaudio.bandcamp.com/album/scorch-ep-tsa055",
+   "https://transparentaudio.bandcamp.com/album/second-guessing-ep-tsa062",
+   "https://transparentaudio.bandcamp.com/album/skeleton",
+   "https://transparentaudio.bandcamp.com/album/so-bad-tsafree015",
+   "https://transparentaudio.bandcamp.com/album/solace-i-wont-wait-tsa065",
+   "https://transparentaudio.bandcamp.com/album/space-magic-tsafree010",
+   "https://transparentaudio.bandcamp.com/album/spektiv-friends-ep-tsa066",
+   "https://transparentaudio.bandcamp.com/album/stay-tsalp001a",
+   "https://transparentaudio.bandcamp.com/album/step-to-me-feat-sylla-bet-you",
+   "https://transparentaudio.bandcamp.com/album/take-the-fall-ep-tsa029",
+   "https://transparentaudio.bandcamp.com/album/through-to-you-ep-tsa051",
+   "https://transparentaudio.bandcamp.com/album/trout-tsafree011",
+   "https://transparentaudio.bandcamp.com/album/turn-to-talk-ep-tsa057",
+   "https://transparentaudio.bandcamp.com/album/under-pressure",
+   "https://transparentaudio.bandcamp.com/album/untitled-analog-ep-tsa071-2",
+   "https://transparentaudio.bandcamp.com/album/verde-ep-tsa064",
+   "https://transparentaudio.bandcamp.com/album/want-you",
+   "https://transparentaudio.bandcamp.com/album/waves-ep-tsa060",
+   "https://transparentaudio.bandcamp.com/album/what-came-before-dimension",
+   "https://transparentaudio.bandcamp.com/album/whats-left-ep-tsa034",
+   "https://transparentaudio.bandcamp.com/album/without-me-tsafree009",
+   "https://transparentaudio.bandcamp.com/track/conviction-tsafree005-2",
+   "https://transparentaudio.bandcamp.com/track/intense-flavour-tsafree004",
+   "https://transparentaudio.bandcamp.com/track/iridescent-tsafree001",
+   "https://transparentaudio.bandcamp.com/track/mirrors-tsafree003"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Transparent Audio",
+  "source": "bandcamp",
+  "url": "https://transparentaudio.bandcamp.com"
+ },
+ "bc:truthhertz": {
+  "city": "Bristol, UK",
+  "first_seen": "2026-10-16",
+  "known": [
+   "https://truthhertz.bandcamp.com/album/ed-it-mc-fokus-stay-true-mixes",
+   "https://truthhertz.bandcamp.com/album/freqs-vol-1-album",
+   "https://truthhertz.bandcamp.com/album/freqs-vol-1-album-sampler",
+   "https://truthhertz.bandcamp.com/album/freqs-vol-2-album",
+   "https://truthhertz.bandcamp.com/album/freqs-vol-2-album-sampler",
+   "https://truthhertz.bandcamp.com/album/nothing-is-forever",
+   "https://truthhertz.bandcamp.com/album/thz001-the-truth-hertz-ep",
+   "https://truthhertz.bandcamp.com/album/thz002-byzance-the-dissolution-of-fate",
+   "https://truthhertz.bandcamp.com/album/thz005-ghost-bark-ep",
+   "https://truthhertz.bandcamp.com/album/thz006-money-power-ep",
+   "https://truthhertz.bandcamp.com/album/thz007-the-looking-glass-ep",
+   "https://truthhertz.bandcamp.com/album/thz008-partys-over-lp",
+   "https://truthhertz.bandcamp.com/album/thz009-stay-true-ep",
+   "https://truthhertz.bandcamp.com/album/thz011-hold-it-ep",
+   "https://truthhertz.bandcamp.com/album/thz012-the-tsundoku-ep",
+   "https://truthhertz.bandcamp.com/album/thz013-it-goes-like-this-ep",
+   "https://truthhertz.bandcamp.com/album/thz014-you-say-ep",
+   "https://truthhertz.bandcamp.com/album/thz015-acetone-ep",
+   "https://truthhertz.bandcamp.com/album/thz016-conjurer-ep",
+   "https://truthhertz.bandcamp.com/album/thz017-cycles-vol-1",
+   "https://truthhertz.bandcamp.com/album/thz018-cycles-vol-2",
+   "https://truthhertz.bandcamp.com/album/thz019-cycles-vol-3",
+   "https://truthhertz.bandcamp.com/album/thz020-headroom-i",
+   "https://truthhertz.bandcamp.com/album/thz021-cycles-vol-4",
+   "https://truthhertz.bandcamp.com/album/thz022-dog-days-ep",
+   "https://truthhertz.bandcamp.com/album/thz023-moonlight-ep",
+   "https://truthhertz.bandcamp.com/album/thz024-dry-socket-colossus",
+   "https://truthhertz.bandcamp.com/album/truth-hertz-one",
+   "https://truthhertz.bandcamp.com/album/truth-hertz-three",
+   "https://truthhertz.bandcamp.com/album/truth-hertz-two",
+   "https://truthhertz.bandcamp.com/track/90-bandcamp-exclusive",
+   "https://truthhertz.bandcamp.com/track/doomsday",
+   "https://truthhertz.bandcamp.com/track/gingham-shirts",
+   "https://truthhertz.bandcamp.com/track/partys-over-2",
+   "https://truthhertz.bandcamp.com/track/raider",
+   "https://truthhertz.bandcamp.com/track/remember-kelly",
+   "https://truthhertz.bandcamp.com/track/the-looking-glass",
+   "https://truthhertz.bandcamp.com/track/the-real-2",
+   "https://truthhertz.bandcamp.com/track/you-tell-me"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Truth Hertz",
+  "source": "bandcamp",
+  "url": "https://truthhertz.bandcamp.com"
  },
  "bc:turky1": {
   "city": "Portsmouth, UK",
@@ -13343,10 +14239,48 @@
    "https://turky1.bandcamp.com/album/garageloops",
    "https://turky1.bandcamp.com/track/deepohouse"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Turky",
   "source": "bandcamp",
   "url": "https://turky1.bandcamp.com"
+ },
+ "bc:tutamen": {
+  "city": "Bristol, UK",
+  "first_seen": "2026-10-16",
+  "known": [
+   "https://tutamen.bandcamp.com/album/2-2",
+   "https://tutamen.bandcamp.com/album/archived-vol-1",
+   "https://tutamen.bandcamp.com/album/boundaries-ep",
+   "https://tutamen.bandcamp.com/album/breathing-relic",
+   "https://tutamen.bandcamp.com/album/euphoria-ep",
+   "https://tutamen.bandcamp.com/album/ioihs-ep",
+   "https://tutamen.bandcamp.com/album/morbid-self-attention",
+   "https://tutamen.bandcamp.com/album/nothing-was-there-ep",
+   "https://tutamen.bandcamp.com/album/oddities-vol-1-old-money",
+   "https://tutamen.bandcamp.com/album/oddities-vol-2-hym",
+   "https://tutamen.bandcamp.com/album/oddities-vol-3-domini",
+   "https://tutamen.bandcamp.com/album/oddities-vol-4-an-ode",
+   "https://tutamen.bandcamp.com/album/oddities-vol-5-secularis",
+   "https://tutamen.bandcamp.com/album/oddities-vol-6",
+   "https://tutamen.bandcamp.com/album/oddities-vol-7",
+   "https://tutamen.bandcamp.com/album/oddities-vol-8",
+   "https://tutamen.bandcamp.com/album/praise-the-lord-of-the-flies-ep",
+   "https://tutamen.bandcamp.com/album/skepasti-ep",
+   "https://tutamen.bandcamp.com/album/suave-sexo-duro",
+   "https://tutamen.bandcamp.com/album/television",
+   "https://tutamen.bandcamp.com/album/the-last-dance",
+   "https://tutamen.bandcamp.com/album/they-dont-let-me-in",
+   "https://tutamen.bandcamp.com/album/thought-assembly-ep",
+   "https://tutamen.bandcamp.com/album/tutamen-001",
+   "https://tutamen.bandcamp.com/album/tutamen-002",
+   "https://tutamen.bandcamp.com/album/venus-express-ep",
+   "https://tutamen.bandcamp.com/album/voittovaara-ep",
+   "https://tutamen.bandcamp.com/album/vulnerable-ep"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Tutamen",
+  "source": "bandcamp",
+  "url": "https://tutamen.bandcamp.com"
  },
  "bc:twonkey": {
   "city": "Edinburgh, UK",
@@ -13360,7 +14294,7 @@
    "https://twonkey.bandcamp.com/album/the-fairy-that-spits",
    "https://twonkey.bandcamp.com/album/the-greatest-twitch"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Twonkey",
   "source": "bandcamp",
   "url": "https://twonkey.bandcamp.com"
@@ -13390,6 +14324,7 @@
    "https://unlawfulbeats.bandcamp.com/album/clothes-off-preacher",
    "https://unlawfulbeats.bandcamp.com/album/computer-love",
    "https://unlawfulbeats.bandcamp.com/album/deeper-love-full-track-sent-on-purchase",
+   "https://unlawfulbeats.bandcamp.com/album/do-ya-full-track-sent-on-purchase",
    "https://unlawfulbeats.bandcamp.com/album/dont-forget-about-me-free-download",
    "https://unlawfulbeats.bandcamp.com/album/dont-wanna-lose-you-vip-mix",
    "https://unlawfulbeats.bandcamp.com/album/down-4-charlie",
@@ -13466,7 +14401,7 @@
    "https://unlawfulbeats.bandcamp.com/track/lick-it",
    "https://unlawfulbeats.bandcamp.com/track/nero-guilt-remix-free-download"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Unlawful Beats",
   "source": "bandcamp",
   "url": "https://unlawfulbeats.bandcamp.com"
@@ -13856,7 +14791,7 @@
    "https://voeaus.bandcamp.com/track/v-o-e-we-will",
    "https://wearedeadwax.bandcamp.com/track/dead-wax-ft-mc-mota-surrender"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Viper Recordings",
   "source": "bandcamp",
   "url": "https://viperrecordings.bandcamp.com"
@@ -13901,7 +14836,7 @@
    "https://warehouseprojectrecords.bandcamp.com/track/whpr07-malugi-interplanetary-criminal-coach-harrison-be-the-only",
    "https://warehouseprojectrecords.bandcamp.com/track/wow"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Warehouse Project Records",
   "source": "bandcamp",
   "url": "https://warehouseprojectrecords.bandcamp.com"
@@ -13932,7 +14867,7 @@
    "https://withbellsrecords.bandcamp.com/track/prodromal-2",
    "https://withbellsrecords.bandcamp.com/track/settled-restlessness"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "With Bells Records",
   "source": "bandcamp",
   "url": "https://withbellsrecords.bandcamp.com"
@@ -14037,7 +14972,7 @@
    "https://wonderfulsound.bandcamp.com/track/alvaro-almeida",
    "https://wonderfulsound.bandcamp.com/track/disque-bleu"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "WONDERFULSOUND",
   "source": "bandcamp",
   "url": "https://wonderfulsound.bandcamp.com"
@@ -14060,7 +14995,7 @@
    "https://worksrecords.bandcamp.com/track/penna-bianca",
    "https://worksrecords.bandcamp.com/track/slinki-foundation"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Works Records",
   "source": "bandcamp",
   "url": "https://worksrecords.bandcamp.com"
@@ -14154,7 +15089,7 @@
    "https://yamatairecords.bandcamp.com/track/substance",
    "https://yamatairecords.bandcamp.com/track/undying"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Yamatai Records",
   "source": "bandcamp",
   "url": "https://yamatairecords.bandcamp.com"
@@ -14173,7 +15108,7 @@
    "https://youngechorecords.bandcamp.com/album/revenge-fantasy",
    "https://youngechorecords.bandcamp.com/album/young-echo"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Young Echo Records",
   "source": "bandcamp",
   "url": "https://youngechorecords.bandcamp.com"
@@ -14187,7 +15122,7 @@
    "https://yyzrecords.bandcamp.com/album/home-truths",
    "https://yyzrecords.bandcamp.com/album/underachievers-cuts-grazes"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "YYZ Records",
   "source": "bandcamp",
   "url": "https://yyzrecords.bandcamp.com"
@@ -14250,11 +15185,66 @@
    "37947147",
    "37947222"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "BMG",
   "parents": [
    "BMG Rights Management GmbH",
    "Bertelsmann AG"
+  ],
+  "source": "discogs"
+ },
+ "dg:1031201": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 1031201,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "36284350",
+   "36284362",
+   "36284371",
+   "36514879",
+   "36514909",
+   "36514915",
+   "36684289",
+   "36684301",
+   "36684307",
+   "37090869",
+   "37090902",
+   "37090908",
+   "37339968",
+   "37339980",
+   "37339995",
+   "37487757",
+   "37487775",
+   "37487781",
+   "37658289",
+   "37658298",
+   "37658307",
+   "37837389",
+   "37837440",
+   "37837473",
+   "37959447",
+   "37959480",
+   "37959495",
+   "38199912",
+   "38199930",
+   "38199933",
+   "38394954",
+   "38394972",
+   "38394975",
+   "38587074",
+   "38587092",
+   "38587101",
+   "38729832",
+   "38729874",
+   "38729922"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "VII",
+  "parents": [
+   "Black Hole Recordings",
+   "Black Hole Recordings B.V."
   ],
   "source": "discogs"
  },
@@ -14312,7 +15302,7 @@
    "37641585",
    "38659344"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Steel City Dance Discs",
   "parents": [],
   "source": "discogs"
@@ -14364,7 +15354,7 @@
    "38399697",
    "38672853"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Electronic Sound",
   "parents": [],
   "source": "discogs"
@@ -14425,12 +15415,28 @@
    "38134119",
    "38200389",
    "38266509",
-   "38655393"
+   "38655393",
+   "38730900"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Gearbox Revolutions",
   "parents": [
    "Gearbox Digital"
+  ],
+  "source": "discogs"
+ },
+ "dg:1060": {
+  "city": "London, UK",
+  "city_checked": true,
+  "discogs_id": 1060,
+  "excluded": "major",
+  "first_seen": "2026-10-16",
+  "known": null,
+  "last_checked": null,
+  "name": "London Records",
+  "parents": [
+   "The Decca Record Company Limited",
+   "Universal Music Group"
   ],
   "source": "discogs"
  },
@@ -14482,7 +15488,7 @@
    "38603349",
    "38690301"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Last Night From Glasgow",
   "parents": [],
   "source": "discogs"
@@ -14541,13 +15547,72 @@
    "38578272",
    "38604525"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Ninja Tune",
   "parents": [
    "Concord Music Group, Inc.",
    "BMG",
    "BMG Rights Management GmbH",
    "Bertelsmann AG"
+  ],
+  "source": "discogs"
+ },
+ "dg:1093361": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 1093361,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "36285091",
+   "36285115",
+   "36379987",
+   "36412918",
+   "36412942",
+   "36618532",
+   "36618547",
+   "36669073",
+   "36669094",
+   "36695047",
+   "36695080",
+   "36825130",
+   "36825136",
+   "36825661",
+   "36952641",
+   "36952689",
+   "37018065",
+   "37018074",
+   "37023453",
+   "37088187",
+   "37216005",
+   "37216038",
+   "37278999",
+   "37279008",
+   "37340208",
+   "37340235",
+   "37465887",
+   "37465905",
+   "37718205",
+   "37718208",
+   "37840227",
+   "37840260",
+   "37901433",
+   "37901442",
+   "37920051",
+   "37920057",
+   "37959750",
+   "37959759",
+   "38016588",
+   "38016609",
+   "38143233",
+   "38143245",
+   "38730588",
+   "38730618"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "AVA White",
+  "parents": [
+   "AVA Recordings"
   ],
   "source": "discogs"
  },
@@ -14609,7 +15674,7 @@
    "38338572",
    "38669889"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Hudson Records",
   "parents": [
    "Hudson Records Ltd."
@@ -14650,13 +15715,14 @@
    "9489786",
    "9489792"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "1609",
   "parents": [],
   "source": "discogs"
  },
  "dg:1120989": {
   "city": "UK",
+  "city_checked": true,
   "discogs_id": 1120989,
   "excluded": null,
   "first_seen": "2026-10-14",
@@ -14695,11 +15761,47 @@
    "38543130",
    "38716623"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Global Underground",
   "parents": [
    "Global Underground Ltd.",
    "Boxed"
+  ],
+  "source": "discogs"
+ },
+ "dg:1126765": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 1126765,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "35644249",
+   "35644255",
+   "35713561",
+   "35713564",
+   "35713567",
+   "38136540",
+   "38136558",
+   "38136564",
+   "38410005",
+   "38410035",
+   "38410047",
+   "38592651",
+   "38592675",
+   "38592681",
+   "38592690",
+   "38592714",
+   "38592726",
+   "38730405",
+   "38730435",
+   "38730438"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Skullduggery",
+  "parents": [
+   "Black Hole Recordings",
+   "Black Hole Recordings B.V."
   ],
   "source": "discogs"
  },
@@ -14761,7 +15863,7 @@
    "37889673",
    "38712183"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Lavender Sweep",
   "parents": [],
   "source": "discogs"
@@ -14816,7 +15918,7 @@
    "38650899",
    "38688429"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "AMF Records",
   "parents": [
    "AMF Collective Ltd"
@@ -14873,7 +15975,7 @@
    "9886377",
    "9947641"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Higher Forces Records",
   "parents": [],
   "source": "discogs"
@@ -14936,7 +16038,7 @@
    "38665995",
    "38669472"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "SharpTone",
   "parents": [
    "SharpTone Records, INC"
@@ -14982,7 +16084,7 @@
    "38692245",
    "4263937"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Shanti Records",
   "parents": [],
   "source": "discogs"
@@ -15043,7 +16145,7 @@
    "38631204",
    "38709846"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Tidy Trax",
   "parents": [
    "Music Factory",
@@ -15097,8 +16199,46 @@
    "38642610",
    "38668062"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Wayside And Woodland Recordings",
+  "parents": [],
+  "source": "discogs"
+ },
+ "dg:121705": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 121705,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "16972263",
+   "16977909",
+   "16977993",
+   "16978203",
+   "16978236",
+   "16995981",
+   "17121771",
+   "18650914",
+   "21213283",
+   "21475150",
+   "21475207",
+   "21475252",
+   "22569581",
+   "22579250",
+   "22582580",
+   "25252819",
+   "25252927",
+   "26858399",
+   "26882408",
+   "27185004",
+   "31678037",
+   "31842209",
+   "32233302",
+   "35114780",
+   "38704896"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Hi-Lo Records",
   "parents": [],
   "source": "discogs"
  },
@@ -15144,7 +16284,7 @@
    "38144931",
    "38651772"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Asking For Trouble",
   "parents": [],
   "source": "discogs"
@@ -15207,7 +16347,7 @@
    "38632401",
    "38686818"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Big Love",
   "parents": [
    "Big Love Music",
@@ -15266,7 +16406,7 @@
    "38670165",
    "38708703"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "whitelabrecs",
   "parents": [
    "Audio Gourmet Netlabel"
@@ -15331,7 +16471,7 @@
    "38654610",
    "38654688"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Demonic Wavs",
   "parents": [],
   "source": "discogs"
@@ -15391,8 +16531,69 @@
    "38673540",
    "38698617"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Diggers Factory",
+  "parents": [],
+  "source": "discogs"
+ },
+ "dg:128": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 128,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "33511646",
+   "33704376",
+   "34040305",
+   "34049488",
+   "34361206",
+   "34419916",
+   "34424236",
+   "34473502",
+   "34473604",
+   "34544572",
+   "34680222",
+   "34769705",
+   "34936385",
+   "34936439",
+   "34936460",
+   "34936517",
+   "34936568",
+   "35086361",
+   "35086403",
+   "35148274",
+   "35169574",
+   "35169988",
+   "35271790",
+   "35498956",
+   "35499661",
+   "35510644",
+   "35699458",
+   "35721754",
+   "35829982",
+   "35925271",
+   "36232279",
+   "36490567",
+   "36802261",
+   "36802300",
+   "36998877",
+   "37267410",
+   "37326336",
+   "37476765",
+   "37516836",
+   "37547856",
+   "37547967",
+   "37570200",
+   "38141703",
+   "38209629",
+   "38245227",
+   "38510988",
+   "38528466",
+   "38728938"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Metalheadz",
   "parents": [],
   "source": "discogs"
  },
@@ -15451,7 +16652,7 @@
    "38641431",
    "38663595"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Distiller Records",
   "parents": [],
   "source": "discogs"
@@ -15508,8 +16709,70 @@
    "833308",
    "983816"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Kaktai Records",
+  "parents": [],
+  "source": "discogs"
+ },
+ "dg:1294054": {
+  "city": "UK",
+  "discogs_id": 1294054,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "10119023",
+   "10632341",
+   "12485769",
+   "12740017",
+   "13406305",
+   "14557844",
+   "15534368",
+   "15538287",
+   "16004110",
+   "16015374",
+   "18143656",
+   "18692620",
+   "19162084",
+   "21676615",
+   "23682092",
+   "26470469",
+   "26711279",
+   "28254814",
+   "28746349",
+   "28922350",
+   "28922566",
+   "29014180",
+   "29014330",
+   "29014432",
+   "29014492",
+   "29014645",
+   "29014714",
+   "29034691",
+   "29126725",
+   "29828581",
+   "30333749",
+   "30334019",
+   "30555094",
+   "31080968",
+   "31407116",
+   "31554778",
+   "31898059",
+   "32562606",
+   "32564397",
+   "33203826",
+   "33545469",
+   "33943146",
+   "34396507",
+   "35132669",
+   "35328598",
+   "36434293",
+   "37074252",
+   "37682373",
+   "38310219",
+   "38729502"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Next Phase : Normal Records",
   "parents": [],
   "source": "discogs"
  },
@@ -15563,7 +16826,7 @@
    "37822194",
    "38665965"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Scruff Of The Neck",
   "parents": [],
   "source": "discogs"
@@ -15607,7 +16870,7 @@
    "38556150",
    "38662551"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "DMF Records",
   "parents": [],
   "source": "discogs"
@@ -15670,7 +16933,7 @@
    "36662374",
    "38650524"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Sub Code Records",
   "parents": [],
   "source": "discogs"
@@ -15693,7 +16956,7 @@
    "28578157",
    "38709732"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Count To Ten",
   "parents": [],
   "source": "discogs"
@@ -15756,7 +17019,7 @@
    "38598786",
    "38691159"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "REALM Records",
   "parents": [],
   "source": "discogs"
@@ -15774,6 +17037,30 @@
    "Warner Records Inc.",
    "Warner Music Group"
   ],
+  "source": "discogs"
+ },
+ "dg:1349547": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 1349547,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "10862836",
+   "11793495",
+   "13564870",
+   "15945778",
+   "23238098",
+   "23257397",
+   "24005717",
+   "25098307",
+   "25128970",
+   "30124769",
+   "38730873"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Space Ritual",
+  "parents": [],
   "source": "discogs"
  },
  "dg:1352358": {
@@ -15824,7 +17111,7 @@
    "38469846",
    "38711358"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Dynamite Cuts",
   "parents": [],
   "source": "discogs"
@@ -15842,7 +17129,7 @@
    "10993365",
    "38669205"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Pie & Mash Recordings Ltd.",
   "parents": [],
   "source": "discogs"
@@ -15903,10 +17190,57 @@
    "38644917",
    "38719362"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Gearbox Overdrive",
   "parents": [
    "Gearbox Digital"
+  ],
+  "source": "discogs"
+ },
+ "dg:1383969": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 1383969,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "11153756",
+   "11252956",
+   "15600012",
+   "15922678",
+   "16888482",
+   "17656609",
+   "20482159",
+   "20593606",
+   "20921086",
+   "26527283",
+   "28324621",
+   "29682592",
+   "30310940",
+   "30311102",
+   "30361889",
+   "32736018",
+   "33295851",
+   "33305361",
+   "33305502",
+   "33305547",
+   "33477698",
+   "34572361",
+   "34585186",
+   "34585255",
+   "34585318",
+   "38728020",
+   "38728140",
+   "38728227",
+   "38728338",
+   "38728386",
+   "38728425",
+   "38728539"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Dispatch Blueprints",
+  "parents": [
+   "Dispatch Recordings"
   ],
   "source": "discogs"
  },
@@ -15956,7 +17290,7 @@
    "38656329",
    "38656482"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Octagonal Records",
   "parents": [],
   "source": "discogs"
@@ -16017,7 +17351,7 @@
    "38380440",
    "38674050"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Souped Up Records",
   "parents": [],
   "source": "discogs"
@@ -16053,7 +17387,7 @@
    "38642346",
    "38721534"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Cavendish House",
   "parents": [],
   "source": "discogs"
@@ -16109,8 +17443,71 @@
    "38600520",
    "38651718"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Spells On The Telly",
+  "parents": [],
+  "source": "discogs"
+ },
+ "dg:1416776": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 1416776,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "30626269",
+   "34804832",
+   "34834811",
+   "34834994",
+   "34835195",
+   "34841282",
+   "34885373",
+   "34931945",
+   "34954403",
+   "35161270",
+   "35490565",
+   "35490679",
+   "35494270",
+   "35588833",
+   "35589034",
+   "35589085",
+   "35888944",
+   "36008263",
+   "36392767",
+   "36420790",
+   "36426409",
+   "36487474",
+   "36487561",
+   "36630391",
+   "36647230",
+   "36659716",
+   "36666838",
+   "36779059",
+   "36882394",
+   "36964527",
+   "37179735",
+   "37180032",
+   "37211718",
+   "37211721",
+   "37367352",
+   "37409382",
+   "37449618",
+   "37495215",
+   "37740966",
+   "37923399",
+   "37954845",
+   "38028396",
+   "38075058",
+   "38162922",
+   "38314311",
+   "38494452",
+   "38560767",
+   "38560884",
+   "38700972",
+   "38735640"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Spinout Nuggets",
   "parents": [],
   "source": "discogs"
  },
@@ -16172,7 +17569,7 @@
    "38382525",
    "38663301"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Do It Thissen Records",
   "parents": [],
   "source": "discogs"
@@ -16233,7 +17630,7 @@
    "38708541",
    "38708826"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Home Normal",
   "parents": [],
   "source": "discogs"
@@ -16251,7 +17648,7 @@
    "32678313",
    "38720823"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Keep Me In Your Heart Records",
   "parents": [],
   "source": "discogs"
@@ -16309,7 +17706,7 @@
    "38703648",
    "38723469"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "My Pet Flamingo",
   "parents": [
    "TimeSlave Recordings"
@@ -16361,7 +17758,7 @@
    "38604180",
    "38689482"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Dimple Discs",
   "parents": [],
   "source": "discogs"
@@ -16422,7 +17819,7 @@
    "38670414",
    "38670516"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "ST Entertainment",
   "parents": [
    "Edaisha Music",
@@ -16465,7 +17862,7 @@
    "38717514",
    "4777387"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Hear It Loud",
   "parents": [],
   "source": "discogs"
@@ -16522,7 +17919,7 @@
    "37939269",
    "38721282"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Dub Shotta",
   "parents": [],
   "source": "discogs"
@@ -16584,7 +17981,7 @@
    "38661015",
    "38690535"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Church Road Records",
   "parents": [],
   "source": "discogs"
@@ -16634,7 +18031,7 @@
    "37765368",
    "38722995"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "Bring The Noise Recordings",
   "parents": [],
   "source": "discogs"
@@ -16697,7 +18094,7 @@
    "37658676",
    "37722252"
   ],
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
   "name": "FSOE Recordings",
   "parents": [
    "Future Sound Of Egypt B.V."
@@ -17085,7 +18482,8 @@
   "source": "discogs"
  },
  "dg:160": {
-  "city": "UK",
+  "city": "London, UK",
+  "city_checked": true,
   "discogs_id": 160,
   "excluded": null,
   "first_seen": "2026-10-15",
@@ -17193,6 +18591,93 @@
   ],
   "source": "discogs"
  },
+ "dg:161315": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 161315,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "26211446",
+   "26540234",
+   "26560610",
+   "26612798",
+   "27443052",
+   "28258462",
+   "28716943",
+   "29556598",
+   "29556883",
+   "29556949",
+   "29556979",
+   "29970808",
+   "30353618",
+   "31551880",
+   "32243421",
+   "32249430",
+   "32294982",
+   "33365891",
+   "34013898",
+   "34015710",
+   "34079710",
+   "34605595",
+   "34605610",
+   "35498659",
+   "35506675",
+   "35536090",
+   "35854060",
+   "36802465",
+   "36802549",
+   "36802594",
+   "37817658",
+   "38091756",
+   "38735202"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Astrophonica",
+  "parents": [],
+  "source": "discogs"
+ },
+ "dg:1622378": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 1622378,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "36283126",
+   "36284296",
+   "36884455",
+   "36884470",
+   "37017738",
+   "37017750",
+   "37276383",
+   "37276401",
+   "37401831",
+   "37401837",
+   "37901286",
+   "37901295",
+   "38015367",
+   "38016375",
+   "38235336",
+   "38327769",
+   "38327799",
+   "38388123",
+   "38455293",
+   "38455314",
+   "38587128",
+   "38587149",
+   "38730462",
+   "38730492",
+   "38732250"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Regenerate Records",
+  "parents": [
+   "Black Hole Recordings",
+   "Black Hole Recordings B.V."
+  ],
+  "source": "discogs"
+ },
  "dg:1630805": {
   "city": "UK",
   "city_checked": true,
@@ -17235,6 +18720,59 @@
   "last_checked": "2026-10-15",
   "name": "Sekito",
   "parents": [],
+  "source": "discogs"
+ },
+ "dg:163111": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 163111,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "18001552",
+   "20389006",
+   "20585458",
+   "21072157",
+   "22967360",
+   "23811764",
+   "23868572",
+   "24580877",
+   "25166560",
+   "25599943",
+   "26232035",
+   "26400158",
+   "26627171",
+   "27470028",
+   "27686556",
+   "28726837",
+   "30555151",
+   "31116341",
+   "31271624",
+   "32166225",
+   "32222532",
+   "32230767",
+   "32480607",
+   "32488314",
+   "33586908",
+   "33586971",
+   "33719646",
+   "34571791",
+   "34992119",
+   "35733193",
+   "35832874",
+   "36900723",
+   "37214550",
+   "37220760",
+   "37495743",
+   "37525812",
+   "38478630",
+   "38726574"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Leng",
+  "parents": [
+   "Claremont 56"
+  ],
   "source": "discogs"
  },
  "dg:1678075": {
@@ -17300,6 +18838,46 @@
   "parents": [
    "Good Company Records Ltd."
   ],
+  "source": "discogs"
+ },
+ "dg:1682221": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 1682221,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "14023486",
+   "14292552",
+   "14912620",
+   "15216104",
+   "15721878",
+   "17980555",
+   "18806608",
+   "19777189",
+   "23870318",
+   "24512558",
+   "24739145",
+   "24739232",
+   "25681231",
+   "26246417",
+   "29342713",
+   "30878325",
+   "32019344",
+   "33394322",
+   "33637224",
+   "35053643",
+   "35053727",
+   "36095614",
+   "36218137",
+   "37513905",
+   "37571037",
+   "38017461",
+   "38727903"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Persistence Of Sound",
+  "parents": [],
   "source": "discogs"
  },
  "dg:1690012": {
@@ -17414,6 +18992,69 @@
   ],
   "last_checked": "2026-10-15",
   "name": "Overview Music",
+  "parents": [],
+  "source": "discogs"
+ },
+ "dg:1698840": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 1698840,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "14178437",
+   "14950689",
+   "15389558",
+   "15408640",
+   "15591527",
+   "18065905",
+   "18104200",
+   "18691087",
+   "21064051",
+   "22017481",
+   "22371763",
+   "23739794",
+   "23863682",
+   "24021017",
+   "25274032",
+   "25342633",
+   "25866100",
+   "26262227",
+   "28812928",
+   "28813087",
+   "29005066",
+   "29105134",
+   "30797076",
+   "31017547",
+   "31019905",
+   "31389380",
+   "32129526",
+   "32148558",
+   "32780112",
+   "33339665",
+   "34001490",
+   "34010670",
+   "34010844",
+   "34010952",
+   "34436479",
+   "34752039",
+   "34888883",
+   "34975535",
+   "35133131",
+   "35517346",
+   "35517367",
+   "35517376",
+   "35722273",
+   "35722309",
+   "35740003",
+   "35900731",
+   "37300317",
+   "37651764",
+   "38205954",
+   "38726931"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "DeepMatter",
   "parents": [],
   "source": "discogs"
  },
@@ -18492,6 +20133,31 @@
   "parents": [],
   "source": "discogs"
  },
+ "dg:1914237": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 1914237,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "18723256",
+   "19257664",
+   "19678150",
+   "31745153",
+   "32202891",
+   "32858394",
+   "33780654",
+   "35016536",
+   "35017148",
+   "35114120",
+   "37813947",
+   "38726643"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Hideous Mink Records",
+  "parents": [],
+  "source": "discogs"
+ },
  "dg:1915057": {
   "city": "UK",
   "city_checked": true,
@@ -19303,6 +20969,53 @@
   "parents": [],
   "source": "discogs"
  },
+ "dg:2193064": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 2193064,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "29909746",
+   "29998579",
+   "30012574",
+   "32742045",
+   "33266952",
+   "33564576",
+   "33564792",
+   "33564975",
+   "34098928",
+   "34350784",
+   "34419388",
+   "34496497",
+   "34558291",
+   "34594465",
+   "35343106",
+   "35344105",
+   "35412934",
+   "36172255",
+   "36367090",
+   "36874999",
+   "36922881",
+   "37012254",
+   "37086933",
+   "37194831",
+   "37207797",
+   "37371855",
+   "37547367",
+   "37625913",
+   "37777107",
+   "37777329",
+   "38098617",
+   "38195403",
+   "38510943",
+   "38728380"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Precious Recordings Of London",
+  "parents": [],
+  "source": "discogs"
+ },
  "dg:2208487": {
   "city": "UK",
   "city_checked": true,
@@ -19401,6 +21114,60 @@
   ],
   "last_checked": "2026-10-15",
   "name": "Aurum (3)",
+  "parents": [],
+  "source": "discogs"
+ },
+ "dg:227549": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 227549,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "36697342",
+   "36698338",
+   "36698422",
+   "36703354",
+   "36738418",
+   "36747985",
+   "36748006",
+   "36837790",
+   "36891727",
+   "37006380",
+   "37210869",
+   "37274520",
+   "37276851",
+   "37276872",
+   "37415130",
+   "37443264",
+   "37443354",
+   "37461678",
+   "37513035",
+   "37642014",
+   "37877337",
+   "38214717",
+   "38231205",
+   "38250999",
+   "38305854",
+   "38305860",
+   "38449590",
+   "38465316",
+   "38472336",
+   "38494119",
+   "38496195",
+   "38585715",
+   "38664633",
+   "38695446",
+   "38695497",
+   "38714268",
+   "38718339",
+   "38718393",
+   "38723616",
+   "38723673",
+   "38734356"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Enjoy The Ride Records",
   "parents": [],
   "source": "discogs"
  },
@@ -19866,6 +21633,41 @@
   "parents": [],
   "source": "discogs"
  },
+ "dg:2400757": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 2400757,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "20250505",
+   "20250589",
+   "21130354",
+   "22471684",
+   "22480790",
+   "22482236",
+   "22483322",
+   "22506548",
+   "22506647",
+   "22559981",
+   "22643078",
+   "23129708",
+   "27343455",
+   "27344091",
+   "27344790",
+   "27366318",
+   "37224714",
+   "37256136",
+   "37281534",
+   "37281696",
+   "37292850",
+   "38736009"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "BooSTR Records",
+  "parents": [],
+  "source": "discogs"
+ },
  "dg:2410": {
   "city": "London, UK",
   "city_checked": true,
@@ -20277,6 +22079,35 @@
   "parents": [],
   "source": "discogs"
  },
+ "dg:2537680": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 2537680,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "21124609",
+   "23924015",
+   "24532790",
+   "24533702",
+   "29233513",
+   "30104114",
+   "30420878",
+   "31089425",
+   "31355569",
+   "32272479",
+   "34320577",
+   "34675753",
+   "34772849",
+   "36566119",
+   "37374600",
+   "38726694"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Blue Crystal Records",
+  "parents": [],
+  "source": "discogs"
+ },
  "dg:25386": {
   "city": "UK",
   "city_checked": true,
@@ -20345,6 +22176,49 @@
    "Sony Music Entertainment",
    "Sony Music Entertainment Inc.",
    "Sony Corporation"
+  ],
+  "source": "discogs"
+ },
+ "dg:2554798": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 2554798,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "31101812",
+   "31200565",
+   "31359658",
+   "32275440",
+   "32429277",
+   "32459589",
+   "32523921",
+   "32555535",
+   "32678808",
+   "33047430",
+   "33690009",
+   "34053610",
+   "34060756",
+   "34103056",
+   "34319290",
+   "35107010",
+   "35107013",
+   "35318515",
+   "35491600",
+   "35804227",
+   "35822899",
+   "35836282",
+   "36580036",
+   "36616735",
+   "36646174",
+   "37521549",
+   "37539783",
+   "38727582"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Two Piers",
+  "parents": [
+   "Two Piers Records"
   ],
   "source": "discogs"
  },
@@ -20525,6 +22399,23 @@
   "name": "Domino",
   "parents": [
    "Domino Recording Co. Ltd."
+  ],
+  "source": "discogs"
+ },
+ "dg:26786": {
+  "city": "London, UK",
+  "city_checked": true,
+  "discogs_id": 26786,
+  "excluded": "major",
+  "first_seen": "2026-10-16",
+  "known": null,
+  "last_checked": null,
+  "name": "V2 Records",
+  "parents": [
+   "V2 Music Ltd.",
+   "V2 Music Group Limited",
+   "Universal International Music B.V.",
+   "Universal Music Group"
   ],
   "source": "discogs"
  },
@@ -20760,6 +22651,67 @@
   "parents": [
    "Million Dollar Disco"
   ],
+  "source": "discogs"
+ },
+ "dg:2806": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 2806,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "25782133",
+   "25933498",
+   "25935058",
+   "25978372",
+   "26177546",
+   "26177630",
+   "26510234",
+   "26528081",
+   "26541107",
+   "26676122",
+   "26783204",
+   "28371727",
+   "28726900",
+   "28827772",
+   "29110840",
+   "29532259",
+   "29606824",
+   "30090377",
+   "30562777",
+   "30819663",
+   "31552306",
+   "32021444",
+   "32069052",
+   "32096625",
+   "32169183",
+   "32173797",
+   "32173896",
+   "32355450",
+   "32471685",
+   "32695989",
+   "32739018",
+   "33070683",
+   "33869166",
+   "34025469",
+   "34889387",
+   "35623465",
+   "35658838",
+   "35690977",
+   "36274387",
+   "36362596",
+   "36509707",
+   "36684340",
+   "37021710",
+   "37513323",
+   "38363034",
+   "38728632",
+   "38728740",
+   "38728857"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Dispatch Recordings",
+  "parents": [],
   "source": "discogs"
  },
  "dg:2863163": {
@@ -22107,6 +24059,69 @@
   ],
   "source": "discogs"
  },
+ "dg:3377271": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 3377271,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "28007778",
+   "28019976",
+   "28020075",
+   "28020177",
+   "29896285",
+   "29958451",
+   "30077662",
+   "30239321",
+   "30284648",
+   "30765996",
+   "31244152",
+   "31244416",
+   "31420946",
+   "31422161",
+   "31636144",
+   "31650638",
+   "31656677",
+   "31808387",
+   "31847285",
+   "31876111",
+   "32083266",
+   "32150631",
+   "32150688",
+   "32150727",
+   "32150781",
+   "32226654",
+   "32226753",
+   "32807361",
+   "33138435",
+   "33543003",
+   "33543219",
+   "33646704",
+   "33655572",
+   "33696549",
+   "33699831",
+   "33820332",
+   "34510408",
+   "35592220",
+   "35592925",
+   "35849554",
+   "35909032",
+   "37490838",
+   "37604721",
+   "37604937",
+   "37765161",
+   "37863327",
+   "38216982",
+   "38651607",
+   "38651727",
+   "38727297"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "London Records (Because Ltd)",
+  "parents": [],
+  "source": "discogs"
+ },
  "dg:3386425": {
   "city": "UK",
   "city_checked": true,
@@ -22310,6 +24325,36 @@
   ],
   "source": "discogs"
  },
+ "dg:3487360": {
+  "city": "Glasgow, UK",
+  "city_checked": true,
+  "discogs_id": 3487360,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "28997587",
+   "32242149",
+   "32498508",
+   "32498679",
+   "32852841",
+   "34083451",
+   "34083736",
+   "34140712",
+   "34213405",
+   "35468029",
+   "35627689",
+   "35939881",
+   "37743945",
+   "37744731",
+   "38042955",
+   "38315442",
+   "38728485"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Errol's Hot Wax",
+  "parents": [],
+  "source": "discogs"
+ },
  "dg:349159": {
   "city": "UK",
   "city_checked": true,
@@ -22358,6 +24403,68 @@
   "last_checked": "2026-10-15",
   "name": "LateNightTales",
   "parents": [],
+  "source": "discogs"
+ },
+ "dg:364459": {
+  "city": "London, UK",
+  "city_checked": true,
+  "discogs_id": 364459,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "33673461",
+   "33692148",
+   "34510738",
+   "34603198",
+   "34671199",
+   "34777124",
+   "35084570",
+   "35366659",
+   "35377159",
+   "35387530",
+   "35397352",
+   "35471218",
+   "35539024",
+   "35617603",
+   "35690656",
+   "35713726",
+   "35740939",
+   "35806336",
+   "35959255",
+   "36179743",
+   "36342223",
+   "36957192",
+   "37102494",
+   "37113450",
+   "37113591",
+   "37114821",
+   "37125087",
+   "37154169",
+   "37589526",
+   "37628310",
+   "37640487",
+   "37676883",
+   "37793799",
+   "37794105",
+   "37794258",
+   "38008872",
+   "38025381",
+   "38060631",
+   "38061945",
+   "38142795",
+   "38292726",
+   "38591154",
+   "38607582",
+   "38661951",
+   "38727414",
+   "38728086",
+   "38728998"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Madfish",
+  "parents": [
+   "Snapper Music plc"
+  ],
   "source": "discogs"
  },
  "dg:3657182": {
@@ -22999,6 +25106,65 @@
   ],
   "source": "discogs"
  },
+ "dg:387485": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 387485,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "10420805",
+   "10506845",
+   "10652845",
+   "11101219",
+   "11785322",
+   "13332670",
+   "14092107",
+   "14765739",
+   "15373597",
+   "15519414",
+   "15992964",
+   "16020458",
+   "16100929",
+   "17764345",
+   "19117243",
+   "20186185",
+   "23988098",
+   "28016508",
+   "35180296",
+   "35180563",
+   "35180578",
+   "35180617",
+   "35180692",
+   "35180755",
+   "35180779",
+   "35180977",
+   "3580443",
+   "38728779",
+   "4900677",
+   "4938790",
+   "4938831",
+   "5056354",
+   "5056397",
+   "5057592",
+   "5057610",
+   "5057631",
+   "5103767",
+   "5168067",
+   "5199267",
+   "5301514",
+   "7091495",
+   "8771749",
+   "9044295",
+   "9773690",
+   "9875728",
+   "9994611"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Haus Of Pins",
+  "parents": [],
+  "source": "discogs"
+ },
  "dg:3879819": {
   "city": "UK",
   "city_checked": true,
@@ -23166,6 +25332,70 @@
   "name": "Emotional Response",
   "parents": [
    "Emotional Response Recordings"
+  ],
+  "source": "discogs"
+ },
+ "dg:3907809": {
+  "city": "London, UK",
+  "city_checked": true,
+  "discogs_id": 3907809,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "36111562",
+   "36111589",
+   "36111664",
+   "36364453",
+   "36364864",
+   "36388279",
+   "36450435",
+   "36450453",
+   "36477406",
+   "36547780",
+   "36724957",
+   "36789568",
+   "36865225",
+   "36958962",
+   "37009695",
+   "37086561",
+   "37156383",
+   "37156437",
+   "37202574",
+   "37238952",
+   "37239117",
+   "37241754",
+   "37264206",
+   "37264257",
+   "37264293",
+   "37276242",
+   "37289631",
+   "37328493",
+   "37613775",
+   "37676964",
+   "37742199",
+   "37840923",
+   "37841049",
+   "37872855",
+   "37979085",
+   "38072991",
+   "38073066",
+   "38197005",
+   "38227698",
+   "38307105",
+   "38307207",
+   "38413569",
+   "38463075",
+   "38505333",
+   "38578251",
+   "38581446",
+   "38655804",
+   "38687073",
+   "38734377"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "ElasticStage.com",
+  "parents": [
+   "elasticStage Ltd."
   ],
   "source": "discogs"
  },
@@ -23682,6 +25912,28 @@
   "parents": [],
   "source": "discogs"
  },
+ "dg:4179421": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 4179421,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "34464106",
+   "34908107",
+   "35770792",
+   "36119155",
+   "36222109",
+   "36678631",
+   "37963206",
+   "38135643",
+   "38727240"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Coastal Electronauts",
+  "parents": [],
+  "source": "discogs"
+ },
  "dg:4216187": {
   "city": "UK",
   "city_checked": true,
@@ -23903,9 +26155,11 @@
    "38530530",
    "38596857",
    "38663505",
-   "38710659"
+   "38710659",
+   "38730582",
+   "38730900"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Gearbox Digital",
   "parents": [],
   "source": "discogs"
@@ -23920,7 +26174,7 @@
    "35371921",
    "38683671"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Hand of God Recording Company",
   "parents": [],
   "source": "discogs"
@@ -23954,7 +26208,7 @@
    "38650356",
    "38659647"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Cash Carrera",
   "parents": [],
   "source": "discogs"
@@ -23994,7 +26248,7 @@
    "38651292",
    "38651364"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Daphne",
   "parents": [
    "Daupe!"
@@ -24054,7 +26308,7 @@
    "38669502",
    "38721123"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Big Scary Monsters",
   "parents": [
    "Big Scary Monsters Recording Company Ltd"
@@ -24102,7 +26356,7 @@
    "38654751",
    "38658084"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Easy Action",
   "parents": [
    "Easy Action Recordings Ltd."
@@ -24126,7 +26380,7 @@
    "38371407",
    "38709861"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "FBAudio",
   "parents": [],
   "source": "discogs"
@@ -24147,8 +26401,41 @@
    "38546277",
    "38712771"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Flung",
+  "parents": [],
+  "source": "discogs"
+ },
+ "dg:4376215": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 4376215,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "35973139",
+   "36150328",
+   "36152137",
+   "36152152",
+   "36153586",
+   "36154051",
+   "36154144",
+   "36531082",
+   "36560545",
+   "36560623",
+   "36899520",
+   "37168962",
+   "37527789",
+   "37672056",
+   "38367273",
+   "38490312",
+   "38527158",
+   "38527263",
+   "38736144",
+   "38736222"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Ingram",
   "parents": [],
   "source": "discogs"
  },
@@ -24184,7 +26471,7 @@
    "38650854",
    "38650857"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Lateral Vision Recordings",
   "parents": [],
   "source": "discogs"
@@ -24224,7 +26511,7 @@
    "38689527",
    "38689578"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "BSC Records",
   "parents": [],
   "source": "discogs"
@@ -24239,7 +26526,7 @@
    "36437611",
    "38669844"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "The Bird Records",
   "parents": [],
   "source": "discogs"
@@ -24298,7 +26585,7 @@
    "38611668",
    "38661177"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Sonik Recordings",
   "parents": [],
   "source": "discogs"
@@ -24337,7 +26624,7 @@
    "8773967",
    "9799029"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Reggae Archive Records",
   "parents": [
    "Sugar Shack Records"
@@ -24366,7 +26653,7 @@
    "38087667",
    "38669397"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Fuel Records",
   "parents": [],
   "source": "discogs"
@@ -24397,7 +26684,7 @@
    "38462865",
    "38701620"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Undergrowth (3)",
   "parents": [],
   "source": "discogs"
@@ -24412,7 +26699,7 @@
    "36856549",
    "38692851"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Final Submission Records",
   "parents": [],
   "source": "discogs"
@@ -24429,7 +26716,7 @@
    "37331295",
    "38710002"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Silk Cuts (5)",
   "parents": [],
   "source": "discogs"
@@ -24456,7 +26743,7 @@
    "38431581",
    "38651565"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Blaggard Records",
   "parents": [],
   "source": "discogs"
@@ -24515,13 +26802,31 @@
    "38486841",
    "38531724",
    "38656716",
-   "38668896"
+   "38668896",
+   "38708298"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Metal Blade Records",
   "parents": [
    "Metal Blade Records Inc."
   ],
+  "source": "discogs"
+ },
+ "dg:4530492": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 4530492,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "37129029",
+   "37129152",
+   "37129179",
+   "38702829"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Sketch Book Records",
+  "parents": [],
   "source": "discogs"
  },
  "dg:4577751": {
@@ -24536,7 +26841,7 @@
    "38636631",
    "38702754"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Grin Audio",
   "parents": [],
   "source": "discogs"
@@ -24599,7 +26904,7 @@
    "38536899",
    "38542089"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Anjunadeep",
   "parents": [
    "Involved Productions",
@@ -24631,7 +26936,7 @@
    "38702694",
    "38708550"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Uprising Records (16)",
   "parents": [],
   "source": "discogs"
@@ -24664,7 +26969,7 @@
    "38687655",
    "38687730"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Ceol Music (UK)",
   "parents": [],
   "source": "discogs"
@@ -24681,7 +26986,7 @@
    "38665683",
    "38665806"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Club Fantasy",
   "parents": [],
   "source": "discogs"
@@ -24698,7 +27003,7 @@
    "38335500",
    "38700954"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Art In A Vacuum",
   "parents": [],
   "source": "discogs"
@@ -24714,7 +27019,7 @@
    "38090964",
    "38673279"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Ta! Records",
   "parents": [],
   "source": "discogs"
@@ -24729,7 +27034,7 @@
    "35772520",
    "38698938"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Sonum",
   "parents": [],
   "source": "discogs"
@@ -24748,8 +27053,40 @@
    "38709012",
    "38709423"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Gyaru Hate Records",
+  "parents": [],
+  "source": "discogs"
+ },
+ "dg:4695381": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 4695381,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "38344128",
+   "38726727"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Hello Trouble Records",
+  "parents": [],
+  "source": "discogs"
+ },
+ "dg:470785": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 470785,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "36457677",
+   "38036253",
+   "38230965",
+   "38727537"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "SoundCloud",
   "parents": [],
   "source": "discogs"
  },
@@ -24763,7 +27100,7 @@
    "38469954",
    "38706105"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "St Wrongbow Records",
   "parents": [],
   "source": "discogs"
@@ -24779,7 +27116,7 @@
    "38556969",
    "38652123"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Keep Cheap",
   "parents": [],
   "source": "discogs"
@@ -24794,7 +27131,7 @@
    "38568033",
    "38720349"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Dialled In Records",
   "parents": [],
   "source": "discogs"
@@ -24808,7 +27145,7 @@
   "known": [
    "38652381"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Blue Century Records",
   "parents": [],
   "source": "discogs"
@@ -24822,7 +27159,7 @@
   "known": [
    "38653842"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Defunkt Sound Inc",
   "parents": [],
   "source": "discogs"
@@ -24836,7 +27173,7 @@
   "known": [
    "38659932"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Tidy Two White",
   "parents": [
    "Tidy"
@@ -24862,7 +27199,7 @@
    "38665665",
    "38665848"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Micent Productions",
   "parents": [],
   "source": "discogs"
@@ -24876,7 +27213,7 @@
   "known": [
    "38669409"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Lost The Plot Records",
   "parents": [],
   "source": "discogs"
@@ -24890,7 +27227,7 @@
   "known": [
    "38673261"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "RIFFSTONEMUSIC",
   "parents": [],
   "source": "discogs"
@@ -24904,7 +27241,7 @@
   "known": [
    "38683494"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Elastic Age",
   "parents": [],
   "source": "discogs"
@@ -24925,7 +27262,7 @@
    "38690325",
    "38690406"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Nuclear Lithium Records",
   "parents": [],
   "source": "discogs"
@@ -24939,7 +27276,7 @@
   "known": [
    "38687226"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Foxico Records",
   "parents": [],
   "source": "discogs"
@@ -24953,7 +27290,7 @@
   "known": [
    "38689545"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Lonely Mountain 3",
   "parents": [],
   "source": "discogs"
@@ -24966,7 +27303,7 @@
   "known": [
    "38690250"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Pink Rose Recordings",
   "parents": [],
   "source": "discogs"
@@ -24980,7 +27317,7 @@
   "known": [
    "38694879"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "TEAM VyRaL",
   "parents": [],
   "source": "discogs"
@@ -24994,7 +27331,7 @@
   "known": [
    "38698800"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Nothing Stays The Same",
   "parents": [],
   "source": "discogs"
@@ -25008,7 +27345,7 @@
   "known": [
    "38700093"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Kids Do Drugs",
   "parents": [],
   "source": "discogs"
@@ -25022,7 +27359,7 @@
   "known": [
    "38702328"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "SPM (9)",
   "parents": [],
   "source": "discogs"
@@ -25036,7 +27373,7 @@
   "known": [
    "38702187"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Nocturnal Me",
   "parents": [],
   "source": "discogs"
@@ -25050,7 +27387,7 @@
   "known": [
    "38704935"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Cardinal Loom",
   "parents": [],
   "source": "discogs"
@@ -25064,7 +27401,7 @@
   "known": [
    "38707881"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "TOMO/OTO",
   "parents": [],
   "source": "discogs"
@@ -25077,7 +27414,7 @@
   "known": [
    "38710929"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "© Valkyrie Music",
   "parents": [],
   "source": "discogs"
@@ -25091,7 +27428,7 @@
   "known": [
    "38711256"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Egg Vox",
   "parents": [],
   "source": "discogs"
@@ -25105,7 +27442,7 @@
   "known": [
    "38710929"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Valkyrie",
   "parents": [],
   "source": "discogs"
@@ -25119,8 +27456,22 @@
   "known": [
    "38718801"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Believe.",
+  "parents": [],
+  "source": "discogs"
+ },
+ "dg:4744722": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 4744722,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "38721348"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Earconnector",
   "parents": [],
   "source": "discogs"
  },
@@ -25182,7 +27533,7 @@
    "38655426",
    "38655435"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Afterdark",
   "parents": [
    "Black Hole Recordings ",
@@ -25239,7 +27590,7 @@
    "38213859",
    "38691027"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Slingshot Recordings",
   "parents": [],
   "source": "discogs"
@@ -25286,7 +27637,7 @@
    "38285511",
    "38660853"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Enhanced Progressive",
   "parents": [
    "Enhanced Music Limited"
@@ -25347,7 +27698,7 @@
    "38656332",
    "38669379"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Daupe!",
   "parents": [],
   "source": "discogs"
@@ -25401,7 +27752,7 @@
    "9025782",
    "9190246"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Aquamelon",
   "parents": [],
   "source": "discogs"
@@ -25415,7 +27766,7 @@
   "known": [
    "38692080"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Sound Support",
   "parents": [],
   "source": "discogs"
@@ -25427,6 +27778,7 @@
   "excluded": null,
   "first_seen": "2026-10-13",
   "known": [
+   "22470313",
    "22640864",
    "23456888",
    "25380031",
@@ -25443,6 +27795,7 @@
    "30770127",
    "30771678",
    "31026886",
+   "31202281",
    "32170620",
    "33381452",
    "33495023",
@@ -25470,7 +27823,7 @@
    "38363889",
    "38652216"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Linn Records",
   "parents": [
    "Linn Products Limited"
@@ -25534,7 +27887,7 @@
    "38624208",
    "38699445"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Partial Records",
   "parents": [],
   "source": "discogs"
@@ -25593,7 +27946,7 @@
    "38480169",
    "38690223"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "V Recordings",
   "parents": [],
   "source": "discogs"
@@ -25656,7 +28009,7 @@
    "36598912",
    "38650977"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Kent Records",
   "parents": [
    "Ace Records Ltd."
@@ -25719,7 +28072,7 @@
    "38606091",
    "38685687"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Loma Vista",
   "parents": [
    "Concord Music Group",
@@ -25727,6 +28080,123 @@
    "BMG",
    "BMG Rights Management GmbH"
   ],
+  "source": "discogs"
+ },
+ "dg:534543": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 534543,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "34351534",
+   "34623811",
+   "34774835",
+   "34797926",
+   "34823222",
+   "34896869",
+   "35290339",
+   "35320939",
+   "35443786",
+   "35513209",
+   "35537014",
+   "35625355",
+   "35703751",
+   "35716564",
+   "35716654",
+   "35721559",
+   "35832112",
+   "35845012",
+   "35915824",
+   "35915986",
+   "35935741",
+   "35944624",
+   "35952373",
+   "35993626",
+   "36000991",
+   "36014821",
+   "36177841",
+   "36446631",
+   "36577378",
+   "36580999",
+   "36667309",
+   "36714037",
+   "36725047",
+   "36727216",
+   "36728116",
+   "36728368",
+   "37014189",
+   "37055616",
+   "37438209",
+   "37740837",
+   "37953387",
+   "38019171",
+   "38028894",
+   "38177298",
+   "38192478",
+   "38256456",
+   "38470092",
+   "38470440",
+   "38601648",
+   "38728362"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Cruel Nature Records",
+  "parents": [],
+  "source": "discogs"
+ },
+ "dg:53506": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 53506,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "33633342",
+   "33800940",
+   "33803877",
+   "33814446",
+   "33826755",
+   "33829095",
+   "33835878",
+   "33837939",
+   "33944970",
+   "34270198",
+   "34346299",
+   "35778991",
+   "35779207",
+   "35817871",
+   "35858509",
+   "36532513",
+   "36543913",
+   "36611302",
+   "36681916",
+   "36741574",
+   "36831898",
+   "36839461",
+   "37068114",
+   "37093101",
+   "37102476",
+   "37102719",
+   "37108938",
+   "37116588",
+   "38294373",
+   "38307186",
+   "38507487",
+   "38509074",
+   "38518452",
+   "38525535",
+   "38542416",
+   "38551698",
+   "38565585",
+   "38599647",
+   "38613543",
+   "38673855",
+   "38729202"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Dark Horse Records",
+  "parents": [],
   "source": "discogs"
  },
  "dg:536046": {
@@ -25784,9 +28254,12 @@
    "38537544",
    "38605569",
    "38668326",
-   "38668776"
+   "38668776",
+   "38734668",
+   "38734917",
+   "38735259"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Signum Classics",
   "parents": [
    "Signum Records"
@@ -25847,9 +28320,11 @@
    "38571417",
    "38604948",
    "38652981",
-   "38665671"
+   "38665671",
+   "38700528",
+   "38734794"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Because Music",
   "parents": [
    "Because Music SARL"
@@ -25914,8 +28389,93 @@
    "5151694",
    "6308406"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Axia Records",
+  "parents": [],
+  "source": "discogs"
+ },
+ "dg:558054": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 558054,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "22206949",
+   "25424149",
+   "25965316",
+   "25965532",
+   "25965604",
+   "26618753",
+   "26618873",
+   "27394425",
+   "27426090",
+   "28311145",
+   "29731309",
+   "29781388",
+   "29781550",
+   "30413099",
+   "30417497",
+   "30621199",
+   "30886077",
+   "31478429",
+   "32071257",
+   "32797248",
+   "33006369",
+   "33582432",
+   "33873195",
+   "34683675",
+   "34751067",
+   "36134215",
+   "36147280",
+   "36553762",
+   "36833824",
+   "37244382",
+   "38176818",
+   "38727951"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "[Emotional] Especial",
+  "parents": [
+   "Emotional Response",
+   "Emotional Response Recordings"
+  ],
+  "source": "discogs"
+ },
+ "dg:564596": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 564596,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "10367972",
+   "10810230",
+   "11370369",
+   "11604322",
+   "11782686",
+   "12793235",
+   "13273003",
+   "38729103",
+   "4718877",
+   "5486174",
+   "5719105",
+   "6221956",
+   "6425717",
+   "6704065",
+   "7006519",
+   "7400278",
+   "7999613",
+   "8185846",
+   "8655675",
+   "8780192",
+   "9042635",
+   "9421282",
+   "9685772",
+   "9983569"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Home Invasion",
   "parents": [],
   "source": "discogs"
  },
@@ -25963,7 +28523,7 @@
    "38651682",
    "38651859"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "White Knight Records",
   "parents": [],
   "source": "discogs"
@@ -26026,7 +28586,7 @@
    "38627427",
    "38684250"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Confront",
   "parents": [
    "Sound 323"
@@ -26091,7 +28651,7 @@
    "38597823",
    "38656473"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Opportunes",
   "parents": [],
   "source": "discogs"
@@ -26150,8 +28710,25 @@
    "4953370",
    "8833181"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Hottwerk Records",
+  "parents": [],
+  "source": "discogs"
+ },
+ "dg:601180": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 601180,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "38730303",
+   "4992771",
+   "6154086",
+   "8681918"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Sonic Terror Discs",
   "parents": [],
   "source": "discogs"
  },
@@ -26205,9 +28782,73 @@
    "9815252",
    "9867747"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Sacred Tapes (2)",
   "parents": [],
+  "source": "discogs"
+ },
+ "dg:608869": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 608869,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "32494545",
+   "32935467",
+   "32990634",
+   "32991933",
+   "32992161",
+   "32992320",
+   "32992674",
+   "32992731",
+   "33728169",
+   "33765558",
+   "33765627",
+   "33765666",
+   "33932973",
+   "33943407",
+   "33943977",
+   "33950187",
+   "33950367",
+   "33952422",
+   "34068565",
+   "34068871",
+   "34069243",
+   "34125322",
+   "34173082",
+   "34201738",
+   "34202377",
+   "34576582",
+   "34581163",
+   "34742232",
+   "34748334",
+   "35177761",
+   "35820373",
+   "35854552",
+   "36227773",
+   "36366439",
+   "36373822",
+   "36386986",
+   "36660529",
+   "36660661",
+   "36916125",
+   "37369011",
+   "37377825",
+   "37696185",
+   "37755762",
+   "38329167",
+   "38353764",
+   "38489172",
+   "38612403",
+   "38661429",
+   "38728920"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Townsend Music",
+  "parents": [
+   "Townsend Music Ltd"
+  ],
   "source": "discogs"
  },
  "dg:62136": {
@@ -26243,7 +28884,7 @@
    "38579550",
    "38709525"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Brownswood Recordings",
   "parents": [
    "Brownswood Music Ltd."
@@ -26311,6 +28952,69 @@
   "parents": [],
   "source": "discogs"
  },
+ "dg:63870": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 63870,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "28968871",
+   "29076931",
+   "29360326",
+   "29750227",
+   "29858917",
+   "29858986",
+   "29973199",
+   "29998171",
+   "29998216",
+   "30008068",
+   "30008134",
+   "30008191",
+   "30008230",
+   "30011452",
+   "30017758",
+   "30066778",
+   "30325784",
+   "30342197",
+   "30342272",
+   "30342314",
+   "30342395",
+   "30342425",
+   "30409781",
+   "30442874",
+   "30539431",
+   "30577114",
+   "30642616",
+   "30794460",
+   "30794517",
+   "30895059",
+   "30995428",
+   "31084151",
+   "31142237",
+   "31264225",
+   "31288721",
+   "31326898",
+   "31494245",
+   "31543096",
+   "31554697",
+   "31635223",
+   "32995812",
+   "32996037",
+   "32996085",
+   "32996208",
+   "32996250",
+   "32996286",
+   "32996370",
+   "38735130"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Freshly Squeezed Music",
+  "parents": [
+   "Freshly Squeezed (Music Ltd)"
+  ],
+  "source": "discogs"
+ },
  "dg:642250": {
   "city": "UK",
   "city_checked": true,
@@ -26347,9 +29051,11 @@
    "38327880",
    "38591649",
    "38591664",
-   "38710104"
+   "38710104",
+   "38729964",
+   "38730003"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Pure Trance Recordings",
   "parents": [
    "Black Hole Recordings",
@@ -26358,7 +29064,8 @@
   "source": "discogs"
  },
  "dg:651": {
-  "city": "UK",
+  "city": "York, UK",
+  "city_checked": true,
   "discogs_id": 651,
   "excluded": "major",
   "first_seen": "2026-10-13",
@@ -26441,7 +29148,7 @@
    "9984712",
    "9984740"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Tent",
   "parents": [],
   "source": "discogs"
@@ -26465,7 +29172,7 @@
    "8543265",
    "9374814"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Trash City Records",
   "parents": [
    "Heartbeat Records"
@@ -26529,7 +29236,7 @@
    "9582753",
    "9975477"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Pariter",
   "parents": [
    "Sushitech Records"
@@ -26581,7 +29288,7 @@
    "38666373",
    "5433649"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Signum Recordings",
   "parents": [],
   "source": "discogs"
@@ -26643,7 +29350,7 @@
    "38033337",
    "38653701"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Die Das Der",
   "parents": [],
   "source": "discogs"
@@ -26687,8 +29394,71 @@
    "38642202",
    "38661573"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "NuNorthernSoul",
+  "parents": [],
+  "source": "discogs"
+ },
+ "dg:697": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 697,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "11148795",
+   "11238485",
+   "12171439",
+   "12171650",
+   "12182360",
+   "12293335",
+   "12817185",
+   "13288531",
+   "14436116",
+   "14642018",
+   "14752745",
+   "15518105",
+   "16859325",
+   "21185587",
+   "26115190",
+   "32150277",
+   "32150838",
+   "34659289",
+   "35134703",
+   "37153299",
+   "38733882",
+   "6011370",
+   "6018099",
+   "6173876",
+   "6585819",
+   "7193857",
+   "7636248",
+   "7637957",
+   "7646515",
+   "7660996",
+   "7668839",
+   "7668855",
+   "7668863",
+   "7668932",
+   "7668934",
+   "7668955",
+   "7668967",
+   "7668970",
+   "7669037",
+   "7669049",
+   "7669051",
+   "7684998",
+   "7688822",
+   "7688872",
+   "7688874",
+   "7727647",
+   "7727659",
+   "7727665",
+   "8481406",
+   "8724008"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Atlantic Jaxx",
   "parents": [],
   "source": "discogs"
  },
@@ -26744,7 +29514,7 @@
    "38570355",
    "38660034"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Deep Medi Musik",
   "parents": [],
   "source": "discogs"
@@ -26762,7 +29532,7 @@
    "759280",
    "765964"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "NUFORM",
   "parents": [],
   "source": "discogs"
@@ -26781,7 +29551,7 @@
    "769327",
    "7901496"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "BSC Records",
   "parents": [],
   "source": "discogs"
@@ -26826,7 +29596,7 @@
    "38656128",
    "38668155"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Soulfuric Recordings",
   "parents": [
    "Defected",
@@ -26881,7 +29651,7 @@
    "38517714",
    "38698668"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Discus",
   "parents": [
    "Discus Music (2)"
@@ -26946,7 +29716,7 @@
    "38655564",
    "38655567"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Outburst Records",
   "parents": [
    "Black Hole Recordings",
@@ -27009,9 +29779,10 @@
    "38689821",
    "38703423",
    "38708532",
-   "38710779"
+   "38710779",
+   "38729319"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Merge Records",
   "parents": [
    "Merge (2)"
@@ -27053,8 +29824,63 @@
    "38542611",
    "38710491"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "M.A.D Records",
+  "parents": [],
+  "source": "discogs"
+ },
+ "dg:763900": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 763900,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "25238002",
+   "26120930",
+   "26128388",
+   "26259422",
+   "26282996",
+   "26669084",
+   "26760059",
+   "27324540",
+   "27779187",
+   "27789066",
+   "28244002",
+   "28300513",
+   "28322845",
+   "28544023",
+   "28706143",
+   "29060113",
+   "29372488",
+   "30503755",
+   "30531691",
+   "31562533",
+   "31792508",
+   "31815983",
+   "31854830",
+   "32588013",
+   "32588097",
+   "32606826",
+   "32910453",
+   "33521201",
+   "33546009",
+   "37049544",
+   "37591044",
+   "37604499",
+   "37640526",
+   "37661982",
+   "37663806",
+   "37677624",
+   "37880274",
+   "37914822",
+   "37921788",
+   "37973514",
+   "38330148",
+   "38727393"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Futurismo",
   "parents": [],
   "source": "discogs"
  },
@@ -27115,7 +29941,7 @@
    "38301765",
    "38717082"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Bedrock Records",
   "parents": [
    "Bedrock Music Ltd."
@@ -27230,7 +30056,7 @@
    "38607729",
    "38653401"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Far Out Recordings",
   "parents": [],
   "source": "discogs"
@@ -27291,7 +30117,7 @@
    "8396403",
    "9982769"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Hell & Back Recordings",
   "parents": [
    "Hell & Back AB"
@@ -27361,6 +30187,70 @@
   "parents": [],
   "source": "discogs"
  },
+ "dg:826452": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 826452,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "10558410",
+   "11794356",
+   "11794490",
+   "11810578",
+   "12293510",
+   "12878678",
+   "13602148",
+   "14169206",
+   "15797212",
+   "15816849",
+   "15817262",
+   "15935134",
+   "15935156",
+   "16071971",
+   "16157830",
+   "16997658",
+   "16999497",
+   "16999590",
+   "17195368",
+   "18249877",
+   "18574699",
+   "18625681",
+   "18892675",
+   "19952125",
+   "21142417",
+   "23750525",
+   "24588929",
+   "27280125",
+   "27312696",
+   "27894084",
+   "29026930",
+   "31009987",
+   "31253542",
+   "31476881",
+   "31697807",
+   "32089896",
+   "32089899",
+   "32092212",
+   "32118537",
+   "32304909",
+   "33048093",
+   "33863583",
+   "35478979",
+   "37750149",
+   "38729646",
+   "7862967",
+   "9829722",
+   "9915871"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Upbeat Jazz",
+  "parents": [
+   "Upbeat Recordings",
+   "Upbeat Recordings Ltd."
+  ],
+  "source": "discogs"
+ },
  "dg:8377": {
   "city": "York, UK",
   "city_checked": true,
@@ -27390,7 +30280,7 @@
    "7004338",
    "7004507"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Dusty Road Records (2)",
   "parents": [
    "Blindfoldead International"
@@ -27453,7 +30343,7 @@
    "949450",
    "986677"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Cyberfunk Records",
   "parents": [],
   "source": "discogs"
@@ -27484,7 +30374,7 @@
    "9575286",
    "9575342"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Sunn Creative",
   "parents": [],
   "source": "discogs"
@@ -27508,7 +30398,7 @@
    "38715384",
    "7172936"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "BMH Audio",
   "parents": [],
   "source": "discogs"
@@ -27582,7 +30472,7 @@
    "36404518",
    "38720124"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Is It Balearic? Recordings",
   "parents": [],
   "source": "discogs"
@@ -27700,7 +30590,7 @@
    "38709810",
    "38713332"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Apocalyptic Witchcraft",
   "parents": [],
   "source": "discogs"
@@ -27763,7 +30653,7 @@
    "38427450",
    "38709330"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "BBC Music Magazine",
   "parents": [
    "BBC Music",
@@ -27771,6 +30661,39 @@
    "BBC Worldwide Ltd.",
    "BBC"
   ],
+  "source": "discogs"
+ },
+ "dg:918190": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 918190,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "12150740",
+   "12163489",
+   "12197156",
+   "13447242",
+   "13637074",
+   "15426096",
+   "15716638",
+   "21905761",
+   "22447597",
+   "22447786",
+   "25783705",
+   "33735456",
+   "34034145",
+   "34171507",
+   "34429768",
+   "35365333",
+   "35803123",
+   "38727063",
+   "7665531",
+   "8326289"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Test Pressing",
+  "parents": [],
   "source": "discogs"
  },
  "dg:930534": {
@@ -27831,8 +30754,46 @@
    "35321692",
    "38701770"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Richter Scale (2)",
+  "parents": [],
+  "source": "discogs"
+ },
+ "dg:933997": {
+  "city": "UK",
+  "city_checked": true,
+  "discogs_id": 933997,
+  "excluded": null,
+  "first_seen": "2026-10-16",
+  "known": [
+   "13335168",
+   "13335175",
+   "14890347",
+   "15453873",
+   "15516586",
+   "15538963",
+   "15837561",
+   "16062792",
+   "22886012",
+   "29905366",
+   "31342477",
+   "31342588",
+   "34590529",
+   "34815179",
+   "34908650",
+   "35028635",
+   "35047151",
+   "35050460",
+   "35151457",
+   "35151763",
+   "35396548",
+   "36236560",
+   "36376510",
+   "37201560",
+   "38728320"
+  ],
+  "last_checked": "2026-10-16",
+  "name": "Microfunk Music",
   "parents": [],
   "source": "discogs"
  },
@@ -27879,7 +30840,7 @@
    "9267634",
    "9900519"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "On The Fiddle Recordings",
   "parents": [],
   "source": "discogs"
@@ -27942,7 +30903,7 @@
    "38530938",
    "38664960"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "OneSeventy",
   "parents": [],
   "source": "discogs"
@@ -28005,7 +30966,7 @@
    "37788195",
    "38666688"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Wire Magazine",
   "parents": [],
   "source": "discogs"
@@ -28064,7 +31025,7 @@
    "38593626",
    "38663442"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Cold Spring",
   "parents": [],
   "source": "discogs"
@@ -28127,7 +31088,7 @@
    "38634792",
    "38669928"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Believe",
   "parents": [],
   "source": "discogs"
@@ -28183,7 +31144,7 @@
    "38661705",
    "38719359"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Venn Records",
   "parents": [],
   "source": "discogs"
@@ -28231,7 +31192,7 @@
    "38704305",
    "38704458"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "LSD - Liquid Sound Design",
   "parents": [
    "Dragonfly Records",
@@ -28298,7 +31259,7 @@
    "38714442",
    "38716953"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Sumerian Records",
   "parents": [],
   "source": "discogs"
@@ -28361,7 +31322,7 @@
    "38585955",
    "38650323"
   ],
-  "last_checked": "2026-10-14",
+  "last_checked": "2026-10-16",
   "name": "Defected",
   "parents": [
    "Defected Records Ltd."
