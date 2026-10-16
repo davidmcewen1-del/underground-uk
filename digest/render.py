@@ -158,6 +158,9 @@ def digest_page(cfg, week, label, releases, playlists, prefix, kind="labels", pa
  <label>City <select id="f-city"><option value="">All</option>{_options(r.get('city') for r in releases)}</select></label>
  <label>Show <select id="f-show"><option value="unvoted" selected>Not voted yet</option><option value="">Everything</option>
   <option value="followed">Following</option><option value="for-you">For you</option><option value="random">Random picks</option></select></label>
+ <div class="view" role="group" aria-label="View">
+  <button type="button" data-view="cards" aria-pressed="true">▦ Cards</button><button type="button" data-view="list" aria-pressed="false">☰ List</button>
+ </div>
  <span id="vote-status" class="status" role="status"></span>
 </section>
 <main class="genres">

@@ -171,6 +171,35 @@ button.save[aria-pressed="true"] { color: var(--accent); border-color: var(--acc
 #pl-down[aria-pressed="true"] { border-color: var(--down); background: color-mix(in srgb, var(--down) 15%, var(--surface)); }
 #pl-frame iframe { display: block; width: 100%; border: 0; border-radius: 10px; }
 body.player-open { padding-bottom: 200px; }
+.view { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; }
+.view button {
+  min-height: 40px; padding: 0 14px; border: 0; background: var(--surface); color: var(--muted);
+  font: inherit; font-size: 0.9rem; font-weight: 600; cursor: pointer;
+}
+.view button + button { border-left: 1px solid var(--line); }
+.view button[aria-pressed="true"] { background: var(--accent); color: var(--surface); }
+/* List view: the same cards, laid out as one compact line each. */
+body.list .grid { grid-template-columns: 1fr; gap: 0; padding: 0 0 16px; }
+body.list .card {
+  flex-direction: row; align-items: center; gap: 12px; padding: 8px 4px;
+  border: 0; border-bottom: 1px solid var(--line); border-radius: 0; background: transparent;
+}
+body.list .card.playing { background: color-mix(in srgb, var(--accent) 10%, transparent); outline: 0; }
+body.list .art { width: 56px; flex: none; border-radius: 8px; overflow: hidden; }
+body.list .noart { font-size: 1.4rem; }
+body.list .badge, body.list .tags, body.list .save, body.list .links .btn:not(.play) { display: none; }
+body.list .body {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto auto; padding: 0; column-gap: 10px; row-gap: 0;
+  grid-template-areas: "t play vote" "a play vote" "m play vote";
+}
+body.list .body h3 { grid-area: t; font-size: 0.95rem; }
+body.list .artist { grid-area: a; font-size: 0.9rem; }
+body.list .meta { grid-area: m; font-size: 0.8rem; }
+body.list .body h3, body.list .artist, body.list .meta { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+body.list .links { grid-area: play; align-self: center; margin: 0; padding: 0; }
+body.list .links .btn.play { min-height: 44px; padding: 0 14px; }
+body.list .vote { grid-area: vote; align-self: center; margin: 0; gap: 6px; }
+body.list .vote button { flex: none; width: 44px; font-size: 1.1rem; }
 .empty { text-align: center; color: var(--muted); padding: 40px 20px; }
 .archive { max-width: 700px; margin: 0 auto; padding: 0 20px 40px; }
 .archive ul { list-style: none; padding: 0; }
@@ -181,4 +210,8 @@ body.player-open { padding-bottom: 200px; }
   .filters, .jump, .genres, .tabs { padding-left: 16px; padding-right: 16px; }
   .grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
   .links .btn { padding: 0 8px; }
+  body.list .art { width: 48px; }
+  body.list .body { column-gap: 6px; }
+  body.list .links .btn.play { padding: 0 10px; }
+  body.list .vote button { width: 40px; }
 }

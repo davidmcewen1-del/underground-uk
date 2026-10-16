@@ -120,6 +120,18 @@
   }
   applyFilters();
 
+  // Cards or a compact list (one line per release), remembered on this device.
+  const viewButtons = Array.from(document.querySelectorAll(".view button"));
+  function setView(view) {
+    document.body.classList.toggle("list", view === "list");
+    viewButtons.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.view === view)));
+  }
+  viewButtons.forEach((b) => b.addEventListener("click", () => {
+    setView(b.dataset.view);
+    try { localStorage.setItem("view", b.dataset.view); } catch (e) { /* ignore */ }
+  }));
+  try { if (viewButtons.length && localStorage.getItem("view") === "list") setView("list"); } catch (e) { /* default: cards */ }
+
   // --- Player bar ------------------------------------------------------
   // ▶ on a card loads Bandcamp's (or Spotify's) own player into a bar fixed to the bottom
   // of the page, with previous/next release and voting. iPads need one tap on the
