@@ -179,6 +179,9 @@
     card.classList.add("playing");
     document.getElementById("pl-title").textContent = card.querySelector("h3").textContent;
     document.getElementById("pl-artist").textContent = card.querySelector(".artist").textContent;
+    const canVote = Boolean(card.querySelector(".vote")); // back-catalogue items have no votes
+    document.getElementById("pl-up").hidden = !canVote;
+    document.getElementById("pl-down").hidden = !canVote;
     bar.hidden = false;
     document.body.classList.add("player-open");
     const section = card.closest("details");
@@ -208,6 +211,17 @@
       document.body.classList.remove("player-open");
       if (current) current.classList.remove("playing");
       current = null;
+    });
+  }
+
+  // Labels page: find a label by name.
+  const search = document.getElementById("label-search");
+  if (search) {
+    search.addEventListener("input", () => {
+      const q = search.value.trim().toLowerCase();
+      document.querySelectorAll(".label-list li[data-name]").forEach((li) => {
+        li.hidden = Boolean(q) && !li.dataset.name.includes(q);
+      });
     });
   }
 

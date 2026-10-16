@@ -200,6 +200,28 @@ body.list .links { grid-area: play; align-self: center; margin: 0; padding: 0; }
 body.list .links .btn.play { min-height: 44px; padding: 0 14px; }
 body.list .vote { grid-area: vote; align-self: center; margin: 0; gap: 6px; }
 body.list .vote button { flex: none; width: 44px; font-size: 1.1rem; }
+.label-link { color: inherit; text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 2px; }
+.label-link:hover { color: var(--accent); }
+.crumb { margin: 0 0 4px; }
+.crumb a { color: var(--accent); font-weight: 600; text-decoration: none; }
+.label-page { max-width: 1400px; margin: 0 auto; padding: 0 20px 40px; }
+.label-page h2 { margin: 28px 0 10px; font-size: 1.25rem; }
+.label-about { display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; }
+.label-about > div { flex: 1; min-width: 260px; max-width: 75ch; }
+.label-pic { width: 180px; max-width: 40vw; aspect-ratio: 1; object-fit: cover; border-radius: 14px; background: var(--chip); }
+.bio { margin: 0 0 12px; white-space: pre-line; color: var(--text); }
+.label-about .links { margin: 0 0 4px; padding: 0; }
+.grid.cat { grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); }
+.hint { color: var(--muted); margin: 24px 0; }
+.labels-index input[type="search"] {
+  width: 100%; min-height: 44px; padding: 0 14px; margin: 8px 0 4px; border: 1px solid var(--line);
+  border-radius: 10px; background: var(--surface); color: var(--text); font: inherit;
+}
+.label-list { list-style: none; padding: 0; margin: 0; }
+.label-list li { padding: 10px 0; border-bottom: 1px solid var(--line); }
+.label-list li[hidden] { display: none; }
+.label-list a { font-weight: 600; }
+.pl-btn[hidden] { display: none; }
 .empty { text-align: center; color: var(--muted); padding: 40px 20px; }
 .archive { max-width: 700px; margin: 0 auto; padding: 0 20px 40px; }
 .archive ul { list-style: none; padding: 0; }

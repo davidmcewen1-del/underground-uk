@@ -41,6 +41,14 @@ UK_CITIES = [
 _CITY_RE = re.compile(r"\b(" + "|".join(re.escape(c) for c in UK_CITIES) + r")\b")
 
 
+def discogs_text(text):
+    """Discogs profile markup to plain text: [a=Name] -> Name, [url=..]text[/url] -> text."""
+    text = re.sub(r"\[(?:a|l|r|m)=([^\]]+)\]", r"\1", text or "")
+    text = re.sub(r"\[url=[^\]]*\](.*?)\[/url\]", r"\1", text, flags=re.S)
+    text = re.sub(r"\[/?[a-z]+\d*\]", "", text)
+    return re.sub(r"\r\n?", "\n", text).strip()
+
+
 def uk_city(address):
     """First UK city named in a label's Discogs address (the current address is listed first)."""
     m = _CITY_RE.search(address or "")
@@ -148,6 +156,26 @@ class Discogs:
         info = {"name": d.get("name", ""), "chain": chain, "contact": d.get("contact_info") or ""}
         self.label_cache[label_id] = info
         return info
+
+    def label_profile(self, label_id):
+        """Bio, websites, picture and back catalogue (newest first) for a label page."""
+        d = self._get(f"/labels/{label_id}")
+        images = d.get("images") or []
+        profile = {"bio": discogs_text(d.get("profile"))[:1500], "image": images[0].get("uri") if images else None,
+                   "websites": [{"url": u, "text": re.sub(r"^https?://(www\.)?", "", u).rstrip("/")}
+                                for u in (d.get("urls") or []) if u.startswith("http")][:6],
+                   "location": None}
+        data = self._get(f"/labels/{label_id}/releases", per_page=100, sort="year", sort_order="desc")
+        catalogue, seen = [], set()
+        for r in data.get("releases", []):
+            sig = (norm(r.get("artist", "")), norm(r.get("title", "")))
+            if sig in seen:
+                continue
+            seen.add(sig)
+            catalogue.append({"title": r.get("title") or "", "artist": clean_name(r.get("artist")),
+                              "year": r.get("year") or None, "catno": r.get("catno"), "art": r.get("thumb") or None,
+                              "url": f"https://www.discogs.com/{'master' if r.get('type') == 'master' else 'release'}/{r['id']}"})
+        return profile, catalogue
 
     def label_size(self, label_id, label_name):
         """(number of releases, average "have" count across a sample of them)."""

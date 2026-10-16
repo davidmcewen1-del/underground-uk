@@ -194,10 +194,12 @@ class Run:
             if not entry.get("followed") and self.out_of_time("Bandcamp label checks"):
                 break
             try:
-                page_name, urls = bc.label_page(entry["url"])
+                page = bc.label_music(entry["url"])
             except Exception as exc:
                 log.warning("Bandcamp label %s failed: %s", entry["name"], exc)
                 continue
+            page_name, urls = page["name"], page["urls"]
+            self.keep_profile(key, page["profile"], page["catalogue"])
             if page_name and entry.pop("name_from_url", False):
                 entry["name"] = page_name
             listed = {r.get("bandcamp_url") for r in self.candidates.values()}
@@ -266,6 +268,40 @@ class Run:
             entry["last_checked"] = self.today
         self.note(f"Discogs labels: checked {len(todo)}, {fresh_count} new releases")
 
+    def featured_labels(self):
+        """Labels you've saved, or given a thumbs up to one of their releases: these get a full label page."""
+        meta = {r["key"]: r for week in self.digests.values() for r in week}
+        liked = {(meta.get(k) or {}).get("label_key") for k, v in self.all_votes.items() if v["vote"] > 0}
+        return {k for k, v in self.labels.items() if v.get("followed") or k in liked}
+
+    def keep_profile(self, key, profile, catalogue):
+        entry = self.labels[key]
+        entry["profile"] = profile
+        if key in self.featured:
+            entry["catalogue"] = catalogue[:300]
+            entry["catalogue_checked"] = self.today
+
+    def refresh_featured(self, bc, dg):
+        """Fetch the profile and back catalogue of featured labels not refreshed in the last week."""
+        week_ago = (date.today() - timedelta(days=6)).isoformat()
+        done = 0
+        for key in sorted(self.featured):
+            entry = self.labels.get(key)
+            if not entry or entry.get("catalogue_checked", "") > week_ago:
+                continue
+            try:
+                if entry["source"] == "bandcamp":
+                    page = bc.label_music(entry["url"])
+                    self.keep_profile(key, page["profile"], page["catalogue"])
+                elif dg:
+                    self.keep_profile(key, *dg.label_profile(entry["discogs_id"]))
+                else:
+                    continue
+                done += 1
+            except Exception as exc:
+                log.warning("Label page for %s failed: %s", entry["name"], exc)
+        self.note(f"Label pages: {len(self.featured)} saved or liked labels, {done} refreshed")
+
     def label_todo(self, source, cap):
         """Followed labels every run; the rest oldest-checked first, up to `cap`."""
         mine = [k for k, v in self.labels.items() if v["source"] == source]
@@ -323,6 +359,7 @@ class Run:
         self.digests, self.all_votes = digests, all_votes
         self.saved = votes.sync_saved(cfg["votes"]["worker_url"], os.environ.get("VOTE_KEY"))
         self.load_follows()
+        self.featured = self.featured_labels()
 
         bc = Bandcamp(cfg["bandcamp"])
         self.from_pending()
@@ -349,6 +386,7 @@ class Run:
         else:
             self.note("Discogs skipped: DISCOGS_TOKEN not set")
         self.check_bandcamp_labels(bc)
+        self.refresh_featured(bc, dg)
 
         pool, seen_sigs = [], set()
         for rel in self.candidates.values():

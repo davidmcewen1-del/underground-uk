@@ -5,7 +5,7 @@ from html import escape
 
 from .bandcamp import BANDCAMP_GENRES, label_key, site_root
 from .discogs import clean_name, genre_name
-from .util import DOCS, ROOT
+from .util import DOCS, ROOT, load_json, norm
 
 
 def save_target(rel):
@@ -21,6 +21,18 @@ def save_target(rel):
     return None
 
 
+def label_slug(key):
+    return "".join(c if c.isalnum() or c in ".-" else "-" for c in key.lower())
+
+
+def label_link(rel, prefix):
+    """The label name on a card, linking to that label's page when it has one."""
+    name = escape(clean_name(rel.get("label")) or "Self-released")
+    if rel.get("label") and rel.get("label_key"):
+        return f'<a class="label-link" href="{prefix}labels/{label_slug(rel["label_key"])}.html">{name}</a>'
+    return name
+
+
 def _genre(rel):
     tag_genre = next((t for t in rel.get("tags") or [] if t in BANDCAMP_GENRES), None)
     return genre_name(rel.get("genre")) or tag_genre or "other"
@@ -30,7 +42,7 @@ def _slug(text):
     return "".join(c if c.isalnum() else "-" for c in text.lower()).strip("-")
 
 
-def _sections(releases):
+def _sections(releases, prefix=""):
     """One folded <details> section per genre, alphabetical, with "other" last."""
     groups = {}
     for rel in releases:
@@ -41,7 +53,7 @@ def _sections(releases):
     sections = "".join(
         f'<details class="genre" id="g-{_slug(g)}"><summary><h2>{escape(g)}</h2>'
         f'<span class="count">{len(groups[g])}</span></summary>'
-        f'<div class="grid">{"".join(_card(r) for r in groups[g])}</div></details>'
+        f'<div class="grid">{"".join(_card(r, prefix) for r in groups[g])}</div></details>'
         for g in names)
     return jump, sections
 
@@ -60,8 +72,8 @@ def _player_ref(rel):
     return None
 
 
-def _card(rel):
-    label = escape(clean_name(rel.get("label")) or "Self-released")
+def _card(rel, prefix=""):
+    label = label_link(rel, prefix)
     tags = "".join(f"<li>{escape(t)}</li>" for t in rel.get("tags") or [])
     art = (f'<img src="{escape(rel["artwork"])}" alt="" loading="lazy" referrerpolicy="no-referrer">'
            if rel.get("artwork") else '<div class="noart" aria-hidden="true">♪</div>')
@@ -118,6 +130,19 @@ def _page(title, body, prefix, worker_url):
 """
 
 
+PLAYER = """<div id="player" class="player" hidden>
+ <div class="player-head">
+  <button type="button" id="pl-prev" class="pl-btn" aria-label="Previous release">⏮</button>
+  <div class="now"><strong id="pl-title"></strong><span id="pl-artist"></span></div>
+  <button type="button" id="pl-up" class="pl-btn" aria-label="Thumbs up" aria-pressed="false">👍</button>
+  <button type="button" id="pl-down" class="pl-btn" aria-label="Thumbs down" aria-pressed="false">👎</button>
+  <button type="button" id="pl-next" class="pl-btn" aria-label="Next release">⏭</button>
+  <button type="button" id="pl-close" class="pl-btn" aria-label="Close player">✕</button>
+ </div>
+ <div id="pl-frame"></div>
+</div>"""
+
+
 KINDS = {"labels": "Labels", "self-released": "Self-released"}
 
 
@@ -144,13 +169,13 @@ def digest_page(cfg, week, label, releases, playlists, prefix, kind="labels", pa
         f'{KINDS[k]} <span class="n">{n}</span></a>'
         for k, (href, n) in (pages or {}).items())
     what = "on small UK labels" if kind == "labels" else "self-released by UK artists"
-    jump, sections = _sections(releases)
+    jump, sections = _sections(releases, prefix)
     body = f"""<header class="top">
  <div>
   <h1>{escape(cfg['digest']['title'])}</h1>
   <p class="sub">{escape(label)} · {len(releases)} new releases {what}</p>
  </div>
- <nav>{playlist}<a class="btn" href="{prefix}saved.html">My labels</a><a class="btn" href="{prefix}taste.html">My taste</a><a class="btn" href="{prefix}archive.html">Archive</a></nav>
+ <nav>{playlist}<a class="btn" href="{prefix}labels.html">Labels</a><a class="btn" href="{prefix}saved.html">My labels</a><a class="btn" href="{prefix}taste.html">My taste</a><a class="btn" href="{prefix}archive.html">Archive</a></nav>
 </header>
 <nav class="tabs" aria-label="Digest pages">{tabs}</nav>
 <nav class="jump" aria-label="Genres">{jump}</nav>
@@ -167,17 +192,7 @@ def digest_page(cfg, week, label, releases, playlists, prefix, kind="labels", pa
 {sections}
 </main>
 <p class="empty" hidden>No releases match these filters.</p>
-<div id="player" class="player" hidden>
- <div class="player-head">
-  <button type="button" id="pl-prev" class="pl-btn" aria-label="Previous release">⏮</button>
-  <div class="now"><strong id="pl-title"></strong><span id="pl-artist"></span></div>
-  <button type="button" id="pl-up" class="pl-btn" aria-label="Thumbs up" aria-pressed="false">👍</button>
-  <button type="button" id="pl-down" class="pl-btn" aria-label="Thumbs down" aria-pressed="false">👎</button>
-  <button type="button" id="pl-next" class="pl-btn" aria-label="Next release">⏭</button>
-  <button type="button" id="pl-close" class="pl-btn" aria-label="Close player">✕</button>
- </div>
- <div id="pl-frame"></div>
-</div>"""
+{PLAYER}"""
     return _page(f"{cfg['digest']['title']} {KINDS[kind]} {week}", body, prefix, cfg["votes"]["worker_url"])
 
 
@@ -241,7 +256,7 @@ Updated every Friday.</p></div>
     return _page("My taste", body, "", cfg["votes"]["worker_url"])
 
 
-def write_site(cfg, week, label, releases, playlists, digests, saved=None, all_votes=None):
+def write_site(cfg, week, label, releases, playlists, digests, saved=None, all_votes=None, labels=None):
     (DOCS / "digests").mkdir(parents=True, exist_ok=True)
     shutil.copytree(ROOT / "static", DOCS / "assets", dirs_exist_ok=True)
     parts = split_releases(releases)
@@ -255,4 +270,152 @@ def write_site(cfg, week, label, releases, playlists, digests, saved=None, all_v
     (DOCS / "archive.html").write_text(archive_page(cfg, digests), encoding="utf-8")
     (DOCS / "saved.html").write_text(saved_page(cfg, saved or {}), encoding="utf-8")
     (DOCS / "taste.html").write_text(taste_page(cfg, all_votes or {}, saved or {}, digests), encoding="utf-8")
+    write_labels(cfg, load_json("labels.json", {}) if labels is None else labels, digests, saved or {}, all_votes or {})
     (DOCS / ".nojekyll").write_text("", encoding="utf-8")
+
+
+# --- Label pages ---------------------------------------------------------
+def _catalogue_tile(item):
+    art = (f'<img src="{escape(item["art"])}" alt="" loading="lazy" referrerpolicy="no-referrer">'
+           if item.get("art") else '<div class="noart" aria-hidden="true">♪</div>')
+    play = (f'<button type="button" class="btn play" data-player="{escape(item["player"])}" '
+            f'aria-label="Play {escape(item["title"])}">▶ Play</button>') if item.get("player") else ""
+    where = "Discogs" if "discogs.com" in item["url"] else "Bandcamp"
+    meta = " · ".join(str(x) for x in (item.get("year"), item.get("catno")) if x)
+    meta = f'<p class="meta">{escape(meta)}</p>' if meta else ""
+    return f"""<article class="card cat-item" data-key="cat:{escape(item['url'])}">
+ <div class="art">{art}</div>
+ <div class="body">
+  <h3>{escape(item['title'])}</h3>
+  <p class="artist">{escape(item.get('artist') or '')}</p>
+  {meta}
+  <div class="links">{play}{_link(item['url'], where, 'bc' if where == 'Bandcamp' else 'dg')}</div>
+ </div>
+</article>"""
+
+
+def _label_url(entry):
+    if entry.get("url"):
+        return entry["url"]
+    return f"https://www.discogs.com/label/{entry['discogs_id']}" if entry.get("discogs_id") else ""
+
+
+def label_page(cfg, key, entry, releases, featured):
+    name = clean_name(entry.get("name")) or key
+    profile = entry.get("profile") or {}
+    kind = entry.get("kind", "label")
+    url = _label_url(entry)
+    links = "".join(_link(w["url"], escape(w.get("text") or w["url"]), "") for w in profile.get("websites", []))
+    discogs = f"https://www.discogs.com/label/{entry['discogs_id']}" if entry.get("discogs_id") else None
+    home = _link(entry.get("url"), "Bandcamp", "bc") + _link(discogs, "Discogs", "dg")
+    save = (f'<button type="button" class="save" data-save-key="{escape(key)}" data-save-name="{escape(name)}"'
+            f' data-save-url="{escape(url)}" data-save-kind="{kind}" aria-pressed="false">'
+            f'<span class="star" aria-hidden="true">☆</span> Save {kind}</button>') if url else ""
+    city = profile.get("location") or entry.get("city") or "UK"
+    image = (f'<img class="label-pic" src="{escape(profile["image"])}" alt="" loading="lazy" referrerpolicy="no-referrer">'
+             if profile.get("image") else "")
+    bio = f'<p class="bio">{escape(profile["bio"])}</p>' if profile.get("bio") else ""
+    about = f'<section class="label-about">{image}<div>{bio}<div class="links">{home}{links}</div>{save}</div></section>'
+    digest_part = ""
+    if releases:
+        cards = "".join(_card(r, "../") for r in releases)
+        digest_part = f'<h2>In your digests <span class="count">{len(releases)}</span></h2><div class="grid">{cards}</div>'
+    catalogue = entry.get("catalogue") if key in featured else None
+    if catalogue:
+        tiles = "".join(_catalogue_tile(c) for c in catalogue)
+        cat_part = (f'<h2>Back catalogue <span class="count">{len(catalogue)}</span></h2>'
+                    f'<div class="grid cat">{tiles}</div>')
+    elif key in featured:
+        cat_part = '<p class="hint">Their back catalogue appears here after the next Friday update.</p>'
+    else:
+        cat_part = ('<p class="hint">Tap ☆ Save (or give one of their releases a 👍) and this page will show their '
+                    'whole back catalogue after the next Friday update.</p>')
+    n = len(releases)
+    sub = f"{escape(city)} · {n} release{'' if n == 1 else 's'} in your digests"
+    body = f"""<header class="top"><div><p class="crumb"><a href="../labels.html">← All labels</a></p>
+<h1>{escape(name)}</h1><p class="sub">{sub}</p></div>
+<nav><a class="btn" href="../index.html">Latest digest</a><a class="btn" href="../saved.html">My labels</a></nav></header>
+<main class="label-page">
+{about}
+<p class="status" id="vote-status" role="status"></p>
+{digest_part}
+{cat_part}
+</main>
+{PLAYER}"""
+    return _page(name, body, "../", cfg["votes"]["worker_url"])
+
+
+def labels_index(cfg, rows, featured):
+    def li(key, entry, n):
+        name = escape(clean_name(entry.get("name")) or key)
+        city = escape((entry.get("profile") or {}).get("location") or entry.get("city") or "UK")
+        count = f" · {n} in digests" if n else ""
+        return (f'<li data-name="{name.lower()}"><a href="labels/{label_slug(key)}.html">{name}</a>'
+                f' <span class="when">{city}{count}</span></li>')
+
+    saved = [r for r in rows if r[1].get("followed")]
+    liked = [r for r in rows if r[0] in featured and not r[1].get("followed")]
+    others = [r for r in rows if r[0] not in featured and r[1].get("kind", "label") == "label"]
+
+    def block(title, items, note=""):
+        inner = "".join(li(*r) for r in items) or f'<li class="none">{note}</li>'
+        return f'<section><h2>{title} <span class="count">{len(items)}</span></h2><ul class="label-list">{inner}</ul></section>'
+
+    body = f"""<header class="top"><div><h1>Labels</h1>
+<p class="sub">Every label found so far. Saved and liked labels get their whole back catalogue on their page.</p></div>
+<nav><a class="btn" href="index.html">Latest digest</a><a class="btn" href="saved.html">My labels</a></nav></header>
+<main class="archive saved-list labels-index">
+ <input type="search" id="label-search" placeholder="Find a label…" aria-label="Find a label">
+ {block("★ Saved", saved, "Nothing saved yet. Tap ☆ Save label on any release.")}
+ {block("👍 Liked", liked, "Give a release a 👍 and its label appears here.")}
+ {block("All labels", others)}
+</main>"""
+    return _page("Labels", body, "", cfg["votes"]["worker_url"])
+
+
+def _merged(keys, labels, featured):
+    """One label found on both Bandcamp and Discogs: fill each entry's gaps from the other."""
+    order = sorted(keys, key=lambda k: (not labels[k].get("followed"), not k.startswith("bc:"), k))
+    merged = {}
+    for k in order:
+        for field, value in labels[k].items():
+            if field == "catalogue" and k not in featured:
+                continue
+            if merged.get(field) in (None, "", "UK", [], {}):
+                merged[field] = value
+    return order[0], merged
+
+
+def write_labels(cfg, labels, digests, saved, all_votes):
+    """docs/labels.html plus one page per label in docs/labels/ (Bandcamp and Discogs twins share a page)."""
+    by_label, seen = {}, set()
+    for week in sorted(digests, reverse=True):
+        for rel in digests[week]:
+            if rel.get("label_key") and rel["key"] not in seen:
+                seen.add(rel["key"])
+                by_label.setdefault(rel["label_key"], []).append(rel)
+    meta = {r["key"]: r for week in digests.values() for r in week}
+    featured = {k for k, v in labels.items() if v.get("followed") or k in saved}
+    featured |= {(meta.get(k) or {}).get("label_key") for k, v in all_votes.items() if v.get("vote", 0) > 0}
+    groups = {}
+    for key, entry in labels.items():
+        if entry.get("excluded") and key not in by_label:
+            continue
+        groups.setdefault(norm(clean_name(entry.get("name"))) or key, []).append(key)
+    folder = DOCS / "labels"
+    folder.mkdir(parents=True, exist_ok=True)
+    rows, index_featured = [], set()
+    for keys in groups.values():
+        main_key, merged = _merged(keys, labels, featured)
+        releases = sorted((r for k in keys for r in by_label.get(k, [])),
+                          key=lambda r: r.get("release_date") or "", reverse=True)
+        is_featured = featured & set(keys)
+        for key in keys:
+            entry = dict(merged, followed=labels[key].get("followed") or merged.get("followed"))
+            page = label_page(cfg, key, entry, releases, {key} if is_featured else set())
+            (folder / f"{label_slug(key)}.html").write_text(page, encoding="utf-8")
+        rows.append((main_key, merged, len(releases)))
+        if is_featured:
+            index_featured.add(main_key)
+    rows.sort(key=lambda r: (clean_name(r[1].get("name")) or r[0]).lower())
+    (DOCS / "labels.html").write_text(labels_index(cfg, rows, index_featured), encoding="utf-8")

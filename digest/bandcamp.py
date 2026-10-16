@@ -53,6 +53,60 @@ def posted_by_label(account_name, album_artist):
     return bool(a and b) and a not in b and b not in a
 
 
+def _text(fragment):
+    text = re.sub(r"<br\s*/?>", "\n", re.sub(r"\s*\n\s*", " ", fragment or ""))
+    text = html.unescape(re.sub(r"<[^>]+>", "", text))
+    return re.sub(r"\n{3,}", "\n\n", "\n".join(line.strip() for line in text.splitlines())).strip()
+
+
+def parse_label_page(page, base):
+    """Everything useful on a Bandcamp /music page (or a release page, for single-release accounts)."""
+    m = re.search(r'<meta property="og:site_name" content="([^"]*)"', page)
+    name = html.unescape(m.group(1)) if m else None
+    profile = {"bio": "", "websites": [], "image": None, "location": None}
+    m = re.search(r'id="bio-text"[^>]*>(.*?)</p>', page, re.S)
+    if m:
+        profile["bio"] = _text(m.group(1))[:1500]
+    m = re.search(r'<ol id="band-links">(.*?)</ol>', page, re.S)
+    if m:
+        profile["websites"] = [{"url": html.unescape(u), "text": _text(t)}
+                               for u, t in re.findall(r'href="([^"]+)"[^>]*>(.*?)</a>', m.group(1), re.S)][:6]
+    m = re.search(r'class="popupImage" href="([^"]+)"', page) or re.search(r'<img[^>]+class="band-photo"[^>]+src="([^"]+)"', page)
+    if m:
+        profile["image"] = m.group(1)
+    m = re.search(r'<span class="location secondaryText">([^<]*)<', page)
+    if m:
+        profile["location"] = html.unescape(m.group(1)).strip() or None
+    if re.search(r"/(album|track)/", urlsplit(base).path):
+        return {"name": name, "urls": [clean_url(base)], "profile": profile, "catalogue": []}
+    catalogue = []
+    for item in re.findall(r'<li data-item-id="(?:album|track)-\d+".*?</li>', page, re.S):
+        item_id = re.search(r'data-item-id="(album|track)-(\d+)"', item)
+        href = re.search(r'<a href="([^"]+)"', item)
+        if not item_id or not href:
+            continue
+        title = re.search(r'<p class="title">(.*?)(?:<br>|</p>)', item, re.S)
+        artist = re.search(r'class="artist-override">(.*?)</span>', item, re.S)
+        img = re.search(r'<img[^>]+(?:data-original|src)="([^"]+)"', item)
+        art = img.group(1) if img and "/img/" in img.group(1) else None
+        catalogue.append({"title": _text(title.group(1)) if title else "", "artist": _text(artist.group(1)) if artist else name,
+                          "url": clean_url(urljoin(base, html.unescape(href.group(1)))), "art": art,
+                          "player": f"bc:{item_id.group(1)}:{item_id.group(2)}"})
+    extra = re.search(r'data-client-items="([^"]+)"', page)
+    if extra:
+        for it in json.loads(html.unescape(extra.group(1))):
+            if it.get("page_url"):
+                catalogue.append({"title": it.get("title") or "", "artist": it.get("artist") or name,
+                                  "url": clean_url(urljoin(base, it["page_url"])), "art": art_url(it.get("art_id")),
+                                  "player": f"bc:{it.get('type') or 'album'}:{it['id']}" if it.get("id") else None})
+    urls = [urljoin(base, u) for u in re.findall(r'href="((?:https?://[^"/]+)?/(?:album|track)/[^"?#]+)', page)]
+    urls += [c["url"] for c in catalogue]
+    seen = set()
+    catalogue = [c for c in catalogue if not (c["url"] in seen or seen.add(c["url"]))]
+    return {"name": name, "urls": list(dict.fromkeys(clean_url(u) for u in urls)), "profile": profile,
+            "catalogue": catalogue}
+
+
 class Bandcamp:
     def __init__(self, cfg):
         self.cfg = cfg
@@ -113,19 +167,13 @@ class Bandcamp:
     # --- Label pages ----------------------------------------------------
     def label_page(self, label_url):
         """(label name, album/track URLs on its /music page in page order, newest first)."""
+        page = self.label_music(label_url)
+        return page["name"], page["urls"]
+
+    def label_music(self, label_url):
+        """A label's /music page: name, release URLs, and a profile (bio, links, picture, catalogue)."""
         resp = self.http.get(label_url.rstrip("/") + "/music")
-        page, base = resp.text, resp.url
-        m = re.search(r'<meta property="og:site_name" content="([^"]*)"', page)
-        name = html.unescape(m.group(1)) if m else None
-        if re.search(r"/(album|track)/", urlsplit(base).path):
-            return name, [clean_url(base)]  # single-release accounts redirect to it
-        urls = [urljoin(base, u) for u in re.findall(r'href="((?:https?://[^"/]+)?/(?:album|track)/[^"?#]+)', page)]
-        extra = re.search(r'data-client-items="([^"]+)"', page)
-        if extra:
-            for it in json.loads(html.unescape(extra.group(1))):
-                if it.get("page_url"):
-                    urls.append(urljoin(base, it["page_url"]))
-        return name, list(dict.fromkeys(clean_url(u) for u in urls))
+        return parse_label_page(resp.text, resp.url)
 
     # --- Album pages ----------------------------------------------------
     def album_details(self, url):
