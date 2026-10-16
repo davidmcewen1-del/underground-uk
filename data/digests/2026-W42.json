@@ -1,6 +1,9 @@
 {
  "label": "Week 42 · 16 Oct 2026",
- "playlists": {},
+ "playlists": {
+  "labels": "https://open.spotify.com/playlist/726Qn1WXn9S7W4lmgaAR2c",
+  "self-released": "https://open.spotify.com/playlist/10B53FIHPZ5Dn4WGN8zsfI"
+ },
  "releases": [
   {
    "artist": "Aztec Records",
@@ -39,7 +42,7 @@
    "release_date": "2026-10-16",
    "self_released": false,
    "source": "bandcamp",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/2UA6rmuQbkqpwyhimHa0RB",
    "tags": [
     "alternative",
     "post-punk",
@@ -62,7 +65,7 @@
    "release_date": "2026-10-16",
    "self_released": false,
    "source": "bandcamp",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/7FIQvyjvp6WJHGMpcWrcgF",
    "tags": [
     "burlesque",
     "electro swing",
@@ -90,7 +93,7 @@
    "release_date": "2026-10-16",
    "self_released": false,
    "source": "bandcamp",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/38IHntfps2yYULrcLSxSRm",
    "tags": [
     "idm",
     "ambient house",
@@ -116,7 +119,7 @@
    "release_date": "2026-10-16",
    "self_released": false,
    "source": "bandcamp",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/3aOXxD7yB9FeZ2Wt9TAkvV",
    "tags": [
     "drum & bass",
     "electronic",
@@ -144,7 +147,7 @@
    "release_date": "2026-10-09",
    "self_released": false,
    "source": "bandcamp",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/3YMCQhRT3Z10tjn0bRfBtf",
    "tags": [
     "critical binary",
     "critical music",
@@ -249,7 +252,7 @@
    "release_date": "2026-10-16",
    "self_released": false,
    "source": "bandcamp",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/0qxMLOLnR9i6jQEJiR49ax",
    "tags": [],
    "title": "Soma 35.3 – Percy X Remixes"
   },
@@ -268,7 +271,7 @@
    "release_date": "2026-10-16",
    "self_released": false,
    "source": "bandcamp",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/1cnRVbUz2CSx57Q1yznpCS",
    "tags": [],
    "title": "Key Code"
   },
@@ -287,7 +290,7 @@
    "release_date": "2026-10-09",
    "self_released": false,
    "source": "bandcamp",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/0FggUH5mC6prCeTV5unPDD",
    "tags": [],
    "title": "Make A Step"
   },
@@ -332,7 +335,7 @@
    "release_date": "2026-10-08",
    "self_released": false,
    "source": "bandcamp",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/4zY90ndBcuXWhwst50hvFO",
    "tags": [
     "drum & bass",
     "dnb",
@@ -706,7 +709,7 @@
    "release_date": "2026-10-16",
    "self_released": true,
    "source": "bandcamp",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/6h2IivzLRqzkAD7p8ziLvG",
    "tags": [
     "alternative",
     "alternative rock"
@@ -727,7 +730,7 @@
    "release_date": "2026-10-14",
    "self_released": true,
    "source": "bandcamp",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/4XIFjVpgE2nxSf54zBWM1H",
    "tags": [
     "alternative",
     "90s",
@@ -752,7 +755,7 @@
    "release_date": "2026-10-09",
    "self_released": true,
    "source": "bandcamp",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/3fXEiGmGb7DAJMVuP25tVi",
    "tags": [
     "alternative",
     "alternative rock",
@@ -869,7 +872,7 @@
    "release_date": "2026-10-16",
    "self_released": true,
    "source": "bandcamp",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/3pNIvcd4Z2yjv4rHUJ1v2N",
    "tags": [
     "alternative",
     "ballads",
@@ -1109,7 +1112,7 @@
    "release_date": "2026-10-09",
    "self_released": true,
    "source": "bandcamp",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/3059SWry6g4UU9ce5OsNwc",
    "tags": [
     "alternative",
     "contemporary jazz",
@@ -1334,7 +1337,7 @@
    "release_date": "2026-10-15",
    "self_released": true,
    "source": "bandcamp",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/7t4zTsaemLiAp8zpOp29zQ",
    "tags": [
     "ambient"
    ],
@@ -1426,7 +1429,7 @@
    "release_date": "2026-10-12",
    "self_released": true,
    "source": "bandcamp",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/7qKxflYw8D74qVuGLtb733",
    "tags": [
     "ambient",
     "electronic",
@@ -1522,7 +1525,7 @@
    "release_date": "2026-10-14",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/6tb9qitqiZZCdH6aVze6M2",
    "tags": [
     "blues"
    ],
@@ -1588,7 +1591,7 @@
    "release_date": "2026-10-16",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/28W8a1PfpPC2mvOODaCTBN",
    "tags": [
     "romantic",
     "organ",
@@ -1738,7 +1741,7 @@
    "release_date": "2026-10-09",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/0sTXaN7OcxffnoO7q9fEt7",
    "tags": [
     "baroque",
     "sonata",
@@ -2005,7 +2008,7 @@
    "release_date": "2026-10-12",
    "self_released": true,
    "source": "bandcamp",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/51d7I84h5LLrJmGGwWJ9ox",
    "tags": [
     "electronic",
     "hip hop",
@@ -2177,7 +2180,7 @@
    "release_date": "2026-02-00",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/28fg5dYAyzyMV9PYTZ4Btn",
    "tags": [
     "disco",
     "house",
@@ -2225,7 +2228,7 @@
    "release_date": "2026-10-15",
    "self_released": false,
    "source": "bandcamp",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/1jIm12lMlmAGbAs9BWcjMD",
    "tags": [
     "electronic",
     "drum & bass",
@@ -2459,7 +2462,7 @@
    "release_date": "2026-08-28",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/4W1mjY8Rfv6D7wMfBraaeE",
    "tags": [
     "garage house",
     "electronic"
@@ -2582,7 +2585,7 @@
    "release_date": "2026-09-18",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/6BRqB5vMGEwAtasZYQMkmv",
    "tags": [
     "house",
     "electronic"
@@ -2605,7 +2608,7 @@
    "release_date": "2026-10-14",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/7u69VcuKFgZJwFcAagHUj1",
    "tags": [
     "ambient",
     "electronic"
@@ -2628,7 +2631,7 @@
    "release_date": "2026-08-28",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/6dOG39KRpxxAz9BCZB91Z5",
    "tags": [
     "drum n bass",
     "electronic"
@@ -2772,7 +2775,7 @@
    "release_date": "2026-10-09",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/5VrGudjbOPRclzyiJDT7iz",
    "tags": [
     "tech house",
     "electronic"
@@ -2890,7 +2893,7 @@
    "release_date": "2026-09-28",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/3MQRqjCvSMhhvneAKAFybY",
    "tags": [
     "hard house",
     "electronic"
@@ -2936,7 +2939,7 @@
    "release_date": "2026-10-16",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/15sT3uAqDIj52fg8m2rIzj",
    "tags": [
     "trance",
     "electronic"
@@ -3007,7 +3010,7 @@
    "release_date": "2026-10-08",
    "self_released": false,
    "source": "bandcamp",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/5ouvkzXlTRzZw3x12DThgv",
    "tags": [
     "electronic",
     "deep house",
@@ -3085,7 +3088,7 @@
    "release_date": "2026-10-09",
    "self_released": true,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/0u1DO0A7YPStI4Vw3kPxHt",
    "tags": [
     "chillwave",
     "electronic"
@@ -3150,7 +3153,7 @@
    "release_date": "2026-10-09",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/5XQowY67mtWpQdYAb62uid",
    "tags": [
     "jungle",
     "electronic"
@@ -3219,7 +3222,7 @@
    "release_date": "2026-10-16",
    "self_released": true,
    "source": "bandcamp",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/47rO6QCoUPRtWhocCUck5H",
    "tags": [
     "electronic",
     "dance",
@@ -3267,7 +3270,7 @@
    "release_date": "2026-10-16",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/1ywQRXuIGguc0dJA17QcHs",
    "tags": [
     "bass music",
     "breaks",
@@ -3390,7 +3393,7 @@
    "release_date": "2026-06-00",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/5RNeuozqVCzL1XKn940ITQ",
    "tags": [
     "free improvisation",
     "avant-garde jazz",
@@ -3440,7 +3443,7 @@
    "release_date": "2026-10-02",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/1rCH19QmAnbhDgTowuAaBg",
    "tags": [
     "drum n bass",
     "jungle",
@@ -3556,7 +3559,7 @@
    "release_date": "2026-10-00",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/5VLqHY1utrN3euRne09cjt",
    "tags": [
     "house",
     "deep house",
@@ -3727,7 +3730,7 @@
    "release_date": "2026-10-15",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/1RM9vSlh8Fhs8JuIHnlpk2",
    "tags": [
     "hardstyle",
     "electronic"
@@ -3774,7 +3777,7 @@
    "release_date": "2026-10-16",
    "self_released": false,
    "source": "bandcamp",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/35int09SGjW0AoBNfDBCmV",
    "tags": [
     "electronic",
     "drum and bass",
@@ -3798,7 +3801,7 @@
    "release_date": "2026-04-02",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/5EMAbsRpsPW08VCg4Rs8xi",
    "tags": [
     "drum n bass",
     "electronic"
@@ -3821,7 +3824,7 @@
    "release_date": "2026-10-16",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/10khbAvoICcRkItKRNmWow",
    "tags": [
     "trance",
     "techno",
@@ -3844,7 +3847,7 @@
    "release_date": "2026-10-15",
    "self_released": true,
    "source": "bandcamp",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/3SDq88royI7ejH49DMK0Ii",
    "tags": [
     "electronic",
     "alternative",
@@ -3871,7 +3874,7 @@
    "release_date": "2026-10-11",
    "self_released": true,
    "source": "bandcamp",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/1lSUbn0zMFYFt0hmtp0Pz7",
    "tags": [
     "electronic",
     "club dance",
@@ -3898,7 +3901,7 @@
    "release_date": "2026-10-09",
    "self_released": true,
    "source": "bandcamp",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/6dna36CkEvdgw5ozxHAnkR",
    "tags": [
     "electronic",
     "electroclash",
@@ -4050,7 +4053,7 @@
    "release_date": "2026-05-14",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/2VNJgzaK1FknkpTIDBByz0",
    "tags": [
     "drum n bass",
     "electronic"
@@ -4170,7 +4173,7 @@
    "release_date": "2026-10-15",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/1V8Qu6CwkBfYucnCWxynq8",
    "tags": [
     "synthwave",
     "electro",
@@ -4244,7 +4247,7 @@
    "release_date": "2026-05-01",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/4MEJNBittQKWwI3zYVJIun",
    "tags": [
     "drum n bass",
     "electronic"
@@ -4267,7 +4270,7 @@
    "release_date": "2026-10-09",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/5hmHlwHuijw6zSeJCw4pTD",
    "tags": [
     "drum n bass",
     "jungle",
@@ -4337,7 +4340,7 @@
    "release_date": "2026-10-16",
    "self_released": false,
    "source": "bandcamp",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/0ugia29R5TBn11SFoq2TGC",
    "tags": [
     "electronic",
     "hardcore",
@@ -4486,7 +4489,7 @@
    "release_date": "2026-08-07",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/5vziom1N2NiS4XgR4Zwwai",
    "tags": [
     "house",
     "electronic"
@@ -4509,7 +4512,7 @@
    "release_date": "2026-08-21",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/4Ccwu86X2xnv5M5CWqYNPb",
    "tags": [
     "deep house",
     "electronic"
@@ -4587,7 +4590,7 @@
    "release_date": "2026-10-09",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/0ELJIrfF5hSEqyFzzgwNlN",
    "tags": [
     "nu-disco",
     "electronic"
@@ -4653,7 +4656,7 @@
    "release_date": "2026-06-12",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/49jILaQUkjWkcRSn6Jixlj",
    "tags": [
     "house",
     "electronic"
@@ -4827,7 +4830,7 @@
    "release_date": "2026-10-15",
    "self_released": false,
    "source": "bandcamp",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/0Yza35JQvjbEX7OCxr6tnV",
    "tags": [
     "electronic",
     "drum & bass",
@@ -4975,7 +4978,7 @@
    "release_date": "2026-09-12",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/2v71TqlHT6XNmNFiwxQwXZ",
    "tags": [
     "goth rock",
     "art rock",
@@ -5078,7 +5081,7 @@
    "release_date": "2026",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/46qZdHAlgpEL0z4Uy2KBkS",
    "tags": [
     "drum n bass",
     "electronic"
@@ -5363,7 +5366,7 @@
    "release_date": "2026-10-13",
    "self_released": true,
    "source": "bandcamp",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/63Dscn2RXfJOjJeRW5B5sx",
    "tags": [
     "electronic",
     "ambient electronic",
@@ -5455,7 +5458,7 @@
    "release_date": "2026-10-00",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/11OpLbFXmDGfRjRqGw7ivz",
    "tags": [
     "balearic",
     "house",
@@ -5551,7 +5554,7 @@
    "release_date": "2026-10-16",
    "self_released": false,
    "source": "bandcamp",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/2twYOxdb51F3hD3OLLuvhG",
    "tags": [
     "electronic",
     "netherlands",
@@ -5601,7 +5604,7 @@
    "release_date": "2026-10-09",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/1FKGaVK0q53ooiGseHLHPf",
    "tags": [
     "trance",
     "electronic"
@@ -5694,7 +5697,7 @@
    "release_date": "2026-10-16",
    "self_released": false,
    "source": "bandcamp",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/6yOs2MY0ozwE9fJXYzk3A5",
    "tags": [
     "electronic",
     "drum & bass"
@@ -5855,7 +5858,7 @@
    "release_date": "2026-03-20",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/5yS6XYFZla9Hk5UrBsBk92",
    "tags": [
     "drum n bass",
     "electronic"
@@ -6103,7 +6106,7 @@
    "release_date": "2026-08-14",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/5mMtDR4nsl5SRClUz32jiq",
    "tags": [
     "drum n bass",
     "electronic"
@@ -6419,7 +6422,7 @@
    "release_date": "2026-10-15",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/1PpXpcLvjqs7Z9YkgJJbZX",
    "tags": [
     "hardstyle",
     "electronic"
@@ -6831,7 +6834,7 @@
    "release_date": "2026-10-16",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/6a0rtQC7fsdoRTjuve06Xe",
    "tags": [
     "trance",
     "electronic"
@@ -7236,7 +7239,7 @@
    "release_date": "2026-10-16",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/4GKgvQxf4eDTQrEKshja4O",
    "tags": [
     "house",
     "deep house",
@@ -7314,7 +7317,7 @@
    "release_date": "2026-01-08",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/5l3QpJhgX7xxH13jNyi0Bg",
    "tags": [
     "drum n bass",
     "electronic"
@@ -7602,7 +7605,7 @@
    "release_date": "2026-09-25",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/7vvb1Jzm3Sdt2DiRKteGse",
    "tags": [
     "dance-pop",
     "electronic"
@@ -7965,7 +7968,7 @@
    "release_date": "2026-10-15",
    "self_released": false,
    "source": "bandcamp",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/1vp2PacAmY9RrI4gYIBhwY",
    "tags": [
     "experimental",
     "industrial"
@@ -8414,7 +8417,7 @@
    "release_date": "2026",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/2VKC6PfgGUNil9eFiFGayd",
    "tags": [
     "folk",
     "folk, world, & country"
@@ -8530,7 +8533,7 @@
    "release_date": "2026-10-02",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/5jsWuuGmdHB9QFHYfukCng",
    "tags": [
     "folk, world, & country"
    ],
@@ -8990,7 +8993,7 @@
    "release_date": "2026-10-02",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/182b2c2NpXsjlllhW0e1G9",
    "tags": [
     "hip hop",
     "rock",
@@ -9041,7 +9044,7 @@
    "release_date": "2026-05-29",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/5k7POafDpZuVsYzW4s1xgW",
    "tags": [
     "grime",
     "hip hop"
@@ -9284,7 +9287,7 @@
    "release_date": "2026-09-18",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/2ORHTa2ZoqtI6Lm6STN6VQ",
    "tags": [
     "soul-jazz",
     "jazz-funk",
@@ -9756,7 +9759,7 @@
    "release_date": "2026-10-02",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/74sen2Tna8UgzNgl3pFfeK",
    "tags": [
     "pop"
    ],
@@ -10009,7 +10012,7 @@
    "release_date": "2026-10-08",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/4PGIfiBHGGWrEa9s6f7Whj",
    "tags": [
     "dub",
     "reggae"
@@ -10270,7 +10273,7 @@
    "release_date": "2026-10-13",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/0xSeQDscLZroifXmtMSr9m",
    "tags": [
     "alternative rock",
     "indie rock",
@@ -10294,7 +10297,7 @@
    "release_date": "2026",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/7BqvX62LfzvsUP94kr2CY4",
    "tags": [
     "thrash",
     "rock"
@@ -10317,7 +10320,7 @@
    "release_date": "2026-09-09",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/3ThL2DprG4nlpYk1V10xxB",
    "tags": [
     "indie rock",
     "rock"
@@ -10340,7 +10343,7 @@
    "release_date": "2026-10-02",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/50t0TEz7Owjimd7bakSpkg",
    "tags": [
     "indie pop",
     "rock",
@@ -10364,7 +10367,7 @@
    "release_date": "2026-10-02",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/0safPk6BmB4kESEtkgRynB",
    "tags": [
     "glam",
     "rock"
@@ -10411,7 +10414,7 @@
    "release_date": "2026-10-09",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/7H3VZJnd1czAoYYv8JEsVB",
    "tags": [
     "alternative rock",
     "indie rock",
@@ -10436,7 +10439,7 @@
    "release_date": "2026",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/3gIq4y07qZnfqNsiRfxFqr",
    "tags": [
     "southern rock",
     "rock"
@@ -10576,7 +10579,7 @@
    "release_date": "2026-08-24",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/7qlyfdGEVLz84DmX0ihcdD",
    "tags": [
     "alternative rock",
     "rock"
@@ -10599,7 +10602,7 @@
    "release_date": "2026",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/4GQAKL637AknmPkvBHy7dT",
    "tags": [
     "classic rock",
     "aor",
@@ -10697,7 +10700,7 @@
    "release_date": "2026-06-26",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/6lX4Np1jf8mBqC0So2fASe",
    "tags": [
     "prog rock",
     "symphonic rock",
@@ -10721,7 +10724,7 @@
    "release_date": "2026-09-25",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/5uACCkmbaCuHqx6dzgHIxP",
    "tags": [
     "hard rock",
     "rock"
@@ -10768,7 +10771,7 @@
    "release_date": "2026-09-11",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/6FIn9BR00xrBzxm5veinqL",
    "tags": [
     "doom metal",
     "stoner rock",
@@ -10839,7 +10842,7 @@
    "release_date": "2026-09-04",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/0vGIHeUMwnxnZyR3PNHylo",
    "tags": [
     "indie rock",
     "rock"
@@ -10889,7 +10892,7 @@
    "release_date": "2026-10-02",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/52lzfH80ON0jSqt1NkKsOQ",
    "tags": [
     "alternative rock",
     "indie rock",
@@ -10938,7 +10941,7 @@
    "release_date": "2026",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/6xqYPkW2kGqczt6SWKZAMZ",
    "tags": [
     "acoustic",
     "psychedelic rock",
@@ -10964,7 +10967,7 @@
    "release_date": "2026-10-09",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/39fk5BkpkgovhoE6CiMCRY",
    "tags": [
     "avantgarde",
     "punk",
@@ -10988,7 +10991,7 @@
    "release_date": "2026-01-10",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/5eLHkqfxL4sG3Ge7ukFX0h",
    "tags": [
     "art rock",
     "indie rock",
@@ -11037,7 +11040,7 @@
    "release_date": "2026-09-00",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/7lSKZnjhgce0bC1B5U8NKL",
    "tags": [
     "psychedelic rock",
     "krautrock",
@@ -11157,7 +11160,7 @@
    "release_date": "2026-09-18",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/4NBk9FUWxdDh8vXwk5czfr",
    "tags": [
     "doom metal",
     "hardcore",
@@ -11186,7 +11189,7 @@
    "release_date": "2026-10-15",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/0TZqEOGnHg13rm5QP9110k",
    "tags": [
     "prog rock",
     "rock"
@@ -11209,7 +11212,7 @@
    "release_date": "2026-09-04",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/1A0ggLaki9qLKWqBvss54a",
    "tags": [
     "emo",
     "hard rock",
@@ -11303,7 +11306,7 @@
    "release_date": "2026",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/2cifD3OWxj1CKB1b7jzlLg",
    "tags": [
     "glam",
     "rock & roll",
@@ -11421,7 +11424,7 @@
    "release_date": "2026-10-16",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/5pgDCeiWTISAcVHDpoOnqE",
    "tags": [
     "rock",
     "pop"
@@ -11444,7 +11447,7 @@
    "release_date": "2026",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/5OUzW1F7N3HPE3OY66wvZU",
    "tags": [
     "indie pop",
     "garage rock",
@@ -11539,7 +11542,7 @@
    "release_date": "2026-10-09",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/50Go49JWhugiExURmIuU6P",
    "tags": [
     "alternative rock",
     "indie rock",
@@ -11563,7 +11566,7 @@
    "release_date": "2026-08-01",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/1XmpjFrvUfRjZzpNcYZslE",
    "tags": [
     "folk rock",
     "classic rock",
@@ -11587,7 +11590,7 @@
    "release_date": "2026-10-02",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/0dxGo6YGP4AzFAvrRGTa8N",
    "tags": [
     "indie rock",
     "rock"
@@ -11610,7 +11613,7 @@
    "release_date": "2026-07-29",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/7sgLmrdXysowfIfAjy215b",
    "tags": [
     "punk",
     "ska",
@@ -11634,7 +11637,7 @@
    "release_date": "2026-09-25",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/3hrLnbT5219Kv8qMTIlO5Y",
    "tags": [
     "lo-fi",
     "indie pop",
@@ -11681,7 +11684,7 @@
    "release_date": "2026-10-02",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/6U24SurpHgAPWckYEivKrs",
    "tags": [
     "rock"
    ],
@@ -11703,7 +11706,7 @@
    "release_date": "2026-10-09",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/3wiGXFOSEkkNOtxBJJG56Q",
    "tags": [
     "alternative metal",
     "alternative rock",
@@ -11753,7 +11756,7 @@
    "release_date": "2026-05-22",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/5SBG60qV7YwTlRy57i73TP",
    "tags": [
     "alternative rock",
     "rock"
@@ -11821,7 +11824,7 @@
    "release_date": "2026-06-26",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/2eSvXKuOknxAapGVzQZrh5",
    "tags": [
     "indie rock",
     "jangle pop",
@@ -11847,7 +11850,7 @@
    "release_date": "2026-10-09",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/5FUxj31V6IQ2USXi2WUyFB",
    "tags": [
     "crust",
     "punk",
@@ -11871,7 +11874,7 @@
    "release_date": "2026-09-09",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/1rKeXCsQtmfOVh4cZBMfSC",
    "tags": [
     "heavy metal",
     "hard rock",
@@ -11895,7 +11898,7 @@
    "release_date": "2026",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/5IhpozFHglZ5LCOZFzdEvb",
    "tags": [
     "heavy metal",
     "hard rock",
@@ -11919,7 +11922,7 @@
    "release_date": "2026-09-00",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/2xS4Lvfvh8i4qkBazuziIv",
    "tags": [
     "black metal",
     "rock"
@@ -11994,7 +11997,7 @@
    "release_date": "2026-06-00",
    "self_released": false,
    "source": "discogs",
-   "spotify_url": null,
+   "spotify_url": "https://open.spotify.com/album/5P5HRLNBZlRmVB1zujTQGj",
    "tags": [
     "score",
     "soundtrack",
