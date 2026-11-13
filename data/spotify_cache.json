@@ -1,4 +1,35 @@
 {
+ "bc:1000321509": {
+  "album": "https://open.spotify.com/album/3NaYwcnfJ7ZEHH37BjkBgZ",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:0lfmLxavT67BIVYn1826LB",
+   "spotify:track:3xC4VCAFsdJfqoi6BQGKhv",
+   "spotify:track:4n31pfzMjv9brvGPgZ8XxQ"
+  ]
+ },
+ "bc:1006239896": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "bc:1007175339": {
+  "album": "https://open.spotify.com/album/01xj7apIyr8d0HcRP8iewr",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:0EYvqylkB3YyeWNSMta2fU",
+   "spotify:track:1gcU1BOjGvEPPt4zlxQTQZ",
+   "spotify:track:6vmFAPL8t1TfFNRtTGyOjt",
+   "spotify:track:4peNXbwF2xh6z4YKLNIYZh",
+   "spotify:track:31JUrrPgPnDyuzQFrMNytl",
+   "spotify:track:6pChm74F2HXe3U2FCn2m7p",
+   "spotify:track:5VE23c0yJUMQEtIKsgBGMi",
+   "spotify:track:6ypao4Ahafd1Gzp0nwf7BY",
+   "spotify:track:0UtjGE2eT1tfbiJ7RBdeoQ",
+   "spotify:track:12GdPZVOW5BG87vDvlw8WU",
+   "spotify:track:1k7CEEflEvnwcOraHbMMdC"
+  ]
+ },
  "bc:1009306145": {
   "album": null,
   "checked": "2026-10-15",
@@ -354,6 +385,13 @@
   "checked": "2026-10-15",
   "tracks": []
  },
+ "bc:1200507770": {
+  "album": "https://open.spotify.com/album/370zvT0p2lOozVmQxYHqU8",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:0kMEWJGcSHNoVzBCodP8V2"
+  ]
+ },
  "bc:1201872685": {
   "album": null,
   "checked": "2026-10-15",
@@ -482,6 +520,11 @@
   "checked": "2026-10-24",
   "tracks": []
  },
+ "bc:1277521750": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
  "bc:1280352131": {
   "album": null,
   "checked": "2026-10-31",
@@ -591,6 +634,11 @@
   "checked": "2026-10-15",
   "tracks": []
  },
+ "bc:1324055238": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
  "bc:1326617906": {
   "album": "https://open.spotify.com/album/0V3RoykDH07NmirvV8XUQZ",
   "checked": "2026-10-23",
@@ -598,6 +646,11 @@
    "spotify:track:0AL76F7Q6F3xiAOsHr318i",
    "spotify:track:4aFP6Tmy7hQ6QibnNWFVSz"
   ]
+ },
+ "bc:1327105794": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
  },
  "bc:1329011607": {
   "album": null,
@@ -944,6 +997,13 @@
    "spotify:track:333htvQTk5Elr976967uRc"
   ]
  },
+ "bc:154065913": {
+  "album": "https://open.spotify.com/album/2Mz3mJsXgSWx3iTFZTIdIx",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:3nJ2yeHpUQZ1ozJ9BxY5BZ"
+  ]
+ },
  "bc:1540760679": {
   "album": null,
   "checked": "2026-10-24",
@@ -1066,6 +1126,11 @@
   "checked": "2026-10-17",
   "tracks": []
  },
+ "bc:1592196243": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
  "bc:1592801395": {
   "album": "https://open.spotify.com/album/0C0ORcLJpnKryw5L1LOriy",
   "checked": "2026-10-31",
@@ -1095,6 +1160,11 @@
  "bc:1606193954": {
   "album": null,
   "checked": "2026-10-15",
+  "tracks": []
+ },
+ "bc:1606933185": {
+  "album": null,
+  "checked": "2026-11-13",
   "tracks": []
  },
  "bc:1612281517": {
@@ -1190,6 +1260,11 @@
  "bc:1659120653": {
   "album": null,
   "checked": "2026-10-31",
+  "tracks": []
+ },
+ "bc:166532355": {
+  "album": null,
+  "checked": "2026-11-13",
   "tracks": []
  },
  "bc:1670813664": {
@@ -1414,6 +1489,16 @@
   "checked": "2026-10-15",
   "tracks": []
  },
+ "bc:176725138": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "bc:1775600608": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
  "bc:1784842797": {
   "album": "https://open.spotify.com/album/1JxxIOvIF9Gm6XaI3iERbd",
   "checked": "2026-11-06",
@@ -1540,6 +1625,11 @@
  "bc:1889636589": {
   "album": null,
   "checked": "2026-11-06",
+  "tracks": []
+ },
+ "bc:1893838144": {
+  "album": null,
+  "checked": "2026-11-13",
   "tracks": []
  },
  "bc:1895913263": {
@@ -1679,6 +1769,11 @@
    "spotify:track:42oPSVncG8epPvoJDRw8SY"
   ]
  },
+ "bc:2004247445": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
  "bc:2012420082": {
   "album": null,
   "checked": "2026-10-15",
@@ -1791,6 +1886,11 @@
   "checked": "2026-10-15",
   "tracks": []
  },
+ "bc:2085897497": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
  "bc:2100955641": {
   "album": "https://open.spotify.com/album/7zBSdIrOqZCpqa8PQUnjfg",
   "checked": "2026-10-15",
@@ -1867,10 +1967,24 @@
   "checked": "2026-10-31",
   "tracks": []
  },
+ "bc:214672617": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
  "bc:2148534387": {
   "album": null,
   "checked": "2026-10-15",
   "tracks": []
+ },
+ "bc:2148665187": {
+  "album": "https://open.spotify.com/album/4M6jErRr9v2KfVoqD1lkOs",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:08zFvP4un94GJBzxjh7URZ",
+   "spotify:track:3yw4DQP8GpjZrDy1AkhRMc",
+   "spotify:track:1EHwfE9y4zLn5KCOEZbDk9"
+  ]
  },
  "bc:2150941335": {
   "album": "https://open.spotify.com/album/2Ahc9ULmrLEJitef3fTPzV",
@@ -1926,6 +2040,11 @@
  "bc:2193375085": {
   "album": null,
   "checked": "2026-10-30",
+  "tracks": []
+ },
+ "bc:2193553347": {
+  "album": null,
+  "checked": "2026-11-13",
   "tracks": []
  },
  "bc:2200246430": {
@@ -2279,6 +2398,11 @@
    "spotify:track:1PXVA6hdihQ8kWmGyawqaq"
   ]
  },
+ "bc:2437024296": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
  "bc:2441935121": {
   "album": null,
   "checked": "2026-10-17",
@@ -2384,6 +2508,24 @@
   "album": null,
   "checked": "2026-10-24",
   "tracks": []
+ },
+ "bc:2521755550": {
+  "album": "https://open.spotify.com/album/5fmzRPJACFVoC82p3M488w",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:0ttQFvmyvjmZBViFogZNWG",
+   "spotify:track:4oIMC6vugrtBxuJk3dRhlH",
+   "spotify:track:6XP7ApsVlYoJTw5826Gokh",
+   "spotify:track:2Ba2dwZE4w6t86qENaFkJE",
+   "spotify:track:4omjHq6GpGtTk5ufnewf71",
+   "spotify:track:6eysDhVk4iqUtPvVMGqQve",
+   "spotify:track:2SVoRDUyqCGymRn08LZtTk",
+   "spotify:track:1xiQzrpI6Iqp13cc8bWQjy",
+   "spotify:track:0DYpVt99NJtLoF5yeGGjXe",
+   "spotify:track:1GNSgGr2VqP1dLz1iINryH",
+   "spotify:track:6QyhOJJnH4V55C62Gu8Fzi",
+   "spotify:track:4fiwFSqfJ19Sq5eVz2vYME"
+  ]
  },
  "bc:2533013123": {
   "album": "https://open.spotify.com/album/0qxMLOLnR9i6jQEJiR49ax",
@@ -2588,10 +2730,22 @@
   "checked": "2026-10-15",
   "tracks": []
  },
+ "bc:2675864335": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
  "bc:268415540": {
   "album": null,
   "checked": "2026-10-23",
   "tracks": []
+ },
+ "bc:2684258288": {
+  "album": "https://open.spotify.com/album/27Su5umwaWJgvCt554MzA0",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:2qxp4wa4qjFJcRRiURRzYc"
+  ]
  },
  "bc:2685355736": {
   "album": null,
@@ -2628,6 +2782,11 @@
   "checked": "2026-10-15",
   "tracks": []
  },
+ "bc:2709712998": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
  "bc:2712445364": {
   "album": null,
   "checked": "2026-11-06",
@@ -2651,6 +2810,17 @@
    "spotify:track:0F88Ca4oufGqtNINZcdUkN",
    "spotify:track:7rtLOB0LNy2dbt5sRlNcEC",
    "spotify:track:41pzCLeWmuLDnNL0Dfhscm"
+  ]
+ },
+ "bc:2720521655": {
+  "album": "https://open.spotify.com/album/2RCIRJU6yEjFaRMFsdhBuc",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:5z6YNXvq0sIiOjlWLJwjPC",
+   "spotify:track:11gO48EyM4YSsdgs5vEyWV",
+   "spotify:track:4O214saimdP7WZacDejTXn",
+   "spotify:track:3ckE8DixvfjKmCWDXTIuef",
+   "spotify:track:4wPGh8vi8l7rdEncmP6NoI"
   ]
  },
  "bc:2726794953": {
@@ -2721,6 +2891,11 @@
   "tracks": [
    "spotify:track:4n2BaYEyk9EzUcNGJtG7Z5"
   ]
+ },
+ "bc:2776366835": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
  },
  "bc:27766159": {
   "album": null,
@@ -2878,6 +3053,11 @@
   "checked": "2026-10-30",
   "tracks": []
  },
+ "bc:2905607720": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
  "bc:2906418322": {
   "album": null,
   "checked": "2026-10-24",
@@ -3000,6 +3180,14 @@
    "spotify:track:11Ft1FKfJ0CLYYnBJMG9XA"
   ]
  },
+ "bc:2978563514": {
+  "album": "https://open.spotify.com/album/6mlHSZ4g4XPhSWdcyn6Kks",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:3Q71N7YDGAfbtJ3tKipJJ7",
+   "spotify:track:2p3DRSkKQq2u9IZOnCRW6p"
+  ]
+ },
  "bc:2978619021": {
   "album": null,
   "checked": "2026-10-23",
@@ -3046,6 +3234,11 @@
  "bc:3025627420": {
   "album": null,
   "checked": "2026-10-30",
+  "tracks": []
+ },
+ "bc:3037124385": {
+  "album": null,
+  "checked": "2026-11-13",
   "tracks": []
  },
  "bc:303751812": {
@@ -3107,6 +3300,11 @@
   "tracks": [
    "spotify:track:5XiAYkcVuRGWg7sdodyi2q"
   ]
+ },
+ "bc:306190448": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
  },
  "bc:307543935": {
   "album": null,
@@ -3296,6 +3494,11 @@
   "checked": "2026-11-06",
   "tracks": []
  },
+ "bc:3178063472": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
  "bc:3185047188": {
   "album": "https://open.spotify.com/album/0EWYLqDlIzzCTdfokAoOVT",
   "checked": "2026-10-31",
@@ -3429,6 +3632,11 @@
   "checked": "2026-10-16",
   "tracks": []
  },
+ "bc:3264111887": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
  "bc:3267516124": {
   "album": "https://open.spotify.com/album/681qKbi0w1Qxb5SKbVDWCz",
   "checked": "2026-11-07",
@@ -3462,6 +3670,14 @@
   "album": null,
   "checked": "2026-10-17",
   "tracks": []
+ },
+ "bc:3304323751": {
+  "album": "https://open.spotify.com/album/339bROxEce8lhwiGzClmC0",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:5otS9GsruHo1AZ44LoodnL",
+   "spotify:track:4TX5iZui0eCJhZxYjZmhKo"
+  ]
  },
  "bc:3316677738": {
   "album": null,
@@ -3953,6 +4169,11 @@
   "checked": "2026-10-17",
   "tracks": []
  },
+ "bc:3617026406": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
  "bc:3622401925": {
   "album": "https://open.spotify.com/album/4C1xWCSxr09B9EiBnKl0sU",
   "checked": "2026-10-24",
@@ -3960,6 +4181,36 @@
    "spotify:track:3xnECqKTcHB1e4ZrNkrE3o",
    "spotify:track:1XXwU5w7yOdMxU23oInXQQ",
    "spotify:track:4qyIDhCnoAC3BHo65EWUTz"
+  ]
+ },
+ "bc:3624077519": {
+  "album": "https://open.spotify.com/album/40bSdbr3GIfFkmJS9E8yre",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:2VKOHrS8f7R2FQwNDVAq0r",
+   "spotify:track:6RDtZGOoUXaNrNBHN1Evix",
+   "spotify:track:0F6Gjguw31JSkZWHVF69No",
+   "spotify:track:2CW4Aa3EZiUApuKi680bGx",
+   "spotify:track:7eUiGQt3f8fuiXZ9SsZz73",
+   "spotify:track:66wGoA3FHaIv5Vs9KxoY94",
+   "spotify:track:1hj1x083bcbbDi2kv9zh41",
+   "spotify:track:0HuMG0HpFz0yV0dDcQyERV",
+   "spotify:track:7kXGzFf8rRhCVyNtQV7WRy",
+   "spotify:track:6aeOZuShejQhe94aLolDJo",
+   "spotify:track:14XgeKvnzvgbi2781WUOul",
+   "spotify:track:76SAB2AMYJNjBtH48IxtdE",
+   "spotify:track:2eScfLJIEGg8hBxo15Sq8K",
+   "spotify:track:2icublN6TIOixNtartdQHF",
+   "spotify:track:3JfpTameuZe14Cuf8YLzYk",
+   "spotify:track:4jivluZDYgi7TwFMRFFcTU",
+   "spotify:track:7z961CiHD3FH9GbphkCb26",
+   "spotify:track:0pSDDGBCH4KaChrPJ9Ihkt",
+   "spotify:track:4mnHKuujkL9hrfCTDaSeUC",
+   "spotify:track:6IU9xiUau6ZGY0GxtJQplY",
+   "spotify:track:6ZioGPeNr9D3KFGqaI7kRG",
+   "spotify:track:2rBCWQZvq8gE5tnGN70sAN",
+   "spotify:track:7Gx9RdyXrhuZQq3taaE2Em",
+   "spotify:track:0cdfLIX1OHZHjg3TC9hiUx"
   ]
  },
  "bc:3628235103": {
@@ -4113,6 +4364,14 @@
   "checked": "2026-10-24",
   "tracks": []
  },
+ "bc:3700894180": {
+  "album": "https://open.spotify.com/album/4Cd134yHSwIYXizY3GlLvS",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:3yP6pmJolx7iIdTcCHYYko",
+   "spotify:track:5PhoRa3olC2bw1wOBhZ6py"
+  ]
+ },
  "bc:3701779239": {
   "album": null,
   "checked": "2026-10-15",
@@ -4233,6 +4492,17 @@
   "album": null,
   "checked": "2026-10-31",
   "tracks": []
+ },
+ "bc:3788330044": {
+  "album": "https://open.spotify.com/album/0QJ9Ar0NjI743BSA1q1eyB",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:0Boi6Z5ewfm3btg9jA03RL",
+   "spotify:track:6LDQmCQMazdqnbvi6p2YYj",
+   "spotify:track:00pg8CO2X2b7Pp0KH92Tfa",
+   "spotify:track:5zoW4kWWdeMAxyS0OK5C1L",
+   "spotify:track:0TudbUP87VI93XbtUA8Mw8"
+  ]
  },
  "bc:3788510063": {
   "album": null,
@@ -4753,6 +5023,14 @@
    "spotify:track:6VThRbNlFT5kyE8fYL7FFj"
   ]
  },
+ "bc:4227759674": {
+  "album": "https://open.spotify.com/album/1cCMUlNesvpuQE4crwa3Ca",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:1oC40QRijTDSbkHJ3GIDZb",
+   "spotify:track:3ZgLGTRbNIBf605MKm0FaO"
+  ]
+ },
  "bc:4228668708": {
   "album": "https://open.spotify.com/album/7HPGkA2Rm4gGWuQcJOPo2S",
   "checked": "2026-10-24",
@@ -5039,6 +5317,23 @@
   "checked": "2026-10-15",
   "tracks": []
  },
+ "bc:555905069": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "bc:556010947": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "bc:562156036": {
+  "album": "https://open.spotify.com/album/09tP0YZxqQmwAsB0Qh6kqs",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:47MSDov1Dy5AFyZ3SIEMEg"
+  ]
+ },
  "bc:564877025": {
   "album": null,
   "checked": "2026-11-06",
@@ -5110,6 +5405,14 @@
   "album": null,
   "checked": "2026-10-24",
   "tracks": []
+ },
+ "bc:591273963": {
+  "album": "https://open.spotify.com/album/24E5fZLCJbhMqUXiGbBNik",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:1yf7uILuafgXZnUO7r05Gu",
+   "spotify:track:0WZ8HUY4UGHhpVfDD09Zgy"
+  ]
  },
  "bc:59325746": {
   "album": null,
@@ -5198,6 +5501,11 @@
  "bc:637470979": {
   "album": null,
   "checked": "2026-10-15",
+  "tracks": []
+ },
+ "bc:639488416": {
+  "album": null,
+  "checked": "2026-11-13",
   "tracks": []
  },
  "bc:639744715": {
@@ -5469,6 +5777,19 @@
    "spotify:track:291j9EQriFEncdtVEMoqpL",
    "spotify:track:2EyF6cLHMSY264TIbICmgO"
   ]
+ },
+ "bc:772473717": {
+  "album": "https://open.spotify.com/album/1fNdQ6i7ylAhjv290n1xNG",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:1RwfueD3vBMijcrIqHXCSt",
+   "spotify:track:1UheE8UNE8nQyUwa54p5SL"
+  ]
+ },
+ "bc:782456781": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
  },
  "bc:793657190": {
   "album": null,
@@ -5815,6 +6136,11 @@
   "checked": "2026-10-24",
   "tracks": []
  },
+ "bc:925421176": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
  "bc:928829611": {
   "album": "https://open.spotify.com/album/0t9JFWDMBbDGBkY0ak8yXH",
   "checked": "2026-10-17",
@@ -5833,6 +6159,11 @@
  "bc:935714677": {
   "album": null,
   "checked": "2026-10-15",
+  "tracks": []
+ },
+ "bc:935823985": {
+  "album": null,
+  "checked": "2026-11-13",
   "tracks": []
  },
  "bc:940397474": {
@@ -9206,6 +9537,11 @@
    "spotify:track:7qBpMGaHR4wIXqj31miZLi"
   ]
  },
+ "dg:38741148": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
  "dg:38741406": {
   "album": "https://open.spotify.com/album/2gtCmnVyGhaLpWo2jyzS6v",
   "checked": "2026-10-23",
@@ -10432,6 +10768,11 @@
   "checked": "2026-10-23",
   "tracks": []
  },
+ "dg:38787192": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
  "dg:38787270": {
   "album": "https://open.spotify.com/album/28zRKn5vdicCOTvW8ZMlta",
   "checked": "2026-10-24",
@@ -11304,6 +11645,11 @@
  "dg:38806872": {
   "album": null,
   "checked": "2026-10-30",
+  "tracks": []
+ },
+ "dg:38806911": {
+  "album": null,
+  "checked": "2026-11-13",
   "tracks": []
  },
  "dg:38807070": {
@@ -12182,6 +12528,11 @@
  "dg:38849202": {
   "album": null,
   "checked": "2026-10-30",
+  "tracks": []
+ },
+ "dg:38850051": {
+  "album": null,
+  "checked": "2026-11-13",
   "tracks": []
  },
  "dg:38850168": {
@@ -13088,6 +13439,20 @@
    "spotify:track:264dqmPnwMRZFmFPybTWUL",
    "spotify:track:7wjGgof5uYfTVMzV7rLeUc",
    "spotify:track:6ieOvmb8R74CRiwzhAEjKy"
+  ]
+ },
+ "dg:38882673": {
+  "album": "https://open.spotify.com/album/16ebT4cobc9A1rMVKTB5K7",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:35r6LRmR6ORvyNDtFrUZCC",
+   "spotify:track:539uE0OtzGVhDMuW0QVLFw",
+   "spotify:track:1fh0XbSvX0iw7LPmDvegSL",
+   "spotify:track:4n9uxiRAy9rMCeoVHrxeD8",
+   "spotify:track:7tM1FJuMXZMNZYRVuGLG4a",
+   "spotify:track:5aoiEdEKMpYMGeISiKOrqp",
+   "spotify:track:3ZyEQYBlK9tfE6nGpHO7p8",
+   "spotify:track:1vK3RxiYtshnlu3SvvB2UL"
   ]
  },
  "dg:38882838": {
@@ -14214,6 +14579,11 @@
    "spotify:track:2GnJj2xH3ybfKbQfamQVxy",
    "spotify:track:6vcd9bUCO2wKu9aejAa19Z"
   ]
+ },
+ "dg:38905620": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
  },
  "dg:38905689": {
   "album": "https://open.spotify.com/album/1kvEEMiuWLI3RzazWzIfz6",
@@ -15972,6 +16342,18 @@
    "spotify:track:3MwpcGqXl73m9SsRR5FzE4"
   ]
  },
+ "dg:38944450": {
+  "album": "https://open.spotify.com/album/77hQKsW1ycyZONAr2P8V7T",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:44ZJNUn9dYSHZrVtylLaGx",
+   "spotify:track:3H6Rb4sagpFuPND0ucJoy8",
+   "spotify:track:5XO2eDrH6X66uQ2V8aVQXs",
+   "spotify:track:5RmTRNTD8sFMvWWVNdUd5G",
+   "spotify:track:28zGeIASDH6QeRfjiOgffX",
+   "spotify:track:3b4B9JHxq9I5kXX9l0uv0n"
+  ]
+ },
  "dg:38944492": {
   "album": "https://open.spotify.com/album/50Ap1bBZwtJDx7jKkPagZ3",
   "checked": "2026-11-06",
@@ -16152,6 +16534,11 @@
    "spotify:track:1WtU2A4VlAxHG3kDq6c9sg",
    "spotify:track:6OcgKdJJhnzejXoVozAFFw"
   ]
+ },
+ "dg:38950164": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
  },
  "dg:38950359": {
   "album": "https://open.spotify.com/album/074HfcJlCLJiYzm92nVqHe",
@@ -16361,5 +16748,1124 @@
    "spotify:track:30dNRIGaNrTxDOf09CjJri",
    "spotify:track:24WktpX4ivhBggwslRMEEx"
   ]
+ },
+ "dg:38954702": {
+  "album": "https://open.spotify.com/album/477x6UzJRKRronx03hUp3F",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:4JT4bH8ak9vyQjnsW2DqNL",
+   "spotify:track:0FmWcc3gMCLmP5OIpi0ANK"
+  ]
+ },
+ "dg:38954750": {
+  "album": "https://open.spotify.com/album/0Njx1vlFAx6WdvkZAZYrdp",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:5m6HjAoGjK91Y9bjSow4bD"
+  ]
+ },
+ "dg:38954861": {
+  "album": "https://open.spotify.com/album/78iUsF9B6QeA6p5nG6GHoQ",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:3Mep8LVvhULlNgkn6oTLNu"
+  ]
+ },
+ "dg:38955092": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38955296": {
+  "album": "https://open.spotify.com/album/4qaKZgBcfLfenBkRPKUfXC",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:5uM6hojRwMgM3fcP4fldPx"
+  ]
+ },
+ "dg:38955386": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38955593": {
+  "album": "https://open.spotify.com/album/6X8esIKOsDc6Q4uzMopz43",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:2GUTA8TOgwlMo8Rkr8FMwX",
+   "spotify:track:74eBKUOCduz2tediQqX98s",
+   "spotify:track:6Zm9uJ0LmLtFni9SMNwBIA",
+   "spotify:track:0hf7ut7ng20hYfw1H9SPxn",
+   "spotify:track:2mXdRwFBCZWiOnPd7njmIK",
+   "spotify:track:3aeGLf814fp4v8kcHsh5rt",
+   "spotify:track:59wGvnmNMfNq4iFMUFj44s",
+   "spotify:track:7zJ11qvpG2zdE4lq1z1Yg1"
+  ]
+ },
+ "dg:38955725": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38955839": {
+  "album": "https://open.spotify.com/album/1ufT49ROiU07R0TKKUa71I",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:40JM4nT5KHy88FOnp8Viet",
+   "spotify:track:1rtWrZL2sSleSadPXF0ft8",
+   "spotify:track:0xNzfJatTnq1obaBHgrBQD",
+   "spotify:track:28wODvF1TpSY6nIGb2ZQ37"
+  ]
+ },
+ "dg:38958770": {
+  "album": "https://open.spotify.com/album/38SM7t56LXi81MfgCXjFuV",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:6qzUuemPLO58J5KBQvGPUQ",
+   "spotify:track:36ZLSgWSoPklIV0rLfSIMB",
+   "spotify:track:1PnZraIxGSTY4co9GTtdaD",
+   "spotify:track:1ImfUworbtkklrXtIHBcHk",
+   "spotify:track:5g5iaNjknDwipoxDxZc8P5",
+   "spotify:track:4YmXM2aQdKKJNxAiyRdaVB",
+   "spotify:track:2ZzatbzL9HyMPLZCvq7wVm",
+   "spotify:track:5jwJ6Y7H4rVNBt7YRyiG7z",
+   "spotify:track:5i1nPOogBX28J0uLm0h0Ri",
+   "spotify:track:4CzaghGQzbLWurOZNw72OY"
+  ]
+ },
+ "dg:38958833": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38958869": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38958884": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38958887": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38959076": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38959097": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38959184": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38959232": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38960816": {
+  "album": "https://open.spotify.com/album/0O4UE1Ck3JbksVil5QgHLl",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:3LUIpOHtWOwKviTyxO3xhH",
+   "spotify:track:1yyh12ZMNQWXUbBEVlUSra",
+   "spotify:track:3ZRqDMXDj6zl0mULHmDF3Y",
+   "spotify:track:1D589cxYelu0W4TBJi56ge",
+   "spotify:track:2yUu8MDQWd8gBnVaNEW0PC",
+   "spotify:track:4X7A4RskFOCE6Y6IxFgPAa",
+   "spotify:track:35hZ6lp9Opp9DCkk717m1S",
+   "spotify:track:0EPaunYpbaNLnx7X5rgsn3",
+   "spotify:track:6ZSk6R2DqY2gxfbwhgD7Hy",
+   "spotify:track:6Jz1qelAaFx1Fpd8INgXz2",
+   "spotify:track:2tGS4nOdKZARC7CJUq4oZf",
+   "spotify:track:6AEVm3u8I0sJhBOi9iFsZB"
+  ]
+ },
+ "dg:38960990": {
+  "album": "https://open.spotify.com/album/6P0mVKqW7upFkxRobFunVp",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:7eWEexeOa46Vvl8gYKEWhF",
+   "spotify:track:0HNoiuK2aI9XOIcPCjv8LC",
+   "spotify:track:49Mk7dYjY4vrAkU1bwmNHD",
+   "spotify:track:3zpBmq1rgFPXLR9by8RsN6",
+   "spotify:track:3DpzTKpowHujkuxckaYjMH",
+   "spotify:track:7KNmdBEwQIBpML1f5rugP2",
+   "spotify:track:3Hgi46ehFDEfTzOSoa7nLj",
+   "spotify:track:6Ndt5zE9rppSQf5tZw6Y6c",
+   "spotify:track:4kp2fNiWJfFM627jBjIA6n",
+   "spotify:track:0Dr2rrMMiRPHM1FvmqScR7",
+   "spotify:track:0pXtpEPYozMeW8ftUkQHzA",
+   "spotify:track:3CBrhSApcCHfG7yHQsMXM6",
+   "spotify:track:7448zaXEn7ojJe0em7ms4P"
+  ]
+ },
+ "dg:38961773": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38962016": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38962025": {
+  "album": "https://open.spotify.com/album/78THKrWuD1EkhYHzd64QW6",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:1ytO6B7XBxPxGRba6NZ3bp",
+   "spotify:track:4sl6LHsqJjrEQ5CTFqF6M9"
+  ]
+ },
+ "dg:38962394": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38962433": {
+  "album": "https://open.spotify.com/album/3wJDVTfmMSgojLojXYUCto",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:0jFoGvTpP1inX8M1u1bZc0"
+  ]
+ },
+ "dg:38962736": {
+  "album": "https://open.spotify.com/album/6yINYjD0XwCggYlmCDp0yK",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:6phd0Su0NnvtTDTp5N3vem",
+   "spotify:track:2T3NIHqsgOadywj0MY1JRN",
+   "spotify:track:4hnn0P4WWEwz7DUD0IKIzt",
+   "spotify:track:4Bx0M2v8o7NMpdXybOF05x",
+   "spotify:track:4XX1GwCtrHsrOdrn71uZPh",
+   "spotify:track:4Ohnx2sNLFU743TiKLcOSx",
+   "spotify:track:7CT6A1QpiZQZrZYG87OcUE",
+   "spotify:track:3gEDtFwDqoOAE3rUEP9DIJ",
+   "spotify:track:44BIds0E4eIebIOP2tzJnY",
+   "spotify:track:14pYLohrvtYziOIf6U9YIq",
+   "spotify:track:6GcgGOYHNCVnwofmNa3abF",
+   "spotify:track:37LT3rY4chrOmOJHo5NtzK"
+  ]
+ },
+ "dg:38964332": {
+  "album": "https://open.spotify.com/album/21eadsoDpOskYUz0n7RPaL",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:2aCUadNejBgzgfOcA8rm2J",
+   "spotify:track:2aeIbJI3gNyjHqV5BZMlz7"
+  ]
+ },
+ "dg:38964548": {
+  "album": "https://open.spotify.com/album/1rCOnlVsFKDrEE1kpYiwXM",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:4K2pOelBw3mVFHQAFSjRZn",
+   "spotify:track:4UKQ1dX7diLKerPCeJlvuj",
+   "spotify:track:7l2UES1Uzy2Fub53MC91WY",
+   "spotify:track:22VtFZYwshD3CaDgvJhm1M"
+  ]
+ },
+ "dg:38965496": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38966570": {
+  "album": "https://open.spotify.com/album/4hn1nPmhBUUGiqLzvLFq50",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:37NoUJYIEZtKzSOMzEtmlM",
+   "spotify:track:2EsGZttrchgyyRqQqXmrpq"
+  ]
+ },
+ "dg:38968709": {
+  "album": "https://open.spotify.com/album/4hXdSScuXDeJWbaeZ6KTPH",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:4MVCEYiZXapBJBRXcVfFEK",
+   "spotify:track:2pcSLtpnwHZ6k4KvXQsRcR",
+   "spotify:track:6CREv1mUhzkNqVyMdRevnz",
+   "spotify:track:35JOgKNY4Q5UVkZifPpGUP",
+   "spotify:track:5VSHhp18Q6JIdpwff2m8KC",
+   "spotify:track:71GWf0Bni6LjEU5r2y4f73",
+   "spotify:track:01YLuUzyyhLEdNrUHbAUQe",
+   "spotify:track:2NR7Gc5s1dcd7bMCbM1LVP",
+   "spotify:track:3qZUHCggx6p4bsE5owJLDb",
+   "spotify:track:6qe4aEcYD5xSS6YgYqsvqj",
+   "spotify:track:1IlXuxkDI7JJrn0RK4Ht59",
+   "spotify:track:0JWWU62m5jQlrfoiToAcM0",
+   "spotify:track:7pyE5JgP8HfaqmeIpYLlzx"
+  ]
+ },
+ "dg:38968982": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38969108": {
+  "album": "https://open.spotify.com/album/66r6i9ZcpG8Tq5wrT7puU9",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:1qXyZdQ4q3cTpI5B3N1c4t"
+  ]
+ },
+ "dg:38969630": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38969894": {
+  "album": "https://open.spotify.com/album/2rTRobgMfI4OPye3MprVd5",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:4cC1cM76rpFiCobLITEvA2",
+   "spotify:track:2iEiscRjvnB0FtS5aCVUlk",
+   "spotify:track:6O5l7qn1u21k3TRVXoOl73",
+   "spotify:track:3TybUl6ZRNG1tqJtYqBHV0",
+   "spotify:track:21M3VJv3FWV2WjDQcrtxKT"
+  ]
+ },
+ "dg:38970200": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38970908": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38971886": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38972636": {
+  "album": "https://open.spotify.com/album/3i3ZRXMtaWAJSEhMalmyzD",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:2cYrqS6BGDEnBCxVjsHVoy",
+   "spotify:track:1BNrgOch4BK5XPgGbNLhSG",
+   "spotify:track:2ukjzYe4HXYPaK5YEl05cX",
+   "spotify:track:7L18sSNJr5v8ym1yeNvBvK",
+   "spotify:track:0iDqtbwBgdeooGphbKiFs2",
+   "spotify:track:7coAUQjYrBhhEyinc2jQeU",
+   "spotify:track:3VJ0rIMQpT28Lv1C40rvyN",
+   "spotify:track:5iPOiqQch4N8ZUKtK7dJPB",
+   "spotify:track:6QzCZrlCjEE6949kBxakih",
+   "spotify:track:00W4f5eO9NRBej0H6AQFiD",
+   "spotify:track:0gQddomPECNjtfNyBfDiFh"
+  ]
+ },
+ "dg:38972960": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38974565": {
+  "album": "https://open.spotify.com/album/3wVqNWgLjD6yjeTa8BUgJq",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:0WvuX0Wd23UJBn9Sy7Q6au",
+   "spotify:track:7o2R02GWwTQMYNsi9cA4Lx",
+   "spotify:track:4typAFQPRWbvOFakZXU8Aq",
+   "spotify:track:7brHqx0UYv63K9h18EFCLB"
+  ]
+ },
+ "dg:38975753": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38976236": {
+  "album": "https://open.spotify.com/album/4YTxGOO0Ux9qsXyItVYvFM",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:7ddHFLYNHcDpNlLsiNCTwB",
+   "spotify:track:5HFF4r73x4L3wiQUkzEa4R"
+  ]
+ },
+ "dg:38980472": {
+  "album": "https://open.spotify.com/album/0CzJoNfhCm2lZ1WbY3TMt5",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:2pLG0IJuvqROr7QedXN6NY",
+   "spotify:track:666ebL6Y9rLYP0sLcDRB8g",
+   "spotify:track:4D0VyNSNioEzXY36ahJq3o",
+   "spotify:track:7BxbdCnSvW3NiI6uhJx38n"
+  ]
+ },
+ "dg:38980520": {
+  "album": "https://open.spotify.com/album/4FU9df1Ua4hdK7iz15gK9y",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:7KlQTpnzRfTDjv3MOVp3zY",
+   "spotify:track:66970uzPAHEgBEwsFTqTjr",
+   "spotify:track:59WXpRbOsMLHITKW38laZo",
+   "spotify:track:6ptdhrr3lPQHDQivHknYch"
+  ]
+ },
+ "dg:38980598": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38981762": {
+  "album": "https://open.spotify.com/album/43OaVR9InGfXQutfGP1Hxn",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:0eSHpdrxGgZm3qX5XM0OsR",
+   "spotify:track:3Qqo9rW1opH2Mn1DcdzxEm"
+  ]
+ },
+ "dg:38981918": {
+  "album": "https://open.spotify.com/album/1sa0vPcrB0rB631BLVhYs4",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:2RAcxUwfDdDcxu1cCsHYQ4",
+   "spotify:track:5LDuoQ8O2qreuCwAVqJeOT"
+  ]
+ },
+ "dg:38982095": {
+  "album": "https://open.spotify.com/album/3D8B5eFjXN8kedOBD8TobQ",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:1plb8ewC4CKumhJI0PoD6m",
+   "spotify:track:3FtPX83owZH2U4GzLiESIM",
+   "spotify:track:6qyHg4oxfpcxo6wxCi2Vdc",
+   "spotify:track:4jvD5aMIAK9h5cAJw8FvwM",
+   "spotify:track:25DZZ2YV33XmRyS3ZzVEjr",
+   "spotify:track:5vzabcRxtHHcwRq5rSK2Sv",
+   "spotify:track:3DN7CnE8OlksbGFVrzmXlu",
+   "spotify:track:3O5rEnQ2PICmTsnpHsuJ4Z",
+   "spotify:track:5tJHjeyCBMhNEbfbYoRI5U",
+   "spotify:track:3XFaxmJjjLrlGmRuJIiq0e",
+   "spotify:track:6nguQvQtJdgD4WNyHMmnQG",
+   "spotify:track:6aMoFJeSXFbZZZgLBoaqoM"
+  ]
+ },
+ "dg:38982230": {
+  "album": "https://open.spotify.com/album/5WPRifmTdWO4iumwlscKTl",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:7kICDGK4THidevJJYxKs3Y",
+   "spotify:track:6WSHx9HDwQIQr9Lp2xUZK9",
+   "spotify:track:6TmByR5Bo27Hju0exykMZH",
+   "spotify:track:666DDKYukG5vqLMRQneUGM"
+  ]
+ },
+ "dg:38983181": {
+  "album": "https://open.spotify.com/album/0xgRPzXwYUoJOweuYlUvxN",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:7IFb4bTDNUFI6rKcWE4Yaq",
+   "spotify:track:1THUbaT0qACcGkgS1NHwDn"
+  ]
+ },
+ "dg:38983742": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38983862": {
+  "album": "https://open.spotify.com/album/1bIm0TJqABWN2m8yBaheq0",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:04aiCaLJQoAupsuqBoe2ZD"
+  ]
+ },
+ "dg:38983883": {
+  "album": "https://open.spotify.com/album/31PXQNbyedEqR7xSVyd6uj",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:59sAOhsWSWxGTxbDSfKzpz"
+  ]
+ },
+ "dg:38983976": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38984000": {
+  "album": "https://open.spotify.com/album/5Uz3QqVyjdSidXSJ8fmSTv",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:3Za77tVpZF5uOR6VO9eBEA"
+  ]
+ },
+ "dg:38984021": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38984036": {
+  "album": "https://open.spotify.com/album/6cd5na0Cgnp7vFYfDtyxvQ",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:1Oq90KTTgJnObcxh80TKq4"
+  ]
+ },
+ "dg:38984102": {
+  "album": "https://open.spotify.com/album/4z0mDADemfWS0PxnWB20jY",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:71KWso0JK56sb2gx6XrrhY"
+  ]
+ },
+ "dg:38984255": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38984615": {
+  "album": "https://open.spotify.com/album/4MykYTnQ1evZTxUrIByzGp",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:4NOwaZ629Jw3MJEt9czEI6"
+  ]
+ },
+ "dg:38984663": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38984858": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38985308": {
+  "album": "https://open.spotify.com/album/22J5NWQsMWujNWCU47OqfT",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:67CgpWOWt5pqzH692VEqMf",
+   "spotify:track:1FqJcL7csrNKnnx4aTKHFA",
+   "spotify:track:0WFP6dOmA2o3aB4lkJy7YO",
+   "spotify:track:4hw24Cou9tfUxQR9nCNkb4"
+  ]
+ },
+ "dg:38985467": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38989001": {
+  "album": "https://open.spotify.com/album/0UjdoxO2ebmeKDp4VZHHy1",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:6SW3tmdoYP05CTl3nBYH8y"
+  ]
+ },
+ "dg:38990144": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38991941": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38992523": {
+  "album": "https://open.spotify.com/album/5lyZzcX01gsKfy4ZfwvGWV",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:5beDh4JJBRdw6TlsHIuYGA"
+  ]
+ },
+ "dg:38992970": {
+  "album": "https://open.spotify.com/album/16tEEwF0WhyKToSXQq3U59",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:0FGWK0kxEmOHIkZanO8ES4",
+   "spotify:track:0b17ZmK8vRhHmSFvAX5STc"
+  ]
+ },
+ "dg:38993006": {
+  "album": "https://open.spotify.com/album/4tF8SUSBq07uWOfComSI4X",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:1UKMGeny9zqb7ZVyuCe8rx",
+   "spotify:track:1C7W6n9KcIwe69XPMPLVCP"
+  ]
+ },
+ "dg:38993123": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38993360": {
+  "album": "https://open.spotify.com/album/5w4dw6uPF8TG8FsDctyhln",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:1rurTLUIc2mfA4vpEjZlBx"
+  ]
+ },
+ "dg:38993807": {
+  "album": "https://open.spotify.com/album/5eOAPYE1nsv4BlnapweOpq",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:7KbkexAdqdLXFPsiJAbzQk",
+   "spotify:track:2B4KZDyA9CZkNpvrWw9FX2",
+   "spotify:track:35uOOYj5KVoqj78sNCHXGB",
+   "spotify:track:3pIRJilY85ngCVvv98J5St",
+   "spotify:track:4OrUnhWUZwhZkQEb5gcViQ",
+   "spotify:track:4kjUZRJlfoLi4lrrWUBygn",
+   "spotify:track:1qQTQvULz5zIaJpGXDmQnm",
+   "spotify:track:2baagWxEsESJzd4VbTm9wi",
+   "spotify:track:0AHln86Njov6BrsbKQZH3c",
+   "spotify:track:2xhJYY3XbIunD1CXOQBEMF",
+   "spotify:track:5pqQ5z3AFCJdWoNs3NqVxB"
+  ]
+ },
+ "dg:38994461": {
+  "album": "https://open.spotify.com/album/17moT4p5EGIZzxMa6Nn5db",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:5u1iX5l48c56RQI64oYJ2L"
+  ]
+ },
+ "dg:38994506": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38994662": {
+  "album": "https://open.spotify.com/album/1tDutfpLMbH31QnIiPKGfl",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:1hjTUe1w2DIsvDFeGQqmO1",
+   "spotify:track:38twKnHO5wG2GIpbIcUc8q"
+  ]
+ },
+ "dg:38994701": {
+  "album": "https://open.spotify.com/album/69k0boHmxUH0rUq2PPvczo",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:2SiAbTRCFslWH5kye2Oa3i",
+   "spotify:track:7xGVRL3eiDV38FMZfKV3xu"
+  ]
+ },
+ "dg:38994989": {
+  "album": "https://open.spotify.com/album/4o1uf9pmDqWKgwuQt7iYPc",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:0z1RFEn2jgyGnDD4At1fJt",
+   "spotify:track:6iQtBinRLtHgzCqrHTrwBk",
+   "spotify:track:4cpYV8DWUNVN1UB2DuijHI",
+   "spotify:track:0md55CAUme9b7j6tbrch9x"
+  ]
+ },
+ "dg:38996060": {
+  "album": "https://open.spotify.com/album/0xpiKKySJMJT1BFOWZT3m4",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:19vgkGOE3ZjU6VhqVKXcFA",
+   "spotify:track:58eNWI0P3q9XY323CTf82X"
+  ]
+ },
+ "dg:38998670": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38998841": {
+  "album": "https://open.spotify.com/album/08yNvItdotxhxdvsagsQJU",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:68zx7D1Nn2BTSl8xude2gC"
+  ]
+ },
+ "dg:38998895": {
+  "album": "https://open.spotify.com/album/31aPANSC2i64Qhu5PkkTFJ",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:2PbwVDqfHOh2NmTYKeT88J",
+   "spotify:track:3qMrTlGnvqOxeJRrdZRquT"
+  ]
+ },
+ "dg:38999177": {
+  "album": "https://open.spotify.com/album/5TxUcdztrtlDSMvVHz2CuE",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:0FCwYrvbXbAdSyGa3ARX8f",
+   "spotify:track:3a15Q39mJPH0P6No4KIGAY",
+   "spotify:track:4rbT7GvncN6OlIPNeEtd3S",
+   "spotify:track:6JwC5smCvPVnXATnIMMUeZ",
+   "spotify:track:6DQwlpKf6R6to6AzipmrTs",
+   "spotify:track:57PNq0AUe0Fs14xzxM8WaN",
+   "spotify:track:1GCxDdFRvOAEpigj8HB3a3",
+   "spotify:track:4d9h1LWw7LqnYzBIKdw5mR",
+   "spotify:track:5e0xzXq0irSgmts1smw8Ha",
+   "spotify:track:3J4ZUXI6hxnK18Sat0jdUJ",
+   "spotify:track:058wSVQAlYxURSb4QdqK5Z",
+   "spotify:track:6StgAR8eqvCAMhKyEt6ZWw",
+   "spotify:track:3ca5LTIkKRdCMTNwpvGzeF",
+   "spotify:track:6f5vIXtcnYsAunhKXx3NJY",
+   "spotify:track:1jDr8V5gNWhPnoODk5sIto",
+   "spotify:track:1gFpEPCuhsfeM2Iik9Hq5d"
+  ]
+ },
+ "dg:38999237": {
+  "album": "https://open.spotify.com/album/4lsG7xoymdXxIOFaSAfFQ5",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:4J6oW6fCrZPqRo5xk910WF",
+   "spotify:track:1XB90tLZV8nSBBSw1NL7mA"
+  ]
+ },
+ "dg:38999399": {
+  "album": "https://open.spotify.com/album/0YgEXkxZ0OQoOipsGbMqlg",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:5aJhQjeD8LoErjhgsLArD0",
+   "spotify:track:2c4wttaKzCRv1I08w2Q0sv",
+   "spotify:track:0Sw5FlMd0OAPZtqJauoIpD",
+   "spotify:track:57e7dzecrKWzXZMQpZlFcE",
+   "spotify:track:4fcFL0y2COMOkVFlzequda",
+   "spotify:track:1e9h1tvPADMJnWaKiEs0MC",
+   "spotify:track:5016xSeogflcCC69KO6Ozn",
+   "spotify:track:5jB9q2Qy8qu8fkSdbzEgmV"
+  ]
+ },
+ "dg:38999582": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:38999663": {
+  "album": "https://open.spotify.com/album/21ngCkF8i3ys0RszDfJbf7",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:09sOuAkpNWu4LPUohlNRSi",
+   "spotify:track:38ksRqTP1IrVGQr1bkMAQM",
+   "spotify:track:2EyzYsTUJrZw0dvxzwd3sj",
+   "spotify:track:09iyRK0gLPGmWYmKJXA82k",
+   "spotify:track:33Yv1SQcuLgbzRxoKxjw9d",
+   "spotify:track:1zaWAnmLA6B4isfSXjGB2d",
+   "spotify:track:2UHkmeSpozYtpd27d09xB6",
+   "spotify:track:0LL08D2KDJhcEBuwEvpIDv",
+   "spotify:track:7zMDHaifjer1s4c22G9Joa",
+   "spotify:track:2va998ZbMWS6zf0iTGLU1a"
+  ]
+ },
+ "dg:38999927": {
+  "album": "https://open.spotify.com/album/0s8sf6xMq8tsJSCe4qFrtu",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:7qSsSWk4cUFumrAp4WSy3f",
+   "spotify:track:0Xy7cHuOhQSIltdD8PAC4G",
+   "spotify:track:5J963Cytyq1vgauSkX9zNd",
+   "spotify:track:029HF0xtl7IPCNQFlMBrbw"
+  ]
+ },
+ "dg:39000752": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:39001271": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:39001922": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:39002099": {
+  "album": "https://open.spotify.com/album/0aCda6WKkeJUqdvDIu0N5z",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:6avywSYl0c6bTPhoOtvXTF",
+   "spotify:track:2QbkE30UU4Af0Xza3UuzaE",
+   "spotify:track:1GuUtuVqPUniaCzZwxo21P",
+   "spotify:track:6SFm313RDypeC244KOUPFH",
+   "spotify:track:5pyDuA8VFdKmSQq4ein3Cn",
+   "spotify:track:0m9FDUdOChanUB06nKdoWp",
+   "spotify:track:66przd0ZsNLMS9FJmV1ESm",
+   "spotify:track:1yh7oYLkZyHJQvuyunDRkX",
+   "spotify:track:2vNK2scxbmGJgPHywEJDgS",
+   "spotify:track:6sHCM0x43VyGTRt1mIKfzY"
+  ]
+ },
+ "dg:39002312": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:39002621": {
+  "album": "https://open.spotify.com/album/3vvic4PrQgUhdhKkE74WxK",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:3nYEUozEl0dbZfYgdhyGJP",
+   "spotify:track:3YAT3Mr4a9WjAfW18lZBFK",
+   "spotify:track:3pNqF904kP8TrL6M5qT6Zy",
+   "spotify:track:46I75fmJcfbxKMf0EOKwHI",
+   "spotify:track:1B6biSgEd7KIVU24WaKMN0",
+   "spotify:track:0kgnimf6Ym8qO70HOsYtIE",
+   "spotify:track:2cYuZZAtnd6UXzTJ9S5ohB",
+   "spotify:track:43p0Rg7zRkWmU69QNTC7I5",
+   "spotify:track:5GrNOQHZc2TU04Mak6zBtQ"
+  ]
+ },
+ "dg:39003161": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:39003458": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:39003980": {
+  "album": "https://open.spotify.com/album/27BLfTWpGRflHAuheimpnK",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:4y0lCOvs9S9QaP9orp1ale",
+   "spotify:track:2QUVzNhlfFvEBkCFVQtPBE"
+  ]
+ },
+ "dg:39004013": {
+  "album": "https://open.spotify.com/album/3FJUr4ZT7xIwGtfZfLPW6h",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:1I507fPqtX6mhRFfkhnU6T",
+   "spotify:track:4ueoNohMgRp1CX3lAS1BmF",
+   "spotify:track:0UXpTDeGWzIcfAlSPMWIit",
+   "spotify:track:2oo5v3f17lYWx8Rbpe4WEx",
+   "spotify:track:2CWk0xPQnKA9LW2VFiydPj"
+  ]
+ },
+ "dg:39004058": {
+  "album": "https://open.spotify.com/album/3eBm6Mn7LwLSeFhd1Q1nRi",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:055xwGslsVRd40NwsOrj5I"
+  ]
+ },
+ "dg:39004112": {
+  "album": "https://open.spotify.com/album/6zGGxrZeYbEk5Z6jRMtaPp",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:2IKns7PcTCTa8WcrfF7tsY"
+  ]
+ },
+ "dg:39004508": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:39004511": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:39005111": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:39005276": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:39005327": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:39005336": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:39005390": {
+  "album": "https://open.spotify.com/album/36DDWpOkV9gGF19zyOsApl",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:4D5aclLEstlBR2PGdd6XPt",
+   "spotify:track:5ueMmPDMxNWS0MgHzqc1TX",
+   "spotify:track:0f5G8I077FTZ1iH3WKtYBg"
+  ]
+ },
+ "dg:39006569": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:39007178": {
+  "album": "https://open.spotify.com/album/42o3RzNPUjHjo4pa5aX1id",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:4KDIRb8CsS0VrrrfaysDTX",
+   "spotify:track:0lsNd0LUky127XSyXT90Yw"
+  ]
+ },
+ "dg:39007832": {
+  "album": "https://open.spotify.com/album/6oKFBd5Q0NTd1oivu3I5C2",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:6bsV4Bkzzyp972s3gXjHow",
+   "spotify:track:1Mfgd5uxYRoYWhvzMPUb5z",
+   "spotify:track:4ceZLyRYv8gE9WLRsqISRf",
+   "spotify:track:1lmlHoCH83pRZqYyBqPDTW"
+  ]
+ },
+ "dg:39007847": {
+  "album": "https://open.spotify.com/album/5LF1jUMvYDlF0tDAceHMgU",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:1XjJPDcuHDxO93PLmMXvF9",
+   "spotify:track:34rxPxoIaMWBAcu3eXfQNj"
+  ]
+ },
+ "dg:39007874": {
+  "album": "https://open.spotify.com/album/3ZvxExzV1eNmNKhZlZYjqQ",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:3z9N1D445rdHAxywDixES8",
+   "spotify:track:62tXjKLrbYgfqmag57lcGU"
+  ]
+ },
+ "dg:39007925": {
+  "album": "https://open.spotify.com/album/28yja1Bh6RGjxcvNZCrtFo",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:3hhXaRdyCI28hmzJF70XJM",
+   "spotify:track:0excSObxOviD6ictxSLlMj",
+   "spotify:track:7DcP9sgrHT50pz31Xm5jCv",
+   "spotify:track:2qstBYjT9JxM3dqksWBkaK",
+   "spotify:track:0kLX3NcQltk59n1Kh9F5vx",
+   "spotify:track:4cSq0WAsKkcL9HS51iBmyB"
+  ]
+ },
+ "dg:39008237": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:39009245": {
+  "album": "https://open.spotify.com/album/7yNuK6lHlPaLejfnTBDO21",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:1ZrqadynvJh5EaAfjDcMuY",
+   "spotify:track:2kYTP3j7E7quPhLdjQaVwN"
+  ]
+ },
+ "dg:39009311": {
+  "album": "https://open.spotify.com/album/75gU9WYmooqeu19icnUEtG",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:1Gq4PlREoW0BqKk15NUUY0",
+   "spotify:track:515ORxjLxkmcgwe7EhGCqL"
+  ]
+ },
+ "dg:39009332": {
+  "album": "https://open.spotify.com/album/4WXc9RJ0FUkNOAeK6xH8xO",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:6eX3gs0QR456V36bVLnbkb"
+  ]
+ },
+ "dg:39009347": {
+  "album": "https://open.spotify.com/album/4YvlryV2uCD9OOQbVY9cV6",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:6LVkz951b8VdjfI3r47Dlz"
+  ]
+ },
+ "dg:39009368": {
+  "album": "https://open.spotify.com/album/1orU3tUltmi5yEK9bWlZCz",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:3CM6mfKFgdtcEIFqJuAlP7"
+  ]
+ },
+ "dg:39009386": {
+  "album": "https://open.spotify.com/album/5AxqiCAdaoTV2hu5MQNLDP",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:1tkNwvTFOaSOY5RrnxyYpA"
+  ]
+ },
+ "dg:39009602": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:39011354": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:39012164": {
+  "album": "https://open.spotify.com/album/7wxr77pnAGOT1OChT12bb1",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:3DUq6KdUFhoQnGcPsCBljM",
+   "spotify:track:35ebjha7kmaOxGD3yVgIOc"
+  ]
+ },
+ "dg:39012179": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:39012617": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:39012656": {
+  "album": "https://open.spotify.com/album/38OApr7cLWx34EzHaWUMZL",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:6a9gtZ4qzKlKnt7qJBwg3m"
+  ]
+ },
+ "dg:39013613": {
+  "album": "https://open.spotify.com/album/7ByZtKmd8aHzvNtdev29Al",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:7rjju3YN8W0jllu4lRyJGU"
+  ]
+ },
+ "dg:39013649": {
+  "album": "https://open.spotify.com/album/2tRnHi5DRNObzEPOstw8gk",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:11OJy48Iy1LhoKBdfz2HXX",
+   "spotify:track:69XbadzYvzsfmDN33AGcCq"
+  ]
+ },
+ "dg:39014111": {
+  "album": "https://open.spotify.com/album/1uWKFma7FzJlPOx2NqqYqy",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:5yyzls3hDTMVwoXrCisbnR"
+  ]
+ },
+ "dg:39014201": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:39014303": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:39014600": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:39014762": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:39018671": {
+  "album": "https://open.spotify.com/album/19KOnPSx1hxfnAAIE7VV02",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:0kMe4RZHqMSPuxitnjHOfg",
+   "spotify:track:07mn7QeTp56Ar9WBGmRgTi",
+   "spotify:track:4JzbGR8bKvrxGRNCEiXvdc",
+   "spotify:track:4c7YA8Am53Ols1vYqNMyXL",
+   "spotify:track:76D6t9ila6CCE8UPhvLmmU",
+   "spotify:track:2wuSSojg02PsKDgIePPMAc",
+   "spotify:track:1Zcasn2F7qRvZ1upyL0MQH",
+   "spotify:track:1xgtRVT918J4GgwzbKL78w",
+   "spotify:track:4cE1LBDCFymByN1mJBtbce"
+  ]
+ },
+ "dg:39019061": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:39019271": {
+  "album": "https://open.spotify.com/album/3eu159bVtGJ1ErAmIXdgt1",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:0V7dUTUUqEnzXuCImQXqwQ",
+   "spotify:track:369pfKXBOmzv4OoRdNyGlR"
+  ]
+ },
+ "dg:39020234": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:39020495": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:39020537": {
+  "album": "https://open.spotify.com/album/14GChLZAojl02lI0DGI2Er",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:5K0D92skbYAgReNVDGTr89",
+   "spotify:track:59enl0ys5GEkZcIwbXcLV2"
+  ]
+ },
+ "dg:39020573": {
+  "album": "https://open.spotify.com/album/3fspU2X0K9VafixkzzQeCG",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:49rgP8ZEuyTK9aC6O11k99"
+  ]
+ },
+ "dg:39020660": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
+ },
+ "dg:39020828": {
+  "album": "https://open.spotify.com/album/3u08gzwRbuiu1W7uqOsVOy",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:2Oay4EQSFUW7lwLgveYFeE",
+   "spotify:track:2fOSGgxAdv9MC1YjDh71Jw"
+  ]
+ },
+ "dg:39021143": {
+  "album": "https://open.spotify.com/album/3udFw9oP8zrADsjMEWLKGr",
+  "checked": "2026-11-13",
+  "tracks": [
+   "spotify:track:4cG8YpnngP5PDgV1uMpo1S",
+   "spotify:track:184B47EA1VuTEG8JVhkQeD",
+   "spotify:track:6MC88adliyy6r4KeNEUJDR",
+   "spotify:track:0z4fKKMTs4U1CqMTpC6plD",
+   "spotify:track:5HmCsIPr9lFu3NXjVPXIma",
+   "spotify:track:0NUhJcDxUQTcxznT5b3ERo",
+   "spotify:track:4G3Ed7PbQzALyKbvtk6UBb",
+   "spotify:track:3IggSwTiknyURFwJFMr9Pw",
+   "spotify:track:05qeAwLPwZ3LLWGexY6jJQ",
+   "spotify:track:4RE4mF12oakzFNsZNlDb2t",
+   "spotify:track:0RNBRSDhU45xXx7eoHBlyl"
+  ]
+ },
+ "dg:39021221": {
+  "album": null,
+  "checked": "2026-11-13",
+  "tracks": []
  }
 }
