@@ -42,47 +42,6 @@
   "title": "Neptune's Landscapes",
   "upcoming": true
  },
- "bc:1087354857": {
-  "artist": "echochamber",
-  "artwork": "https://f4.bcbits.com/img/a1197474357_2.jpg",
-  "bandcamp_url": "https://echochamberuk.bandcamp.com/album/dead-to-me-album",
-  "city": "Bristol, UK",
-  "discogs_url": null,
-  "enriched": false,
-  "genre": "rock",
-  "key": "bc:1087354857",
-  "label": null,
-  "label_url": null,
-  "release_date": "2026-11-20",
-  "self_released": true,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [
-   "rock"
-  ],
-  "title": "dead to me (ALBUM)",
-  "upcoming": true
- },
- "bc:111829762": {
-  "artist": "DJ Goce",
-  "artwork": "https://f4.bcbits.com/img/a3801543161_2.jpg",
-  "bandcamp_url": "https://gammenterprises.bandcamp.com/album/goce-reworks-volume-1",
-  "city": "Manchester, UK",
-  "discogs_url": null,
-  "enriched": false,
-  "genre": null,
-  "key": "bc:111829762",
-  "label": "G.A.M.M. Enterprises",
-  "label_key": "bc:gammenterprises",
-  "label_url": "https://gammenterprises.bandcamp.com",
-  "release_date": "2026-11-19",
-  "self_released": false,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [],
-  "title": "Goce Reworks Volume 1",
-  "upcoming": true
- },
  "bc:1125793021": {
   "artist": "Head Becomes Void",
   "artwork": "https://f4.bcbits.com/img/a2277738493_2.jpg",
@@ -167,27 +126,6 @@
   "title": "Chimera",
   "upcoming": true
  },
- "bc:1214607233": {
-  "artist": "Isla Scott",
-  "artwork": "https://f4.bcbits.com/img/a1577869354_2.jpg",
-  "bandcamp_url": "https://islascott.bandcamp.com/album/nothings-gonna-stop-tomorrow",
-  "city": "Glasgow, UK",
-  "discogs_url": null,
-  "enriched": false,
-  "genre": "folk",
-  "key": "bc:1214607233",
-  "label": null,
-  "label_url": null,
-  "release_date": "2026-11-20",
-  "self_released": true,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [
-   "folk"
-  ],
-  "title": "Nothing's Gonna Stop Tomorrow",
-  "upcoming": true
- },
  "bc:1220252252": {
   "artist": "Batch Gueye",
   "artwork": "https://f4.bcbits.com/img/a2693329643_2.jpg",
@@ -208,6 +146,33 @@
   ],
   "title": "BAAL UN",
   "upcoming": true
+ },
+ "bc:1262498643": {
+  "artist": "Drex174",
+  "artwork": "https://f4.bcbits.com/img/a0820616695_2.jpg",
+  "bandcamp_url": "https://dispatchrecordings.bandcamp.com/album/indefinition-ep",
+  "city": "Leeds, UK",
+  "discogs_url": null,
+  "enriched": true,
+  "genre": null,
+  "key": "bc:1262498643",
+  "label": "Dispatch Recordings",
+  "label_key": "bc:dispatchrecordings",
+  "label_url": "https://dispatchrecordings.bandcamp.com",
+  "release_date": "2026-12-04",
+  "self_released": false,
+  "source": "bandcamp",
+  "spotify_url": null,
+  "tags": [
+   "dispatch recordings",
+   "drex174",
+   "d'n'b",
+   "dnb",
+   "drum & bass",
+   "drum and bass",
+   "drum n bass"
+  ],
+  "title": "Indefinition EP"
  },
  "bc:1277001845": {
   "artist": "Alexander Wolfe",
@@ -376,25 +341,6 @@
   "title": "no nose as of 2027",
   "upcoming": true
  },
- "bc:1463356125": {
-  "artist": "JAYC",
-  "artwork": "https://f4.bcbits.com/img/a3544872846_2.jpg",
-  "bandcamp_url": "https://dansudiscsuk.bandcamp.com/album/jayc-get-loose",
-  "city": "Manchester, UK",
-  "discogs_url": null,
-  "enriched": true,
-  "genre": null,
-  "key": "bc:1463356125",
-  "label": "Dansu Discs",
-  "label_key": "bc:dansudiscsuk",
-  "label_url": "https://dansudiscsuk.bandcamp.com",
-  "release_date": "2026-11-20",
-  "self_released": false,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [],
-  "title": "JAYC - Get Loose"
- },
  "bc:147170243": {
   "artist": "Mondo Love & Betrayal",
   "artwork": "https://f4.bcbits.com/img/a2073032994_2.jpg",
@@ -503,28 +449,6 @@
    "folk"
   ],
   "title": "Volume IV",
-  "upcoming": true
- },
- "bc:174579212": {
-  "artist": "Joseph McGann",
-  "artwork": "https://f4.bcbits.com/img/a2938328154_2.jpg",
-  "bandcamp_url": "https://youngechorecords.bandcamp.com/album/old-wounds-2",
-  "city": "Bristol, UK",
-  "discogs_url": null,
-  "enriched": false,
-  "genre": "electronic",
-  "key": "bc:174579212",
-  "label": "Young Echo Records",
-  "label_key": "bc:youngechorecords",
-  "label_url": "https://youngechorecords.bandcamp.com",
-  "release_date": "2026-11-20",
-  "self_released": false,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [
-   "electronic"
-  ],
-  "title": "Old Wounds",
   "upcoming": true
  },
  "bc:1804361967": {
@@ -680,27 +604,6 @@
   "title": "20 Years In Dub",
   "upcoming": true
  },
- "bc:1879357074": {
-  "artist": "Klinical",
-  "artwork": "https://f4.bcbits.com/img/a3928072062_2.jpg",
-  "bandcamp_url": "https://klinical.bandcamp.com/album/klinical-eden",
-  "city": "Bristol, UK",
-  "discogs_url": null,
-  "enriched": false,
-  "genre": "electronic",
-  "key": "bc:1879357074",
-  "label": null,
-  "label_url": null,
-  "release_date": "2026-11-20",
-  "self_released": true,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [
-   "electronic"
-  ],
-  "title": "Klinical - EDEN",
-  "upcoming": true
- },
  "bc:1913138369": {
   "artist": "Slate",
   "artwork": "https://f4.bcbits.com/img/a0552356812_2.jpg",
@@ -743,62 +646,6 @@
    "mo lei tau"
   ],
   "title": "Dirty Little Secret"
- },
- "bc:1996153660": {
-  "artist": "Brain (ft. Gui, Spel & Leks)",
-  "artwork": "https://f4.bcbits.com/img/a1060345392_2.jpg",
-  "bandcamp_url": "https://dispatchrecordings.bandcamp.com/album/sutura-ep",
-  "city": "Leeds, UK",
-  "discogs_url": null,
-  "enriched": true,
-  "genre": null,
-  "key": "bc:1996153660",
-  "label": "Dispatch Recordings",
-  "label_key": "bc:dispatchrecordings",
-  "label_url": "https://dispatchrecordings.bandcamp.com",
-  "release_date": "2026-11-20",
-  "self_released": false,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [
-   "brain",
-   "dispatch recordings",
-   "gui",
-   "leks",
-   "spel",
-   "d'n'b",
-   "dnb",
-   "drum & bass"
-  ],
-  "title": "Sutura EP"
- },
- "bc:1996949639": {
-  "artist": "Dust Theory",
-  "artwork": "https://f4.bcbits.com/img/a1266268495_2.jpg",
-  "bandcamp_url": "https://audiodeeprecords.bandcamp.com/album/pause-rewind",
-  "city": "Birmingham, UK",
-  "discogs_url": null,
-  "enriched": true,
-  "genre": "electronic",
-  "key": "bc:1996949639",
-  "label": "Audiodeep Records",
-  "label_key": "bc:audiodeeprecords",
-  "label_url": "https://audiodeeprecords.bandcamp.com",
-  "release_date": "2026-11-15",
-  "self_released": false,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [
-   "drum & bass",
-   "electronic",
-   "experimental",
-   "future garage",
-   "idm",
-   "ambient",
-   "atmospheric",
-   "electronica"
-  ],
-  "title": "Pause/Rewind"
  },
  "bc:2042806193": {
   "artist": "Bicep",
@@ -864,26 +711,33 @@
   "title": "Pavilion 12s Volume 2 (New Beat & Electro Industrial)",
   "upcoming": true
  },
- "bc:214063710": {
-  "artist": "The Cindys",
-  "artwork": "https://f4.bcbits.com/img/a2139629493_2.jpg",
-  "bandcamp_url": "https://thecindys.bandcamp.com/album/love-century",
+ "bc:2158004009": {
+  "artist": "Various Artists",
+  "artwork": "https://f4.bcbits.com/img/a3265308995_2.jpg",
+  "bandcamp_url": "https://yamatairecords.bandcamp.com/album/5-years-of-yamatai-sampler-1",
   "city": "Bristol, UK",
   "discogs_url": null,
-  "enriched": false,
-  "genre": "alternative",
-  "key": "bc:214063710",
-  "label": null,
-  "label_url": null,
-  "release_date": "2026-11-19",
-  "self_released": true,
+  "enriched": true,
+  "genre": "electronic",
+  "key": "bc:2158004009",
+  "label": "Yamatai Records",
+  "label_key": "bc:yamatairecords",
+  "label_url": "https://yamatairecords.bandcamp.com",
+  "release_date": "2026-11-27",
+  "self_released": false,
   "source": "bandcamp",
   "spotify_url": null,
   "tags": [
-   "alternative"
+   "drum & bass",
+   "electronic",
+   "dnb",
+   "dnbmusic",
+   "dnbnation",
+   "drum and bass",
+   "drum n bass",
+   "music"
   ],
-  "title": "Love Century",
-  "upcoming": true
+  "title": "5 Years Of Yamatai Sampler 1"
  },
  "bc:2162241224": {
   "artist": "Kev Hopper",
@@ -948,26 +802,6 @@
   "title": "Dog Roses",
   "upcoming": true
  },
- "bc:2215254648": {
-  "artist": "Various Artists",
-  "artwork": "https://f4.bcbits.com/img/a3090995511_2.jpg",
-  "bandcamp_url": "https://viperrecordings.bandcamp.com/album/future-fire-vol-11-viper-presents",
-  "city": "Liverpool, UK",
-  "discogs_url": null,
-  "enriched": false,
-  "genre": null,
-  "key": "bc:2215254648",
-  "label": "Viper Recordings",
-  "label_key": "bc:viperrecordings",
-  "label_url": "https://viperrecordings.bandcamp.com",
-  "release_date": "2026-11-20",
-  "self_released": false,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [],
-  "title": "Future Fire Vol.11 (Viper Presents)",
-  "upcoming": true
- },
  "bc:2288175616": {
   "artist": "Ova Doce",
   "artwork": "https://f4.bcbits.com/img/a4009885108_2.jpg",
@@ -1029,27 +863,6 @@
    "pop"
   ],
   "title": "Beautifully out of Sync",
-  "upcoming": true
- },
- "bc:2333070395": {
-  "artist": "Rory Green",
-  "artwork": "https://f4.bcbits.com/img/a1903760314_2.jpg",
-  "bandcamp_url": "https://rorygreenmusic.bandcamp.com/album/moments-brighter-than-the-sun",
-  "city": "Manchester, UK",
-  "discogs_url": null,
-  "enriched": false,
-  "genre": "jazz",
-  "key": "bc:2333070395",
-  "label": null,
-  "label_url": null,
-  "release_date": "2026-11-20",
-  "self_released": true,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [
-   "jazz"
-  ],
-  "title": "Moments Brighter Than The Sun",
   "upcoming": true
  },
  "bc:2350290568": {
@@ -1116,6 +929,34 @@
    "trance"
   ],
   "title": "Modex - Ojas"
+ },
+ "bc:2428612384": {
+  "artist": "Cave Sex",
+  "artwork": "https://f4.bcbits.com/img/a0145633292_2.jpg",
+  "bandcamp_url": "https://lavidaesunmus.bandcamp.com/album/ikonoklasme",
+  "city": "London, UK",
+  "discogs_url": null,
+  "enriched": true,
+  "genre": "punk",
+  "key": "bc:2428612384",
+  "label": "LA VIDA ES UN MUS DISCOS",
+  "label_key": "bc:lavidaesunmus",
+  "label_url": "https://lavidaesunmus.bandcamp.com",
+  "release_date": "2026-12-11",
+  "self_released": false,
+  "source": "bandcamp",
+  "spotify_url": null,
+  "tags": [
+   "punk",
+   "ebm",
+   "hardcore punk",
+   "industrial",
+   "post-punk",
+   "postpunk",
+   "primative",
+   "singapore"
+  ],
+  "title": "Ikonoklasme"
  },
  "bc:2469280328": {
   "artist": "Classic Trucks",
@@ -1223,6 +1064,28 @@
   "title": "Do I See You There?",
   "upcoming": true
  },
+ "bc:2776460539": {
+  "artist": "JALA",
+  "artwork": "https://f4.bcbits.com/img/a2139175823_2.jpg",
+  "bandcamp_url": "https://eartoground.bandcamp.com/album/lcy",
+  "city": "London, UK",
+  "discogs_url": null,
+  "enriched": true,
+  "genre": "electronic",
+  "key": "bc:2776460539",
+  "label": "EarToGround Records",
+  "label_key": "bc:eartoground",
+  "label_url": "https://eartoground.bandcamp.com",
+  "release_date": "2026-12-01",
+  "self_released": false,
+  "source": "bandcamp",
+  "spotify_url": null,
+  "tags": [
+   "eartoground",
+   "electronic"
+  ],
+  "title": "LCY"
+ },
  "bc:2782758781": {
   "artist": "Odium Records",
   "artwork": "https://f4.bcbits.com/img/a4253514997_2.jpg",
@@ -1307,6 +1170,59 @@
   "title": "Back In The Groove (EP)",
   "upcoming": true
  },
+ "bc:2854614425": {
+  "artist": "Jah Jah Breaks",
+  "artwork": "https://f4.bcbits.com/img/a4106858907_2.jpg",
+  "bandcamp_url": "https://pickledtrax.bandcamp.com/album/welcome-to-the-darkside-pkdtrx004",
+  "city": "Leeds, UK",
+  "discogs_url": null,
+  "enriched": true,
+  "genre": "electronic",
+  "key": "bc:2854614425",
+  "label": "Pickled Trax",
+  "label_key": "bc:pickledtrax",
+  "label_url": "https://pickledtrax.bandcamp.com",
+  "release_date": "2026-12-04",
+  "self_released": false,
+  "source": "bandcamp",
+  "spotify_url": null,
+  "tags": [
+   "drum & bass",
+   "electronic",
+   "northern sound",
+   "pkdtrx004",
+   "pickled trax",
+   "star wars",
+   "ukg",
+   "breakbeat"
+  ],
+  "title": "Welcome to the Darkside [PKDTRX004]"
+ },
+ "bc:2862701707": {
+  "artist": "Klubfiller x Yannis G",
+  "artwork": "https://f4.bcbits.com/img/a1295474332_2.jpg",
+  "bandcamp_url": "https://ravelife.bandcamp.com/album/someone-you-loved",
+  "city": "Liverpool, UK",
+  "discogs_url": null,
+  "enriched": true,
+  "genre": "electronic",
+  "key": "bc:2862701707",
+  "label": "Ravelife",
+  "label_key": "bc:ravelife",
+  "label_url": "https://ravelife.bandcamp.com",
+  "release_date": "2026-11-26",
+  "self_released": false,
+  "source": "bandcamp",
+  "spotify_url": null,
+  "tags": [
+   "electronic",
+   "happy hardcore",
+   "hard dance",
+   "harddance",
+   "uk hardcore"
+  ],
+  "title": "Someone You Loved"
+ },
  "bc:2871919501": {
   "artist": "Reflex Blue",
   "artwork": "https://f4.bcbits.com/img/a2383133339_2.jpg",
@@ -1332,6 +1248,34 @@
    "tech house"
   ],
   "title": "EPE012: Network Operator"
+ },
+ "bc:2878834636": {
+  "artist": "EIJER",
+  "artwork": "https://f4.bcbits.com/img/a0051456224_2.jpg",
+  "bandcamp_url": "https://metalheadz.bandcamp.com/album/purple-vice-ep",
+  "city": "London, UK",
+  "discogs_url": null,
+  "enriched": true,
+  "genre": null,
+  "key": "bc:2878834636",
+  "label": "Metalheadz",
+  "label_key": "bc:metalheadz",
+  "label_url": "https://metalheadz.bandcamp.com",
+  "release_date": "2026-11-30",
+  "self_released": false,
+  "source": "bandcamp",
+  "spotify_url": null,
+  "tags": [
+   "eijer",
+   "metalheadz",
+   "d'n'b",
+   "dnb",
+   "drum & bass",
+   "drum and bass",
+   "drum n bass",
+   "jungle"
+  ],
+  "title": "Purple Vice EP"
  },
  "bc:2890681316": {
   "artist": "SCALER",
@@ -1395,6 +1339,28 @@
   "title": "Here Lies Human",
   "upcoming": true
  },
+ "bc:2905708540": {
+  "artist": "Various Artists",
+  "artwork": "https://f4.bcbits.com/img/a0883499098_2.jpg",
+  "bandcamp_url": "https://viperrecordings.bandcamp.com/album/annual-2027-sampler-1-viper-presents",
+  "city": "Liverpool, UK",
+  "discogs_url": null,
+  "enriched": true,
+  "genre": null,
+  "key": "bc:2905708540",
+  "label": "Viper Recordings",
+  "label_key": "bc:viperrecordings",
+  "label_url": "https://viperrecordings.bandcamp.com",
+  "release_date": "2026-12-04",
+  "self_released": false,
+  "source": "bandcamp",
+  "spotify_url": null,
+  "tags": [
+   "dnbmusic",
+   "drum and bass"
+  ],
+  "title": "Annual 2027 Sampler 1 (Viper Presents)"
+ },
  "bc:294760593": {
   "artist": "Matt O'Brien",
   "artwork": "https://f4.bcbits.com/img/a4200365814_2.jpg",
@@ -1416,31 +1382,6 @@
   ],
   "title": "Evolve Your Resolve EP",
   "upcoming": true
- },
- "bc:2954119559": {
-  "artist": "Lady Dammage",
-  "artwork": "https://f4.bcbits.com/img/a3599983575_2.jpg",
-  "bandcamp_url": "https://darksideunleashed.bandcamp.com/album/drunk",
-  "city": "Glasgow, UK",
-  "discogs_url": null,
-  "enriched": true,
-  "genre": "electronic",
-  "key": "bc:2954119559",
-  "label": "Darkside Unleashed",
-  "label_key": "bc:darksideunleashed",
-  "label_url": "https://darksideunleashed.bandcamp.com",
-  "release_date": "2026-11-20",
-  "self_released": false,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [
-   "electronic",
-   "hardcore",
-   "hardcore techno",
-   "mainstream hardcore",
-   "uptempo hardcore"
-  ],
-  "title": "Drunk"
  },
  "bc:2997527920": {
   "artist": "Hooton Tennis Club",
@@ -1728,27 +1669,6 @@
   ],
   "title": "Scheiß auf die Welt"
  },
- "bc:3292029044": {
-  "artist": "Faulty Lights",
-  "artwork": "https://f4.bcbits.com/img/a1606618552_2.jpg",
-  "bandcamp_url": "https://faultylights.bandcamp.com/album/dark-ambient-vol-1",
-  "city": "Bristol, UK",
-  "discogs_url": null,
-  "enriched": false,
-  "genre": "electronic",
-  "key": "bc:3292029044",
-  "label": null,
-  "label_url": null,
-  "release_date": "2026-11-20",
-  "self_released": true,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [
-   "electronic"
-  ],
-  "title": "Dark Ambient: Vol. 1",
-  "upcoming": true
- },
  "bc:3292182339": {
   "artist": "Speed Hearse",
   "artwork": "https://f4.bcbits.com/img/a2405616808_2.jpg",
@@ -1769,6 +1689,28 @@
   ],
   "title": "Convert The House",
   "upcoming": true
+ },
+ "bc:3378765344": {
+  "artist": "Triplestack",
+  "artwork": "https://f4.bcbits.com/img/a0042516107_2.jpg",
+  "bandcamp_url": "https://intriguemusic.bandcamp.com/album/hatch-the-box",
+  "city": "Bristol, UK",
+  "discogs_url": null,
+  "enriched": true,
+  "genre": "electronic",
+  "key": "bc:3378765344",
+  "label": "Intrigue Music",
+  "label_key": "bc:intriguemusic",
+  "label_url": "https://intriguemusic.bandcamp.com",
+  "release_date": "2026-12-18",
+  "self_released": false,
+  "source": "bandcamp",
+  "spotify_url": null,
+  "tags": [
+   "drum & bass",
+   "electronic"
+  ],
+  "title": "Hatch / The Box"
  },
  "bc:3390901225": {
   "artist": "Shed Seven",
@@ -1833,33 +1775,29 @@
   "title": "Fallen Angel",
   "upcoming": true
  },
- "bc:3428490880": {
-  "artist": "Bricolage VA",
-  "artwork": "https://f4.bcbits.com/img/a2714835589_2.jpg",
-  "bandcamp_url": "https://bricolageglasgow.bandcamp.com/album/bc100",
-  "city": "Glasgow, UK",
+ "bc:3457387797": {
+  "artist": "Maruwa",
+  "artwork": "https://f4.bcbits.com/img/a3349653104_2.jpg",
+  "bandcamp_url": "https://hawscardiff.bandcamp.com/album/destination-dream",
+  "city": "Cardiff, UK",
   "discogs_url": null,
   "enriched": true,
-  "genre": "electronic",
-  "key": "bc:3428490880",
-  "label": "Bricolage",
-  "label_key": "bc:bricolageglasgow",
-  "label_url": "https://bricolageglasgow.bandcamp.com",
-  "release_date": "2026-11-20",
+  "genre": null,
+  "key": "bc:3457387797",
+  "label": "Haŵs",
+  "label_key": "bc:hawscardiff",
+  "label_url": "https://hawscardiff.bandcamp.com",
+  "release_date": "2026-12-28",
   "self_released": false,
   "source": "bandcamp",
   "spotify_url": null,
   "tags": [
-   "electronic",
-   "idm",
-   "ambient",
-   "broken beat",
-   "dub",
-   "electronic music",
-   "electronica",
-   "underground"
+   "progressive house",
+   "tech house",
+   "acid",
+   "dub"
   ],
-  "title": "(bc100)"
+  "title": "Destination Dream"
  },
  "bc:3491965353": {
   "artist": "Lambrini Girls",
@@ -1934,30 +1872,6 @@
   ],
   "title": "The Melt Goes On Forever: The Art And Times of David Hammons"
  },
- "bc:3516335767": {
-  "artist": "Vick Lavender",
-  "artwork": "https://f4.bcbits.com/img/a2262989473_2.jpg",
-  "bandcamp_url": "https://randsrecords.bandcamp.com/album/dimensions-travel",
-  "city": "London, UK",
-  "discogs_url": null,
-  "enriched": true,
-  "genre": null,
-  "key": "bc:3516335767",
-  "label": "R&S Records",
-  "label_key": "bc:randsrecords",
-  "label_url": "https://randsrecords.bandcamp.com",
-  "release_date": "2026-11-20",
-  "self_released": false,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [
-   "deep house",
-   "house",
-   "jazz house",
-   "jazzy house"
-  ],
-  "title": "Dimensions Travel"
- },
  "bc:352309943": {
   "artist": "Russell Haswell",
   "artwork": "https://f4.bcbits.com/img/a1982583800_2.jpg",
@@ -1999,27 +1913,6 @@
    "electronic"
   ],
   "title": "NO MERCY",
-  "upcoming": true
- },
- "bc:3533422817": {
-  "artist": "Chris Hull",
-  "artwork": "https://f4.bcbits.com/img/a1149118818_2.jpg",
-  "bandcamp_url": "https://chrishull.bandcamp.com/album/universe-juice-vol-1",
-  "city": "Nottingham, UK",
-  "discogs_url": null,
-  "enriched": false,
-  "genre": "folk",
-  "key": "bc:3533422817",
-  "label": null,
-  "label_url": null,
-  "release_date": "2026-11-14",
-  "self_released": true,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [
-   "folk"
-  ],
-  "title": "Universe Juice Vol. 1",
   "upcoming": true
  },
  "bc:3545773789": {
@@ -2065,26 +1958,6 @@
   "title": "Gombeen - Preorder",
   "upcoming": true
  },
- "bc:3625609792": {
-  "artist": "The Noisy Line",
-  "artwork": "https://f4.bcbits.com/img/a1519347117_2.jpg",
-  "bandcamp_url": "https://freshlysqueezedmusic.bandcamp.com/album/play-the-game",
-  "city": "Brighton, UK",
-  "discogs_url": null,
-  "enriched": false,
-  "genre": null,
-  "key": "bc:3625609792",
-  "label": "Freshly Squeezed Music",
-  "label_key": "bc:freshlysqueezedmusic",
-  "label_url": "https://freshlysqueezedmusic.bandcamp.com",
-  "release_date": "2026-11-20",
-  "self_released": false,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [],
-  "title": "Play the Game",
-  "upcoming": true
- },
  "bc:3649242311": {
   "artist": "Caoilfhionn Rose",
   "artwork": "https://f4.bcbits.com/img/a2198507310_2.jpg",
@@ -2125,46 +1998,6 @@
    "folk"
   ],
   "title": "KING DEATH.",
-  "upcoming": true
- },
- "bc:3672493034": {
-  "artist": "Two-Piers",
-  "artwork": "https://f4.bcbits.com/img/a3922584418_2.jpg",
-  "bandcamp_url": "https://two-piers.bandcamp.com/album/kosmische-psych-d-lique-motorik-astral-and-avant-garde-musik-from-deutschland-and-beyond-1970-2025",
-  "city": "Brighton, UK",
-  "discogs_url": null,
-  "enriched": false,
-  "genre": "alternative",
-  "key": "bc:3672493034",
-  "label": null,
-  "label_url": null,
-  "release_date": "2026-11-20",
-  "self_released": true,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [
-   "alternative"
-  ],
-  "title": "Kosmische Psychédélique (Motorik, Astral and Avant-Garde Musik from Deutschland and Beyond 1970–2025)",
-  "upcoming": true
- },
- "bc:3713662478": {
-  "artist": "Neptune Discs",
-  "artwork": "https://f4.bcbits.com/img/a2420414570_2.jpg",
-  "bandcamp_url": "https://neptunediscs.bandcamp.com/album/samesame-low-signal-dreams",
-  "city": "Edinburgh, UK",
-  "discogs_url": null,
-  "enriched": false,
-  "genre": null,
-  "key": "bc:3713662478",
-  "label": null,
-  "label_url": null,
-  "release_date": "2026-11-19",
-  "self_released": true,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [],
-  "title": "SameSame - Low Signal Dreams",
   "upcoming": true
  },
  "bc:3722797810": {
@@ -2208,28 +2041,6 @@
    "electronic"
   ],
   "title": "Arp Pussy DUKE222",
-  "upcoming": true
- },
- "bc:3773524600": {
-  "artist": "Ghettofix Revolution, Raggo Zulu Rebel, George Palmer",
-  "artwork": "https://f4.bcbits.com/img/a2109363497_2.jpg",
-  "bandcamp_url": "https://ghettofixrevolution.bandcamp.com/album/uprising-uprising-riddim",
-  "city": "Norwich, UK",
-  "discogs_url": null,
-  "enriched": false,
-  "genre": "reggae",
-  "key": "bc:3773524600",
-  "label": "Ghettofix Revolution Records",
-  "label_key": "bc:ghettofixrevolution",
-  "label_url": "https://ghettofixrevolution.bandcamp.com",
-  "release_date": "2026-11-20",
-  "self_released": false,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [
-   "reggae"
-  ],
-  "title": "Uprising (Uprising Riddim)",
   "upcoming": true
  },
  "bc:3792251890": {
@@ -2293,26 +2104,6 @@
    "alternative"
   ],
   "title": "FUCK YOU.",
-  "upcoming": true
- },
- "bc:3861067037": {
-  "artist": "Benedikt Frey",
-  "artwork": "https://f4.bcbits.com/img/a1517038549_2.jpg",
-  "bandcamp_url": "https://clubblanco1.bandcamp.com/album/benedikt-frey-detours",
-  "city": "Bristol, UK",
-  "discogs_url": null,
-  "enriched": false,
-  "genre": null,
-  "key": "bc:3861067037",
-  "label": "Club Blanco",
-  "label_key": "bc:clubblanco1",
-  "label_url": "https://clubblanco1.bandcamp.com",
-  "release_date": "2026-11-20",
-  "self_released": false,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [],
-  "title": "Benedikt Frey - Detours",
   "upcoming": true
  },
  "bc:3953747504": {
@@ -2425,6 +2216,31 @@
   ],
   "title": "Conscious/Life (feat. Sapele)"
  },
+ "bc:4116575920": {
+  "artist": "Tube Alloys",
+  "artwork": "https://f4.bcbits.com/img/a0199659637_2.jpg",
+  "bandcamp_url": "https://lavidaesunmus.bandcamp.com/album/live-from-death-row",
+  "city": "London, UK",
+  "discogs_url": null,
+  "enriched": true,
+  "genre": "punk",
+  "key": "bc:4116575920",
+  "label": "LA VIDA ES UN MUS DISCOS",
+  "label_key": "bc:lavidaesunmus",
+  "label_url": "https://lavidaesunmus.bandcamp.com",
+  "release_date": "2027-01-29",
+  "self_released": false,
+  "source": "bandcamp",
+  "spotify_url": null,
+  "tags": [
+   "punk",
+   "hardcore punk",
+   "post-punk",
+   "postpunk",
+   "primative"
+  ],
+  "title": "Live From Death Row"
+ },
  "bc:4129729671": {
   "artist": "KTALINDJ",
   "artwork": "https://f4.bcbits.com/img/a3279198289_2.jpg",
@@ -2465,27 +2281,6 @@
   "title": "Wah Wah 45s Remixed: Specials",
   "upcoming": true
  },
- "bc:4207323014": {
-  "artist": "pyncher",
-  "artwork": "https://f4.bcbits.com/img/a3394084543_2.jpg",
-  "bandcamp_url": "https://pyncher.bandcamp.com/album/the-eight-legged-band",
-  "city": "Manchester, UK",
-  "discogs_url": null,
-  "enriched": false,
-  "genre": "rock",
-  "key": "bc:4207323014",
-  "label": null,
-  "label_url": null,
-  "release_date": "2026-11-20",
-  "self_released": true,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [
-   "rock"
-  ],
-  "title": "The Eight Legged Band",
-  "upcoming": true
- },
  "bc:4266620584": {
   "artist": "Pulled Apart By Horses",
   "artwork": "https://f4.bcbits.com/img/a3677343284_2.jpg",
@@ -2505,48 +2300,6 @@
    "rock"
   ],
   "title": "Dopamine Hits",
-  "upcoming": true
- },
- "bc:4268480750": {
-  "artist": "Tocca",
-  "artwork": "https://f4.bcbits.com/img/a4172710357_2.jpg",
-  "bandcamp_url": "https://toccamusic.bandcamp.com/album/fragments",
-  "city": "Nottingham, UK",
-  "discogs_url": null,
-  "enriched": false,
-  "genre": "electronic",
-  "key": "bc:4268480750",
-  "label": null,
-  "label_url": null,
-  "release_date": "2026-11-19",
-  "self_released": true,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [
-   "electronic"
-  ],
-  "title": "Fragments",
-  "upcoming": true
- },
- "bc:4270240351": {
-  "artist": "Lucy Claire",
-  "artwork": "https://f4.bcbits.com/img/a1220540081_2.jpg",
-  "bandcamp_url": "https://lucyclaire.bandcamp.com/album/with-child-without",
-  "city": "London, UK",
-  "discogs_url": null,
-  "enriched": false,
-  "genre": "classical",
-  "key": "bc:4270240351",
-  "label": null,
-  "label_url": null,
-  "release_date": "2026-11-20",
-  "self_released": true,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [
-   "classical"
-  ],
-  "title": "With Child, Without",
   "upcoming": true
  },
  "bc:43003238": {
@@ -2571,28 +2324,6 @@
    "techno"
   ],
   "title": "Red Box"
- },
- "bc:49171631": {
-  "artist": "Kevin Figes",
-  "artwork": "https://f4.bcbits.com/img/a0029084698_2.jpg",
-  "bandcamp_url": "https://pigrecords.bandcamp.com/album/sound-dimensions-2",
-  "city": "Bristol, UK",
-  "discogs_url": null,
-  "enriched": false,
-  "genre": "jazz",
-  "key": "bc:49171631",
-  "label": "Pig Records",
-  "label_key": "bc:pigrecords",
-  "label_url": "https://pigrecords.bandcamp.com",
-  "release_date": "2026-11-20",
-  "self_released": false,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [
-   "jazz"
-  ],
-  "title": "Sound Dimensions",
-  "upcoming": true
  },
  "bc:522488859": {
   "artist": "Isla Callister",
@@ -2635,32 +2366,6 @@
   ],
   "title": "This Isn't Fun, This Is A Lifestyle",
   "upcoming": true
- },
- "bc:559493729": {
-  "artist": "Duoscience",
-  "artwork": "https://f4.bcbits.com/img/a1772933814_2.jpg",
-  "bandcamp_url": "https://moceanrecords.bandcamp.com/album/the-fall-conmigo",
-  "city": "London, UK",
-  "discogs_url": null,
-  "enriched": true,
-  "genre": "electronic",
-  "key": "bc:559493729",
-  "label": "M Ocean Records",
-  "label_key": "bc:moceanrecords",
-  "label_url": "https://moceanrecords.bandcamp.com",
-  "release_date": "2026-11-19",
-  "self_released": false,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [
-   "d&b",
-   "drum and bass",
-   "electronic",
-   "jungle",
-   "liquid drum & bass",
-   "pop"
-  ],
-  "title": "The Fall / Conmigo"
  },
  "bc:567375111": {
   "artist": "Mirrortalk",
@@ -2874,26 +2579,32 @@
   "title": "CRYME - Glitch Gala",
   "upcoming": true
  },
- "bc:771484911": {
-  "artist": "KTALINDJ",
-  "artwork": "https://f4.bcbits.com/img/a0107183568_2.jpg",
-  "bandcamp_url": "https://ktalindj.bandcamp.com/album/one-more-christmas",
-  "city": "Leeds, UK",
+ "bc:829376135": {
+  "artist": "Heist",
+  "artwork": "https://f4.bcbits.com/img/a0371508864_2.jpg",
+  "bandcamp_url": "https://metalheadz.bandcamp.com/album/casanova",
+  "city": "London, UK",
   "discogs_url": null,
-  "enriched": false,
-  "genre": "electronic",
-  "key": "bc:771484911",
-  "label": null,
-  "label_url": null,
-  "release_date": "2026-11-20",
-  "self_released": true,
+  "enriched": true,
+  "genre": null,
+  "key": "bc:829376135",
+  "label": "Metalheadz",
+  "label_key": "bc:metalheadz",
+  "label_url": "https://metalheadz.bandcamp.com",
+  "release_date": "2026-11-23",
+  "self_released": false,
   "source": "bandcamp",
   "spotify_url": null,
   "tags": [
-   "electronic"
+   "casanova",
+   "drum and bass",
+   "heist",
+   "metalheadz",
+   "d'n'b",
+   "dnb",
+   "drum & bass"
   ],
-  "title": "ONE MORE CHRISTMAS",
-  "upcoming": true
+  "title": "Casanova"
  },
  "bc:839674268": {
   "artist": "MTNLLY",
@@ -2956,48 +2667,6 @@
    "folk"
   ],
   "title": "Part Two - Fundraiser for Parkinson's UK",
-  "upcoming": true
- },
- "bc:864868674": {
-  "artist": "Mulholland",
-  "artwork": "https://f4.bcbits.com/img/a1125232978_2.jpg",
-  "bandcamp_url": "https://mulhollanddd.bandcamp.com/album/eyez",
-  "city": "Bristol, UK",
-  "discogs_url": null,
-  "enriched": false,
-  "genre": "electronic",
-  "key": "bc:864868674",
-  "label": null,
-  "label_url": null,
-  "release_date": "2026-11-17",
-  "self_released": true,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [
-   "electronic"
-  ],
-  "title": "EYEZ",
-  "upcoming": true
- },
- "bc:966916028": {
-  "artist": "Pat's Alternative Bus Tour",
-  "artwork": "https://f4.bcbits.com/img/a0917516485_2.jpg",
-  "bandcamp_url": "https://patsalternativebustour.bandcamp.com/album/the-big-light",
-  "city": "Glasgow, UK",
-  "discogs_url": null,
-  "enriched": false,
-  "genre": "alternative",
-  "key": "bc:966916028",
-  "label": null,
-  "label_url": null,
-  "release_date": "2026-11-16",
-  "self_released": true,
-  "source": "bandcamp",
-  "spotify_url": null,
-  "tags": [
-   "alternative"
-  ],
-  "title": "The Big Light",
   "upcoming": true
  },
  "dg:38654214": {
@@ -3180,55 +2849,6 @@
   ],
   "title": "Vinyl Requiem"
  },
- "dg:38949351": {
-  "added": "2026-11-06",
-  "artist": "Sea of Suns",
-  "artwork": "https://i.discogs.com/r8a30ay8W6bViWQVUpyRNI4-hRAri-HNs-pb24cqF7Y/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4OTQ5/MzUxLTE3OTM5NjI4/MTUtMjM0Ni5qcGVn.jpeg",
-  "bandcamp_url": null,
-  "city": "UK",
-  "discogs_label_id": null,
-  "discogs_url": "https://www.discogs.com/release/38949351-Sea-of-Suns-From-Here-To-There",
-  "enriched": true,
-  "genre": "electronic",
-  "have": 1,
-  "key": "dg:38949351",
-  "label": null,
-  "release_date": "2026-11-20",
-  "self_released": true,
-  "source": "discogs",
-  "spotify_url": null,
-  "tags": [
-   "idm",
-   "downtempo",
-   "ambient",
-   "electronic"
-  ],
-  "title": "From Here To There"
- },
- "dg:38950227": {
-  "added": "2026-11-06",
-  "artist": "Distant Strangers",
-  "artwork": null,
-  "bandcamp_url": null,
-  "city": "UK",
-  "discogs_label_id": 66565,
-  "discogs_url": "https://www.discogs.com/release/38950227-Distant-Strangers-Distant-Strangers-EP",
-  "enriched": true,
-  "genre": "electronic",
-  "have": 0,
-  "key": "dg:38950227",
-  "label": "Distant Strangers",
-  "label_key": "dg:66565",
-  "release_date": "2026-11-20",
-  "self_released": false,
-  "source": "discogs",
-  "spotify_url": null,
-  "tags": [
-   "tech house",
-   "electronic"
-  ],
-  "title": "Distant Strangers EP"
- },
  "dg:38960873": {
   "added": "2026-11-07",
   "artist": "Various",
@@ -3256,56 +2876,6 @@
    "folk, world, & country"
   ],
   "title": "Landnotes 2"
- },
- "dg:38962748": {
-  "added": "2026-11-07",
-  "artist": "Various",
-  "artwork": "https://i.discogs.com/dYRNIQWkYgfa1HLxYa9_XxCoas-2A6L_piJp1G6mJIU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4OTYy/NzQ4LTE3OTQwNzM1/ODQtMzQ2Mi5qcGVn.jpeg",
-  "bandcamp_url": null,
-  "city": "UK",
-  "discogs_label_id": 943810,
-  "discogs_url": "https://www.discogs.com/release/38962748-Various-bc100",
-  "enriched": true,
-  "genre": "electronic",
-  "have": 1,
-  "key": "dg:38962748",
-  "label": "The Bricolage Collective",
-  "label_key": "dg:943810",
-  "release_date": "2026-11-20",
-  "self_released": false,
-  "source": "discogs",
-  "spotify_url": null,
-  "tags": [
-   "idm",
-   "broken beat",
-   "electronic"
-  ],
-  "title": "bc100"
- },
- "dg:38962880": {
-  "added": "2026-11-07",
-  "artist": "Various",
-  "artwork": "https://i.discogs.com/9MoGuwG0eDPMokBQ2ZjrADoHtUd2n1XTzcupaoNdkQU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4OTYy/ODgwLTE3OTQwNzQy/ODUtNzIxNi5qcGVn.jpeg",
-  "bandcamp_url": null,
-  "city": "UK",
-  "discogs_label_id": 943810,
-  "discogs_url": "https://www.discogs.com/release/38962880-Various-bc100",
-  "enriched": true,
-  "genre": "electronic",
-  "have": 0,
-  "key": "dg:38962880",
-  "label": "The Bricolage Collective",
-  "label_key": "dg:943810",
-  "release_date": "2026-11-20",
-  "self_released": false,
-  "source": "discogs",
-  "spotify_url": null,
-  "tags": [
-   "idm",
-   "broken beat",
-   "electronic"
-  ],
-  "title": "bc100"
  },
  "dg:38985572": {
   "added": "2026-11-09",
@@ -3384,29 +2954,162 @@
   ],
   "title": "Forgiveness Not Permission EP 5"
  },
- "dg:39008630": {
-  "added": "2026-11-12",
-  "artist": "Kogumaza",
-  "artwork": "https://i.discogs.com/DePwPrFyKQle7mMbwkyiWopUq_bu-yl7g-LplY5jpEQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5MDA4/NjMwLTE3OTQ0NzMw/NzgtMTk2Ni5qcGVn.jpeg",
+ "dg:39052241": {
+  "added": "2026-11-16",
+  "artist": "Night Wolf, Lois Powell",
+  "artwork": "https://i.discogs.com/3NIdVt8u-HvjK8R-uBLcWLPLmZqlb1_9-kuUk-umyzI/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5MDUy/MjQxLTE3OTQ4NDc2/NDAtMzI5OS5wbmc.jpeg",
   "bandcamp_url": null,
   "city": "UK",
-  "discogs_label_id": 59447,
-  "discogs_url": "https://www.discogs.com/release/39008630-Kogumaza-You-Found-Yourself-Where-You-Found-Yourself",
+  "discogs_label_id": 4451515,
+  "discogs_url": "https://www.discogs.com/release/39052241-Night-Wolf-8-Lois-Powell-4-Rainbow-Bridge",
   "enriched": true,
-  "genre": "rock",
-  "have": 3,
-  "key": "dg:39008630",
-  "label": "Low Point",
-  "label_key": "dg:59447",
-  "release_date": "2026-11-20",
+  "genre": "pop",
+  "have": 0,
+  "key": "dg:39052241",
+  "label": "EscaVolt Records",
+  "label_key": "dg:4451515",
+  "release_date": "2026-12-18",
   "self_released": false,
   "source": "discogs",
   "spotify_url": null,
   "tags": [
-   "post rock",
+   "alt-pop",
+   "indie pop",
+   "pop",
+   "folk, world, & country"
+  ],
+  "title": "Rainbow Bridge"
+ },
+ "dg:39062177": {
+  "added": "2026-11-17",
+  "artist": "DJ Tubby",
+  "artwork": "https://i.discogs.com/4vZYNbb59tR7rTyiABZbr4sDcYPzP4rJ6z9jXBcuPYQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5MDYy/MTc3LTE3OTQ5OTMw/MzUtOTkxMS5qcGVn.jpeg",
+  "bandcamp_url": null,
+  "city": "UK",
+  "discogs_label_id": 4553511,
+  "discogs_url": "https://www.discogs.com/release/39062177-DJ-Tubby-100-Dubplate",
+  "enriched": true,
+  "genre": "electronic",
+  "have": 0,
+  "key": "dg:39062177",
+  "label": "Positive Pressure",
+  "label_key": "dg:4553511",
+  "release_date": "2026-12-11",
+  "self_released": false,
+  "source": "discogs",
+  "spotify_url": null,
+  "tags": [
+   "grime",
+   "dubstep",
+   "electronic"
+  ],
+  "title": "100% Dubplate"
+ },
+ "dg:39069509": {
+  "added": "2026-11-18",
+  "artist": "Megabasse",
+  "artwork": "https://i.discogs.com/LhFw7GZqjkt51R9v41I2Gg-OiYe0GVTVSYykyTjlKa0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5MDY5/NTA5LTE3OTUwMDY3/MDEtMzExMi5qcGVn.jpeg",
+  "bandcamp_url": null,
+  "city": "UK",
+  "discogs_label_id": 2757464,
+  "discogs_url": "https://www.discogs.com/release/39069509-Megabasse-Apolemia",
+  "enriched": true,
+  "genre": "jazz",
+  "have": 1,
+  "key": "dg:39069509",
+  "label": "Infinite Expanse",
+  "label_key": "dg:2757464",
+  "release_date": "2026-12-00",
+  "self_released": false,
+  "source": "discogs",
+  "spotify_url": null,
+  "tags": [
+   "experimental",
    "psychedelic rock",
+   "ethereal",
+   "free improvisation",
+   "jazz",
    "rock"
   ],
-  "title": "You Found Yourself Where You Found Yourself"
+  "title": "Apolemia"
+ },
+ "dg:39069638": {
+  "added": "2026-11-18",
+  "artist": "Alex Howard",
+  "artwork": "https://i.discogs.com/9Kzu1jKJeiI9SRvJxsEsb_7AVFD1peOWJcFqQGoQNTc/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5MDY5/NjM4LTE3OTUwMDgw/OTItMjM5NC5qcGVn.jpeg",
+  "bandcamp_url": null,
+  "city": "UK",
+  "discogs_label_id": 2757464,
+  "discogs_url": "https://www.discogs.com/release/39069638-Alex-Howard-Piano-Improvisations",
+  "enriched": true,
+  "genre": "folk",
+  "have": 1,
+  "key": "dg:39069638",
+  "label": "Infinite Expanse",
+  "label_key": "dg:2757464",
+  "release_date": "2026-12-00",
+  "self_released": false,
+  "source": "discogs",
+  "spotify_url": null,
+  "tags": [
+   "ambient",
+   "minimal",
+   "free improvisation",
+   "folk, world, & country"
+  ],
+  "title": "Piano Improvisations"
+ },
+ "dg:39093837": {
+  "added": "2026-11-20",
+  "artist": "Red Axes",
+  "artwork": "https://i.discogs.com/4ht9ggOhJEWb65fs_k2xJtlU7AOko_LyR2IV7rLqKSY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5MDkz/ODM3LTE3OTUxNjQx/ODktMTQ1MS5qcGVn.jpeg",
+  "bandcamp_url": null,
+  "city": "UK",
+  "discogs_label_id": 15,
+  "discogs_url": "https://www.discogs.com/release/39093837-Red-Axes-Red-Box",
+  "enriched": true,
+  "genre": "electronic",
+  "have": 3,
+  "key": "dg:39093837",
+  "label": "20:20 Vision",
+  "label_key": "dg:15",
+  "release_date": "2026-11-27",
+  "self_released": false,
+  "source": "discogs",
+  "spotify_url": null,
+  "tags": [
+   "house",
+   "tech house",
+   "electro",
+   "electronic"
+  ],
+  "title": "Red Box"
+ },
+ "dg:39095874": {
+  "added": "2026-11-20",
+  "artist": "Rig Thrall",
+  "artwork": null,
+  "bandcamp_url": null,
+  "city": "UK",
+  "discogs_label_id": 4570089,
+  "discogs_url": "https://www.discogs.com/release/39095874-Rig-Thrall-Dead-Hype",
+  "enriched": true,
+  "genre": "electronic",
+  "have": 1,
+  "key": "dg:39095874",
+  "label": "Braintickle",
+  "label_key": "dg:4570089",
+  "release_date": "2026-12-09",
+  "self_released": false,
+  "source": "discogs",
+  "spotify_url": null,
+  "tags": [
+   "techno",
+   "acid",
+   "idm",
+   "ambient",
+   "electronic"
+  ],
+  "title": "Dead Hype"
  }
 }
