@@ -4,11 +4,14 @@ Open `index.html` in a browser. No build step.
 
 ## Age 1: Primordial Soup
 
-- Each cell has a small neural network brain (9 senses, 8 hidden neurons, 3 actions: turn, swim, attack) plus body genes (size, speed, senses, colour).
-- Brains start random. Cells that eat enough divide, and children inherit mutated copies, so behaviour is learned through evolution, not scripted.
-- **You are natural selection:** cull cells or whole lineages you don't like, favour the ones you do, drop food, and set famine or plenty.
-- The foraging line (food found per lifetime) shows the species getting smarter.
-- Goals unlock the next age.
+Four species of single cells share one pool. Yours are teal.
+
+- **Swim:** you control one cell (gold ring). Hold or drag anywhere and it swims there (arrow keys or WASD on desktop). Eat algae and swim into smaller rival cells to eat them.
+- **DNA:** your species earns DNA by eating and hunting, and your own cell earns the most. Spend it on species-wide upgrades: flagella, eyespot, metabolism, rapid division, spines and shell. Rival species buy upgrades too.
+- **Natural selection:** cull your weak cells for free, or rivals for 3 DNA. Favour good cells, or drop food.
+- **Learning:** every cell has a small neural network brain (11 senses, 8 hidden neurons, 3 actions) that evolves across generations. Inspect any cell to watch its brain live.
+- **Disasters:** volcanic vent, giant amoeba, ice age, plague (hits the most crowded species) and algae bloom. Extinct rivals come back as new strains after a disaster.
+- **Win:** own half of the pool, reach generation 20, survive 3 disasters and win 25 hunts. **Lose:** your species goes extinct.
 
 ## Planned ages
 
