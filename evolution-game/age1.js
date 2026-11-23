@@ -90,6 +90,17 @@ function randomGenome(hue) {
   for (let i = 0; i < WN; i++) w[i] = rnd(1.2);
   return { w, size: 6 + Math.random() * 4, speed: 1 + Math.random() * 0.8, sense: 80 + Math.random() * 60, hue: hue + rnd(12) };
 }
+// a basic instinct for your species: steer at food, keep swimming, bite smaller non-kin
+function instinctGenome(hue) {
+  const g = randomGenome(hue), w = g.w;
+  for (let i = 0; i < WN; i++) w[i] *= 0.25;
+  w[0 * NI + 0] = 3; w[HO + 0 * NH + 0] = 2.5;          // food direction -> turn
+  w[HB + 1] = 2; w[HO + 1 * NH + 1] = 1.6;              // always swim
+  w[2 * NI + 4] = -3; w[2 * NI + 5] = -2; w[HO + 2 * NH + 2] = 2.5; w[OB + 2] = -0.4; // bite smaller rivals
+  return mutate(g, hue, 0.5);
+}
+// rivals get the same instinct in half their cells, scrambled harder, so they compete but start a little behind you
+const seedGenome = S => S.i === 0 ? instinctGenome(S.hue) : Math.random() < 0.3 ? mutate(instinctGenome(S.hue), S.hue, 3) : randomGenome(S.hue);
 function mutate(g, base, rate = 1) {
   const w = new Float32Array(g.w);
   for (let i = 0; i < WN; i++) if (Math.random() < 0.12 * rate) w[i] = clamp(w[i] + gauss() * 0.45, -4, 4);
@@ -158,7 +169,7 @@ function newGame() {
   const per = Math.max(10, Math.round(AREA / 60000));
   for (const S of species) {
     const cx = Math.random() * W, cy = Math.random() * H;
-    for (let i = 0; i < per; i++) cells.push(makeCell(randomGenome(S.hue), wrapP(cx + rnd(W * 0.3), W), wrapP(cy + rnd(H * 0.3), H), 0, S.i));
+    for (let i = 0; i < per; i++) cells.push(makeCell(seedGenome(S), wrapP(cx + rnd(W * 0.3), W), wrapP(cy + rnd(H * 0.3), H), 0, S.i));
   }
   possess(cells.find(c => c.sp === 0));
   select(null); closeEvolve();
@@ -339,7 +350,7 @@ function step() {
     for (const S of species) S.count = 0;
     for (const c of cells) if (!c.dead) species[c.sp].count++;
     for (const S of species) {
-      if (tick < GRACE && S.count < 5) cells.push(makeCell(randomGenome(S.hue), Math.random() * W, Math.random() * H, 0, S.i));
+      if (tick < GRACE && S.count < 5) cells.push(makeCell(seedGenome(S), Math.random() * W, Math.random() * H, 0, S.i));
       else if (S.count === 0 && !S.extinct && tick >= GRACE) {
         S.extinct = true;
         if (S.i) toast(`${S.name} has gone extinct.`, true);
@@ -400,7 +411,7 @@ const AGES = [
 ];
 const total = () => species.reduce((a, S) => a + S.count, 0) || 1;
 const GOALS = [
-  { t: 'Own half of the pool', v: () => species[0].count / total() * 100, max: 50, fmt: v => Math.floor(v) + '%' },
+  { t: 'Own 40% of the pool', v: () => species[0].count / total() * 100, max: 40, fmt: v => Math.floor(v) + '%' },
   { t: 'Reach generation 20', v: () => species[0].maxGen, max: 20 },
   { t: 'Survive 3 disasters', v: () => survived, max: 3 },
   { t: 'Win 25 hunts', v: () => species[0].kills, max: 25 },
@@ -733,8 +744,8 @@ $('speedBtn').onclick = () => { speedIdx = (speedIdx + 1) % SPEEDS.length; $('sp
 $('viewBtn').onclick = () => { closeUp = !closeUp; $('viewBtn').textContent = closeUp ? 'Whole pool' : 'Close up'; };
 $('openAges').onclick = () => showModal({
   eyebrow: 'The road to civilization', title: 'The ages ahead',
-  body: PR.agesHtml(1),
-  buttons: [['Back to the pool', null, true]],
+  body: PR.agesHtml(1) + '<p class="note">Want to see Age 2 now? Skipping takes your species as it is, with its current brains, into the Shallow Sea.</p>',
+  buttons: [['Skip to Age 2', () => { if (species[0].count) advance(); else PR.startAge(2); }], ['Back to the pool', null, true]],
 });
 $('goals').addEventListener('click', e => { if (innerWidth <= 760 && e.target.id !== 'openAges') $('goals').classList.toggle('min'); });
 if (innerWidth <= 760) $('goals').classList.add('min');
