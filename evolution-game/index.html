@@ -173,6 +173,28 @@ canvas#world { position: absolute; inset: 0; width: 100%; height: 100%; display:
   #abilities { flex-direction: column; bottom: calc(118px + env(safe-area-inset-bottom, 0px)); }
   .ab { width: 60px; height: 60px; }
 }
+/* open world */
+.history { max-height: calc(100% - 190px); overflow-y: auto; }
+.history h2 { margin: 0; }
+.log { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; font-size: 12.5px; line-height: 1.4; }
+.log li { display: flex; flex-direction: column; gap: 1px; padding: 6px 0 0; border-top: 1px solid var(--line); }
+.log li span { font-family: var(--mono); font-size: 10.5px; color: var(--accent); }
+.log li.go { cursor: pointer; }
+.log li.go:hover { color: var(--gold); }
+.splist { display: flex; flex-direction: column; gap: 4px; }
+.sprow { display: grid; grid-template-columns: 12px 1fr auto auto; gap: 8px; align-items: center; padding: 7px 8px; border: 1px solid var(--line); border-radius: 8px; cursor: pointer; }
+.sprow:hover { border-color: var(--accent); }
+.sprow.fav { border-color: var(--gold); }
+.sprow b { font-family: var(--display); font-weight: 600; font-size: 13.5px; display: block; }
+.sprow small { font-size: 11px; color: var(--muted); }
+.sprow .n { font-family: var(--mono); font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.star { background: none; border: 0; color: var(--gold); font-size: 20px; line-height: 1; cursor: pointer; padding: 2px 4px; }
+@media (max-width: 760px) {
+  .wtools { overflow-x: auto; justify-content: flex-start !important; }
+  .wtools .btn { flex: 0 0 auto; }
+  #goals.min .note, #goals.min .log, #goals.min .label:nth-of-type(2) { display: none; }
+  .history { max-height: 50%; }
+}
 /* shared by later ages */
 .ages li.past .n, .ages li.past b { color: var(--gold); }
 .upg em { font-style: normal; color: var(--fg); opacity: 0.75; }
@@ -201,23 +223,20 @@ canvas#world { position: absolute; inset: 0; width: 100%; height: 100%; display:
 </div>
 
 <script src="shared.js" charset="utf-8"></script>
-<script src="age1.js" charset="utf-8"></script>
-<script src="age2.js" charset="utf-8"></script>
+<script src="world.js" charset="utf-8"></script>
 <script>
 (() => {
   const saved = PR.load();
-  if (!saved || !saved.state || !PR.ages[saved.age]) { PR.startAge(1); return; }
-  const name = PR.AGES[saved.age - 1][0];
-  // draw the saved world behind the menu
-  PR.startAge(saved.age, saved.state);
+  if (!saved || saved.age !== 'world' || !saved.state) { PR.startAge('world'); return; }
+  PR.startAge('world', saved.state);
   PR.showModal({
-    eyebrow: 'Saved game', title: 'Welcome back',
-    body: `<p>Your species is in Age ${saved.age}: ${name}.</p>${PR.agesHtml(saved.age)}`,
+    eyebrow: 'Saved world', title: 'Welcome back',
+    body: '<p>Your world has kept evolving where you left it.</p>',
     buttons: [
-      ['New game', () => PR.showModal({
-        eyebrow: 'New game', title: 'Start from a single cell?',
-        body: '<p>Your saved species and everything it has evolved will be lost.</p>',
-        buttons: [['Start over', () => { PR.clearSave(); PR.startAge(1); }], ['Keep my save', null, true]],
+      ['New world', () => PR.showModal({
+        eyebrow: 'New world', title: 'Start a new world?',
+        body: '<p>This world and every species in it will be lost.</p>',
+        buttons: [['Start over', () => { PR.clearSave(); PR.startAge('world'); }], ['Keep my world', null, true]],
       })],
       ['Continue', null, true],
     ],
