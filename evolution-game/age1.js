@@ -50,6 +50,14 @@ const HUD1 = `
   </aside>
 
 
+  <div id="mission" class="panel" hidden><span class="label" id="msLabel">Mission</span><b id="msTitle"></b><span id="msText"></span><div class="t"><i id="msBar"></i></div></div>
+
+  <div id="abilities" aria-label="Abilities">
+    <button class="ab" id="abSplit" type="button"><b>Split</b><small id="abSplitT">F</small></button>
+    <button class="ab" id="abRally" type="button"><b>Rally</b><small id="abRallyT">R</small></button>
+    <button class="ab" id="abDash" type="button"><b>Dash</b><small id="abDashT">Space</small></button>
+  </div>
+
   <nav id="toolbar" class="panel" aria-label="Tools">
     <button class="btn" data-tool="swim" aria-pressed="true" type="button">Swim</button>
     <button class="btn" data-tool="inspect" aria-pressed="false" type="button">Inspect</button>
@@ -147,6 +155,7 @@ function buy(S, u) {
 // ---------- state ----------
 let cells, food, nextId, tick, speedIdx, paused, tool, selected, avatar, kills, history, effects, flags;
 let ev, nextEv, evOrder, survived, won, lost, gameStart, respawnAt;
+let ab, mission, nextMission, missionN, orb;
 const SPEEDS = [1, 3, 8];
 const GRACE = 3600;
 function makeCell(g, x, y, gen, sp, e = 40) {
@@ -160,6 +169,7 @@ function addFood(x, y) { if (food.length < FOOD_MAX * 1.6) food.push({ x: wrapP(
 function newGame() {
   cells = []; food = []; nextId = 1; tick = 0; kills = 0; history = []; effects = []; flags = {};
   if (typeof GOALS !== 'undefined') GOALS.forEach(g => g.done = false);
+  ab = { dashT: 0, dashCd: 0, rallyT: 0, rallyCd: 0, splitCd: 0 }; mission = null; nextMission = 700; missionN = 0; orb = null;
   selected = null; avatar = null; ev = null; nextEv = 2200; survived = 0; won = false; lost = false; respawnAt = 0;
   evOrder = ['vent', 'amoeba', 'ice', 'bloom'].sort(() => Math.random() - 0.5);
   if (evOrder[0] === 'bloom') evOrder.push(evOrder.shift()); // open with a real threat
@@ -305,26 +315,47 @@ function step() {
       c.out[0] = turn / 0.2; c.out[1] = thrust * 2 - 1; c.out[2] = 1;
       think(c, inp); // keep the brain visual alive, then override with the player's input
       c.out[0] = turn / 0.2; c.out[1] = thrust * 2 - 1; c.out[2] = 1;
+    } else if (c.elite) {
+      think(c, inp);
+      let best = null, bd = 520;
+      for (const o of cells) { if (o.dead || o.sp !== 0) continue; const d = Math.hypot(wrapD(o.x - c.x, W), wrapD(o.y - c.y, H)); if (d < bd) { bd = d; best = o; } }
+      if (best) { const want = Math.atan2(wrapD(best.y - c.y, H), wrapD(best.x - c.x, W)); c.a += clamp(angTo(c.a, Math.cos(want), Math.sin(want)), -0.12, 0.12); c.thrust = 1; }
+      else { c.a += c.out[0] * 0.14; c.thrust = 0.6; }
+      attack = true; c.e = Math.max(c.e, g.size * 5);
+    } else if (c.sp === 0 && ab.rallyT > 0 && avatar && !avatar.dead && Math.hypot(wrapD(avatar.x - c.x, W), wrapD(avatar.y - c.y, H)) < 340) {
+      think(c, inp);
+      // swarm: chase small rivals and food near you, otherwise hold formation around your cell
+      let tx, ty;
+      const prey = nc && nc.o.sp !== 0 && nc.d < 70 && nc.o.g.size * 1.1 < g.size ? nc : null;
+      if (prey) { tx = c.x + prey.dx; ty = c.y + prey.dy; }
+      else if (nf && nf.d < 35) { tx = c.x + nf.dx; ty = c.y + nf.dy; }
+      else { const an = c.id * 2.399 + tick * 0.01, rr = 24 + (c.id % 6) * 9; tx = avatar.x + Math.cos(an) * rr; ty = avatar.y + Math.sin(an) * rr; }
+      const dx = wrapD(tx - c.x, W), dy = wrapD(ty - c.y, H);
+      c.a += clamp(angTo(c.a, dx, dy), -0.25, 0.25); c.thrust = clamp(Math.hypot(dx, dy) / 30, 0.3, 1); attack = true;
+      c.rallied = true;
     } else {
       think(c, inp);
       c.a += c.out[0] * 0.14;
       c.thrust = (c.out[1] + 1) / 2;
       attack = c.out[2] > 0.3;
     }
-    const v = c.thrust * g.speed * M.speed;
+    if (c.rallied && ab.rallyT <= 0) c.rallied = false;
+    const v = c.thrust * g.speed * M.speed * (c === avatar && ab.dashT > 0 ? 2.7 : 1) * (c.elite ? 1.35 : 1) * (c.rallied ? 1.15 : 1);
     c.x = wrapP(c.x + Math.cos(c.a) * v, W);
     c.y = wrapP(c.y + Math.sin(c.a) * v, H);
     c.phase += 0.15 + v * 0.25;
-    c.e -= (0.012 + 0.0026 * g.size + 0.0065 * c.thrust * g.speed * g.speed * g.size / 8 + (attack && c !== avatar ? 0.012 : 0) + sense * 0.00003) * M.cost * (ice ? 1.25 : 1) * (S.count < 15 ? 0.6 : 1);
+    c.e -= (0.012 + 0.0026 * g.size + 0.0065 * c.thrust * g.speed * g.speed * g.size / 8 + (attack && c !== avatar ? 0.012 : 0) + sense * 0.00003) * M.cost * (ice ? 1.25 : 1) * (c.sp === 0 && S.count < 20 ? 0.45 : S.count < 15 ? 0.6 : 1);
     if (ev && ev.type === 'vent') c.e -= danger * 0.3;
     c.age++;
+    if (orb && c === avatar && Math.hypot(wrapD(orb.x - c.x, W), wrapD(orb.y - c.y, H)) < g.size + 12) takeOrb(c);
     if (nf && nf.d < g.size + 3 && !nf.o.dead) { nf.o.dead = true; c.e += 12; c.eaten++; S.dna += c === avatar ? 1 : 0.07; }
-    if (attack && c.e < g.size * 10 * 0.75 && nc && !nc.o.dead && nc.o.sp !== c.sp && nc.d < g.size + nc.o.g.size) {
+    if (attack && (c.e < g.size * 10 * 0.75 || c === avatar || c.elite) && nc && !nc.o.dead && nc.o.sp !== c.sp && nc.d < g.size + nc.o.g.size) {
       const prey = nc.o, P = species[prey.sp];
-      const need = Math.max(0.95, 1.38 - 0.12 * S.lv.spike + 0.12 * P.lv.shell);
+      const need = c === avatar && ab.dashT > 0 ? 0.8 : Math.max(c.elite ? 0.8 : 0.95, 1.38 - 0.12 * S.lv.spike + 0.12 * P.lv.shell);
       if (g.size > prey.g.size * need) {
         prey.dead = true; c.e += prey.e * 0.45 + prey.g.size; c.kills++; S.kills++;
         S.dna += c === avatar ? 4 : 0.5;
+        if (mission && mission.type === 'hunt' && c.sp === 0 && prey.sp === mission.sp) mission.have++;
         effects.push({ x: prey.x, y: prey.y, t: 0, hue: prey.g.hue, kind: 'eat' });
         if (prey === avatar) toast(`Your cell was eaten by ${S.name}.`);
         onDeath(prey);
@@ -343,6 +374,8 @@ function step() {
   }
   if (born.length) cells.push(...born);
   if (ev && ev.type === 'amoeba') stepAmoeba();
+  for (const k of ['dashT', 'dashCd', 'rallyT', 'rallyCd', 'splitCd']) if (ab[k] > 0) ab[k]--;
+  stepMission();
   if (ev && ev.type === 'plague' && tick % 20 === 0) for (const c of cells) if (!c.dead && c.sp === ev.target && c !== avatar && Math.random() < 0.025) { c.dead = true; effects.push({ x: c.x, y: c.y, t: 0, hue: 90, kind: 'eat' }); onDeath(c); }
   if (tick % 30 === 0) { cells = cells.filter(c => !c.dead); food = food.filter(f => !f.dead); }
   // census
@@ -394,6 +427,84 @@ function cull(c) {
   if (c.sp !== 0 && !spend(3)) return;
   c.dead = true; effects.push({ x: c.x, y: c.y, t: 0, hue: c.g.hue, kind: 'cull' }); onDeath(c);
   if (!flags.firstCull) { flags.firstCull = true; toast(c.sp ? 'Rival culled for 3 DNA.' : 'Culled. Its genes are gone from your pool.'); }
+}
+function split() {
+  const a = avatar; if (!a || a.dead) return;
+  if (ab.splitCd > 0) return;
+  const maxE = a.g.size * 10;
+  if (a.e < maxE * 0.35) { toast('Your cell needs more energy to split. Eat first.'); return; }
+  a.e /= 2; a.kids++; ab.splitCd = species[0].count < 15 ? 70 : 150;
+  const k = makeCell(mutate(a.g, species[0].hue), wrapP(a.x - Math.cos(a.a) * a.g.size * 2, W), wrapP(a.y - Math.sin(a.a) * a.g.size * 2, H), a.gen + 1, 0, a.e);
+  k.a = a.a + Math.PI; cells.push(k);
+  if (k.gen > species[0].maxGen) species[0].maxGen = k.gen;
+  effects.push({ x: a.x, y: a.y, t: 0, kind: 'favour' });
+  if (mission && mission.type === 'split') mission.have++;
+}
+function dash() { const a = avatar; if (!a || a.dead || ab.dashCd > 0) return; ab.dashT = 40; ab.dashCd = 240; a.e -= 2; effects.push({ x: a.x, y: a.y, t: 0, kind: 'dash' }); }
+function rally() {
+  const a = avatar; if (!a || a.dead || ab.rallyCd > 0) return;
+  ab.rallyT = 600; ab.rallyCd = 1200; effects.push({ x: a.x, y: a.y, t: 0, kind: 'rally' });
+  if (!flags.rallied) { flags.rallied = true; toast('Your nearby cells are following you. Lead them into smaller rivals.'); }
+}
+const MISSIONS = {
+  split: { title: 'Grow your colony', text: n => `Split your cell ${n} times.`, need: 3, dur: 1500, reward: 10 },
+  orb: { title: 'Golden algae', text: () => 'Golden algae has appeared. Follow the gold arrow and eat it with your cell.', need: 1, dur: 1500, reward: 0 },
+  hunt: { title: 'Hunt', text: (n, S) => `Your species must eat ${n} ${S.name} cells. Rally your swarm.`, need: 4, dur: 1800, reward: 15 },
+  elite: { title: 'Elite hunter', text: (n, S) => `A giant ${S.name} hunter is eating your cells. Kill it: rally and dash into it.`, need: 1, dur: 2100, reward: 25 },
+};
+function startMission() {
+  const order = ['split', 'orb', 'hunt', 'elite'];
+  let type = missionN < order.length ? order[missionN] : order[Math.floor(Math.random() * order.length)];
+  const rivals = species.filter(S => S.i && S.count > 2);
+  if ((type === 'hunt' || type === 'elite') && !rivals.length) type = 'orb';
+  if (type === 'elite' && species[0].count < 25) type = species[0].count < 12 ? 'split' : 'orb';
+  const m = { type, t0: tick, dur: MISSIONS[type].dur, need: MISSIONS[type].need, have: 0 };
+  if (type === 'hunt' || type === 'elite') m.sp = rivals[Math.floor(Math.random() * rivals.length)].i;
+  if (type === 'orb' || type === 'elite') {
+    const a = avatar || { x: W / 2, y: H / 2 }, an = Math.random() * 6.28, d = Math.min(W, H) * 0.35;
+    const x = wrapP(a.x + Math.cos(an) * d, W), y = wrapP(a.y + Math.sin(an) * d, H);
+    if (type === 'orb') orb = { x, y };
+    else {
+      const S = species[m.sp], g = randomGenome(S.hue); g.size = 14; g.sense = 240; g.speed = 1.4;
+      const e = makeCell(g, x, y, S.maxGen, S.i, 140); e.elite = true; e.maxAge = 1e9; cells.push(e); m.elite = e;
+    }
+  }
+  mission = m; missionN++;
+  toast('New mission: ' + MISSIONS[type].title, true);
+}
+function endMission(ok) {
+  const m = mission, def = MISSIONS[m.type];
+  if (ok && def.reward) { species[0].dna += def.reward; toast(`Mission complete! +${def.reward} DNA.`, true); }
+  else if (!ok) toast(m.type === 'orb' ? 'The golden algae dissolved.' : 'Mission failed. Another will come.');
+  if (m.elite && !m.elite.dead) m.elite.elite = false;
+  if (m.type === 'orb') orb = null;
+  mission = null; nextMission = tick + 900;
+}
+function stepMission() {
+  if (!mission) { if (tick >= nextMission && avatar) startMission(); return; }
+  const m = mission;
+  if (m.type === 'elite' && m.elite.dead) m.have = 1;
+  if (m.have >= m.need && m.type !== 'orb') return endMission(true);
+  if (tick > m.t0 + m.dur) endMission(false);
+}
+function takeOrb(c) {
+  const where = orb; orb = null;
+  effects.push({ x: where.x, y: where.y, t: 0, kind: 'favour' });
+  if (c === avatar) { if (mission && mission.type === 'orb') mission = null, nextMission = tick + 900; chooseMutation(); return; }
+  const S = species[c.sp];
+  if (c.sp === 0) { S.dna += 10; toast('One of your cells ate the golden algae. +10 DNA.'); }
+  else { const opts = UPG.filter(u => S.lv[u.k] < MAXLV); if (opts.length) { const u = opts[Math.floor(Math.random() * opts.length)]; S.lv[u.k]++; mods(S); } toast(`${S.name} got the golden algae first and evolved for free.`); }
+  if (mission && mission.type === 'orb') { mission = null; nextMission = tick + 900; }
+}
+function chooseMutation() {
+  const me = species[0];
+  const opts = UPG.filter(u => me.lv[u.k] < MAXLV).sort(() => Math.random() - 0.5).slice(0, 3);
+  const buttons = opts.map(u => [u.name, () => { me.lv[u.k]++; mods(me); toast(`${u.name} evolved for free.`); }]);
+  if (buttons.length < 3) buttons.push(['+25 DNA', () => { me.dna += 25; }]);
+  buttons[buttons.length - 1][2] = true;
+  showModal({ eyebrow: 'Golden algae', title: 'Choose a free mutation',
+    body: '<p>Your cell ate the golden algae. Pick one upgrade for your whole species, free.</p><ul class="howto">' + opts.map(u => `<li><b>${u.name.toUpperCase()}</b><span>${u.desc}. Best for ${u.best.toLowerCase()}.</span></li>`).join('') + '</ul>',
+    buttons });
 }
 function favour(c) { if (!c || c.dead || !spend(1)) return; c.e = Math.min(c.g.size * 10, c.e + c.g.size * 4); effects.push({ x: c.x, y: c.y, t: 0, kind: 'favour' }); }
 function feed(x, y) { if (!spend(2)) return; for (let i = 0; i < 18; i++) addFood(x + rnd(40), y + rnd(40)); effects.push({ x, y, t: 0, kind: 'feed' }); }
@@ -546,6 +657,15 @@ function draw() {
     ctx.restore();
   }
   const px = 1 / S * dpr; // one css pixel in world units
+  // rallied cells, elite hunters and the golden algae
+  ctx.fillStyle = 'rgba(232,196,106,0.85)';
+  for (const c of cells) if (!c.dead && c.rallied) { const x = X(c.x), y = Y(c.y); if (vis(x, y)) { ctx.beginPath(); ctx.arc(x, y - c.g.size * 1.6, 1.8 * px * 1.5, 0, 7); ctx.fill(); } }
+  for (const c of cells) if (!c.dead && c.elite) { const x = X(c.x), y = Y(c.y); ctx.strokeStyle = `rgba(255,90,90,${0.5 + Math.sin(t * 6) * 0.3})`; ctx.lineWidth = 2.5 * px; ctx.beginPath(); ctx.arc(x, y, c.g.size * 2 + 4, 0, 7); ctx.stroke(); }
+  if (orb) {
+    const x = X(orb.x), y = Y(orb.y), pul = 1 + Math.sin(t * 5) * 0.15;
+    const gr = ctx.createRadialGradient(x, y, 0, x, y, 22 * pul); gr.addColorStop(0, 'rgba(255,230,140,0.95)'); gr.addColorStop(0.35, 'rgba(232,196,106,0.6)'); gr.addColorStop(1, 'rgba(232,196,106,0)');
+    ctx.fillStyle = gr; ctx.beginPath(); ctx.arc(x, y, 22 * pul, 0, 7); ctx.fill();
+  }
   // avatar marker, steering line and energy ring
   if (avatar && !avatar.dead) {
     const a = avatar, x = X(a.x), y = Y(a.y), r = a.g.size * 1.7 + 4;
@@ -575,6 +695,9 @@ function draw() {
       ctx.beginPath(); ctx.arc(x, y, 6 + p * 30, 0, 7); ctx.stroke();
       ctx.fillStyle = `hsla(${e.hue},40%,60%,${(1 - p) * 0.6})`;
       for (let k = 0; k < 8; k++) { const an = k * 0.785; ctx.beginPath(); ctx.arc(x + Math.cos(an) * p * 26, y + Math.sin(an) * p * 26, 2, 0, 7); ctx.fill(); }
+    } else if (e.kind === 'rally' || e.kind === 'dash') {
+      ctx.strokeStyle = e.kind === 'rally' ? `rgba(232,196,106,${1 - p})` : `rgba(200,240,255,${1 - p})`; ctx.lineWidth = 2;
+      ctx.beginPath(); ctx.arc(x, y, 6 + p * (e.kind === 'rally' ? 300 : 30), 0, 7); ctx.stroke();
     } else if (e.kind === 'eat') {
       ctx.strokeStyle = `hsla(${e.hue},70%,70%,${1 - p})`; ctx.lineWidth = 1.5; ctx.beginPath(); ctx.arc(x, y, 4 + p * 16, 0, 7); ctx.stroke();
     } else {
@@ -585,6 +708,18 @@ function draw() {
   effects = effects.filter(e => e.t < 40);
   // lens vignette, tinted cold during an ice age
   ctx.setTransform(1, 0, 0, 1, 0, 0);
+  // arrows at the screen edge pointing to mission targets
+  const targets = [];
+  if (orb) targets.push([orb.x, orb.y, '#e8c46a']);
+  if (mission && mission.elite && !mission.elite.dead) targets.push([mission.elite.x, mission.elite.y, '#ff6a6a']);
+  for (const [tx, ty, col] of targets) {
+    const sx = Wc / 2 + (X(tx) - cam.x) * S, sy = Hc / 2 + (Y(ty) - cam.y) * S, m = 40 * dpr;
+    if (sx > m && sx < Wc - m && sy > m && sy < Hc - m) continue;
+    const an = Math.atan2(sy - Hc / 2, sx - Wc / 2), k = Math.min((Wc / 2 - m) / Math.abs(Math.cos(an) || 1e-6), (Hc / 2 - m) / Math.abs(Math.sin(an) || 1e-6));
+    const ax = Wc / 2 + Math.cos(an) * k, ay = Hc / 2 + Math.sin(an) * k;
+    ctx.save(); ctx.translate(ax, ay); ctx.rotate(an); ctx.fillStyle = col;
+    ctx.beginPath(); ctx.moveTo(14 * dpr, 0); ctx.lineTo(-8 * dpr, -10 * dpr); ctx.lineTo(-3 * dpr, 0); ctx.lineTo(-8 * dpr, 10 * dpr); ctx.closePath(); ctx.fill(); ctx.restore();
+  }
   const vg = ctx.createRadialGradient(Wc / 2, Hc / 2, Math.min(Wc, Hc) * 0.35, Wc / 2, Hc / 2, Math.hypot(Wc, Hc) * 0.6);
   vg.addColorStop(0, 'rgba(0,0,0,0)'); vg.addColorStop(1, ev && ev.type === 'ice' ? 'rgba(150,200,255,0.35)' : 'rgba(0,0,0,0.55)');
   ctx.fillStyle = vg; ctx.fillRect(0, 0, Wc, Hc);
@@ -615,6 +750,16 @@ function renderHud() {
     b.hidden = false; $('bTitle').textContent = 'Warning: ' + EVENTS[type].title.toLowerCase();
     $('bText').textContent = EVENTS[type].warn; $('bBar').style.width = ((nextEv - tick) / 420 * 100) + '%';
   } else b.hidden = true;
+  const ms = $('mission');
+  if (mission) {
+    const def = MISSIONS[mission.type], S = species[mission.sp || 0];
+    ms.hidden = false; ms.classList.toggle('below', !b.hidden);
+    $('msTitle').textContent = def.title + (mission.need > 1 ? ` · ${mission.have}/${mission.need}` : '');
+    $('msText').textContent = def.text(mission.need, S) + (def.reward ? ` Reward: ${def.reward} DNA.` : ' Reward: a free mutation.');
+    $('msBar').style.width = (100 - (tick - mission.t0) / mission.dur * 100) + '%';
+  } else ms.hidden = true;
+  const cd = (id, v, label) => { const el = $(id); el.parentElement.disabled = !avatar || v > 0; el.textContent = v > 0 ? Math.ceil(v / 60) + 's' : label; };
+  cd('abSplitT', ab.splitCd, avatar && avatar.e < avatar.g.size * 3.5 ? 'hungry' : 'F'); cd('abRallyT', ab.rallyCd, ab.rallyT > 0 ? 'on' : 'R'); cd('abDashT', ab.dashCd, 'Space');
   // chart
   const w = chart.width, h = chart.height;
   cx2.clearRect(0, 0, w, h);
@@ -725,7 +870,10 @@ const KEYMAP = { ArrowUp: 'up', KeyW: 'up', ArrowDown: 'down', KeyS: 'down', Arr
 addEventListener('keydown', e => {
   if (stopped) return;
   if (KEYMAP[e.code]) { keys[KEYMAP[e.code]] = true; e.preventDefault(); }
-  if (e.code === 'Space') { togglePause(); e.preventDefault(); }
+  if (e.code === 'Space') { dash(); e.preventDefault(); }
+  if (e.code === 'KeyP') togglePause();
+  if (e.code === 'KeyR') rally();
+  if (e.code === 'KeyF') split();
   if (e.code === 'KeyE') $('dnaBtn').click();
   if (e.key === 'Escape') { if (PR.modal.open && PR.modal.close) PR.modal.close(); else { select(null); closeEvolve(); } }
 });
@@ -740,6 +888,7 @@ function setTool(t) {
 document.querySelectorAll('[data-tool]').forEach(b => b.onclick = () => setTool(b.dataset.tool));
 function togglePause() { paused = !paused; $('pauseBtn').setAttribute('aria-pressed', paused); }
 $('pauseBtn').onclick = togglePause;
+$('abSplit').onclick = split; $('abRally').onclick = rally; $('abDash').onclick = dash;
 $('speedBtn').onclick = () => { speedIdx = (speedIdx + 1) % SPEEDS.length; $('speedBtn').textContent = SPEEDS[speedIdx] + '×'; };
 $('viewBtn').onclick = () => { closeUp = !closeUp; $('viewBtn').textContent = closeUp ? 'Whole pool' : 'Close up'; };
 $('openAges').onclick = () => showModal({
@@ -779,6 +928,8 @@ function intro() {
     body: `<p>Four species of single cells share one pool. Yours are <b style="color:var(--accent)">teal</b>. Every cell has a tiny brain that learns over generations. Only one species can win.</p>
     <ul class="howto">
       <li><b>SWIM</b><span>You control one cell with the gold ring. Hold anywhere and it swims toward your finger (arrow keys or WASD on a keyboard). Eat green algae. Swim into smaller rival cells to eat them.</span></li>
+      <li><b>ACT</b><span><b>Split</b> your cell to grow your colony. <b>Rally</b> makes nearby cells swarm after you, so you can lead them into rival groups. <b>Dash</b> is a burst of speed: ram smaller cells to eat them or escape.</span></li>
+      <li><b>MISSIONS</b><span>Missions pop up for DNA: hunt a rival species, race to golden algae for a free mutation, or kill an elite hunter.</span></li>
       <li><b>DNA</b><span>Your species earns DNA when it eats and hunts. Your own cell earns the most. Spend it on upgrades like flagella, spines and shells.</span></li>
       <li><b>SELECT</b><span>Cull the cells you don't like and favour the ones you do. Better cells breed, so your whole species gets smarter.</span></li>
       <li><b>SURVIVE</b><span>Disasters hit the pool: volcanic vents, a giant amoeba, ice ages. If your species dies out, the game is over.</span></li>
@@ -810,6 +961,7 @@ function restore(s) {
   for (const S of species) S.count = 0;
   for (const c of cells) species[c.sp].count++;
   avatar = null; possess(cells.find(c => c.id === s.avatarId) || cells.find(c => c.sp === 0));
+  missionN = 4; nextMission = tick + 600;
 }
 if (saved && saved.cells) { restore(saved); toast('Welcome back. Your pool is as you left it.'); }
 else { newGame(); for (let i = 0; i < 10; i++) step(); intro(); }
@@ -826,6 +978,6 @@ function frame(t) {
 }
 renderHud();
 requestAnimationFrame(frame);
-window.__sim = { bot: v => botPlayer = v, step, species: () => species, get stats() { return { tick, survived, won, lost, ev: ev && ev.type, sp: species.map(S => ({ n: S.count, dna: Math.round(S.dna), gen: S.maxGen, k: S.kills, lv: Object.values(S.lv).join(''), sk: +skillOf(S).toFixed(1) })) }; }, win: () => { GOALS.forEach(g => g.done = true); }, advance };
+window.__sim = { bot: v => botPlayer = v, step, species: () => species, get stats() { return { mission: mission && (mission.type + " " + mission.have + "/" + mission.need), orb: !!orb, tick, survived, won, lost, ev: ev && ev.type, sp: species.map(S => ({ n: S.count, dna: Math.round(S.dna), gen: S.maxGen, k: S.kills, lv: Object.values(S.lv).join(''), sk: +skillOf(S).toFixed(1) })) }; }, win: () => { GOALS.forEach(g => g.done = true); }, advance };
 return { stop() { stopped = true; }, serialize };
 } };
